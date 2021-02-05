@@ -1,0 +1,31 @@
+trait_ngm_youth_politics = {
+	cost = 0
+	initial = yes
+	randomized = yes
+	modification = yes
+	potential_crossbreeding_chance = 0.1
+    potential = { civic_fsass_youth_politics }
+	modifier = {
+		leader_age_min = 20
+		leader_age_max = 30
+	}
+	slave_cost = {
+		energy = 150
+	}
+}
+
+trait_ngm_elder_politics = {
+	cost = 0
+	initial = yes
+	randomized = yes
+	modification = yes
+    potential_crossbreeding_chance = 0.1
+    potential = { civic_fsass_elder_politics }
+	modifier = {
+        leader_age_min = 65
+        leader_age_max = 100
+	}
+	slave_cost = {
+		energy = 150
+	}
+}

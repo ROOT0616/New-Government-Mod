@@ -1,0 +1,377 @@
+#犯罪抑止力-10％　安定度5％	エネルギー-5
+decision_planet_patrolling = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 50
+			energy = 100
+		}
+	}
+	potential = {
+		owner = { 
+			is_regular_empire = yes 
+			is_lithoid_empire = no
+			is_ai = no
+			OR = { 
+			has_ethic = ethic_materialist
+			has_ethic = ethic_fanatic_materialist
+			has_ethic = ethic_authoritarian
+			has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			has_modifier = patrolling_society 
+		}
+		NOT = {
+			has_modifier = fanatic_patrolling_society 
+		}
+		NOT = {
+			has_modifier = hyper_fanatic_patrolling_society 
+		}
+	}
+
+	effect = {
+		add_modifier = { modifier = "patrolling_society" }
+			hidden_effect = {add_deposit = d_patrolling_society_deposit}
+	}
+}
+
+decision_end_patrolling = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+
+	resources = {category = decisions}
+	potential = {has_modifier = patrolling_society}
+	
+	effect = {
+		custom_tooltip = decision_end_planet_patrolling_society_effects_short
+		remove_modifier = patrolling_society
+		hidden_effect = {
+			remove_deposit = d_patrolling_society_deposit
+		}
+	}
+}
+
+#犯罪抑止力-30％　安定度15％	エネルギー-20% 合金-15%
+decision_planet_fanatic_patrolling = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 100
+			energy = 200
+			alloys = 20
+		}
+	}
+	potential = {
+		owner = { 
+			is_regular_empire = yes 
+			is_lithoid_empire = no
+			is_ai = no
+			OR = { 
+			has_ethic = ethic_fanatic_materialist
+			has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+		allow = {
+			NOT = {
+				has_modifier = patrolling_society 
+			}
+			NOT = {
+				has_modifier = fanatic_patrolling_society 
+			}
+			NOT = {
+				has_modifier = hyper_fanatic_patrolling_society 
+			}
+	}
+
+	effect = {
+		add_modifier = { modifier = "fanatic_patrolling_society" }
+			hidden_effect = {add_deposit = d_fanatic_patrolling_society_deposit}
+	}
+}
+
+decision_end_fanatic_patrolling = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+
+	resources = {category = decisions}
+	potential = {has_modifier = fanatic_patrolling_society}
+	
+	effect = {
+		custom_tooltip = decision_end_planet_fanatic_patrolling_society_effects_short
+		remove_modifier = fanatic_patrolling_society
+		hidden_effect = {
+			remove_deposit = d_fanatic_patrolling_society_deposit
+		}
+	}
+}
+
+#犯罪抑止力-50％　安定度30％	エネルギー-30% 合金-20% 消費財-20%
+decision_planet_hyper_fanatic_patrolling = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 100
+			energy = 200
+			alloys = 20
+		}
+	}
+	potential = {
+		owner = { 
+			is_regular_empire = yes 
+			is_lithoid_empire = no
+			is_ai = no
+			OR = { 
+			has_ethic = ethic_fanatic_materialist
+			has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+		allow = {
+			NOT = {
+				has_modifier = patrolling_society 
+			}
+			NOT = {
+				has_modifier = fanatic_patrolling_society 
+			}
+			NOT = {
+				has_modifier = hyper_fanatic_patrolling_society 
+			}
+	}
+	effect = {
+		add_modifier = { modifier = "hyper_fanatic_patrolling_society" }
+	}
+}
+
+decision_end_hyper_fanatic_patrolling = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+
+	resources = {category = decisions}
+	potential = {has_modifier = hyper_fanatic_patrolling_society}
+	
+	effect = {
+		custom_tooltip = decision_end_planet_fanatic_patrolling_society_effects_short
+		remove_modifier = hyper_fanatic_patrolling_society
+	}
+}
+
+#志向魅力-25％				研究力10％　統合力10％
+decision_planet_free_speech = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 100
+		}
+	}
+	potential = {
+		owner = { 
+			is_regular_empire = yes 
+			is_lithoid_empire = no
+			is_ai = no
+			OR = { 
+
+			has_ethic = ethic_egalitarian
+			has_ethic = ethic_fanatic_egalitarian
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_fanatic_pacifist
+			}
+			NOT = {
+			has_ethic = ethic_xenophobe
+			has_ethic = ethic_fanatic_xenophobe
+			}
+		}
+	}
+		allow = {
+			NOT = {
+				has_modifier = free_speech 
+			}
+			NOT = {
+				has_modifier = fanatic_free_speech 
+			}
+	}
+
+	effect = {
+		add_modifier = { modifier = "free_speech" }
+	}
+}
+
+decision_end_free_speech = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+
+	resources = {category = decisions}
+	potential = {has_modifier = free_speech}
+	
+	effect = {
+		custom_tooltip = decision_end_planet_free_speech_effects_short
+		remove_modifier = free_speech
+	}
+}
+
+#志向魅力-50％	安定度-5％		研究力20％　統合力20％
+decision_planet_fanatic_free_speech = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 100
+		}
+	}
+	potential = {
+		owner = { 
+			is_regular_empire = yes 
+			is_lithoid_empire = no
+			is_ai = no
+			OR = { 
+			has_ethic = ethic_fanatic_egalitarian
+			has_ethic = ethic_fanatic_pacifist
+			}
+		}
+	}
+		allow = {
+			NOT = {
+				has_modifier = free_speech 
+			}
+			NOT = {
+				has_modifier = fanatic_free_speech 
+			}
+	}
+
+	effect = {
+		add_modifier = { modifier = "fanatic_free_speech" }
+	}
+}
+
+decision_end_fanatic_free_speech = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+
+	resources = {category = decisions}
+	potential = {has_modifier = fanatic_free_speech}
+	
+	effect = {
+		custom_tooltip = decision_end_planet_fanatic_free_speech_effects_short
+		remove_modifier = fanatic_free_speech
+	}
+}
+
+#惑星規模の徴用政策	戦争中 消費財維持費-30% 犯罪度-10% 合金+10%	安定度-20 幸福度-20
+decision_planet_requisition_policy = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+		}
+	}
+	potential = {
+		owner = { 
+			is_regular_empire = yes 
+			is_lithoid_empire = no
+			is_ai = no
+			is_at_war = yes
+			OR = { 
+			has_ethic = ethic_ｍilitarist
+			has_ethic = ethic_fanatic_ｍilitarist
+			has_ethic = ethic_authoritarian
+			has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			has_modifier = requisition_policy 
+		}
+	}
+	effect = {
+		add_modifier = { modifier = "requisition_policy" }
+	}
+}
+
+decision_end_requisition_policy = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+
+	resources = {category = decisions}
+	potential = {has_modifier = requisition_policy}
+	
+	effect = {
+		custom_tooltip = decision_end_planet_requisition_policy_effects_short
+		remove_modifier = requisition_policy
+	}
+}
+
+#強制労働　食糧、鉱物、エネルギー+10%　幸福度-10％　研究、統合力-30%
+decision_planet_forced_labor = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 300
+		}
+	}
+	potential = {
+		owner = { 
+			is_regular_empire = yes 
+			is_lithoid_empire = no
+			is_ai = no
+			is_at_war = yes
+			OR = { 
+			has_ethic = ethic_ｍilitarist
+			has_ethic = ethic_fanatic_ｍilitarist
+			has_ethic = ethic_authoritarian
+			has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			has_modifier = forced_labor 
+		}
+	}
+	effect = {
+		add_modifier = { modifier = "forced_labor" }
+	}
+}
+
+decision_end_forced_labor = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+
+	resources = {category = decisions}
+	potential = {has_modifier = forced_labor}
+	
+	effect = {
+		custom_tooltip = decision_end_planet_forced_labor_effects_short
+		remove_modifier = forced_labor
+	}
+}
+
+decision_redistricting= {
+	owned_planets_only = yes
+	enactment_time = 0
+	sound = event_administrative_work
+
+	resources = {category = decisions}
+	potential = {has_ethic = ethic_fanatic_materialist}
+	
+	effect = {
+		custom_tooltip = decision_redistricting_effects_short
+	District_mining_max =15
+	}
+}

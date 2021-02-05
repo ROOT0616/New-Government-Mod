@@ -1,0 +1,77 @@
+# 青年政治
+country_event = {
+	id = ngm_civic_young.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_fsass_youth_politics
+		from = { Not = { has_leader_flag = flag_ngm_got_civic_young_bonus } }
+	}
+	
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					leader_class = admiral
+					Not = {  has_leader_flag = flag_ngm_got_civic_young_bonus }
+				}
+				add_experience = 650
+				add_trait = leader_trait_adaptable
+				break = yes
+			}
+			else_if = {
+				limit = {
+					leader_class = general
+					Not = {  has_leader_flag = flag_ngm_got_civic_young_bonus }
+				}
+				add_trait = leader_trait_adaptable
+				add_experience = 650
+				break = yes
+			}
+			else_if = {
+				limit = {
+					leader_class = governor
+					Not = {  has_leader_flag = flag_ngm_got_civic_young_bonus }
+				}
+				add_trait = leader_trait_adaptable
+				add_experience = 650
+				break = yes
+			}
+			else_if = {
+				limit = {
+					leader_class = scientist
+					Not = {  has_leader_flag = flag_ngm_got_civic_young_bonus }
+				}
+				add_trait = leader_trait_adaptable
+				add_experience = 650
+				break = yes
+			}
+		}
+	}
+}
+
+老年政治
+country_event = {
+	id = ngm_civic_old.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_civic = civic_fsass_elder_politics
+	}
+	
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				has_skill < 2
+				Not = {  has_leader_flag = flag_ngm_got_civic_old_bonus }
+			}
+			set_timed_leader_flag = { 
+				flag = flag_ngm_got_civic_old_bonus
+				days = 1
+			}
+			add_experience = 675
+		}
+	}
+}

@@ -1,0 +1,10 @@
+# 帝国のために新しいリーダーを生成し、募集のために利用できるようになります。
+# scope: country, from: leader
+on_leader_spawned = {
+	events = {
+		# 青年政治
+		ngm_civic_young.1
+		# 老年政治
+		ngm_civic_old.1
+	}
+}

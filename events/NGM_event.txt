@@ -1,0 +1,108 @@
+###############################
+#######  内政用イベント ########
+###############################
+
+namespace = ngm_domestic_affairs
+
+# トマト祭り
+country_event = {
+	## イベントの基本情報
+	id = ngm_domestic_affairs.1
+	title = ngm_domestic_affairs.1.name
+	desc = ngm_domestic_affairs.1.desc
+	picture =GFX_evt_announcement
+	hide_window = no
+	
+	## イベントの発生条件
+	is_triggered_only = no
+	fire_only_once = no
+	mean_time_to_happen = { years = 5 }
+	trigger = { 
+		is_regular_empire = yes
+	}
+		## イベントの効果
+	immediate = {
+ }
+}
+
+# トマト祭り
+country_event = {
+	## イベントの基本情報
+	id = ngm_domestic_affairs.2
+	title = ngm_domestic_affairs.2.name
+	desc = ngm_domestic_affairs.2.desc
+	picture = GFX_evt_announcement
+	hide_window = no
+	
+	## イベントの発生条件
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+		is_regular_empire = yes
+	}
+		## イベントの効果
+	option = {
+		allow = { owner = { resource_stockpile_compare = { resource = food value >= 5000 } } }
+		name = ngm_domestic_affairs.2a.name
+		owner = { add_resource = { food = -5000 } }
+	}
+	option = {
+		name = ngm_domestic_affairs.2b.name
+	}
+}
+
+# 廃棄部が多い
+country_event = {
+	## イベントの基本情報
+	id = ngm_domestic_affairs.3
+	title = ngm_domestic_affairs.3.name
+	desc = ngm_domestic_affairs.3.desc
+	picture = GFX_evt_announcement
+	hide_window = no
+	
+	## イベントの発生条件
+	is_triggered_only = no
+	fire_only_once = no
+	trigger = { 
+		is_regular_empire = yes
+		owner = { resource_stockpile_compare = { resource = ngm_garbage value >= 10000 } }
+	}
+		## イベントの効果
+	option = {
+		allow = { owner = { resource_stockpile_compare = { resource = energy value >= 5000 } } }
+		name = ngm_domestic_affairs.3a.name
+		owner = { add_resource = { ngm_garbage = -5000 } }
+		owner = { add_resource = { energy =-6000 } }
+	}
+	option = {
+		name = ngm_domestic_affairs.3b.name
+	}
+}
+
+# 廃棄部が多すぎる
+country_event = {
+	## イベントの基本情報
+	id = ngm_domestic_affairs.3
+	title = ngm_domestic_affairs.3.name
+	desc = ngm_domestic_affairs.3.desc
+	picture = GFX_evt_announcement
+	hide_window = no
+	
+	## イベントの発生条件
+	is_triggered_only = no
+	fire_only_once = no
+	trigger = { 
+		is_regular_empire = yes
+		owner = { resource_stockpile_compare = { resource = ngm_garbage value >= 100000 } }
+	}
+		## イベントの効果
+	option = {
+		allow = { owner = { resource_stockpile_compare = { resource = energy value >= 100000 } } }
+		name = ngm_domestic_affairs.3a.name
+		owner = { add_resource = { ngm_garbage = -95000 } }
+		owner = { add_resource = { energy = -100000 } }
+	}
+	option = {
+		name = ngm_domestic_affairs.3b.name
+	}
+}
