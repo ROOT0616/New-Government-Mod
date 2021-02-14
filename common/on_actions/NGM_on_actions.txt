@@ -3,8 +3,26 @@
 on_leader_spawned = {
 	events = {
 		# 青年政治
-		ngm_civic_young.1
+		ngm_civic.2
 		# 老年政治
-		ngm_civic_old.1
+		ngm_civic.4
+	}
+}
+
+on_game_start = {
+	events = {
+		# 青年政治
+		ngm_civic.1
+		# 老年政治
+		ngm_civic.3
+	}
+}
+
+on_monthly_pulse = {
+	events = {
+		# 青年政治
+		ngm_civic.1
+		# 老年政治
+		ngm_civic.3
 	}
 }

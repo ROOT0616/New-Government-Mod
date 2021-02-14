@@ -12,7 +12,28 @@ country_event = {
 
 	trigger = {
 		has_civic = civic_fsass_youth_politics
-		from = { Not = { has_leader_flag = flag_ngm_got_civic_young_bonus } }
+	}
+	
+	immediate = {
+		every_owned_species = {
+			limit = {
+				Not = {  has_species_flag = flag_ngm_got_civic_young }
+			}
+			set_species_flag = { 
+				flag = flag_ngm_got_civic_young
+			}
+			add_trait = trait_ngm_youth_politics
+		}
+	}
+}
+# リーダーの特性付
+country_event = {
+	id = ngm_civic.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_fsass_youth_politics
 	}
 	
 	immediate = {
@@ -59,7 +80,29 @@ country_event = {
 
 # 老年政治
 country_event = {
-	id = ngm_civic.2
+	id = ngm_civic.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_civic = civic_fsass_elder_politics
+	}
+	
+	immediate = {
+		every_owned_species = {
+			limit = {
+				Not = {  has_species_flag = flag_ngm_got_civic_old }
+			}
+			set_species_flag = { 
+				flag = flag_ngm_got_civic_old
+			}
+			add_trait = trait_ngm_elder_politics
+		}
+	}
+}
+# リーダーの特性付
+country_event = {
+	id = ngm_civic.4
 	hide_window = yes
 	is_triggered_only = yes
 	
