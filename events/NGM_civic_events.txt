@@ -29,15 +29,15 @@ country_event = {
 # リーダーの特性付
 country_event = {
 	id = ngm_civic.2
-	hide_window = yes
-	is_triggered_only = yes
+	hide_window = no
+	is_triggered_only = no
 
 	trigger = {
 		has_civic = civic_fsass_youth_politics
 	}
 	
 	immediate = {
-		leader = {
+		every_leader = {
 			limit = {
 				Not = {  has_leader_flag = flag_ngm_got_civic_young_bonus }
 			}
@@ -75,15 +75,15 @@ country_event = {
 # リーダーの特性付
 country_event = {
 	id = ngm_civic.4
-	hide_window = yes
-	is_triggered_only = yes
+	hide_window = no
+	is_triggered_only = no
 	
 	trigger = {
 		has_civic = civic_fsass_elder_politics
 	}
 	
 	immediate = {
-		leader = {
+		every_owned_leader = {
 			limit = {
 				Not = {  has_leader_flag = flag_ngm_got_civic_old_bonus }
 			}
