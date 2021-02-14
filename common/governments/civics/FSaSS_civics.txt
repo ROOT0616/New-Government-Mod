@@ -1,14 +1,14 @@
 #1.外見的立憲制度		寡頭制、独裁制、君主制、権威主義	安定度+5、派閥からの最大影響力収入+20%、専門家からの政治力+100％
 civic_sham_constitutionalism = {
-	possible = { 
+	possible = {
 		ethics = {
-			OR = { 
+			OR = {
 				text = civic_tooltip_authoritarian
-				value =  ethic_authoritarian
-				value =  ethic_fanatic_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
 			}
 		}
-		authority = { 
+		authority = {
 			OR = {
 				text = civic_tooltip_fsass
 				value = auth_dictatorial
@@ -17,14 +17,18 @@ civic_sham_constitutionalism = {
 			}
 		}
 		civics = {
-			NOT = {value = civic_substantive_constitutionalism }
+			NOT = {
+				value = civic_substantive_constitutionalism
+			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
-	planet_stability_add = 5
-	pop_factions_produces_mult = 0.2
-	pop_cat_specialist_political_power = 1
+		planet_stability_add = 5
+		pop_factions_produces_mult = 0.2
+		pop_cat_specialist_political_power = 1
 	}
 }
 
@@ -32,15 +36,21 @@ civic_sham_constitutionalism = {
 civic_substantive_constitutionalism = {
 	possible = {
 		civics = {
-			NOT = {value = civic_sham_constitutionalism }
+			NOT = {
+				value = civic_sham_constitutionalism
+			}
 		}
-		authority = { value = auth_imperial }
+		authority = {
+			value = auth_imperial
+		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
-	pop_factions_produces_mult = 0.2
-	pop_cat_worker_political_power = 1
-	envoys_add = 1
+		pop_factions_produces_mult = 0.2
+		pop_cat_worker_political_power = 1
+		envoys_add = 1
 	}
 }
 
@@ -48,18 +58,20 @@ civic_substantive_constitutionalism = {
 civic_noblesse_oblige = {
 	possible = {
 		ethics = {
-			OR = { 
+			OR = {
 				text = civic_tooltip_authoritarian
-				value =  ethic_authoritarian
-				value =  ethic_fanatic_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
 			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
-	pop_happiness = 0.05
-	planet_jobs_unity_produces_mult = 0.1
-	job_noble_per_pop = 0.02
+		pop_happiness = 0.05
+		planet_jobs_unity_produces_mult = 0.1
+		job_noble_per_pop = 0.02
 	}
 }
 
@@ -67,19 +79,20 @@ civic_noblesse_oblige = {
 civic_non_retention_of_force = {
 	possible = {
 		ethics = {
-				value =  ethic_fanatic_pacifist
+			value = ethic_fanatic_pacifist
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
-	local_trade_protection_add = 5
-	envoys_add = 1
-	planet_jobs_food_produces_mult = 0.2
-	planet_jobs_consumer_goods_produces_mult = 0.2
-	DIPLO_WEIGHT_ECONOMY_MULT = 0.25
-	country_naval_cap_mult = -0.8
-	shipclass_military_station_damage_mult = 0.5
-	
+		local_trade_protection_add = 5
+		envoys_add = 1
+		planet_jobs_food_produces_mult = 0.2
+		planet_jobs_consumer_goods_produces_mult = 0.2
+		DIPLO_WEIGHT_ECONOMY_MULT = 0.25
+		country_naval_cap_mult = -0.8
+		shipclass_military_station_damage_mult = 0.5
 	}
 }
 
@@ -90,14 +103,16 @@ civic_symbolic_monarchy = {
 			OR = {
 				value = auth_democratic
 				value = auth_imperial
-			} 
+			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
-	planet_stability_add = 5
-	envoys_add = 1
-	planet_jobs_unity_produces_mult = 0.1
+		planet_stability_add = 5
+		envoys_add = 1
+		planet_jobs_unity_produces_mult = 0.1
 	}
 }
 
@@ -121,22 +136,23 @@ civic_symbolic_monarchy = {
 # 	planet_jobs_engineering_research_produces_mult = 0.1
 # 	}
 # }
-
 #7.詰め込み教育			物質主義				各研究力+10％、幸福度-10％
 civic_cramming_for_education = {
 	possible = {
 		ethics = {
-			OR = { 
+			OR = {
 				text = civic_tooltip_materialist
-				value =  ethic_materialist
-				value =  ethic_fanatic_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
 			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
-	pop_happiness = -0.1
-	all_technology_research_speed = 0.1
+		pop_happiness = -0.1
+		all_technology_research_speed = 0.1
 	}
 }
 
@@ -144,10 +160,10 @@ civic_cramming_for_education = {
 civic_lax_building_codes = {
 	possible = {
 		ethics = {
-			OR = { 
+			OR = {
 				text = civic_tooltip_materialist
-				value =  ethic_materialist
-				value =  ethic_fanatic_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
 			}
 			NOR = {
 				text = civic_tooltip_not_egalitarian
@@ -156,10 +172,12 @@ civic_lax_building_codes = {
 			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
-	pop_amenities_usage_mult = 0.1
-	pop_housing_usage_mult = -0.1	
+		pop_amenities_usage_mult = 0.1
+		pop_housing_usage_mult = -0.1
 	}
 }
 
@@ -179,27 +197,27 @@ civic_lax_building_codes = {
 # 	}
 # 	random_weight = { base = 2 }
 # 	modifier = {
-	
 # 	}
 # }
-
 #10.真実と和解委員会		受容主義				幸福度+10％、統合力+10％、使節+1
 civic_truth_and_reconciliation_commission = {
 	possible = {
 		ethics = {
-			OR = { 
+			OR = {
 				text = civic_tooltip_xenophile
-				value =  ethic_xenophile
-				value =  ethic_fanatic_xenophile
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
 			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
-	pop_happiness = 0.1
-	planet_stability_add = 5
-	envoys_add = 1
-	planet_jobs_unity_produces_mult = 0.1
+		pop_happiness = 0.1
+		planet_stability_add = 5
+		envoys_add = 1
+		planet_jobs_unity_produces_mult = 0.1
 	}
 }
 
@@ -207,17 +225,19 @@ civic_truth_and_reconciliation_commission = {
 civic_national_sacrifice = {
 	possible = {
 		ethics = {
-			OR = { 
+			OR = {
 				text = civic_tooltip_spiritualist
-				value =  ethic_spiritualist
-				value =  ethic_fanatic_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
 			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
-	planet_jobs_unity_produces_mult = 0.1
-	pop_ethic_spiritualist_attraction_mult = 0.1
+		planet_jobs_unity_produces_mult = 0.1
+		pop_ethic_spiritualist_attraction_mult = 0.1
 	}
 }
 
@@ -227,30 +247,34 @@ civic_neoliberalism = {
 		ethics = {
 			NOR = {
 				text = civic_tooltip_not_authoritarian
-				value =  ethic_authoritarian
-				value =  ethic_fanatic_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
 			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
-	trade_value_mult = 0.1
-	pop_cat_worker_happiness = -0.2
-	planet_jobs_consumer_goods_produces_mult = 0.1
-	planet_jobs_alloys_produces_mult = 0.1
+		trade_value_mult = 0.1
+		pop_cat_worker_happiness = -0.2
+		planet_jobs_consumer_goods_produces_mult = 0.1
+		planet_jobs_alloys_produces_mult = 0.1
 	}
 }
 
 #13.マニュフェスト・ディスティニー			オール				植民地建設速度+30%	前哨地建設コスト-10%	強制移住コスト-10%	外交スタンスが拡張主義者から変更できない
-civic_fsass_manifest_destiny = {
+civic_ngm_manifest_destiny = {
 	possible = {
 		ethics = {
 			NOT = {
-				value =  ethic_gestalt_consciousness
+				value = ethic_gestalt_consciousness
 			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
 		planet_colony_development_speed_mult = 0.3
 		country_starbase_influence_cost_mult = -0.1
@@ -259,15 +283,17 @@ civic_fsass_manifest_destiny = {
 }
 
 #14.三権分立 独裁制以外	犯罪度-10%	影響力+1	選挙影響力コスト+100%
-civic_fsass_separation_of_powers = {
+civic_ngm_separation_of_powers = {
 	possible = {
 		authority = {
 			NOT = {
-				value =  auth_oligarchic
+				value = auth_oligarchic
 			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
 		planet_crime_mult = -0.1
 		country_base_influence_produces_add = 1
@@ -276,15 +302,17 @@ civic_fsass_separation_of_powers = {
 }
 
 #15.カキストクラシー オール	犯罪度+50%	安定度-10	幸福度-20%	選挙影響力コスト-50%	エネルギー生産量+20%	交易価値+20%	影響力+1
-civic_fsass_kakistocracy = {
+civic_ngm_kakistocracy = {
 	possible = {
 		ethics = {
 			NOT = {
-				value =  ethic_gestalt_consciousness
+				value = ethic_gestalt_consciousness
 			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
 		planet_crime_mult = 0.5
 		planet_stability_add = -10
@@ -297,17 +325,19 @@ civic_fsass_kakistocracy = {
 }
 
 #16.啓蒙主義 受容主義	原地文明啓蒙速度+10%	従属国統合速度+50%	関係改善速度+10%
-civic_fsass_enlightenment = {
+civic_ngm_enlightenment = {
 	possible = {
 		ethics = {
 			OR = {
 				text = civic_tooltip_xenophile
-				value =  ethic_xenophile
-				value =  ethic_fanatic_xenophile
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
 			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
 		envoy_improve_relations_mult = 0.1
 		country_trust_growth = 0.1
@@ -317,18 +347,23 @@ civic_fsass_enlightenment = {
 }
 
 #17.青年政治 オール	リーダー寿命-20年	初期リーダー年-5年	研究速度+10%
-civic_fsass_youth_politics = {
+civic_ngm_youth_politics = {
 	custom_tooltip = Youth_Politics
 	possible = {
 		ethics = {
-			NOT = { value = ethic_gestalt_consciousness }
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
 		}
 		civics = {
-			NOT = { value = civic_fsass_elder_politics }
+			NOT = {
+				value = civic_ngm_elder_politics
+			}
 		}
 	}
-
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
 		leader_age = -20
 		all_technology_research_speed = 0.1
@@ -336,20 +371,23 @@ civic_fsass_youth_politics = {
 }
 
 #18.長老政治 オール	リーダー寿命+20年	初期リーダー年+10年	統合力+10%
-civic_fsass_elder_politics = {
+civic_ngm_elder_politics = {
 	custom_tooltip = Elder_Politics
 	possible = {
 		ethics = {
 			NOT = {
-				value =  ethic_gestalt_consciousness
+				value = ethic_gestalt_consciousness
 			}
 		}
 		civics = {
-			NOT = { value = civic_fsass_youth_politics }
+			NOT = {
+				value = civic_ngm_youth_politics
+			}
 		}
 	}
-
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.1
 		leader_age = 30
@@ -357,39 +395,43 @@ civic_fsass_elder_politics = {
 }
 
 #19.高度な栄典制度	権威主義のみ	影響力+1	リーダースキル+1	リーダースキル上限+1	リーダー経験値+25%	リーダー雇用費用+50%	リーダー維持費+20%
-civic_fsass_advanced_glory_system = {
+civic_ngm_advanced_glory_system = {
 	possible = {
-		OR = { 
+		OR = {
 			text = civic_tooltip_authoritarian
-			value =  ethic_authoritarian
-			value =  ethic_fanatic_authoritarian
+			value = ethic_authoritarian
+			value = ethic_fanatic_authoritarian
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
 		country_base_influence_produces_add = 1
 		leader_skill_levels = 1
 		species_leader_exp_gain = 0.25
 		leaders_cost_mult = 0.5
 		leaders_upkeep_mult = 0.2
-	}	
+	}
 	every_owned_leader = {
 		add_experience = 200
 	}
 }
 
 #20.教養主義	物質主義	研究速度+10%	統合力+10%	エネルギー生産-5%	交易価値-5%
-civic_fsass_culturism = {
+civic_ngm_culturism = {
 	possible = {
 		ethics = {
-			OR = { 
+			OR = {
 				text = civic_tooltip_materialist
-				value =  ethic_materialist
-				value =  ethic_fanatic_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
 			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
 		all_technology_research_speed = 0.1
 		planet_jobs_unity_produces_mult = 0.1
@@ -399,17 +441,19 @@ civic_fsass_culturism = {
 }
 
 #21.空想的社会主義 精神主義以外	快適度+10%	住宅+10%	幸福度+5%	消費財維持費+20%	交易価値-5%
-civic_fsass_imaginary_socialism = {
+civic_ngm_imaginary_socialism = {
 	possible = {
 		ethics = {
 			NOR = {
 				text = civic_tooltip_not_spiritualist
-				value =  ethic_spiritualist
-				value =  ethic_fanatic_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
 			}
 		}
 	}
-	random_weight = { base = 2 }
+	random_weight = {
+		base = 2
+	}
 	modifier = {
 		planet_amenities_mult = 0.1
 		planet_housing_mult = 0.1
