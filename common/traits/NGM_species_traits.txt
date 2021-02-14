@@ -22,7 +22,6 @@ trait_ngm_elder_politics = {
 	initial = no
 	randomized = no
 	# modification = no
-	}
     leader_age_min = 60
     leader_age_max = 100
 }

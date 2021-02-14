@@ -1,14 +1,4 @@
-# 帝国のために新しいリーダーを生成し、募集のために利用できるようになります。
-# scope: country, from: leader
-on_leader_spawned = {
-	events = {
-		# 青年政治
-		ngm_civic.2
-		# 老年政治
-		ngm_civic.4
-	}
-}
-
+# Triggers when the game starts
 on_game_start = {
 	events = {
 		# 青年政治
@@ -24,5 +14,16 @@ on_monthly_pulse = {
 		ngm_civic.1
 		# 老年政治
 		ngm_civic.3
+	}
+}
+
+# 帝国のために新しいリーダーを生成し、募集のために利用できるようになります。
+# scope: country, from: leader
+on_leader_spawned = {
+	events = {
+		# 青年政治
+		ngm_civic.2
+		# 老年政治
+		ngm_civic.4
 	}
 }
