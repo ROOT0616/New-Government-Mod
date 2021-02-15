@@ -10,10 +10,10 @@ ngm_order_of_merit = {
 	ai_wants = {
 		base = 100
 	}
-  prerequisites {
-    "tech_canonical_theory"
+  prerequisites = {
+    "tech_ceremony_theory"
   }
-  visibility_prerequisite{
+  visibility_prerequisite = {
     always = yes
   }
 }
@@ -30,7 +30,7 @@ ngm_garbage = {
 	ai_wants = {
 		base = 5000
 	}
-  	visibility_prerequisite{
+  	visibility_prerequisite = {
     always = yes
   }
 }
