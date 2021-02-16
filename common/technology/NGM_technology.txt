@@ -2,7 +2,6 @@
 tech_ceremony_theory = {
 	cost = @tier1cost2
 	area = society
-	type = society
 	tier = 1
 	category = { statecraft }
 	weight = @tier1weight2
@@ -50,7 +49,6 @@ tech_ceremony_theory = {
 tech_ceremony_theory_second = {
 	cost = @tier3cost1
 	area = society
-	type = society
 	tier = 3
 	prerequisites = { "tech_ceremony_theory" }
 	category = { statecraft }

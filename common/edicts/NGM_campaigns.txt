@@ -7,19 +7,27 @@ awarding_medalsto_faction_leaders_campaign = {
 			ngm_order_of_merit = 1
 		}
 	}
-
 	modifier = {
 		pop_factions_produces_mult = 0.15
-		pop_factions_happiness_mult = 0.2
 	}
-
+	potential = {
+		has_technology = tech_ceremony_theory
+	}
 	effect = {
 		if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 400
@@ -28,9 +36,15 @@ awarding_medalsto_faction_leaders_campaign = {
 		else_if = {
 			limit = {
 				has_civic = civic_national_sacrifice
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 600
@@ -39,9 +53,13 @@ awarding_medalsto_faction_leaders_campaign = {
 		else_if = {
 			limit = {
 				has_civic = civic_national_sacrifice
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 700
@@ -50,7 +68,9 @@ awarding_medalsto_faction_leaders_campaign = {
 		else_if = {
 			limit = {
 				has_civic = civic_national_sacrifice
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
 				has_technology = tech_ceremony_theory_second
 			}
@@ -60,10 +80,16 @@ awarding_medalsto_faction_leaders_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
 				has_civic = civic_ngm_advanced_glory_system
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 600
@@ -71,10 +97,14 @@ awarding_medalsto_faction_leaders_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
 				has_civic = civic_ngm_advanced_glory_system
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 700
@@ -82,7 +112,9 @@ awarding_medalsto_faction_leaders_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
 				has_civic = civic_ngm_advanced_glory_system
 				has_technology = tech_ceremony_theory
 				has_technology = tech_ceremony_theory_second
@@ -95,8 +127,12 @@ awarding_medalsto_faction_leaders_campaign = {
 			limit = {
 				has_civic = civic_national_sacrifice
 				has_civic = civic_ngm_advanced_glory_system
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 800
@@ -107,7 +143,9 @@ awarding_medalsto_faction_leaders_campaign = {
 				has_civic = civic_national_sacrifice
 				has_civic = civic_ngm_advanced_glory_system
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 900
@@ -126,10 +164,16 @@ awarding_medalsto_faction_leaders_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 500
@@ -137,8 +181,12 @@ awarding_medalsto_faction_leaders_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
 				has_technology = tech_ceremony_theory_second
 			}
@@ -147,7 +195,6 @@ awarding_medalsto_faction_leaders_campaign = {
 			}
 		}
 	}
-
 	ai_weight = {
 		weight = 1
 	}
@@ -162,20 +209,29 @@ awarding_medals_to_military_personnel_campaign = {
 			ngm_order_of_merit = 1
 		}
 	}
-
 	modifier = {
 		army_attack_morale_mult = 0.1
 		army_defense_morale_mult = 0.1
-		ship_fire_rate_mult = 0.10
+		ship_fire_rate_mult = 0.1
 	}
-
+	potential = {
+		has_technology = tech_ceremony_theory
+	}
 	effect = {
 		if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 400
@@ -184,9 +240,15 @@ awarding_medals_to_military_personnel_campaign = {
 		else_if = {
 			limit = {
 				has_civic = civic_national_sacrifice
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 600
@@ -195,9 +257,13 @@ awarding_medals_to_military_personnel_campaign = {
 		else_if = {
 			limit = {
 				has_civic = civic_national_sacrifice
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 700
@@ -206,7 +272,9 @@ awarding_medals_to_military_personnel_campaign = {
 		else_if = {
 			limit = {
 				has_civic = civic_national_sacrifice
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
 				has_technology = tech_ceremony_theory_second
 			}
@@ -216,10 +284,16 @@ awarding_medals_to_military_personnel_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
 				has_civic = civic_ngm_advanced_glory_system
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 600
@@ -227,10 +301,14 @@ awarding_medals_to_military_personnel_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
 				has_civic = civic_ngm_advanced_glory_system
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 700
@@ -238,7 +316,9 @@ awarding_medals_to_military_personnel_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
 				has_civic = civic_ngm_advanced_glory_system
 				has_technology = tech_ceremony_theory
 				has_technology = tech_ceremony_theory_second
@@ -251,8 +331,12 @@ awarding_medals_to_military_personnel_campaign = {
 			limit = {
 				has_civic = civic_national_sacrifice
 				has_civic = civic_ngm_advanced_glory_system
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 800
@@ -263,7 +347,9 @@ awarding_medals_to_military_personnel_campaign = {
 				has_civic = civic_national_sacrifice
 				has_civic = civic_ngm_advanced_glory_system
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 900
@@ -282,10 +368,16 @@ awarding_medals_to_military_personnel_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 500
@@ -293,8 +385,12 @@ awarding_medals_to_military_personnel_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
 				has_technology = tech_ceremony_theory_second
 			}
@@ -303,7 +399,6 @@ awarding_medals_to_military_personnel_campaign = {
 			}
 		}
 	}
-
 	ai_weight = {
 		weight = 1
 	}
@@ -318,18 +413,27 @@ awarding_medals_to_the_ruling_class_campaign = {
 			ngm_order_of_merit = 1
 		}
 	}
-
 	modifier = {
 		planet_stability_add = 10
 	}
-
+	potential = {
+		has_technology = tech_ceremony_theory
+	}
 	effect = {
 		if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 400
@@ -338,9 +442,15 @@ awarding_medals_to_the_ruling_class_campaign = {
 		else_if = {
 			limit = {
 				has_civic = civic_national_sacrifice
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 600
@@ -349,9 +459,13 @@ awarding_medals_to_the_ruling_class_campaign = {
 		else_if = {
 			limit = {
 				has_civic = civic_national_sacrifice
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 700
@@ -360,7 +474,9 @@ awarding_medals_to_the_ruling_class_campaign = {
 		else_if = {
 			limit = {
 				has_civic = civic_national_sacrifice
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
 				has_technology = tech_ceremony_theory_second
 			}
@@ -370,10 +486,16 @@ awarding_medals_to_the_ruling_class_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
 				has_civic = civic_ngm_advanced_glory_system
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 600
@@ -381,10 +503,14 @@ awarding_medals_to_the_ruling_class_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
 				has_civic = civic_ngm_advanced_glory_system
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 700
@@ -392,7 +518,9 @@ awarding_medals_to_the_ruling_class_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
 				has_civic = civic_ngm_advanced_glory_system
 				has_technology = tech_ceremony_theory
 				has_technology = tech_ceremony_theory_second
@@ -405,8 +533,12 @@ awarding_medals_to_the_ruling_class_campaign = {
 			limit = {
 				has_civic = civic_national_sacrifice
 				has_civic = civic_ngm_advanced_glory_system
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 800
@@ -417,7 +549,9 @@ awarding_medals_to_the_ruling_class_campaign = {
 				has_civic = civic_national_sacrifice
 				has_civic = civic_ngm_advanced_glory_system
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 900
@@ -436,10 +570,16 @@ awarding_medals_to_the_ruling_class_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 500
@@ -447,8 +587,12 @@ awarding_medals_to_the_ruling_class_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
 				has_technology = tech_ceremony_theory_second
 			}
@@ -457,7 +601,6 @@ awarding_medals_to_the_ruling_class_campaign = {
 			}
 		}
 	}
-
 	ai_weight = {
 		weight = 1
 	}
@@ -472,20 +615,29 @@ awarding_of_medals_to_cultural_figures_campaign = {
 			ngm_order_of_merit = 1
 		}
 	}
-
 	modifier = {
 		planet_jobs_physics_research_produces_mult = 0.1
 		planet_jobs_society_research_produces_mult = 0.1
 		planet_jobs_engineering_research_produces_mult = 0.1
 	}
-
+	potential = {
+		has_technology = tech_ceremony_theory
+	}
 	effect = {
 		if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 400
@@ -494,9 +646,15 @@ awarding_of_medals_to_cultural_figures_campaign = {
 		else_if = {
 			limit = {
 				has_civic = civic_national_sacrifice
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 600
@@ -505,9 +663,13 @@ awarding_of_medals_to_cultural_figures_campaign = {
 		else_if = {
 			limit = {
 				has_civic = civic_national_sacrifice
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 700
@@ -516,7 +678,9 @@ awarding_of_medals_to_cultural_figures_campaign = {
 		else_if = {
 			limit = {
 				has_civic = civic_national_sacrifice
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
 				has_technology = tech_ceremony_theory_second
 			}
@@ -526,10 +690,16 @@ awarding_of_medals_to_cultural_figures_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
 				has_civic = civic_ngm_advanced_glory_system
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 600
@@ -537,10 +707,14 @@ awarding_of_medals_to_cultural_figures_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
 				has_civic = civic_ngm_advanced_glory_system
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 700
@@ -548,7 +722,9 @@ awarding_of_medals_to_cultural_figures_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
 				has_civic = civic_ngm_advanced_glory_system
 				has_technology = tech_ceremony_theory
 				has_technology = tech_ceremony_theory_second
@@ -561,8 +737,12 @@ awarding_of_medals_to_cultural_figures_campaign = {
 			limit = {
 				has_civic = civic_national_sacrifice
 				has_civic = civic_ngm_advanced_glory_system
-				NOT = { has_technology = tech_ceremony_theory }
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory
+				}
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 800
@@ -573,7 +753,9 @@ awarding_of_medals_to_cultural_figures_campaign = {
 				has_civic = civic_national_sacrifice
 				has_civic = civic_ngm_advanced_glory_system
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 900
@@ -592,10 +774,16 @@ awarding_of_medals_to_cultural_figures_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
-				NOT = { has_technology = tech_ceremony_theory_second }
+				NOT = {
+					has_technology = tech_ceremony_theory_second
+				}
 			}
 			add_resource = {
 				unity = 500
@@ -603,8 +791,12 @@ awarding_of_medals_to_cultural_figures_campaign = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_civic = civic_national_sacrifice }
-				NOT = { has_civic = civic_ngm_advanced_glory_system }
+				NOT = {
+					has_civic = civic_national_sacrifice
+				}
+				NOT = {
+					has_civic = civic_ngm_advanced_glory_system
+				}
 				has_technology = tech_ceremony_theory
 				has_technology = tech_ceremony_theory_second
 			}
@@ -613,7 +805,6 @@ awarding_of_medals_to_cultural_figures_campaign = {
 			}
 		}
 	}
-
 	ai_weight = {
 		weight = 1
 	}

@@ -7,7 +7,6 @@ trait_ngm_youth_politics = {
 	allowed_archetypes = { BIOLOGICAL ROBOT MACHINE PRESAPIENT LITHOID }
 	initial = no
 	randomized = no
-	# modification = no
 	leader_age_min = 15
 	leader_age_max = 25
 }
@@ -21,7 +20,6 @@ trait_ngm_elder_politics = {
 	allowed_archetypes = { BIOLOGICAL ROBOT MACHINE PRESAPIENT LITHOID }
 	initial = no
 	randomized = no
-	# modification = no
     leader_age_min = 60
     leader_age_max = 100
 }

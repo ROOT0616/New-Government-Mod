@@ -348,7 +348,6 @@ civic_ngm_enlightenment = {
 
 #17.青年政治 オール	リーダー寿命-20年	初期リーダー年-5年	研究速度+10%
 civic_ngm_youth_politics = {
-	custom_tooltip = Youth_Politics
 	possible = {
 		ethics = {
 			NOT = {
@@ -372,7 +371,6 @@ civic_ngm_youth_politics = {
 
 #18.長老政治 オール	リーダー寿命+20年	初期リーダー年+10年	統合力+10%
 civic_ngm_elder_politics = {
-	custom_tooltip = Elder_Politics
 	possible = {
 		ethics = {
 			NOT = {
@@ -397,10 +395,12 @@ civic_ngm_elder_politics = {
 #19.高度な栄典制度	権威主義のみ	影響力+1	リーダースキル+1	リーダースキル上限+1	リーダー経験値+25%	リーダー雇用費用+50%	リーダー維持費+20%
 civic_ngm_advanced_glory_system = {
 	possible = {
-		OR = {
-			text = civic_tooltip_authoritarian
-			value = ethic_authoritarian
-			value = ethic_fanatic_authoritarian
+		ethics = {
+			OR = {
+				text = civic_tooltip_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}
 		}
 	}
 	random_weight = {
@@ -413,9 +413,9 @@ civic_ngm_advanced_glory_system = {
 		leaders_cost_mult = 0.5
 		leaders_upkeep_mult = 0.2
 	}
-	every_owned_leader = {
-		add_experience = 200
-	}
+	# every_owned_leader = {
+	# 	add_experience = 200
+	# }
 }
 
 #20.教養主義	物質主義	研究速度+10%	統合力+10%	エネルギー生産-5%	交易価値-5%
@@ -458,7 +458,7 @@ civic_ngm_imaginary_socialism = {
 		planet_amenities_mult = 0.1
 		planet_housing_mult = 0.1
 		pop_happiness = 0.05
-		planet_jobs_consumer_goods_cost_mult = 0.2
+		planet_jobs_consumer_goods_upkeep_mult = 0.2
 		trade_value_mult = -0.05
 	}
 }

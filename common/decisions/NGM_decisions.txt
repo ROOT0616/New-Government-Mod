@@ -10,43 +10,48 @@ decision_planet_patrolling = {
 		}
 	}
 	potential = {
-		owner = { 
-			is_regular_empire = yes 
+		owner = {
+			is_regular_empire = yes
 			is_lithoid_empire = no
 			is_ai = no
-			OR = { 
-			has_ethic = ethic_materialist
-			has_ethic = ethic_fanatic_materialist
-			has_ethic = ethic_authoritarian
-			has_ethic = ethic_fanatic_authoritarian
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
 			}
 		}
 	}
 	allow = {
 		NOT = {
-			has_modifier = patrolling_society 
+			has_modifier = patrolling_society
 		}
 		NOT = {
-			has_modifier = fanatic_patrolling_society 
+			has_modifier = fanatic_patrolling_society
 		}
 		NOT = {
-			has_modifier = hyper_fanatic_patrolling_society 
+			has_modifier = hyper_fanatic_patrolling_society
 		}
 	}
-
 	effect = {
-		add_modifier = { modifier = "patrolling_society" }
-			hidden_effect = {add_deposit = d_patrolling_society_deposit}
+		add_modifier = {
+			modifier = "patrolling_society"
+		}
+		hidden_effect = {
+			add_deposit = d_patrolling_society_deposit
+		}
 	}
 }
 
 decision_end_patrolling = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-
-	resources = {category = decisions}
-	potential = {has_modifier = patrolling_society}
-	
+	resources = {
+		category = decisions
+	}
+	potential = {
+		has_modifier = patrolling_society
+	}
 	effect = {
 		custom_tooltip = decision_end_planet_patrolling_society_effects_short
 		remove_modifier = patrolling_society
@@ -69,45 +74,54 @@ decision_planet_fanatic_patrolling = {
 		}
 	}
 	potential = {
-		owner = { 
-			is_regular_empire = yes 
+		owner = {
+			is_regular_empire = yes
 			is_lithoid_empire = no
 			is_ai = no
-			OR = { 
-			has_ethic = ethic_fanatic_materialist
-			has_ethic = ethic_fanatic_authoritarian
+			OR = {
+				has_ethic = ethic_fanatic_materialist
+				has_ethic = ethic_fanatic_authoritarian
 			}
 		}
 	}
-		allow = {
-			NOT = {
-				has_modifier = patrolling_society 
-			}
-			NOT = {
-				has_modifier = fanatic_patrolling_society 
-			}
-			NOT = {
-				has_modifier = hyper_fanatic_patrolling_society 
-			}
+	allow = {
+		NOT = {
+			has_modifier = patrolling_society
+		}
+		NOT = {
+			has_modifier = fanatic_patrolling_society
+		}
+		NOT = {
+			has_modifier = hyper_fanatic_patrolling_society
+		}
 	}
-
 	effect = {
-		add_modifier = { modifier = "fanatic_patrolling_society" }
-			hidden_effect = {add_deposit = d_fanatic_patrolling_society_deposit}
+		add_modifier = {
+			modifier = "fanatic_patrolling_society"
+		}
+		hidden_effect = {
+			add_deposit = d_fanatic_patrolling_society_deposit
+		}
 	}
 }
 
 decision_end_fanatic_patrolling = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-
-	resources = {category = decisions}
-	potential = {has_modifier = fanatic_patrolling_society}
-	
+	resources = {
+		category = decisions
+	}
+	potential = {
+		has_modifier = fanatic_patrolling_society
+	}
 	effect = {
 		custom_tooltip = decision_end_planet_fanatic_patrolling_society_effects_short
 		remove_modifier = fanatic_patrolling_society
 		hidden_effect = {
+			has_deposit = d_fanatic_patrolling_society_deposit
+			deposit = {
+				d_fanatic_patrolling_society_deposit
+			}
 			remove_deposit = d_fanatic_patrolling_society_deposit
 		}
 	}
@@ -126,39 +140,43 @@ decision_planet_hyper_fanatic_patrolling = {
 		}
 	}
 	potential = {
-		owner = { 
-			is_regular_empire = yes 
+		owner = {
+			is_regular_empire = yes
 			is_lithoid_empire = no
 			is_ai = no
-			OR = { 
-			has_ethic = ethic_fanatic_materialist
-			has_ethic = ethic_fanatic_authoritarian
+			OR = {
+				has_ethic = ethic_fanatic_materialist
+				has_ethic = ethic_fanatic_authoritarian
 			}
 		}
 	}
-		allow = {
-			NOT = {
-				has_modifier = patrolling_society 
-			}
-			NOT = {
-				has_modifier = fanatic_patrolling_society 
-			}
-			NOT = {
-				has_modifier = hyper_fanatic_patrolling_society 
-			}
+	allow = {
+		NOT = {
+			has_modifier = patrolling_society
+		}
+		NOT = {
+			has_modifier = fanatic_patrolling_society
+		}
+		NOT = {
+			has_modifier = hyper_fanatic_patrolling_society
+		}
 	}
 	effect = {
-		add_modifier = { modifier = "hyper_fanatic_patrolling_society" }
+		add_modifier = {
+			modifier = "hyper_fanatic_patrolling_society"
+		}
 	}
 }
 
 decision_end_hyper_fanatic_patrolling = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-
-	resources = {category = decisions}
-	potential = {has_modifier = hyper_fanatic_patrolling_society}
-	
+	resources = {
+		category = decisions
+	}
+	potential = {
+		has_modifier = hyper_fanatic_patrolling_society
+	}
 	effect = {
 		custom_tooltip = decision_end_planet_fanatic_patrolling_society_effects_short
 		remove_modifier = hyper_fanatic_patrolling_society
@@ -176,44 +194,46 @@ decision_planet_free_speech = {
 		}
 	}
 	potential = {
-		owner = { 
-			is_regular_empire = yes 
+		owner = {
+			is_regular_empire = yes
 			is_lithoid_empire = no
 			is_ai = no
-			OR = { 
-
-			has_ethic = ethic_egalitarian
-			has_ethic = ethic_fanatic_egalitarian
-			has_ethic = ethic_pacifist
-			has_ethic = ethic_fanatic_pacifist
+			OR = {
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
 			}
 			NOT = {
-			has_ethic = ethic_xenophobe
-			has_ethic = ethic_fanatic_xenophobe
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
 			}
 		}
 	}
-		allow = {
-			NOT = {
-				has_modifier = free_speech 
-			}
-			NOT = {
-				has_modifier = fanatic_free_speech 
-			}
+	allow = {
+		NOT = {
+			has_modifier = free_speech
+		}
+		NOT = {
+			has_modifier = fanatic_free_speech
+		}
 	}
-
 	effect = {
-		add_modifier = { modifier = "free_speech" }
+		add_modifier = {
+			modifier = "free_speech"
+		}
 	}
 }
 
 decision_end_free_speech = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-
-	resources = {category = decisions}
-	potential = {has_modifier = free_speech}
-	
+	resources = {
+		category = decisions
+	}
+	potential = {
+		has_modifier = free_speech
+	}
 	effect = {
 		custom_tooltip = decision_end_planet_free_speech_effects_short
 		remove_modifier = free_speech
@@ -231,37 +251,40 @@ decision_planet_fanatic_free_speech = {
 		}
 	}
 	potential = {
-		owner = { 
-			is_regular_empire = yes 
+		owner = {
+			is_regular_empire = yes
 			is_lithoid_empire = no
 			is_ai = no
-			OR = { 
-			has_ethic = ethic_fanatic_egalitarian
-			has_ethic = ethic_fanatic_pacifist
+			OR = {
+				has_ethic = ethic_fanatic_egalitarian
+				has_ethic = ethic_fanatic_pacifist
 			}
 		}
 	}
-		allow = {
-			NOT = {
-				has_modifier = free_speech 
-			}
-			NOT = {
-				has_modifier = fanatic_free_speech 
-			}
+	allow = {
+		NOT = {
+			has_modifier = free_speech
+		}
+		NOT = {
+			has_modifier = fanatic_free_speech
+		}
 	}
-
 	effect = {
-		add_modifier = { modifier = "fanatic_free_speech" }
+		add_modifier = {
+			modifier = "fanatic_free_speech"
+		}
 	}
 }
 
 decision_end_fanatic_free_speech = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-
-	resources = {category = decisions}
-	potential = {has_modifier = fanatic_free_speech}
-	
+	resources = {
+		category = decisions
+	}
+	potential = {
+		has_modifier = fanatic_free_speech
+	}
 	effect = {
 		custom_tooltip = decision_end_planet_fanatic_free_speech_effects_short
 		remove_modifier = fanatic_free_speech
@@ -279,36 +302,40 @@ decision_planet_requisition_policy = {
 		}
 	}
 	potential = {
-		owner = { 
-			is_regular_empire = yes 
+		owner = {
+			is_regular_empire = yes
 			is_lithoid_empire = no
 			is_ai = no
 			is_at_war = yes
-			OR = { 
-			has_ethic = ethic_ｍilitarist
-			has_ethic = ethic_fanatic_ｍilitarist
-			has_ethic = ethic_authoritarian
-			has_ethic = ethic_fanatic_authoritarian
+			OR = {
+				has_ethic = ethic_ｍilitarist
+				has_ethic = ethic_fanatic_ｍilitarist
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
 			}
 		}
 	}
 	allow = {
 		NOT = {
-			has_modifier = requisition_policy 
+			has_modifier = requisition_policy
 		}
 	}
 	effect = {
-		add_modifier = { modifier = "requisition_policy" }
+		add_modifier = {
+			modifier = "requisition_policy"
+		}
 	}
 }
 
 decision_end_requisition_policy = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-
-	resources = {category = decisions}
-	potential = {has_modifier = requisition_policy}
-	
+	resources = {
+		category = decisions
+	}
+	potential = {
+		has_modifier = requisition_policy
+	}
 	effect = {
 		custom_tooltip = decision_end_planet_requisition_policy_effects_short
 		remove_modifier = requisition_policy
@@ -326,52 +353,42 @@ decision_planet_forced_labor = {
 		}
 	}
 	potential = {
-		owner = { 
-			is_regular_empire = yes 
+		owner = {
+			is_regular_empire = yes
 			is_lithoid_empire = no
 			is_ai = no
 			is_at_war = yes
-			OR = { 
-			has_ethic = ethic_ｍilitarist
-			has_ethic = ethic_fanatic_ｍilitarist
-			has_ethic = ethic_authoritarian
-			has_ethic = ethic_fanatic_authoritarian
+			OR = {
+				has_ethic = ethic_ｍilitarist
+				has_ethic = ethic_fanatic_ｍilitarist
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
 			}
 		}
 	}
 	allow = {
 		NOT = {
-			has_modifier = forced_labor 
+			has_modifier = forced_labor
 		}
 	}
 	effect = {
-		add_modifier = { modifier = "forced_labor" }
+		add_modifier = {
+			modifier = "forced_labor"
+		}
 	}
 }
 
 decision_end_forced_labor = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-
-	resources = {category = decisions}
-	potential = {has_modifier = forced_labor}
-	
+	resources = {
+		category = decisions
+	}
+	potential = {
+		has_modifier = forced_labor
+	}
 	effect = {
 		custom_tooltip = decision_end_planet_forced_labor_effects_short
 		remove_modifier = forced_labor
-	}
-}
-
-decision_redistricting= {
-	owned_planets_only = yes
-	enactment_time = 0
-	sound = event_administrative_work
-
-	resources = {category = decisions}
-	potential = {has_ethic = ethic_fanatic_materialist}
-	
-	effect = {
-		custom_tooltip = decision_redistricting_effects_short
-	District_mining_max =15
 	}
 }

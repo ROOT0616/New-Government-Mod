@@ -2,7 +2,7 @@
 # 多産推奨
 # 人口政策なし
 # 一人っ子政策
-fsass_policies_population_stance = {
+ngm_policies_population_stance = {
 	potential = {
 		OR = {
 			is_country_type = default
@@ -13,34 +13,8 @@ fsass_policies_population_stance = {
 		}
 	}
 
-	# option = {
-	# 	name = "NAME_fertility_recommendation"
-
-	# 	potential = {
-	# 		OR = {
-	# 			is_country_type = default
-	# 			is_country_type = awakened_fallen_empire
-	# 		}
-
-	# 		is_homicidal = no # They have their own variants of this
-	# 	}
-
-	# 	policy_flags = {
-	# 		population_stance_fertility_recommendation
-	# 	}
-
-	# 	modifier = {
-  #     pop_growth_speed = 0.05
-	# 		planet_pops_upkeep_mult = 0.15
-	# 	}
-
-	# 	ai_weight = {
-	# 		weight = 10
-	# 	}
-	# }
-	
-		option = {
-			name = "NAME_population_stance_non_non"
+	option = {
+		name = "NAME_population_stance_non_non"
 	
 			potential = {
 				OR = {
@@ -73,7 +47,7 @@ fsass_policies_population_stance = {
 		}
 
 		policy_flags = {
-			population_stance_appointments_system_hybrid
+			population_stance_one_child
 		}
 
 		modifier = {
@@ -96,7 +70,7 @@ fsass_policies_population_stance = {
 # 猟官制			リーダー雇用費用-50% 市場手数料-7%
 # 混合制			影響力+0.5
 # 資格任用制	布告許容量+1	管理許容量+20
-fsass_policies_civil_service_appointments_system = {
+ngm_policies_civil_service_appointments_system = {
 	potential = {
 		OR = {
 			is_country_type = default
@@ -190,7 +164,7 @@ fsass_policies_civil_service_appointments_system = {
 # 累進課税制度	Progressive Tax System	統治者幸福度-10%、エネルギー生産量+10%
 # 一般税制度	General tax system
 # 逆進課税制度	Counterproductive taxation system	労働者幸福度-10%、エネルギー生産量+10%
-fsass_policies_taxation_system = {
+ngm_policies_taxation_system = {
 	potential = {
 		OR = {
 			is_country_type = default
@@ -286,7 +260,7 @@ fsass_policies_taxation_system = {
 # 民間主導	private initiative
 # 国家後援	state sponsorship	エネルギー算出-5%、統合力+10%
 # 無秩序の芸術	The Art of Disorder	統治志向魅力-10%、統合力+20%、消費財消費量+10%
-fsass_policies_cultural_policy = {
+ngm_policies_cultural_policy = {
 	potential = {
 		OR = {
 			is_country_type = default
@@ -394,7 +368,7 @@ fsass_policies_cultural_policy = {
 		modifier = {
 			pop_government_ethic_attraction = -0.1
 			planet_jobs_unity_produces_mult = 0.2
-			planet_jobs_consumer_goods_cost_mult = 0.1
+			planet_jobs_consumer_goods_upkeep_mult = 0.1
 		}
 
 		ai_weight = {
@@ -409,7 +383,7 @@ fsass_policies_cultural_policy = {
 # 大規模農家優遇	Large-scale Farmer Preference	食料生産量+20%、労働者幸福度-10%
 # 農業優遇なし		No agricultural incentives
 # 自作農家優遇	preferential treatment for farmers	食料生産量+20%、鉱物生産量-5%
-fsass_policies_agricultural_policy = {
+ngm_policies_agricultural_policy = {
 	potential = {
 		OR = {
 			is_country_type = default
@@ -500,7 +474,7 @@ fsass_policies_agricultural_policy = {
 # 統一言語政策	uniform language policy	交易価値+10%、研究速度+5%、幸福度-10%
 # 共通語政策	common language policy	
 # 母語教育	mother tongue training	統合力+15%、エネルギー消費-5%、研究力-5%
-fsass_policies_language_policy = {
+ngm_policies_language_policy = {
 	potential = {
 		OR = {
 			is_country_type = default

@@ -179,7 +179,7 @@
  NAME_the_art_of_disorder_desc:0 "あらゆる芸術は既存の社会や法に縛られることがない。"
 
  policy_ngm_policies_agricultural_policy:0 "農業政策"
- policy_ngm_policies_agricultural_policy:_desc0 "農業は民衆の生存に大きな影響を与える。"
+ policy_ngm_policies_agricultural_policy_desc:0 "農業は民衆の生存に大きな影響を与える。"
  NAME_large_scale_farmer_preference:0 "大規模農家優遇"
  NAME_large_scale_farmer_preference_desc:0 "大規模農家を優遇することにより水や農薬を大量使用し、農業生産量を引き上げることができる。しかし、低所得者の住居や生活環境が惑星上で制約されることとなる。"
  NAME_no_agricultural_incentives:0 "農業優遇なし"
@@ -249,6 +249,7 @@
  board_of_the_ceremonies:0 "式部官"
  board_of_the_ceremonies_desc:0 "式典や栄典を管理作成し、その授与に大きな権威を与える"
  job_board_of_the_ceremonies:0 "式部官"
+ job_board_of_the_ceremonies_desc:0 "式典や栄典を管理作成し、その授与に大きな権威を与える"
  job_board_of_the_ceremonies_plural:0 "式部官"
  mod_job_board_of_the_ceremonies_add:0 "式部官の職業枠"
  NGM_chef:0 "シェフ"
