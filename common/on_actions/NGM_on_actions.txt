@@ -1,21 +1,14 @@
 # Triggers when the game starts
 on_game_start_country = {
 	events = {
-		# 青年政治
-		ngm_civic.2
-		# 老年政治
-		ngm_civic.5
+		#ポリシーの設定
+		ngm_policy.1
+		# # 青年政治
+		# ngm_civic.2
+		# # 老年政治
+		# ngm_civic.5
 	}
 }
-
-# on_monthly_pulse = {
-# 	events = {
-# 		# 青年政治
-# 		ngm_civic.2
-# 		# 老年政治
-# 		ngm_civic.5
-# 	}
-# }
 
 # 帝国のために新しいリーダーを生成し、募集のために利用できるようになります。
 # scope: country, from: leader
@@ -23,7 +16,11 @@ on_leader_spawned = {
 	events = {
 		# 青年政治
 		ngm_civic.1
+		ngm_civic.2
 		# 老年政治
 		ngm_civic.4
+		ngm_civic.5
+		#高度な栄典制度
+		ngm_civic.7
 	}
 }

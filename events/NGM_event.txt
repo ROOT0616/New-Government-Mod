@@ -42,7 +42,6 @@ country_event = {
 				species = THIS				# species to modify
 				base = auto				# new base species; default: auto (uses species)
 				add_trait = trait_ngm_youth_politics				# optional, can specify multiple
-				change_scoped_species = yes				# modify scoped pops/planet/leader/country; default: yes
 			}
 		}
 	}
@@ -85,7 +84,7 @@ country_event = {
 				}
 			}
 			set_skill = 4
-			add_experience = 400
+			add_experience = 300
 			set_leader_flag = flag_ngm_got_civic_old_bonus
 		}
 	}
@@ -110,7 +109,6 @@ country_event = {
 				species = THIS				# species to modify
 				base = auto				# new base species; default: auto (uses species)
 				add_trait = trait_ngm_elder_politics				# optional, can specify multiple
-				change_scoped_species = yes				# modify scoped pops/planet/leader/country; default: yes
 			}
 		}
 	}
@@ -135,10 +133,105 @@ country_event = {
 # 		}
 # 	}
 # }
+#19.高度な栄典制度	権威主義のみ	影響力+1	リーダースキル+1	リーダースキル上限+1	リーダー経験値+25%	リーダー雇用費用+50%	リーダー維持費+20%
+country_event = {
+	id = ngm_civic.7
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_ngm_advanced_glory_system
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				NOT = {
+					has_leader_flag = flag_civic_ngm_advanced_glory_system
+				}
+			}
+			set_leader_flag = flag_civic_ngm_advanced_glory_system
+			set_skill = 2
+		}
+	}
+}
+
+country_event = {
+	id = ngm_civic.8
+	hide_window = yes
+	is_triggered_only = yes
+	option = {
+		every_owned_species = {
+			# limit = {
+			# 	NOT = {
+			# 		has_species_flag = flag_ngm_got_civic_old
+			# 	}
+			# }
+			# set_species_flag = flag_ngm_got_civic_old
+			modify_species = {
+				species = THIS				# species to modify
+				base = auto				# new base species; default: auto (uses species)
+				add_trait = trait_ngm_elder_politics				# optional, can specify multiple
+			}
+		}
+	}
+}
+###############################
+######  policy用イベント #######
+###############################
+namespace = ngm_policy
+
+country_event = {
+	id = ngm_policy.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
+		}
+	}
+	immediate = {
+		set_policy = {
+			policy = ngm_policies_population_stance
+			option = NAME_population_stance_non_non
+			cooldown = no
+		}
+		set_policy = {
+			policy = ngm_policies_civil_service_appointments_system 
+			option = NAME_hybrid
+			cooldown = no
+		}
+		set_policy = {
+			policy =  ngm_policies_taxation_system
+			option = NAME_general_tax_system
+			cooldown = no
+		}
+		set_policy = {
+			policy = ngm_policies_cultural_policy
+			option = NAME_private_initiative
+			cooldown = no
+		}
+		set_policy = {
+			policy = ngm_policies_agricultural_policy
+			option = NAME_no_agricultural_incentives
+			cooldown = no
+		}
+		set_policy = {
+			policy = ngm_policies_language_policy
+			option = NAME_common_language_policy
+			cooldown = no
+		}
+
+	}
+}
+
+
 ###############################
 #######  内政用イベント ########
 ###############################
-namespace = ngm_domestic_affairs
+# namespace = ngm_domestic_affairs
 # # トマト祭り
 # country_event = {
 # 	## イベントの基本情報
