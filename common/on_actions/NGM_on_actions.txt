@@ -3,10 +3,6 @@ on_game_start_country = {
 	events = {
 		#ポリシーの設定
 		ngm_policy.1
-		# # 青年政治
-		# ngm_civic.2
-		# # 老年政治
-		# ngm_civic.5
 	}
 }
 

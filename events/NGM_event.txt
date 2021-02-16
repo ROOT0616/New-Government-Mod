@@ -31,43 +31,17 @@ country_event = {
 		has_civic = civic_ngm_youth_politics
 	}
 	immediate = {
-		every_owned_species = {
-			limit = {
-				NOT = {
-					has_species_flag = flag_ngm_got_civic_young
-				}
-			}
-			set_species_flag = flag_ngm_got_civic_young
-			modify_species = {
-				species = THIS				# species to modify
-				base = auto				# new base species; default: auto (uses species)
-				add_trait = trait_ngm_youth_politics				# optional, can specify multiple
-			}
+		limit = {
+			is_species = THIS
+		}
+		modify_species = {
+			species = THIS			# species to modify
+			base = auto			# new base species; default: auto (uses species)
+			add_trait = trait_ngm_youth_politics			# optional, can specify multiple
 		}
 	}
 }
 
-# country_event = {
-# 	id = ngm_civic.3
-# 	hide_window = yes
-# 	is_triggered_only = yes
-# 	trigger = {
-# 		has_civic = civic_ngm_youth_politics
-# 	}
-# 	immediate = {
-# 		every_owned_leader = {
-# 			limit = {
-# 				NOT = {
-# 					has_leader_flag = flag_ngm_got_civic_young
-# 				}
-# 			}
-# 			set_leader_flag = {
-# 				flag = flag_ngm_got_civic_young
-# 			}
-# 			add_trait = leader_trait_adaptable
-# 		}
-# 	}
-# }
 # 老年政治
 country_event = {
 	id = ngm_civic.4
@@ -98,42 +72,18 @@ country_event = {
 		has_civic = civic_ngm_elder_politics
 	}
 	immediate = {
-		every_owned_species = {
-			limit = {
-				NOT = {
-					has_species_flag = flag_ngm_got_civic_old
-				}
-			}
-			set_species_flag = flag_ngm_got_civic_old
-			modify_species = {
-				species = THIS				# species to modify
-				base = auto				# new base species; default: auto (uses species)
-				add_trait = trait_ngm_elder_politics				# optional, can specify multiple
-			}
+		limit = {
+			is_species = THIS
+		}
+		modify_species = {
+			species = THIS			# species to modify
+			base = auto			# new base species; default: auto (uses species)
+			add_trait = trait_ngm_elder_politics			# optional, can specify multiple
 		}
 	}
 }
 
-# country_event = {
-# 	id = ngm_civic.6
-# 	hide_window = yes
-# 	is_triggered_only = yes
-# 	trigger = {
-# 		has_civic = civic_ngm_elder_politics
-# 	}
-# 	immediate = {
-# 		every_owned_leader = {
-# 			limit = {
-# 				NOT = {
-# 					has_leader_flag = flag_ngm_got_civic_old_bonus
-# 				}
-# 			}
-# 			set_leader_flag = flag_ngm_got_civic_old_bonus
-# 			set_skill = 3
-# 		}
-# 	}
-# }
-#19.高度な栄典制度	権威主義のみ	影響力+1	リーダースキル+1	リーダースキル上限+1	リーダー経験値+25%	リーダー雇用費用+50%	リーダー維持費+20%
+#19z.高度な栄典制度	権威主義のみ	影響力+1	リーダースキル+1	リーダースキル上限+1	リーダー経験値+25%	リーダー雇用費用+50%	リーダー維持費+20%
 country_event = {
 	id = ngm_civic.7
 	hide_window = yes
@@ -154,31 +104,10 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = ngm_civic.8
-	hide_window = yes
-	is_triggered_only = yes
-	option = {
-		every_owned_species = {
-			# limit = {
-			# 	NOT = {
-			# 		has_species_flag = flag_ngm_got_civic_old
-			# 	}
-			# }
-			# set_species_flag = flag_ngm_got_civic_old
-			modify_species = {
-				species = THIS				# species to modify
-				base = auto				# new base species; default: auto (uses species)
-				add_trait = trait_ngm_elder_politics				# optional, can specify multiple
-			}
-		}
-	}
-}
 ###############################
 ######  policy用イベント #######
 ###############################
 namespace = ngm_policy
-
 country_event = {
 	id = ngm_policy.1
 	hide_window = yes
@@ -199,12 +128,12 @@ country_event = {
 			cooldown = no
 		}
 		set_policy = {
-			policy = ngm_policies_civil_service_appointments_system 
+			policy = ngm_policies_civil_service_appointments_system
 			option = NAME_hybrid
 			cooldown = no
 		}
 		set_policy = {
-			policy =  ngm_policies_taxation_system
+			policy = ngm_policies_taxation_system
 			option = NAME_general_tax_system
 			cooldown = no
 		}
@@ -223,10 +152,8 @@ country_event = {
 			option = NAME_common_language_policy
 			cooldown = no
 		}
-
 	}
 }
-
 
 ###############################
 #######  内政用イベント ########
