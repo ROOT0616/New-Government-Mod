@@ -18,7 +18,6 @@ board_of_the_ceremonies = {
 	resources = {
 		category = planet_metallurgists
 		produces = {
-      		ngm_order_of_merit = 0.02
 		}
 		upkeep = {
 			unity = 10
