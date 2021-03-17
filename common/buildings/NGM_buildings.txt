@@ -17,7 +17,7 @@ building_bureau_of_ceremonies = {
       }
   }
 	planet_modifier = {
-		job_board_of_the_ceremonies_add = 2
+		job_bureau_of_ceremonies_add = 2
 	}
 }
 

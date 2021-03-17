@@ -99,9 +99,6 @@ decision_planet_fanatic_patrolling = {
 		add_modifier = {
 			modifier = "fanatic_patrolling_society"
 		}
-		hidden_effect = {
-			add_deposit = d_fanatic_patrolling_society_deposit
-		}
 	}
 }
 
@@ -117,13 +114,6 @@ decision_end_fanatic_patrolling = {
 	effect = {
 		custom_tooltip = decision_end_planet_fanatic_patrolling_society_effects_short
 		remove_modifier = fanatic_patrolling_society
-		hidden_effect = {
-			has_deposit = d_fanatic_patrolling_society_deposit
-			deposit = {
-				d_fanatic_patrolling_society_deposit
-			}
-			remove_deposit = d_fanatic_patrolling_society_deposit
-		}
 	}
 }
 
@@ -308,8 +298,8 @@ decision_planet_requisition_policy = {
 			is_ai = no
 			is_at_war = yes
 			OR = {
-				has_ethic = ethic_ｍilitarist
-				has_ethic = ethic_fanatic_ｍilitarist
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
 			}
@@ -359,8 +349,8 @@ decision_planet_forced_labor = {
 			is_ai = no
 			is_at_war = yes
 			OR = {
-				has_ethic = ethic_ｍilitarist
-				has_ethic = ethic_fanatic_ｍilitarist
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
 			}
