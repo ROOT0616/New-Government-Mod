@@ -1,8 +1,8 @@
 ﻿l_english:
 
-#############################
+##############################
 #####    ディシジョン    ######
-#############################
+##############################
 
  patrolling_society:0 "ドローン警備隊"
  patrolling_society_desc:0 "この惑星は、街中をドローンにより警備される。"
@@ -246,8 +246,6 @@
 
  ngm_order_of_merit:0 "勲章"
  ngm_order_of_merit_desc:0 "国家あるいはその元首などが個人に対し、その功績や業績を表彰するために与える栄典のうち、章飾の授与を伴うもの。"
- ngm_garbage:0 "廃棄物"
- ngm_garbage_desc:0 "工業国家ほどマイナスがかかり、交易国家が栄える。しかし、交易国家優先になると資源価格が上昇するから工業国家が儲かることとなる。"
 
 #######################
 #####    建物    ######
@@ -255,10 +253,6 @@
 
  building_bureau_of_ceremonies:0 "儀典局"
  building_bureau_of_ceremonies_desc:0 "式典や栄典を管理し、国家や権力者の権威を守り、敷衍させる役所"
- building_NGM_biomass_power_plant:0 "バイオマス発電所"
- building_NGM_biomass_power_plant_desc:0 ""
- building_NGM_high_end_restaurant:0 "高級レストラン"
- building_NGM_high_end_restaurant_desc:0 ""
 
 #######################
 #####    仕事    ######
@@ -270,21 +264,6 @@
  job_bureau_of_ceremonies_desc:0 "式典や栄典を管理作成し、その授与に大きな権威を与える"
  job_bureau_of_ceremonies_plural:0 "式部官"
  mod_job_bureau_of_ceremonies_add:0 "式部官の職業枠"
- NGM_chef:0 "シェフ"
- NGM_chef_desc:0 ""
- job_NGM_chef:0 "シェフ"
- job_NGM_chef_plural:0 "シェフの職業枠"
- mod_job_NGM_chef_add:0 "シェフ"
- NGM_sous_chef:0 "スー・シェフ"
- NGM_sous_chef_desc:0 ""
- job_NGM_sous_chef:0 "スー・シェフ"
- job_NGM_sous_chef_plural:0 "スー・シェフ"
- mod_job_NGM_sous_chef_add:0 "スー・シェフの職業枠"
- NGM_waiter:0 "ウェイター"
- NGM_waiter_desc:0 ""
- job_NGM_waiter:0 "ウェイター"
- job_NGM_waiter_plural:0 "ウェイター"
- mod_job_NGM_waiter_add:0 "ウェイターの職業枠"
 
 #######################
 #####    特性    ######

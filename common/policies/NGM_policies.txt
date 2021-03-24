@@ -19,7 +19,10 @@ ngm_policies_population_stance = {
 			potential = {
 				OR = {
 					is_country_type = default
+					is_country_type = fallen_empire
 					is_country_type = awakened_fallen_empire
+					is_country_type = primitive
+					is_country_type = awakened_marauders
 				}
 	
 				is_homicidal = no # They have their own variants of this
@@ -39,9 +42,11 @@ ngm_policies_population_stance = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -86,9 +91,11 @@ ngm_policies_civil_service_appointments_system = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -112,9 +119,11 @@ ngm_policies_civil_service_appointments_system = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -136,9 +145,11 @@ ngm_policies_civil_service_appointments_system = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -180,9 +191,11 @@ ngm_policies_taxation_system = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -206,9 +219,11 @@ ngm_policies_taxation_system = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -231,9 +246,11 @@ ngm_policies_taxation_system = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -276,9 +293,11 @@ ngm_policies_cultural_policy = {
 		
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -303,9 +322,11 @@ ngm_policies_cultural_policy = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -328,9 +349,11 @@ ngm_policies_cultural_policy = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -354,9 +377,11 @@ ngm_policies_cultural_policy = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -399,9 +424,11 @@ ngm_policies_agricultural_policy = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -425,9 +452,11 @@ ngm_policies_agricultural_policy = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -446,9 +475,11 @@ ngm_policies_agricultural_policy = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -490,9 +521,11 @@ ngm_policies_language_policy = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -517,9 +550,11 @@ ngm_policies_language_policy = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
@@ -538,9 +573,11 @@ ngm_policies_language_policy = {
 
 		potential = {
 			OR = {
-				is_country_type = default
-				is_country_type = awakened_fallen_empire
-			}
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
 
 			is_homicidal = no # They have their own variants of this
 		}
