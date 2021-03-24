@@ -117,6 +117,7 @@ country_event = {
 			is_country_type = primitive
 			is_country_type = awakened_marauders
 		}
+		is_homicidal = no			# They have their own variants of this
 	}
 	immediate = {
 		set_policy = {
