@@ -1,5 +1,4 @@
 #人口政策	Population Policy
-# 多産推奨
 # 人口政策なし
 # 一人っ子政策
 ngm_policies_population_stance = {
@@ -14,7 +13,7 @@ ngm_policies_population_stance = {
 		is_homicidal = no		# They have their own variants of this
 	}
 	option = {
-		name = "NAME_population_stance_non_non"
+		name = "NAME_population_stance_non_non"		# 人口政策なし
 		potential = {
 			OR = {
 				is_country_type = default
@@ -30,10 +29,26 @@ ngm_policies_population_stance = {
 		}
 		ai_weight = {
 			weight = 10
+			modifier = {
+				factor = 0.5
+				has_ethic = ethic_fanatic_authoritarian
+			}
+			modifier = {
+				factor = 0.5
+				has_civic = civic_ngm_kakistocracy
+			}
+			modifier = {
+				factor = 2
+				has_civic = civic_beacon_of_liberty
+			}
+			modifier = {
+				factor = 10
+				has_civic = civic_neoliberalism
+			}
 		}
 	}
 	option = {
-		name = "NAME_one_child"
+		name = "NAME_one_child"		# 一人っ子政策
 		potential = {
 			OR = {
 				is_country_type = default
@@ -56,6 +71,25 @@ ngm_policies_population_stance = {
 		}
 		ai_weight = {
 			weight = 10
+			# Militarist
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_militarist
+			}
+			modifier = {
+				factor = 1.25
+				has_ethic = ethic_militarist
+			}
+			# Citizen Service
+			modifier = {
+				factor = 1.5
+				has_civic = civic_citizen_service
+			}
+			# 詰め込み教育
+			modifier = {
+				factor = 2.0
+				has_civic = civic_cramming_for_education
+			}
 		}
 	}
 }
@@ -76,7 +110,7 @@ ngm_policies_civil_service_appointments_system = {
 		is_homicidal = no		# They have their own variants of this
 	}
 	option = {
-		name = "NAME_spoils_system"
+		name = "NAME_spoils_system"		# 猟官制
 		potential = {
 			OR = {
 				is_country_type = default
@@ -96,10 +130,35 @@ ngm_policies_civil_service_appointments_system = {
 		}
 		ai_weight = {
 			weight = 10
+			# Militarist
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_militarist
+			}
+			modifier = {
+				factor = 2.0
+				has_ethic = ethic_fanatic_authoritarian
+			}
+			modifier = {
+				factor = 1.5
+				has_civic = civic_ngm_kakistocracy
+			}
+			modifier = {
+				factor = 1.5
+				has_civic = civic_shadow_council
+			}
+			modifier = {
+				factor = 1.5
+				has_civic = civic_feudal_realm
+			}
+			modifier = {
+				factor = 10
+				has_civic = civic_imperial_cult
+			}
 		}
 	}
 	option = {
-		name = "NAME_hybrid"
+		name = "NAME_hybrid"		# 混合制
 		potential = {
 			OR = {
 				is_country_type = default
@@ -118,10 +177,23 @@ ngm_policies_civil_service_appointments_system = {
 		}
 		ai_weight = {
 			weight = 10
+			# Materialist
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_materialist
+			}
+			modifier = {
+				factor = 1.25
+				has_ethic = ethic_materialist
+			}
+			modifier = {
+				factor = 1.25
+				has_civic = civic_parliamentary_system
+			}
 		}
 	}
 	option = {
-		name = "NAME_qualified_appointment_system"
+		name = "NAME_qualified_appointment_system"		# 資格任用制
 		potential = {
 			OR = {
 				is_country_type = default
@@ -141,6 +213,23 @@ ngm_policies_civil_service_appointments_system = {
 		}
 		ai_weight = {
 			weight = 10
+			# Egalitarian
+			modifier = {
+				factor = 5.0
+				has_ethic = ethic_fanatic_egalitarian
+			}
+			modifier = {
+				factor = 1.2
+				has_ethic = ethic_egalitarian
+			}
+			modifier = {
+				factor = 2.0
+				has_civic = civic_meritocracy
+			}
+			modifier = {
+				factor = 1.25
+				has_civic = civic_technocracy
+			}
 		}
 	}
 }
@@ -161,7 +250,7 @@ ngm_policies_taxation_system = {
 		is_homicidal = no		# They have their own variants of this
 	}
 	option = {
-		name = "NAME_progressive_tax_system"
+		name = "NAME_progressive_tax_system"		# 累進課税制度
 		potential = {
 			OR = {
 				is_country_type = default
@@ -181,10 +270,23 @@ ngm_policies_taxation_system = {
 		}
 		ai_weight = {
 			weight = 10
+			# Egalitarian
+			modifier = {
+				factor = 5.0
+				has_ethic = ethic_fanatic_egalitarian
+			}
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_egalitarian
+			}
+			modifier = {
+				factor = 2.0
+				has_civic = civic_shared_burden
+			}
 		}
 	}
 	option = {
-		name = "NAME_general_tax_system"
+		name = "NAME_general_tax_system"		# 一般税制度
 		potential = {
 			OR = {
 				is_country_type = default
@@ -198,14 +300,21 @@ ngm_policies_taxation_system = {
 		policy_flags = {
 			taxation_system_general_tax_system
 		}
-		modifier = {
-		}
 		ai_weight = {
 			weight = 10
+			# Materialist
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_materialist
+			}
+			modifier = {
+				factor = 1.25
+				has_ethic = ethic_materialist
+			}
 		}
 	}
 	option = {
-		name = "NAME_counterproductive_taxation_system"
+		name = "NAME_counterproductive_taxation_system"		# 逆進課税制度
 		potential = {
 			OR = {
 				is_country_type = default
@@ -225,6 +334,18 @@ ngm_policies_taxation_system = {
 		}
 		ai_weight = {
 			weight = 10
+			modifier = {
+				factor = 1.5
+				has_civic = civic_ngm_kakistocracy
+			}
+			modifier = {
+				factor = 1.25
+				has_civic = civic_aristocratic_elite
+			}
+			modifier = {
+				factor = 1.25
+				has_civic = civic_corvee_system
+			}
 		}
 	}
 }
@@ -246,7 +367,7 @@ ngm_policies_cultural_policy = {
 		is_homicidal = no		# They have their own variants of this
 	}
 	option = {
-		name = "NAME_state_intervention"
+		name = "NAME_state_intervention"		# 国家干渉
 		potential = {
 			OR = {
 				is_country_type = default
@@ -267,10 +388,36 @@ ngm_policies_cultural_policy = {
 		}
 		ai_weight = {
 			weight = 10
+			# Authoritarian
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_authoritarian
+			}
+			modifier = {
+				factor = 1.25
+				has_ethic = ethic_authoritarian
+			}
+			# Militarist
+			modifier = {
+				factor = 0.5
+				has_ethic = ethic_fanatic_militarist
+			}
+			modifier = {
+				factor = 0.75
+				has_ethic = ethic_militarist
+			}
+			modifier = {
+				factor = 10
+				has_civic = civic_imperial_cult
+			}
+			modifier = {
+				factor = 1.25
+				has_civic = civic_aristocratic_elite
+			}
 		}
 	}
 	option = {
-		name = "NAME_private_initiative"
+		name = "NAME_private_initiative"		# 民間主導
 		potential = {
 			OR = {
 				is_country_type = default
@@ -284,14 +431,21 @@ ngm_policies_cultural_policy = {
 		policy_flags = {
 			cultural_policy_private_initiative
 		}
-		modifier = {
-		}
 		ai_weight = {
 			weight = 10
+			# Egalitarian
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_egalitarian
+			}
+			modifier = {
+				factor = 1.2
+				has_ethic = ethic_egalitarian
+			}
 		}
 	}
 	option = {
-		name = "NAME_state_sponsorship"
+		name = "NAME_state_sponsorship"		# 国家後援
 		potential = {
 			OR = {
 				is_country_type = default
@@ -311,10 +465,28 @@ ngm_policies_cultural_policy = {
 		}
 		ai_weight = {
 			weight = 10
+			# Authoritarian
+			modifier = {
+				factor = 0.5
+				has_ethic = ethic_fanatic_authoritarian
+			}
+			modifier = {
+				factor = 0.75
+				has_ethic = ethic_authoritarian
+			}
+			# Materialist
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_materialist
+			}
+			modifier = {
+				factor = 1.25
+				has_ethic = ethic_materialist
+			}
 		}
 	}
 	option = {
-		name = "NAME_the_art_of_disorder"
+		name = "NAME_the_art_of_disorder"		# 無秩序の芸術
 		potential = {
 			OR = {
 				is_country_type = default
@@ -335,6 +507,10 @@ ngm_policies_cultural_policy = {
 		}
 		ai_weight = {
 			weight = 10
+			modifier = {
+				factor = 10
+				has_civic = civic_neoliberalism
+			}
 		}
 	}
 }
@@ -355,7 +531,7 @@ ngm_policies_agricultural_policy = {
 		is_homicidal = no		# They have their own variants of this
 	}
 	option = {
-		name = "NAME_large_scale_farmer_preference"
+		name = "NAME_large_scale_farmer_preference"		# 大規模農家優遇
 		potential = {
 			OR = {
 				is_country_type = default
@@ -375,10 +551,14 @@ ngm_policies_agricultural_policy = {
 		}
 		ai_weight = {
 			weight = 10
+			modifier = {
+				factor = 1.25
+				has_civic = civic_agrarian_idyll
+			}
 		}
 	}
 	option = {
-		name = "NAME_no_agricultural_incentives"
+		name = "NAME_no_agricultural_incentives"		# 農業優遇なし
 		potential = {
 			OR = {
 				is_country_type = default
@@ -394,10 +574,23 @@ ngm_policies_agricultural_policy = {
 		}
 		ai_weight = {
 			weight = 10
+			# Egalitarian
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_egalitarian
+			}
+			modifier = {
+				factor = 1.2
+				has_ethic = ethic_egalitarian
+			}
+			modifier = {
+				factor = 10
+				has_civic = civic_neoliberalism
+			}
 		}
 	}
 	option = {
-		name = "NAME_preferential_treatment_for_farmers"
+		name = "NAME_preferential_treatment_for_farmers"		# 自作農家優遇
 		potential = {
 			OR = {
 				is_country_type = default
@@ -437,7 +630,7 @@ ngm_policies_language_policy = {
 		is_homicidal = no		# They have their own variants of this
 	}
 	option = {
-		name = "NAME_uniform_language_policy"
+		name = "NAME_uniform_language_policy"		# 統一言語政策
 		potential = {
 			OR = {
 				is_country_type = default
@@ -458,10 +651,32 @@ ngm_policies_language_policy = {
 		}
 		ai_weight = {
 			weight = 10
+			# Materialist
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_materialist
+			}
+			modifier = {
+				factor = 1.25
+				has_ethic = ethic_materialist
+			}
+			# Authoritarian
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_authoritarian
+			}
+			modifier = {
+				factor = 1.25
+				has_ethic = ethic_authoritarian
+			}
+			modifier = {
+				factor = 10
+				has_civic = civic_imperial_cult
+			}
 		}
 	}
 	option = {
-		name = "NAME_common_language_policy"
+		name = "NAME_common_language_policy"		# 共通語政策
 		potential = {
 			OR = {
 				is_country_type = default
@@ -477,10 +692,14 @@ ngm_policies_language_policy = {
 		}
 		ai_weight = {
 			weight = 10
+			modifier = {
+				factor = 10
+				has_civic = civic_neoliberalism
+			}
 		}
 	}
 	option = {
-		name = "NAME_mother_tongue_training"
+		name = "NAME_mother_tongue_training"		# 母語教育
 		potential = {
 			OR = {
 				is_country_type = default
@@ -501,6 +720,15 @@ ngm_policies_language_policy = {
 		}
 		ai_weight = {
 			weight = 10
+			# Egalitarian
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_egalitarian
+			}
+			modifier = {
+				factor = 1.25
+				has_ethic = ethic_egalitarian
+			}
 		}
 	}
 }
