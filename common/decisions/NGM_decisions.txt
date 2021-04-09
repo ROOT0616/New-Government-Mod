@@ -1,4 +1,4 @@
-#犯罪抑止力-10％　安定度5％	エネルギー-5
+#犯罪抑止力-10％ 安定度5％	エネルギー-5
 decision_planet_patrolling = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -13,7 +13,6 @@ decision_planet_patrolling = {
 		owner = {
 			is_regular_empire = yes
 			is_lithoid_empire = no
-			is_ai = no
 			OR = {
 				has_ethic = ethic_materialist
 				has_ethic = ethic_fanatic_materialist
@@ -41,6 +40,9 @@ decision_planet_patrolling = {
 			add_deposit = d_patrolling_society_deposit
 		}
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
 decision_end_patrolling = {
@@ -59,9 +61,12 @@ decision_end_patrolling = {
 			remove_deposit = d_patrolling_society_deposit
 		}
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
-#犯罪抑止力-30％　安定度15％	エネルギー-20% 合金-15%
+#犯罪抑止力-30％ 安定度15％	エネルギー-20% 合金-15%
 decision_planet_fanatic_patrolling = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -77,7 +82,6 @@ decision_planet_fanatic_patrolling = {
 		owner = {
 			is_regular_empire = yes
 			is_lithoid_empire = no
-			is_ai = no
 			OR = {
 				has_ethic = ethic_fanatic_materialist
 				has_ethic = ethic_fanatic_authoritarian
@@ -100,6 +104,9 @@ decision_planet_fanatic_patrolling = {
 			modifier = "fanatic_patrolling_society"
 		}
 	}
+	ai_weight = {
+		weight = 1
+	}
 }
 
 decision_end_fanatic_patrolling = {
@@ -115,9 +122,12 @@ decision_end_fanatic_patrolling = {
 		custom_tooltip = decision_end_planet_fanatic_patrolling_society_effects_short
 		remove_modifier = fanatic_patrolling_society
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
-#犯罪抑止力-50％　安定度30％	エネルギー-30% 合金-20% 消費財-20%
+#犯罪抑止力-50％ 安定度30％	エネルギー-30% 合金-20% 消費財-20%
 decision_planet_hyper_fanatic_patrolling = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -133,7 +143,6 @@ decision_planet_hyper_fanatic_patrolling = {
 		owner = {
 			is_regular_empire = yes
 			is_lithoid_empire = no
-			is_ai = no
 			OR = {
 				has_ethic = ethic_fanatic_materialist
 				has_ethic = ethic_fanatic_authoritarian
@@ -156,6 +165,9 @@ decision_planet_hyper_fanatic_patrolling = {
 			modifier = "hyper_fanatic_patrolling_society"
 		}
 	}
+	ai_weight = {
+		weight = 1
+	}
 }
 
 decision_end_hyper_fanatic_patrolling = {
@@ -171,9 +183,12 @@ decision_end_hyper_fanatic_patrolling = {
 		custom_tooltip = decision_end_planet_fanatic_patrolling_society_effects_short
 		remove_modifier = hyper_fanatic_patrolling_society
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
-#志向魅力-25％				研究力10％　統合力10％
+#志向魅力-25％				研究力10％ 統合力10％
 decision_planet_free_speech = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -187,7 +202,6 @@ decision_planet_free_speech = {
 		owner = {
 			is_regular_empire = yes
 			is_lithoid_empire = no
-			is_ai = no
 			OR = {
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
@@ -213,6 +227,9 @@ decision_planet_free_speech = {
 			modifier = "free_speech"
 		}
 	}
+	ai_weight = {
+		weight = 1
+	}
 }
 
 decision_end_free_speech = {
@@ -228,9 +245,12 @@ decision_end_free_speech = {
 		custom_tooltip = decision_end_planet_free_speech_effects_short
 		remove_modifier = free_speech
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
-#志向魅力-50％	安定度-5％		研究力20％　統合力20％
+#志向魅力-50％	安定度-5％		研究力20％ 統合力20％
 decision_planet_fanatic_free_speech = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -244,7 +264,6 @@ decision_planet_fanatic_free_speech = {
 		owner = {
 			is_regular_empire = yes
 			is_lithoid_empire = no
-			is_ai = no
 			OR = {
 				has_ethic = ethic_fanatic_egalitarian
 				has_ethic = ethic_fanatic_pacifist
@@ -264,6 +283,9 @@ decision_planet_fanatic_free_speech = {
 			modifier = "fanatic_free_speech"
 		}
 	}
+	ai_weight = {
+		weight = 1
+	}
 }
 
 decision_end_fanatic_free_speech = {
@@ -278,6 +300,9 @@ decision_end_fanatic_free_speech = {
 	effect = {
 		custom_tooltip = decision_end_planet_fanatic_free_speech_effects_short
 		remove_modifier = fanatic_free_speech
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -295,7 +320,6 @@ decision_planet_requisition_policy = {
 		owner = {
 			is_regular_empire = yes
 			is_lithoid_empire = no
-			is_ai = no
 			is_at_war = yes
 			OR = {
 				has_ethic = ethic_militarist
@@ -315,6 +339,9 @@ decision_planet_requisition_policy = {
 			modifier = "requisition_policy"
 		}
 	}
+	ai_weight = {
+		weight = 1
+	}
 }
 
 decision_end_requisition_policy = {
@@ -330,9 +357,12 @@ decision_end_requisition_policy = {
 		custom_tooltip = decision_end_planet_requisition_policy_effects_short
 		remove_modifier = requisition_policy
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
-#強制労働　食糧、鉱物、エネルギー+10%　幸福度-10％　研究、統合力-30%
+#強制労働 食糧、鉱物、エネルギー+10% 幸福度-10％ 研究、統合力-30%
 decision_planet_forced_labor = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -346,7 +376,6 @@ decision_planet_forced_labor = {
 		owner = {
 			is_regular_empire = yes
 			is_lithoid_empire = no
-			is_ai = no
 			is_at_war = yes
 			OR = {
 				has_ethic = ethic_militarist
@@ -366,6 +395,9 @@ decision_planet_forced_labor = {
 			modifier = "forced_labor"
 		}
 	}
+	ai_weight = {
+		weight = 1
+	}
 }
 
 decision_end_forced_labor = {
@@ -380,5 +412,8 @@ decision_end_forced_labor = {
 	effect = {
 		custom_tooltip = decision_end_planet_forced_labor_effects_short
 		remove_modifier = forced_labor
+	}
+	ai_weight = {
+		weight = 0
 	}
 }

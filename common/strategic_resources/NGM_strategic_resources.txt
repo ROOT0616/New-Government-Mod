@@ -15,18 +15,3 @@ ngm_order_of_merit = {
 		always = yes
 	}
 }
-
-# #廃棄物
-# ngm_garbage = {
-# 	tradable = no
-# 	max = 100000
-# 	ai_weight = {
-# 		weight = 0
-# 	}
-# 	ai_wants = {
-# 		base = 5000
-# 	}
-#   	visibility_prerequisite = {
-#     always = yes
-#   }
-# }

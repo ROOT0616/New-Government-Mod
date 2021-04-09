@@ -137,6 +137,7 @@ civic_symbolic_monarchy = {
 # 	planet_jobs_engineering_research_produces_mult = 0.1
 # 	}
 # }
+
 #7.詰め込み教育			物質主義				各研究力+10％、幸福度-10％
 civic_cramming_for_education = {
 	possible = {
