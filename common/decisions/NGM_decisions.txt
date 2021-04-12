@@ -1,3 +1,596 @@
+# ※セクター首都にのみ布告可能
+# ※それぞれ惑星の算出するエネルギー-10%、幸福度+10%
+# 1.絶対君主制(鉱業、農業)
+# 2.象徴君主制(統合力)
+# 3.地方独裁制(工業)
+# 4.金権支配制(交易価値)
+# 5.AI補助統治(研究力)
+# 6.首長優位制(最大多数の派閥幸福度)
+# 7.議会優位制(全派閥の幸福度)
+# 8.宗教支配制(統合力+)
+# 9.中央支配体制(エネルギー消費なし)
+# 10.高度な地方自治(初期の社会学研究)
+
+# 1.絶対君主制 absolute_monarchy(鉱業、農業)
+decision_ngm_absolute_monarchy = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+		}
+	}
+	potential = {
+		is_capital = yes
+		owner = {
+			is_regular_empire = yes
+			NOR = {
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+	}
+	allow = {
+		NOR = {
+			has_modifier = ngm_absolute_monarchy
+			has_modifier = ngm_symbolic_monarchy
+			has_modifier = ngm_local_dictatorship
+			has_modifier = ngm_golden_rule_system
+			has_modifier = ngm_ai_supplementary_governance
+			has_modifier = ngm_chieftaincy_system
+			has_modifier = ngm_parliamentary_dominance
+			has_modifier = ngm_religious_domination
+			has_modifier = ngm_central_control_system
+			has_modifier = ngm_high_degree_of_local_autonomy
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = "ngm_absolute_monarchy"
+		}
+	}
+	ai_weight = {
+		weight = 0.25
+	}
+}
+
+decision_ngm_end_absolute_monarchy = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	potential = {
+		has_modifier = ngm_absolute_monarchy
+	}
+	effect = {
+		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
+		remove_modifier = ngm_absolute_monarchy
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 2.象徴君主制(統合力)
+decision_ngm_symbolic_monarchy = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+		}
+	}
+	potential = {
+		is_capital = yes
+		owner = {
+			is_regular_empire = yes
+			NOR = {
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	allow = {
+		NOR = {
+			has_modifier = ngm_absolute_monarchy
+			has_modifier = ngm_symbolic_monarchy
+			has_modifier = ngm_local_dictatorship
+			has_modifier = ngm_golden_rule_system
+			has_modifier = ngm_ai_supplementary_governance
+			has_modifier = ngm_chieftaincy_system
+			has_modifier = ngm_parliamentary_dominance
+			has_modifier = ngm_religious_domination
+			has_modifier = ngm_central_control_system
+			has_modifier = ngm_high_degree_of_local_autonomy
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = "ngm_symbolic_monarchy"
+		}
+	}
+	ai_weight = {
+		weight = 0.25
+	}
+}
+
+decision_ngm_end_symbolic_monarchy = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	potential = {
+		has_modifier = ngm_symbolic_monarchy
+	}
+	effect = {
+		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
+		remove_modifier = ngm_symbolic_monarchy
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 3.地方独裁制(工業)
+decision_ngm_local_dictatorship = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+		}
+	}
+	potential = {
+		is_capital = yes
+		owner = {
+			is_regular_empire = yes
+			NOR = {
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	allow = {
+		NOR = {
+			has_modifier = ngm_absolute_monarchy
+			has_modifier = ngm_symbolic_monarchy
+			has_modifier = ngm_local_dictatorship
+			has_modifier = ngm_golden_rule_system
+			has_modifier = ngm_ai_supplementary_governance
+			has_modifier = ngm_chieftaincy_system
+			has_modifier = ngm_parliamentary_dominance
+			has_modifier = ngm_religious_domination
+			has_modifier = ngm_central_control_system
+			has_modifier = ngm_high_degree_of_local_autonomy
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = "ngm_local_dictatorship"
+		}
+	}
+	ai_weight = {
+		weight = 0.25
+	}
+}
+
+decision_ngm_end_local_dictatorship = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	potential = {
+		has_modifier = ngm_local_dictatorship
+	}
+	effect = {
+		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
+		remove_modifier = ngm_local_dictatorship
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 4.金権支配制(交易価値)
+decision_ngm_golden_rule_system = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+		}
+	}
+	potential = {
+		is_capital = yes
+		owner = {
+			is_regular_empire = yes
+		}
+	}
+	allow = {
+		NOR = {
+			has_modifier = ngm_absolute_monarchy
+			has_modifier = ngm_symbolic_monarchy
+			has_modifier = ngm_local_dictatorship
+			has_modifier = ngm_golden_rule_system
+			has_modifier = ngm_ai_supplementary_governance
+			has_modifier = ngm_chieftaincy_system
+			has_modifier = ngm_parliamentary_dominance
+			has_modifier = ngm_religious_domination
+			has_modifier = ngm_central_control_system
+			has_modifier = ngm_high_degree_of_local_autonomy
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = "ngm_golden_rule_system"
+		}
+	}
+	ai_weight = {
+		weight = 0.25
+	}
+}
+
+decision_ngm_end_golden_rule_system = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	potential = {
+		has_modifier = ngm_golden_rule_system
+	}
+	effect = {
+		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
+		remove_modifier = ngm_golden_rule_system
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 5.AI補助統治(研究力)
+decision_ngm_ai_supplementary_governance = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+		}
+	}
+	potential = {
+		is_capital = yes
+		owner = {
+			is_regular_empire = yes
+			NOR = {
+				has_ethic = ethic_spiritualist
+				has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+	}
+	allow = {
+		NOR = {
+			has_modifier = ngm_absolute_monarchy
+			has_modifier = ngm_symbolic_monarchy
+			has_modifier = ngm_local_dictatorship
+			has_modifier = ngm_golden_rule_system
+			has_modifier = ngm_ai_supplementary_governance
+			has_modifier = ngm_chieftaincy_system
+			has_modifier = ngm_parliamentary_dominance
+			has_modifier = ngm_religious_domination
+			has_modifier = ngm_central_control_system
+			has_modifier = ngm_high_degree_of_local_autonomy
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = "ngm_ai_supplementary_governance"
+		}
+	}
+	ai_weight = {
+		weight = 0.25
+	}
+}
+
+decision_ngm_end_ai_supplementary_governance = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	potential = {
+		has_modifier = ngm_ai_supplementary_governance
+	}
+	effect = {
+		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
+		remove_modifier = ngm_ai_supplementary_governance
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 6.首長優位制(最大多数の派閥幸福度)
+decision_ngm_chieftaincy_system = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+		}
+	}
+	potential = {
+		is_capital = yes
+		owner = {
+			is_regular_empire = yes
+			NOT = {
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+	}
+	allow = {
+		NOR = {
+			has_modifier = ngm_absolute_monarchy
+			has_modifier = ngm_symbolic_monarchy
+			has_modifier = ngm_local_dictatorship
+			has_modifier = ngm_golden_rule_system
+			has_modifier = ngm_ai_supplementary_governance
+			has_modifier = ngm_chieftaincy_system
+			has_modifier = ngm_parliamentary_dominance
+			has_modifier = ngm_religious_domination
+			has_modifier = ngm_central_control_system
+			has_modifier = ngm_high_degree_of_local_autonomy
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = "ngm_chieftaincy_system"
+		}
+	}
+	ai_weight = {
+		weight = 0.25
+	}
+}
+
+decision_ngm_end_chieftaincy_system = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	potential = {
+		has_modifier = ngm_chieftaincy_system
+	}
+	effect = {
+		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
+		remove_modifier = ngm_chieftaincy_system
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 7.議会優位制(全派閥の幸福度)
+decision_ngm_parliamentary_dominance = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+		}
+	}
+	potential = {
+		is_capital = yes
+		owner = {
+			is_regular_empire = yes
+			NOT = {
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	allow = {
+		NOR = {
+			has_modifier = ngm_absolute_monarchy
+			has_modifier = ngm_symbolic_monarchy
+			has_modifier = ngm_local_dictatorship
+			has_modifier = ngm_golden_rule_system
+			has_modifier = ngm_ai_supplementary_governance
+			has_modifier = ngm_chieftaincy_system
+			has_modifier = ngm_parliamentary_dominance
+			has_modifier = ngm_religious_domination
+			has_modifier = ngm_central_control_system
+			has_modifier = ngm_high_degree_of_local_autonomy
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = "ngm_parliamentary_dominance"
+		}
+	}
+	ai_weight = {
+		weight = 0.25
+	}
+}
+
+decision_ngm_end_parliamentary_dominance = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	potential = {
+		has_modifier = ngm_parliamentary_dominance
+	}
+	effect = {
+		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
+		remove_modifier = ngm_parliamentary_dominance
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 8.宗教支配制(統合力+)
+decision_ngm_religious_domination = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+		}
+	}
+	potential = {
+		is_capital = yes
+		owner = {
+			is_regular_empire = yes
+			NOR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+	}
+	allow = {
+		NOR = {
+			has_modifier = ngm_absolute_monarchy
+			has_modifier = ngm_symbolic_monarchy
+			has_modifier = ngm_local_dictatorship
+			has_modifier = ngm_golden_rule_system
+			has_modifier = ngm_ai_supplementary_governance
+			has_modifier = ngm_chieftaincy_system
+			has_modifier = ngm_parliamentary_dominance
+			has_modifier = ngm_religious_domination
+			has_modifier = ngm_central_control_system
+			has_modifier = ngm_high_degree_of_local_autonomy
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = "ngm_religious_domination"
+		}
+	}
+	ai_weight = {
+		weight = 0.25
+	}
+}
+
+decision_ngm_end_religious_domination = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	potential = {
+		has_modifier = ngm_religious_domination
+	}
+	effect = {
+		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
+		remove_modifier = ngm_religious_domination
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 9.中央支配体制(エネルギー消費なし)
+decision_ngm_central_control_system = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+		}
+	}
+	potential = {
+		is_capital = yes
+		owner = {
+			is_regular_empire = yes
+		}
+	}
+	allow = {
+		NOR = {
+			has_modifier = ngm_absolute_monarchy
+			has_modifier = ngm_symbolic_monarchy
+			has_modifier = ngm_local_dictatorship
+			has_modifier = ngm_golden_rule_system
+			has_modifier = ngm_ai_supplementary_governance
+			has_modifier = ngm_chieftaincy_system
+			has_modifier = ngm_parliamentary_dominance
+			has_modifier = ngm_religious_domination
+			has_modifier = ngm_central_control_system
+			has_modifier = ngm_high_degree_of_local_autonomy
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = "ngm_central_control_system"
+		}
+	}
+	ai_weight = {
+		weight = 0.25
+	}
+}
+
+decision_ngm_end_central_control_system = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	potential = {
+		has_modifier = ngm_central_control_system
+	}
+	effect = {
+		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
+		remove_modifier = ngm_central_control_system
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 10.高度な地方自治(初期の社会学研究)
+decision_ngm_high_degree_of_local_autonomy = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+		}
+	}
+	potential = {
+		is_capital = yes
+		owner = {
+			is_regular_empire = yes
+			NOR = {
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	allow = {
+		NOR = {
+			has_modifier = ngm_absolute_monarchy
+			has_modifier = ngm_symbolic_monarchy
+			has_modifier = ngm_local_dictatorship
+			has_modifier = ngm_golden_rule_system
+			has_modifier = ngm_ai_supplementary_governance
+			has_modifier = ngm_chieftaincy_system
+			has_modifier = ngm_parliamentary_dominance
+			has_modifier = ngm_religious_domination
+			has_modifier = ngm_central_control_system
+			has_modifier = ngm_high_degree_of_local_autonomy
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = "ngm_high_degree_of_local_autonomy"
+		}
+	}
+	ai_weight = {
+		weight = 0.25
+	}
+}
+
+decision_ngm_end_high_degree_of_local_autonomy = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	potential = {
+		has_modifier = ngm_high_degree_of_local_autonomy
+	}
+	effect = {
+		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
+		remove_modifier = ngm_high_degree_of_local_autonomy
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
 #犯罪抑止力-10％ 安定度5％	エネルギー-5
 decision_planet_patrolling = {
 	owned_planets_only = yes
@@ -12,7 +605,6 @@ decision_planet_patrolling = {
 	potential = {
 		owner = {
 			is_regular_empire = yes
-			is_lithoid_empire = no
 			OR = {
 				has_ethic = ethic_materialist
 				has_ethic = ethic_fanatic_materialist
@@ -41,7 +633,19 @@ decision_planet_patrolling = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 0.25
+		modifier = {
+			factor = 0
+			planet_crime <= 5
+		}
+		modifier = {
+			factor = 8
+			planet_crime >= 10
+		}
+		modifier = {
+			factor = 8
+			planet_stability <= 70 
+		}
 	}
 }
 
@@ -81,7 +685,6 @@ decision_planet_fanatic_patrolling = {
 	potential = {
 		owner = {
 			is_regular_empire = yes
-			is_lithoid_empire = no
 			OR = {
 				has_ethic = ethic_fanatic_materialist
 				has_ethic = ethic_fanatic_authoritarian
@@ -105,7 +708,23 @@ decision_planet_fanatic_patrolling = {
 		}
 	}
 	ai_weight = {
-		weight = 1
+		weight = 0.25
+		modifier = {
+			factor = 0
+			planet_crime <= 15
+		}
+		modifier = {
+			factor = 4
+			planet_crime >= 20
+		}
+		modifier = {
+			factor = 8
+			planet_crime >= 30
+		}
+		modifier = {
+			factor = 8
+			planet_stability <= 60 
+		}
 	}
 }
 
@@ -142,7 +761,6 @@ decision_planet_hyper_fanatic_patrolling = {
 	potential = {
 		owner = {
 			is_regular_empire = yes
-			is_lithoid_empire = no
 			OR = {
 				has_ethic = ethic_fanatic_materialist
 				has_ethic = ethic_fanatic_authoritarian
@@ -166,7 +784,43 @@ decision_planet_hyper_fanatic_patrolling = {
 		}
 	}
 	ai_weight = {
-		weight = 1
+		weight = 0.25
+		modifier = {
+			factor = 0
+			planet_crime <= 5
+		}
+		modifier = {
+			factor = 0
+			planet_crime < 10
+		}
+		modifier = {
+			factor = 2
+			planet_crime >= 10
+		}
+		modifier = {
+			factor = 2
+			planet_crime >= 20
+		}
+		modifier = {
+			factor = 4
+			planet_crime >= 40
+		}
+		modifier = {
+			factor = 8
+			planet_crime >= 50
+		}
+		modifier = {
+			factor = 2
+			planet_stability <= 60 
+		}
+		modifier = {
+			factor = 2
+			planet_stability <= 50 
+		}
+		modifier = {
+			factor = 4
+			planet_stability <= 30 
+		}
 	}
 }
 
@@ -201,7 +855,6 @@ decision_planet_free_speech = {
 	potential = {
 		owner = {
 			is_regular_empire = yes
-			is_lithoid_empire = no
 			OR = {
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
@@ -263,7 +916,6 @@ decision_planet_fanatic_free_speech = {
 	potential = {
 		owner = {
 			is_regular_empire = yes
-			is_lithoid_empire = no
 			OR = {
 				has_ethic = ethic_fanatic_egalitarian
 				has_ethic = ethic_fanatic_pacifist
@@ -285,6 +937,34 @@ decision_planet_fanatic_free_speech = {
 	}
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 8
+			planet_stability = 100
+		}
+		modifier = {
+			factor = 4
+			planet_stability >= 90
+		}
+		modifier = {
+			factor = 2
+			planet_stability >= 80
+		}
+		modifier = {
+			factor = 0.75
+			planet_stability <= 65
+		}
+		modifier = {
+			factor = 0.5
+			planet_stability <= 55
+		}
+		modifier = {
+			factor = 0.25
+			planet_stability <= 45
+		}
+		modifier = {
+			factor = 0
+			planet_stability <= 40
+		}
 	}
 }
 
@@ -319,7 +999,6 @@ decision_planet_requisition_policy = {
 	potential = {
 		owner = {
 			is_regular_empire = yes
-			is_lithoid_empire = no
 			is_at_war = yes
 			OR = {
 				has_ethic = ethic_militarist
@@ -341,6 +1020,31 @@ decision_planet_requisition_policy = {
 	}
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 5
+			owner = {
+				has_monthly_income = {
+					resource = alloys
+					value < 10
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			planet_stability >= 80
+		}
+		modifier = {
+			factor = 4
+			planet_stability >= 90
+		}
+		modifier = {
+			factor = 6
+			planet_stability = 100
+		}
+		modifier = {
+			factor = 0
+			planet_stability <= 60
+		}
 	}
 }
 
@@ -375,7 +1079,6 @@ decision_planet_forced_labor = {
 	potential = {
 		owner = {
 			is_regular_empire = yes
-			is_lithoid_empire = no
 			is_at_war = yes
 			OR = {
 				has_ethic = ethic_militarist
@@ -396,7 +1099,25 @@ decision_planet_forced_labor = {
 		}
 	}
 	ai_weight = {
-		weight = 1
+		weight = 0.1
+		modifier = {
+			factor = 20
+			owner = {
+				has_monthly_income = {
+					resource = minerals
+					value < -10
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value < -10
+				}
+			}
+		}
 	}
 }
 

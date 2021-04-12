@@ -1,5 +1,4 @@
 @campaignDuration = 3600
-
 #派閥指導者への勲章授与（派閥満足度+）
 awarding_medalsto_faction_leaders_campaign = {
 	length = @campaignDuration
@@ -200,6 +199,22 @@ awarding_medalsto_faction_leaders_campaign = {
 	}
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 2
+			has_civic = civic_national_sacrifice
+		}
+		modifier = {
+			factor = 2
+			has_civic = civic_ngm_advanced_glory_system
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_ceremony_theory
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_ceremony_theory_second
+		}
 	}
 }
 
@@ -405,6 +420,22 @@ awarding_medals_to_military_personnel_campaign = {
 	}
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 2
+			has_civic = civic_national_sacrifice
+		}
+		modifier = {
+			factor = 2
+			has_civic = civic_ngm_advanced_glory_system
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_ceremony_theory
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_ceremony_theory_second
+		}
 	}
 }
 
@@ -608,6 +639,22 @@ awarding_medals_to_the_ruling_class_campaign = {
 	}
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 2
+			has_civic = civic_national_sacrifice
+		}
+		modifier = {
+			factor = 2
+			has_civic = civic_ngm_advanced_glory_system
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_ceremony_theory
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_ceremony_theory_second
+		}
 	}
 }
 
@@ -813,5 +860,21 @@ awarding_of_medals_to_cultural_figures_campaign = {
 	}
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 2
+			has_civic = civic_national_sacrifice
+		}
+		modifier = {
+			factor = 2
+			has_civic = civic_ngm_advanced_glory_system
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_ceremony_theory
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_ceremony_theory_second
+		}
 	}
 }

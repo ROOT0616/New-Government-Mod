@@ -1,3 +1,87 @@
+# ※セクター首都にのみ布告可能
+# ※それぞれ惑星の算出するエネルギー-10%、幸福度+10%
+# 1.絶対君主制(鉱業、農業)
+# 2.象徴君主制(統合力)
+# 3.地方独裁制(工業)
+# 4.金権支配制(交易価値)
+# 5.AI補助統治(研究力)
+# 6.首長優位制(最大多数の派閥幸福度)
+# 7.議会優位制(全派閥の幸福度)
+# 8.宗教支配制(統合力+)
+# 9.中央支配体制(エネルギー消費なし)
+# 10.高度な地方自治(初期の社会学研究)
+# 1.絶対君主制 absolute_monarchy(鉱業、農業)
+ngm_absolute_monarchy = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 1
+	planet_jobs_minerals_produces_mult = 0.1
+	planet_jobs_food_produces_mult = 0.1
+}
+
+# 2.象徴君主制(統合力)
+ngm_symbolic_monarchy = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 1
+	planet_jobs_unity_produces_mult = 0.1
+}
+
+# 3.地方独裁制(工業)
+ngm_local_dictatorship = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 1
+	planet_jobs_alloys_produces_mult = 0.1
+	planet_jobs_consumer_goods_produces_mult = 0.1
+}
+
+# 4.金権支配制(交易価値)
+ngm_golden_rule_system = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 1
+	trade_value_mult = 0.1
+}
+
+# 5.AI補助統治(研究力)
+ngm_ai_supplementary_governance = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 1
+	planet_researchers_produces_mult = 0.1
+}
+
+# 6.首長優位制(最大多数の派閥幸福度)
+ngm_chieftaincy_system = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 1
+}
+
+# 7.議会優位制(全派閥の幸福度)
+ngm_parliamentary_dominance = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 1
+	planet_jobs_minerals_produces_mult = 0.1
+	planet_jobs_food_produces_mult = 0.1
+}
+
+# 8.宗教支配制(統合力+)
+ngm_religious_domination = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 1
+	planet_jobs_unity_produces_mult = 0.1
+}
+
+# 9.中央支配体制(エネルギー消費なし)
+ngm_central_control_system = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 1
+	planet_buildings_energy_upkeep_mult = -1
+}
+
+# 10.高度な地方自治(初期の社会学研究)
+ngm_high_degree_of_local_autonomy = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 1
+	planet_jobs_society_research_produces_mult = 0.1
+}
+
 #犯罪抑止力-10％	安定度5％	エネルギー-5
 patrolling_society = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_colony_settlement.dds"
@@ -54,7 +138,7 @@ fanatic_free_speech = {
 }
 
 #惑星規模の徴用政策 消費財維持費-30% 犯罪度-10% 合金+10%		安定度-20 幸福度-20
-requisition_policy= {
+requisition_policy = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_expel_population.dds"
 	icon_frame = 1
 	pop_happiness = -0.2
@@ -65,7 +149,7 @@ requisition_policy= {
 }
 
 #強制労働 食糧、鉱物、エネルギー+10%		幸福度-10％ 研究、統合力-30%
-forced_labor= {
+forced_labor = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_archaeology.dds"
 	icon_frame = 1
 	pop_happiness = -0.1

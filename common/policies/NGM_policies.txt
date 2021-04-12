@@ -71,6 +71,26 @@ ngm_policies_population_stance = {
 		}
 		ai_weight = {
 			weight = 10
+			modifier = {
+				factor = 1.5
+				free_housing < 0 
+			}
+			modifier = {
+				factor = 2
+				free_housing < -10 
+			}
+			modifier = {
+				factor = 6
+				free_housing < -20 
+			}
+			modifier = {
+				factor = 0.5
+				free_housing >=10
+			}
+			modifier = {
+				factor = 0
+				free_housing >=20
+			}
 			# Militarist
 			modifier = {
 				factor = 1.5
