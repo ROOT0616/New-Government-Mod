@@ -982,6 +982,9 @@ decision_planet_free_speech = {
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		owner = {
 			is_regular_empire = yes
 			OR = {
