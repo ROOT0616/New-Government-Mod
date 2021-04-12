@@ -51,14 +51,14 @@ ngm_ai_supplementary_governance = {
 ngm_chieftaincy_system = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = 1
+	pop_cat_ruler_happiness = 10
 }
 
 # 7.議会優位制(全派閥の幸福度)
 ngm_parliamentary_dominance = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = 1
-	planet_jobs_minerals_produces_mult = 0.1
-	planet_jobs_food_produces_mult = 0.1
+	pop_citizen_happiness = 5
 }
 
 # 8.宗教支配制(統合力+)
@@ -73,6 +73,7 @@ ngm_central_control_system = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = 1
 	planet_buildings_energy_upkeep_mult = -1
+	planet_pops_energy_upkeep_mult = -1
 }
 
 # 10.高度な地方自治(初期の社会学研究)

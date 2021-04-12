@@ -11,6 +11,57 @@
 # 9.中央支配体制(エネルギー消費なし)
 # 10.高度な地方自治(初期の社会学研究)
 
+# 表示非表示
+decision_ngm_do = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		is_capital = yes
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
+	}
+	effect = {
+		hidden_effect = {
+			set_planet_flag = do_ngm_do
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_ngm_undo = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		is_capital = yes
+		owner = {
+			is_regular_empire = yes
+		}
+			has_planet_flag = do_ngm_do
+	}
+	allow = {
+		has_planet_flag = do_ngm_do
+	}
+	effect = {
+		hidden_effect = {
+			remove_planet_flag = do_ngm_do
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
 # 1.絶対君主制 absolute_monarchy(鉱業、農業)
 decision_ngm_absolute_monarchy = {
 	owned_planets_only = yes
@@ -29,6 +80,9 @@ decision_ngm_absolute_monarchy = {
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
 			}
+		}
+		NOT = {
+			has_planet_flag = do_ngm_do
 		}
 	}
 	allow = {
@@ -60,6 +114,9 @@ decision_ngm_end_absolute_monarchy = {
 	sound = event_administrative_work
 	potential = {
 		has_modifier = ngm_absolute_monarchy
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 	}
 	effect = {
 		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
@@ -87,6 +144,9 @@ decision_ngm_symbolic_monarchy = {
 			NOR = {
 				has_ethic = ethic_fanatic_authoritarian
 			}
+		}
+		NOT = {
+			has_planet_flag = do_ngm_do
 		}
 	}
 	allow = {
@@ -118,6 +178,9 @@ decision_ngm_end_symbolic_monarchy = {
 	sound = event_administrative_work
 	potential = {
 		has_modifier = ngm_symbolic_monarchy
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 	}
 	effect = {
 		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
@@ -146,6 +209,9 @@ decision_ngm_local_dictatorship = {
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
 			}
+		}
+		NOT = {
+			has_planet_flag = do_ngm_do
 		}
 	}
 	allow = {
@@ -177,6 +243,9 @@ decision_ngm_end_local_dictatorship = {
 	sound = event_administrative_work
 	potential = {
 		has_modifier = ngm_local_dictatorship
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 	}
 	effect = {
 		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
@@ -201,6 +270,9 @@ decision_ngm_golden_rule_system = {
 		is_capital = yes
 		owner = {
 			is_regular_empire = yes
+		}
+		NOT = {
+			has_planet_flag = do_ngm_do
 		}
 	}
 	allow = {
@@ -232,6 +304,9 @@ decision_ngm_end_golden_rule_system = {
 	sound = event_administrative_work
 	potential = {
 		has_modifier = ngm_golden_rule_system
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 	}
 	effect = {
 		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
@@ -260,6 +335,9 @@ decision_ngm_ai_supplementary_governance = {
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_spiritualist
 			}
+		}
+		NOT = {
+			has_planet_flag = do_ngm_do
 		}
 	}
 	allow = {
@@ -291,6 +369,9 @@ decision_ngm_end_ai_supplementary_governance = {
 	sound = event_administrative_work
 	potential = {
 		has_modifier = ngm_ai_supplementary_governance
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 	}
 	effect = {
 		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
@@ -318,6 +399,9 @@ decision_ngm_chieftaincy_system = {
 			NOT = {
 				has_ethic = ethic_fanatic_egalitarian
 			}
+		}
+		NOT = {
+			has_planet_flag = do_ngm_do
 		}
 	}
 	allow = {
@@ -349,6 +433,9 @@ decision_ngm_end_chieftaincy_system = {
 	sound = event_administrative_work
 	potential = {
 		has_modifier = ngm_chieftaincy_system
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 	}
 	effect = {
 		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
@@ -376,6 +463,9 @@ decision_ngm_parliamentary_dominance = {
 			NOT = {
 				has_ethic = ethic_fanatic_authoritarian
 			}
+		}
+		NOT = {
+			has_planet_flag = do_ngm_do
 		}
 	}
 	allow = {
@@ -407,6 +497,9 @@ decision_ngm_end_parliamentary_dominance = {
 	sound = event_administrative_work
 	potential = {
 		has_modifier = ngm_parliamentary_dominance
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 	}
 	effect = {
 		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
@@ -435,6 +528,9 @@ decision_ngm_religious_domination = {
 				has_ethic = ethic_materialist
 				has_ethic = ethic_fanatic_materialist
 			}
+		}
+		NOT = {
+			has_planet_flag = do_ngm_do
 		}
 	}
 	allow = {
@@ -466,6 +562,9 @@ decision_ngm_end_religious_domination = {
 	sound = event_administrative_work
 	potential = {
 		has_modifier = ngm_religious_domination
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 	}
 	effect = {
 		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
@@ -490,6 +589,9 @@ decision_ngm_central_control_system = {
 		is_capital = yes
 		owner = {
 			is_regular_empire = yes
+		}
+		NOT = {
+			has_planet_flag = do_ngm_do
 		}
 	}
 	allow = {
@@ -521,6 +623,9 @@ decision_ngm_end_central_control_system = {
 	sound = event_administrative_work
 	potential = {
 		has_modifier = ngm_central_control_system
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 	}
 	effect = {
 		# custom_tooltip = decision_end_planet_patrolling_society_effects_short
@@ -549,6 +654,9 @@ decision_ngm_high_degree_of_local_autonomy = {
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
 			}
+		}
+		NOT = {
+			has_planet_flag = do_ngm_do
 		}
 	}
 	allow = {
@@ -579,6 +687,9 @@ decision_ngm_end_high_degree_of_local_autonomy = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		has_modifier = ngm_high_degree_of_local_autonomy
 	}
 	effect = {
@@ -603,6 +714,9 @@ decision_planet_patrolling = {
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		owner = {
 			is_regular_empire = yes
 			OR = {
@@ -656,6 +770,9 @@ decision_end_patrolling = {
 		category = decisions
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		has_modifier = patrolling_society
 	}
 	effect = {
@@ -683,6 +800,9 @@ decision_planet_fanatic_patrolling = {
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		owner = {
 			is_regular_empire = yes
 			OR = {
@@ -735,6 +855,9 @@ decision_end_fanatic_patrolling = {
 		category = decisions
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		has_modifier = fanatic_patrolling_society
 	}
 	effect = {
@@ -759,6 +882,9 @@ decision_planet_hyper_fanatic_patrolling = {
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		owner = {
 			is_regular_empire = yes
 			OR = {
@@ -831,6 +957,9 @@ decision_end_hyper_fanatic_patrolling = {
 		category = decisions
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		has_modifier = hyper_fanatic_patrolling_society
 	}
 	effect = {
@@ -892,6 +1021,9 @@ decision_end_free_speech = {
 		category = decisions
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		has_modifier = free_speech
 	}
 	effect = {
@@ -975,6 +1107,9 @@ decision_end_fanatic_free_speech = {
 		category = decisions
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		has_modifier = fanatic_free_speech
 	}
 	effect = {
@@ -997,6 +1132,9 @@ decision_planet_requisition_policy = {
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		owner = {
 			is_regular_empire = yes
 			is_at_war = yes
@@ -1055,6 +1193,9 @@ decision_end_requisition_policy = {
 		category = decisions
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		has_modifier = requisition_policy
 	}
 	effect = {
@@ -1077,6 +1218,9 @@ decision_planet_forced_labor = {
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		owner = {
 			is_regular_empire = yes
 			is_at_war = yes
@@ -1128,6 +1272,9 @@ decision_end_forced_labor = {
 		category = decisions
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ngm_do
+		}
 		has_modifier = forced_labor
 	}
 	effect = {

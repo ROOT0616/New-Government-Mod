@@ -4,6 +4,11 @@
 #####    ディシジョン    ######
 ##############################
 
+ decision_ngm_do:0 "非表示"
+ decision_ngm_do_desc:0 ""
+ decision_ngm_undo:0 "表示"
+ decision_ngm_undo_desc:0 ""
+
  decision_ngm_absolute_monarchy:0 "絶対君主制"
  decision_ngm_absolute_monarchy_desc:0 ""
  ngm_absolute_monarchy:0 "絶対君主制"
