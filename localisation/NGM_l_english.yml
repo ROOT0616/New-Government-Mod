@@ -349,5 +349,13 @@
  trait_ngm_elder_politics:0 "長老政治"
  trait_ngm_elder_politics_desc:0 "§Lこの政府の高官は高齢の者に支配されており、熟達した政府高官により多くの決定がなされている。しかし、それは新参者の政府参加を妨げやすく、新たな思想を受け入れる素地を減らしてしまう傾向にある。§!"
 
+##########################
+#####    そのほか    ######
+##########################
+
+ mod_planet_buildings_energy_upkeep_mult:0 "建物の$energy$維持費"
+ mod_planet_jobs_consumer_goods_upkeep_mult:0 "£job£ 職業の$consumer_goods$維持費""
+ mod_planet_pops_energy_upkeep_mult:0 "POPの$energy$維持費"
+
 # :0 ""
 # _desc:0 ""
