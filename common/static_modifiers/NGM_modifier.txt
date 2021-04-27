@@ -10,8 +10,8 @@
 # 8.宗教支配制(統合力+)
 # 9.中央支配体制(エネルギー消費なし)
 # 10.高度な地方自治(初期の社会学研究)
-# 1.絶対君主制 absolute_monarchy(鉱業、農業)
-ngm_absolute_monarchy = {
+# 1.絶対君主制 territorial_monarchy(鉱業、農業)
+ngm_territorial_monarchy = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = 1
 	planet_jobs_minerals_produces_mult = 0.1
@@ -66,21 +66,6 @@ ngm_religious_domination = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = 1
 	planet_jobs_unity_produces_mult = 0.1
-}
-
-# 9.中央支配体制(エネルギー消費なし)
-ngm_central_control_system = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
-	icon_frame = 1
-	planet_buildings_energy_upkeep_mult = -1
-	planet_pops_energy_upkeep_mult = -1
-}
-
-# 10.高度な地方自治(初期の社会学研究)
-ngm_high_degree_of_local_autonomy = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
-	icon_frame = 1
-	planet_jobs_society_research_produces_mult = 0.1
 }
 
 #犯罪抑止力-10％	安定度5％	エネルギー-5
