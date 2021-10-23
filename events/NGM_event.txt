@@ -112,7 +112,6 @@ country_event = {
 			has_civic = civic_ngm_healthy_habits
 			has_civic = civic_ngm_ultimate_freedom_of_thought
 			has_civic = civic_ngm_The_Struggle_for_Struggle
-			has_civic = civic_ngm_mechanical_faith
 			has_civic = civic_ngm_economic_primitivism
 			has_civic = civic_ngm_deregulation
 			has_civic = civic_ngm_mastermind
@@ -147,12 +146,6 @@ country_event = {
 				has_civic = civic_ngm_The_Struggle_for_Struggle
 			}
 			set_country_flag = civic_ngm_The_Struggle_for_Struggle_flag
-		}
-		if = {
-			limit = {
-				has_civic = civic_ngm_mechanical_faith
-			}
-			set_country_flag = civic_ngm_mechanical_faith_flag
 		}
 		if = {
 			limit = {
@@ -215,7 +208,6 @@ country_event = {
 			has_civic = civic_ngm_healthy_habits
 			has_civic = civic_ngm_ultimate_freedom_of_thought
 			has_civic = civic_ngm_The_Struggle_for_Struggle
-			has_civic = civic_ngm_mechanical_faith
 			has_civic = civic_ngm_economic_primitivism
 			has_civic = civic_ngm_deregulation
 			has_civic = civic_ngm_mastermind
@@ -228,7 +220,6 @@ country_event = {
 			has_country_flag = civic_ngm_healthy_habits_flag
 			has_country_flag = civic_ngm_ultimate_freedom_of_thought_flag
 			has_country_flag = civic_ngm_The_Struggle_for_Struggle_flag
-			has_country_flag = civic_ngm_mechanical_faith_flag
 			has_country_flag = civic_ngm_economic_primitivism_flag
 			has_country_flag = civic_ngm_deregulation_flag
 			has_country_flag = civic_ngm_mastermind_flag
@@ -332,30 +323,6 @@ country_event = {
 				has_civic = civic_ngm_The_Struggle_for_Struggle
 			}
 			force_remove_civic = civic_ngm_The_Struggle_for_Struggle
-			add_resource = {
-				influence = 250
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_civic = civic_ngm_mechanical_faith
-				}
-				has_country_flag = civic_ngm_mechanical_faith_flag
-			}
-			force_add_civic = civic_ngm_mechanical_faith
-			add_resource = {
-				influence = 250
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_country_flag = civic_ngm_mechanical_faith_flag
-				}
-				has_civic = civic_ngm_mechanical_faith
-			}
-			force_remove_civic = civic_ngm_mechanical_faith
 			add_resource = {
 				influence = 250
 			}

@@ -288,14 +288,6 @@ priest = {
 			unity = 3
 			society_research = 2
 		}
-		# 自然信仰
-		produces = {
-			trigger = {
-				exists = owner
-				has_civic = civic_ngm_nature_faith
-			}
-			society_research = 1
-		}
 		produces = {
 			trigger = {
 				exists = owner
@@ -312,16 +304,6 @@ priest = {
 		planet_amenities_add = 5
 	}
 
-	# 自然信仰
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_civic = civic_ngm_nature_faith
-			}
-		}
-		pop_environment_tolerance = 0.01
-	}
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -1537,16 +1519,7 @@ chemist = {
 			volatile_motes = 2
 		}
 		upkeep = {
-			minerals = 6.5
-		}
-		# 最先端工業:化学技師、透過技師、ガス精製技師の維持費-35%
-		upkeep = {
-			trigger = {
-				NOT = {
-					has_tradition = tr_ngm_latast_industrial
-				}
-			}
-			minerals = 3.5
+			minerals = 10
 		}
 	}
 
@@ -1615,16 +1588,7 @@ translucer = {
 			rare_crystals = 2
 		}
 		upkeep = {
-			minerals = 6.5
-		}
-		# 最先端工業:化学技師、透過技師、ガス精製技師の維持費-35%
-		upkeep = {
-			trigger = {
-				NOT = {
-					has_tradition = tr_ngm_latast_industrial
-				}
-			}
-			minerals = 3.5
+			minerals = 10
 		}
 	}
 
@@ -1704,16 +1668,7 @@ gas_refiner = {
 			exotic_gases = 2
 		}
 		upkeep = {
-			minerals = 6.5
-		}
-		# 最先端工業:化学技師、透過技師、ガス精製技師の維持費-35%
-		upkeep = {
-			trigger = {
-				NOT = {
-					has_tradition = tr_ngm_latast_industrial
-				}
-			}
-			minerals = 3.5
+			minerals = 10
 		}
 	}
 

@@ -402,9 +402,6 @@
  civic_ngm_big_ship_policy:0 "大艦巨砲主義"
  civic_ngm_big_ship_policy_desc:0 "この社会は巨艦が至高であり、巨砲は全てを薙ぎ払うと考えている。"
 
- civic_ngm_military_industrial_complex:0 "軍産複合体"
- civic_ngm_military_industrial_complex_desc:0 "この社会は巨大な軍産複合体が大きな力を有しており、軍事政策にも大きな影響を与えている。"
-
  civic_ngm_war_prosperity:0 "戦争経済"
  civic_ngm_war_prosperity_desc:0 "この社会の経済は極めて脆弱であるが、戦争が始まると総動員の名の下にあらゆる経済が活性化する。"
 
@@ -432,8 +429,6 @@
  civic_ngm_good_faith_negotiator:0 "誠実な交渉人"
  civic_ngm_good_faith_negotiator_desc:0 "この国は他国から誠実であると考えられており、貿易や外交において信頼を置かれている。"
 
- civic_ngm_mechanical_faith:0 "機械信仰"
- civic_ngm_mechanical_faith_desc:0 "この国の信仰は創作物に向けられており、その究極であるロボットは神と我々を繋ぐ存在であると考えられている。"
 
  civic_ngm_defender_of_the_faith:0 "信仰の擁護者"
  civic_ngm_defender_of_the_faith_desc:0 "この国の指導者は国家として神を守ることを誓約しており、そのためにはあらゆる犠牲を惜しまない。"
@@ -482,9 +477,6 @@
 
  civic_ngm_development_dictatorship:0 "開発独裁"
  civic_ngm_development_dictatorship_desc:0 "この国では経済発展の為には「政治的安定」が必要であるとして、国民の政治参加を著しく制限し、強権的政策が正当化されている。"
-
- civic_ngm_commercialism:0 "重商主義"
- civic_ngm_commercialism_desc:0 "この国では貿易により通貨を蓄えることを重視しており、貿易利潤を求めている。"
 
  civic_ngm_financing:0 "金融資本主義"
  civic_ngm_financing_desc:0 "この国では金融産業が中心として発展しており、資本家はそれらに投資を続けている。"
