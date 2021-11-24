@@ -63,9 +63,6 @@ building_ngm_ginga_department_store = {
 		branch_office_owner = {
 			has_civic = civic_ngm_corporate_empire
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	planet_modifier = {
@@ -100,9 +97,6 @@ building_ngm_business_school = {
 		branch_office_owner = {
 			has_civic = civic_ngm_high_tech_company
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	planet_modifier = {
@@ -137,9 +131,6 @@ building_ngm_star_workshop = {
 		branch_office_owner = {
 			has_civic = civic_ngm_smokestack_industry
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	planet_modifier = {
@@ -174,9 +165,6 @@ building_ngm_galaxy_salon = {
 		branch_office_owner = {
 			has_civic = civic_ngm_hereditary_officers
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	country_modifier = {
@@ -213,9 +201,6 @@ building_ngm_m_a_center = {
 		branch_office_owner = {
 			has_civic = civic_ngm_zaibatsu
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	country_modifier = {
@@ -250,9 +235,6 @@ building_ngm_galactic_bank = {
 		branch_office_owner = {
 			has_civic = civic_ngm_financial_enterprises
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	planet_modifier = {
@@ -286,9 +268,6 @@ building_ngm_IAA = {
 		branch_office_owner = {
 			has_civic = civic_ngm_information_company
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	country_modifier = {
@@ -322,9 +301,6 @@ building_ngm_corporate_hospital = {
 		branch_office_owner = {
 			has_civic = civic_ngm_social_enterprise
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	planet_modifier = {
@@ -358,9 +334,6 @@ building_ngm_planetary_scale_building_center = {
 		branch_office_owner = {
 			has_civic = civic_ngm_general_contractor
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	planet_modifier = {
@@ -394,9 +367,6 @@ building_ngm_corporate_plantation = {
 		branch_office_owner = {
 			has_civic = civic_ngm_agricultural_company
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	planet_modifier = {
@@ -429,9 +399,6 @@ building_ngm_society_cosmic_port = {
 		branch_office_owner = {
 			has_civic = civic_ngm_shipping_company
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	planet_modifier = {
@@ -463,9 +430,6 @@ building_ngm_planet_trust_bank = {
 		branch_office_owner = {
 			has_civic = civic_ngm_operating_company
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	planet_modifier = {
@@ -498,9 +462,6 @@ building_ngm_corporate_espionage = {
 		branch_office_owner = {
 			has_civic = civic_ngm_industrial_espionage
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	country_modifier = {
@@ -534,9 +495,6 @@ building_ngm_planet_rating_agency = {
 		branch_office_owner = {
 			has_civic = civic_ngm_rating_company
 			is_criminal_syndicate = no
-			NOT = {
-				is_ai = yes
-			}
 		}
 	}
 	planet_modifier = {
@@ -569,15 +527,12 @@ building_ngm_planet_rating_agency = {
 building_ngm_sa_ko_ryo = {
 	base_buildtime = @b1_time
 	branch_office_building = yes
-	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		is_capital = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
-			NOT = {
-				is_ai = yes
-			}
+			is_criminal_syndicate = yes
+			has_civic = civic_ngm_underhanded_trick
 		}
 	}
 	planet_modifier = {

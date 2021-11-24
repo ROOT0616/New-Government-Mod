@@ -210,7 +210,7 @@ living_standard_chemical_bliss = {
 	}
 
 	pop_modifier = {
-		planet_jobs_produces_mult = -0.6
+		planet_jobs_productive_produces_mult = -0.6
 		custom_tooltip = living_standard_chemical_bliss_happiness_tooltip
 	}
 
