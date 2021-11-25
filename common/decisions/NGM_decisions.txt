@@ -65,7 +65,7 @@ decision_ngm_undo = {
 	}
 }
 
-# 1.領邦君主制 territorial_monarchy(鉱業、農業)
+# 1.領邦君主制 territorial_monarchy(鉱業+10%、農業+10%)
 decision_ngm_territorial_monarchy = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -113,6 +113,24 @@ decision_ngm_territorial_monarchy = {
 	}
 	ai_weight = {
 		weight = 0.25
+		modifier = {
+			factor = 10
+			owner = {
+				resource_income_compare = {
+					resource = minerals
+					value < 10
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				resource_income_compare = {
+					resource = food
+					value < 0
+				}
+			}
+		}
 	}
 }
 
@@ -145,7 +163,7 @@ decision_ngm_end_territorial_monarchy = {
 	}
 }
 
-# 2.象徴君主制(統合力)
+# 2.象徴君主制(統合力+10%)
 decision_ngm_symbolic_monarchy = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -192,6 +210,15 @@ decision_ngm_symbolic_monarchy = {
 	}
 	ai_weight = {
 		weight = 0.25
+		modifier = {
+			factor = 10
+			owner = {
+				resource_income_compare = {
+					resource = unity
+					value > 50
+				}
+			}
+		}
 	}
 }
 
@@ -224,7 +251,7 @@ decision_ngm_end_symbolic_monarchy = {
 	}
 }
 
-# 3.地方独裁制(工業)
+# 3.地方独裁制(工業)合金+10%、消費財+10%
 decision_ngm_local_dictatorship = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -272,6 +299,24 @@ decision_ngm_local_dictatorship = {
 	}
 	ai_weight = {
 		weight = 0.25
+		modifier = {
+			factor = 10
+			owner = {
+				resource_income_compare = {
+					resource = alloys
+					value < 10
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				resource_income_compare = {
+					resource = consumer_goods
+					value < 10
+				}
+			}
+		}
 	}
 }
 
@@ -304,7 +349,7 @@ decision_ngm_end_local_dictatorship = {
 	}
 }
 
-# 4.金権支配制(交易価値)
+# 4.金権支配制(交易価値)交易価値+10%
 decision_ngm_golden_rule_system = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -380,7 +425,7 @@ decision_ngm_end_golden_rule_system = {
 	}
 }
 
-# 5.AI補助統治(研究力)
+# 5.AI補助統治(研究力)+10%
 decision_ngm_ai_supplementary_governance = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -428,6 +473,13 @@ decision_ngm_ai_supplementary_governance = {
 	}
 	ai_weight = {
 		weight = 0.25
+		modifier = {
+			factor = 10
+			resource_income_compare = {
+				resource = physics_research
+				value > 20
+			}
+		}
 	}
 }
 
@@ -618,7 +670,7 @@ decision_ngm_end_parliamentary_dominance = {
 	}
 }
 
-# 8.宗教支配制(統合力+)
+# 8.宗教支配制(統合力+)+10%
 decision_ngm_religious_domination = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -666,6 +718,13 @@ decision_ngm_religious_domination = {
 	}
 	ai_weight = {
 		weight = 0.25
+		modifier = {
+			factor = 10
+			resource_income_compare = {
+				resource = unity
+				value > 20
+			}
+		}
 	}
 }
 
@@ -967,7 +1026,7 @@ decision_end_hyper_fanatic_patrolling = {
 	}
 }
 
-#志向魅力-25％				研究力10％ 統合力10％
+#自由言論 志向魅力-25％				研究力10％ 統合力10％
 decision_planet_free_speech = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -1010,6 +1069,62 @@ decision_planet_free_speech = {
 	}
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 2
+			planet_resource_compare = {
+				resource = physics_research
+				value > 10
+			}
+		}
+		modifier = {
+			factor = 2
+			planet_resource_compare = {
+				resource = society_research
+				value > 10
+			}
+		}
+		modifier = {
+			factor = 2
+			planet_resource_compare = {
+				resource = engineering_research
+				value > 10
+			}
+		}
+		modifier = {
+			factor = 2
+			planet_resource_compare = {
+				resource = unity
+				value > 10
+			}
+		}
+		modifier = {
+			factor = 0.2
+			planet_resource_compare = {
+				resource = physics_research
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 0.2
+			planet_resource_compare = {
+				resource = society_research
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 0.2
+			planet_resource_compare = {
+				resource = engineering_research
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 0.2
+			planet_resource_compare = {
+				resource = unity
+				value = 0
+			}
+		}
 	}
 }
 
@@ -1030,11 +1145,75 @@ decision_end_free_speech = {
 		remove_modifier = free_speech
 	}
 	ai_weight = {
-		weight = 0
+		weight = 1
+		modifier = {
+			factor = 0.1
+			planet_resource_compare = {
+				resource = physics_research
+				value > 0
+			}
+		}
+		modifier = {
+			factor = 0.1
+			planet_resource_compare = {
+				resource = society_research
+				value > 0
+			}
+		}
+		modifier = {
+			factor = 0.1
+			planet_resource_compare = {
+				resource = engineering_research
+				value > 0
+			}
+		}
+		modifier = {
+			factor = 0.1
+			planet_resource_compare = {
+				resource = unity
+				value > 0
+			}
+		}
+		modifier = {
+			factor = 2
+			planet_resource_compare = {
+				resource = physics_research
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 2
+			planet_resource_compare = {
+				resource = society_research
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 2
+			planet_resource_compare = {
+				resource = engineering_research
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 2
+			planet_resource_compare = {
+				resource = unity
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 5
+			has_modifier = requisition_policy
+		}
+		modifier = {
+			factor = 5
+			has_modifier = forced_labor
+		}
 	}
 }
 
-#志向魅力-50％	安定度-5％		研究力20％ 統合力20％
+#大自由討論会 志向魅力-50％	安定度-5％		研究力20％ 統合力20％
 decision_planet_fanatic_free_speech = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -1072,32 +1251,60 @@ decision_planet_fanatic_free_speech = {
 	ai_weight = {
 		weight = 1
 		modifier = {
-			factor = 8
-			planet_stability = 100
-		}
-		modifier = {
-			factor = 4
-			planet_stability >= 90
+			factor = 2
+			planet_resource_compare = {
+				resource = physics_research
+				value > 10
+			}
 		}
 		modifier = {
 			factor = 2
-			planet_stability >= 80
+			planet_resource_compare = {
+				resource = society_research
+				value > 10
+			}
 		}
 		modifier = {
-			factor = 0.75
-			planet_stability <= 65
+			factor = 2
+			planet_resource_compare = {
+				resource = engineering_research
+				value > 10
+			}
 		}
 		modifier = {
-			factor = 0.5
-			planet_stability <= 55
+			factor = 2
+			planet_resource_compare = {
+				resource = unity
+				value > 10
+			}
 		}
 		modifier = {
-			factor = 0.25
-			planet_stability <= 45
+			factor = 0.2
+			planet_resource_compare = {
+				resource = physics_research
+				value = 0
+			}
 		}
 		modifier = {
-			factor = 0
-			planet_stability <= 40
+			factor = 0.2
+			planet_resource_compare = {
+				resource = society_research
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 0.2
+			planet_resource_compare = {
+				resource = engineering_research
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 0.2
+			planet_resource_compare = {
+				resource = unity
+				value = 0
+			}
 		}
 	}
 }
@@ -1119,7 +1326,71 @@ decision_end_fanatic_free_speech = {
 		remove_modifier = fanatic_free_speech
 	}
 	ai_weight = {
-		weight = 0
+		weight = 1
+		modifier = {
+			factor = 0.1
+			planet_resource_compare = {
+				resource = physics_research
+				value > 0
+			}
+		}
+		modifier = {
+			factor = 0.1
+			planet_resource_compare = {
+				resource = society_research
+				value > 0
+			}
+		}
+		modifier = {
+			factor = 0.1
+			planet_resource_compare = {
+				resource = engineering_research
+				value > 0
+			}
+		}
+		modifier = {
+			factor = 0.1
+			planet_resource_compare = {
+				resource = unity
+				value > 0
+			}
+		}
+		modifier = {
+			factor = 2
+			planet_resource_compare = {
+				resource = physics_research
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 2
+			planet_resource_compare = {
+				resource = society_research
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 2
+			planet_resource_compare = {
+				resource = engineering_research
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 2
+			planet_resource_compare = {
+				resource = unity
+				value = 0
+			}
+		}
+		modifier = {
+			factor = 5
+			has_modifier = requisition_policy
+		}
+		modifier = {
+			factor = 5
+			has_modifier = forced_labor
+		}
 	}
 }
 
@@ -1160,6 +1431,10 @@ decision_planet_requisition_policy = {
 	}
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 0
+			planet_stability < 50
+		}
 		modifier = {
 			factor = 5
 			owner = {
@@ -1206,6 +1481,12 @@ decision_end_requisition_policy = {
 	}
 	ai_weight = {
 		weight = 0
+		modifier = {
+			weight = 10
+			owner = {
+				is_at_war = yes
+			}
+		}
 	}
 }
 
