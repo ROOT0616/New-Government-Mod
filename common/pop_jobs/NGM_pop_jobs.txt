@@ -1,4 +1,4 @@
-#式武官   統合力10 影響力1 → 勲章0.02
+#式武官   統合力30 影響力1 → 勲章0.02
 bureau_of_ceremonies = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -16,61 +16,12 @@ bureau_of_ceremonies = {
 			ngm_order_of_merit = 0.2
 		}
 		upkeep = {
-			unity = 10
+			unity = 30
 			influence = 1
 		}
 	}
 	weight = {
 		weight = @specialist_job_weight
-	}
-}
-
-# 書記 secretary 				(政党の幹部で、あらゆる官僚や軍人に指導を行う政治的エリート)安定度+5、工学+3、社会主義魅力+10%
-ngm_secretary = {
-	category = ruler
-	condition_string = RULER_JOB_TRIGGER
-	# building_icon = building_bureau_of_ceremonies
-	clothes_texture_index = 3
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-	}
-	possible_precalc = can_fill_ruler_job
-	planet_modifier = {
-		planet_stability_add = 5
-		pop_ethic_socialism_attraction_mult = 0.1
-	}
-	resources = {
-		category = planet_ngm_secretary
-		produces = {
-			engineering_research = 3
-		}
-	}
-	weight = {
-		weight = @ruler_job_weight
-	}
-}
-
-# 宣撫官 pacifist 				(民衆を鼓舞し、扇動する言葉の魔術師)労働者幸福度+5%、労働者生産力+1%、実利主義魅力+10%
-ngm_pacifist = {
-	category = ruler
-	condition_string = RULER_JOB_TRIGGER
-	# building_icon = building_bureau_of_ceremonies
-	clothes_texture_index = 3
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-	}
-	possible_precalc = can_fill_ruler_job
-	planet_modifier = {
-		pop_cat_worker_happiness = 0.05
-		planet_jobs_worker_produces_mult = 0.01
-		pop_ethic_utilitarianism_attraction_mult = 0.1
-	}
-	weight = {
-		weight = @ruler_job_weight
 	}
 }
 
@@ -88,7 +39,6 @@ ngm_crest_bearer = {
 	possible_precalc = can_fill_ruler_job
 	planet_modifier = {
 		planet_jobs_unity_produces_mult = 0.01
-		pop_ethic_honorism_attraction_mult = 0.1
 	}
 	resources = {
 		category = planet_ngm_crest_bearer
@@ -122,11 +72,6 @@ ngm_senior_advisor = {
 		planet_stability_add = 5
 		pop_ethic_militarist_attraction_mult = 0.1
 	}
-	# resources = {
-	# 	category = planet_ngm_senior_advisor
-	# 	produces = {
-	# 	}
-	# }
 	weight = {
 		weight = @ruler_job_weight
 	}
@@ -148,68 +93,6 @@ ngm_heroes_of_society = {
 		pop_happiness = 0.05
 		planet_amenities_add = 3
 		planet_stability_add = 5
-	}
-	# resources = {
-	# 	category = planet_ngm_heroes_of_society
-	# 	produces = {
-	# 	}
-	# 	upkeep = {
-	# 	}
-	# }
-	weight = {
-		weight = @ruler_job_weight
-	}
-}
-
-# 大自然監督官 superintendent_of_wilderness	(国家の自然を管理し、保全を行う高級官僚)統合力+3、社会学+3、居住性+5%、保全主義魅力+10%
-ngm_superintendent_of_wilderness = {
-	category = ruler
-	condition_string = RULER_JOB_TRIGGER
-	# building_icon = building_bureau_of_ceremonies
-	clothes_texture_index = 3
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-	}
-	possible_precalc = can_fill_ruler_job
-	planet_modifier = {
-		pop_environment_tolerance = 0.05
-		pop_ethic_conservationism_attraction_mult = 0.1
-	}
-	resources = {
-		category = planet_ngm_superintendent_of_wilderness
-		produces = {
-			unity = 3
-			society_research = 3
-		}
-	}
-	weight = {
-		weight = @ruler_job_weight
-	}
-}
-
-# インフルエンサー influencer  影響力+0.1、社会研究+5、統治志向魅力+5%（現代社会で様々なコンテンツを利用して他者の思考や行動に影響を与える有力者）
-ngm_influencer = {
-	category = ruler
-	condition_string = RULER_JOB_TRIGGER
-	# building_icon = building_bureau_of_ceremonies
-	clothes_texture_index = 3
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-	}
-	possible_precalc = can_fill_ruler_job
-	planet_modifier = {
-		pop_government_ethic_attraction = 0.05
-	}
-	resources = {
-		category = planet_ngm_influencer
-		produces = {
-			influence = 0.1
-			society_research = 5
-		}
 	}
 	weight = {
 		weight = @ruler_job_weight

@@ -11,8 +11,6 @@ on_game_start_country = {
 		ngm_civic.5
 		# 高度な栄典制度
 		ngm_civic.7
-		# ゲーム開始後の追加削除不可の国是
-		ngm_civic.11
 		# 戦争経済
 		ngm_civic.17
 		# 異種族解剖
@@ -49,8 +47,6 @@ on_monthly_pulse_country = {
 # this = country
 on_yearly_pulse_country = {
 	events = {
-		# ゲーム開始後の追加削除不可の国是
-		ngm_civic.12
 	}
 }
 

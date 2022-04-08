@@ -471,11 +471,12 @@ decision_ngm_ai_supplementary_governance = {
 			add_deposit = d_ngm_special_policies_deposit
 		}
 	}
+
 	ai_weight = {
 		weight = 0.25
 		modifier = {
 			factor = 10
-			resource_income_compare = {
+			planet_resource_compare = {
 				resource = physics_research
 				value > 20
 			}
@@ -720,7 +721,7 @@ decision_ngm_religious_domination = {
 		weight = 0.25
 		modifier = {
 			factor = 10
-			resource_income_compare = {
+			planet_resource_compare = {
 				resource = unity
 				value > 20
 			}

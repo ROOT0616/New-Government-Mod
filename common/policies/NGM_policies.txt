@@ -73,15 +73,6 @@ ngm_policies_population_stance = {
 				factor = 1.25
 				has_ethic = ethic_militarist
 			}
-			# Socialism
-			modifier = {
-				factor = 1.5
-				has_ethic = ethic_fanatic_socialism
-			}
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_socialism
-			}
 			# Authoritarian
 			modifier = {
 				factor = 1.5
@@ -319,22 +310,6 @@ ngm_policies_civil_law = {
 			weight = 10
 			modifier = {
 				factor = 1.5
-				has_ethic = ethic_fanatic_interventionism
-			}
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_interventionism
-			}
-			modifier = {
-				factor = 0.5
-				has_ethic = ethic_fanatic_neutralism
-			}
-			modifier = {
-				factor = 0.75
-				has_ethic = ethic_neutralism
-			}
-			modifier = {
-				factor = 1.5
 				has_ethic = ethic_fanatic_authoritarian
 			}
 			modifier = {
@@ -380,39 +355,15 @@ ngm_policies_criminal_law = {
 				is_country_type = awakened_marauders
 			}
 		}
-		valid = {
-			OR = {
-				# text = civic_tooltip_utilitarianism
-				has_ethic = "ethic_utilitarianism"
-				has_ethic = "ethic_fanatic_utilitarianism"
-			}
-		}
 		policy_flags = {
 			criminal_law_not_in_reality
 		}
 		modifier = {
 			planet_crime_add = 20
 			pop_happiness = 0.1
-			pop_ethic_utilitarianism_attraction_mult = 0.2
 		}
 		AI_weight = {
 			weight = 10
-			modifier = {
-				factor = 1.5
-				has_ethic = ethic_fanatic_utilitarianism
-			}
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_utilitarianism
-			}
-			modifier = {
-				factor = 0.5
-				has_ethic = ethic_fanatic_honorism
-			}
-			modifier = {
-				factor = 0.75
-				has_ethic = ethic_honorism
-			}
 		}
 	}
 	option = {
@@ -431,26 +382,9 @@ ngm_policies_criminal_law = {
 		}
 		modifier = {
 			planet_stability_add = -5
-			pop_ethic_utilitarianism_attraction_mult = 0.1
 		}
 		AI_weight = {
 			weight = 10
-			modifier = {
-				factor = 1.5
-				has_ethic = ethic_utilitarianism
-			}
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_fanatic_utilitarianism
-			}
-			modifier = {
-				factor = 0.5
-				has_ethic = ethic_honorism
-			}
-			modifier = {
-				factor = 0.75
-				has_ethic = ethic_fanatic_honorism
-			}
 		}
 	}
 	option = {
@@ -680,7 +614,7 @@ ngm_policies_parliamentarism = {
 		}
 		modifier = {
 			faction_modifier_protected_interests = -0.35
-			country_admin_cap_mult = 0.2
+			empire_size_mult = -0.1
 			edicts_cost_mult = -0.05
 		}
 		AI_weight = {
@@ -940,8 +874,7 @@ ngm_policies_electoral_system = {
 			electoral_system_desig
 		}
 		modifier = {
-			country_admin_cap_mult = 0.1
-			pop_ethic_honorism_attraction_mult = 0.1
+			empire_size_mult = -0.05
 		}
 		AI_weight = {
 			weight = 10
@@ -1096,15 +1029,6 @@ ngm_policies_election_law = {
 				is_country_type = awakened_marauders
 			}
 		}
-		valid = {
-			OR = {
-				# text = civic_tooltip_capitalism_or_utilitarianism
-				has_ethic = "ethic_capitalism"
-				has_ethic = "ethic_fanatic_capitalism"
-				has_ethic = "ethic_utilitarianism"
-				has_ethic = "ethic_fanatic_utilitarianism"
-			}
-		}
 		policy_flags = {
 			election_law_tax_e
 		}
@@ -1165,7 +1089,7 @@ ngm_policies_election_law = {
 			election_law_e_e
 		}
 		modifier = {
-			country_admin_cap_mult = 0.1
+			empire_size_mult = -0.05
 		}
 		AI_weight = {
 			weight = 10
@@ -1359,8 +1283,8 @@ ngm_policies_civil_service_appointments_system = {
 			civil_service_appointments_system_qualified_appointment_system
 		}
 		modifier = {
-			country_edict_cap_add = 1
-			country_admin_cap_add = 20
+			country_edict_fund_add = 50
+			empire_size_mult = -0.05
 		}
 		AI_weight = {
 			weight = 10
@@ -1526,13 +1450,6 @@ ngm_policies_income_tax = {
 				is_country_type = awakened_marauders
 			}
 		}
-		valid = {
-			OR = {
-				# text = civic_tooltip_socialism
-				has_ethic = "ethic_socialism"
-				has_ethic = "ethic_fanatic_socialism"
-			}
-		}
 		policy_flags = {
 			income_tax_no_income
 		}
@@ -1543,14 +1460,6 @@ ngm_policies_income_tax = {
 		}
 		AI_weight = {
 			weight = 10
-			modifier = {
-				factor = 2
-				has_ethic = ethic_fanatic_socialism
-			}
-			modifier = {
-				factor = 1.75
-				has_ethic = ethic_socialism
-			}
 			modifier = {
 				factor = 1.5
 				has_ethic = ethic_fanatic_egalitarian
@@ -1582,14 +1491,6 @@ ngm_policies_income_tax = {
 		AI_weight = {
 			weight = 10
 			modifier = {
-				factor = 1.5
-				has_ethic = ethic_fanatic_socialism
-			}
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_socialism
-			}
-			modifier = {
 				factor = 1.25
 				has_ethic = ethic_fanatic_egalitarian
 			}
@@ -1619,14 +1520,6 @@ ngm_policies_income_tax = {
 		}
 		AI_weight = {
 			weight = 10
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_fanatic_socialism
-			}
-			modifier = {
-				factor = 1.125
-				has_ethic = ethic_socialism
-			}
 			modifier = {
 				factor = 1.25
 				has_ethic = ethic_fanatic_egalitarian
@@ -1712,13 +1605,6 @@ ngm_policies_income_tax = {
 				is_country_type = awakened_marauders
 			}
 		}
-		valid = {
-			OR = {
-				# text = civic_tooltip_capitalism
-				has_ethic = "ethic_capitalism"
-				has_ethic = "ethic_fanatic_capitalism"
-			}
-		}
 		policy_flags = {
 			income_tax_max_income
 		}
@@ -1729,14 +1615,6 @@ ngm_policies_income_tax = {
 		}
 		AI_weight = {
 			weight = 10
-			modifier = {
-				factor = 1.5
-				has_ethic = ethic_fanatic_capitalism
-			}
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_capitalism
-			}
 		}
 	}
 }
@@ -1770,20 +1648,12 @@ ngm_policies_corporation_tax = {
 				is_country_type = awakened_marauders
 			}
 		}
-		valid = {
-			OR = {
-				# text = civic_tooltip_socialism
-				has_ethic = "ethic_socialism"
-				has_ethic = "ethic_fanatic_socialism"
-			}
-		}
 		policy_flags = {
 			income_tax_no_corp_tax
 		}
 		modifier = {
 			trade_value_mult = -0.3
 			pop_cat_worker_happiness = 0.15
-			pop_ethic_socialism_attraction_mult = 0.1
 		}
 		AI_weight = {
 			weight = 10
@@ -1908,20 +1778,12 @@ ngm_policies_corporation_tax = {
 				is_country_type = awakened_marauders
 			}
 		}
-		valid = {
-			OR = {
-				# text = civic_tooltip_capitalism
-				has_ethic = "ethic_capitalism"
-				has_ethic = "ethic_fanatic_capitalism"
-			}
-		}
 		policy_flags = {
 			income_tax_max_corp_tax
 		}
 		modifier = {
 			trade_value_mult = 0.3
 			pop_cat_worker_happiness = -0.15
-			pop_ethic_capitalism_attraction_mult = 0.1
 		}
 		AI_weight = {
 			weight = 10
@@ -2118,9 +1980,6 @@ ngm_policies_national_ceremony = {
 		}
 		valid = {
 			OR = {
-				# text = civic_tooltip_honorism_or_spiritualist
-				has_ethic = "ethic_honorism"
-				has_ethic = "ethic_fanatic_honorism"
 				has_ethic = "ethic_spiritualist"
 				has_ethic = "ethic_fanatic_spiritualist"
 			}
@@ -2132,18 +1991,9 @@ ngm_policies_national_ceremony = {
 			country_base_influence_produces_add = 0.5
 			country_unity_produces_mult = 0.1
 			planet_pops_consumer_goods_upkeep_mult = 0.1
-			pop_ethic_honorism_attraction_mult = 0.1
 		}
 		AI_weight = {
 			weight = 10
-			modifier = {
-				factor = 1.5
-				has_ethic = ethic_fanatic_honorism
-			}
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_honorism
-			}
 			modifier = {
 				factor = 1.5
 				has_ethic = ethic_fanatic_spiritualist
@@ -2151,14 +2001,6 @@ ngm_policies_national_ceremony = {
 			modifier = {
 				factor = 1.25
 				has_ethic = ethic_spiritualist
-			}
-			modifier = {
-				factor = 0.5
-				has_ethic = ethic_fanatic_utilitarianism
-			}
-			modifier = {
-				factor = 0.75
-				has_ethic = ethic_utilitarianism
 			}
 			modifier = {
 				factor = 0.5
@@ -2247,9 +2089,6 @@ ngm_policies_national_ceremony = {
 		}
 		valid = {
 			OR = {
-				# text = civic_tooltip_utilitarianism_or_materialist
-				has_ethic = "ethic_utilitarianism"
-				has_ethic = "ethic_fanatic_utilitarianism"
 				has_ethic = "ethic_materialist"
 				has_ethic = "ethic_fanatic_materialist"
 			}
@@ -2261,18 +2100,9 @@ ngm_policies_national_ceremony = {
 			country_base_influence_produces_add = -0.5
 			country_unity_produces_mult = -0.1
 			planet_pops_consumer_goods_upkeep_mult = -0.1
-			pop_ethic_utilitarianism_attraction_mult = 0.1
 		}
 		AI_weight = {
 			weight = 10
-			modifier = {
-				factor = 1.5
-				has_ethic = ethic_fanatic_utilitarianism
-			}
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_utilitarianism
-			}
 			modifier = {
 				factor = 1.5
 				has_ethic = ethic_fanatic_materialist
@@ -2280,14 +2110,6 @@ ngm_policies_national_ceremony = {
 			modifier = {
 				factor = 1.25
 				has_ethic = ethic_materialist
-			}
-			modifier = {
-				factor = 0.5
-				has_ethic = ethic_fanatic_honorism
-			}
-			modifier = {
-				factor = 0.75
-				has_ethic = ethic_honorism
 			}
 			modifier = {
 				factor = 0.5
@@ -2619,28 +2441,12 @@ ngm_policies_research_ethics = {
 				has_ethic = ethic_materialist
 			}
 			modifier = {
-				factor = 1.5
-				has_ethic = ethic_fanatic_utilitarianism
-			}
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_utilitarianism
-			}
-			modifier = {
 				factor = 0.5
 				has_ethic = ethic_fanatic_spiritualist
 			}
 			modifier = {
 				factor = 0.75
 				has_ethic = ethic_spiritualist
-			}
-			modifier = {
-				factor = 0.5
-				has_ethic = ethic_fanatic_honorism
-			}
-			modifier = {
-				factor = 0.75
-				has_ethic = ethic_honorism
 			}
 		}
 	}
@@ -2725,14 +2531,6 @@ ngm_policies_research_ethics = {
 				factor = 1.25
 				has_ethic = ethic_spiritualist
 			}
-			modifier = {
-				factor = 0.5
-				has_ethic = ethic_fanatic_utilitarianism
-			}
-			modifier = {
-				factor = 0.75
-				has_ethic = ethic_utilitarianism
-			}
 		}
 	}
 	option = {
@@ -2748,11 +2546,8 @@ ngm_policies_research_ethics = {
 		}
 		valid = {
 			OR = {
-				# text = civic_tooltip_xenophile_or_conservationism
 				has_ethic = "ethic_xenophile"
 				has_ethic = "ethic_fanatic_xenophile"
-				has_ethic = "ethic_conservationism"
-				has_ethic = "ethic_fanatic_conservationism"
 			}
 		}
 		policy_flags = {
@@ -2773,28 +2568,12 @@ ngm_policies_research_ethics = {
 				has_ethic = ethic_xenophile
 			}
 			modifier = {
-				factor = 1.5
-				has_ethic = ethic_fanatic_conservationism
-			}
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_conservationism
-			}
-			modifier = {
 				factor = 0.5
 				has_ethic = ethic_fanatic_xenophobe
 			}
 			modifier = {
 				factor = 0.75
 				has_ethic = ethic_xenophobe
-			}
-			modifier = {
-				factor = 0.5
-				has_ethic = ethic_fanatic_neutralism
-			}
-			modifier = {
-				factor = 0.75
-				has_ethic = ethic_neutralism
 			}
 		}
 	}
@@ -2879,7 +2658,6 @@ ngm_policies_SNS_regulation = {
 		modifier = {
 			country_unity_produces_mult = 0.1
 			planet_stability_add = -5
-			pop_ethic_utilitarianism_attraction_mult = 0.1
 		}
 		AI_weight = {
 			weight = 10
@@ -3005,11 +2783,8 @@ ngm_policies_weapon_export_law = {
 		}
 		valid = {
 			OR = {
-				# text = civic_tooltip_pacifist_or_neutralism
 				has_ethic = "ethic_pacifist"
 				has_ethic = "ethic_fanatic_pacifist"
-				has_ethic = "ethic_neutralism"
-				has_ethic = "ethic_fanatic_neutralism"
 			}
 		}
 		policy_flags = {
@@ -3107,17 +2882,6 @@ ngm_policies_weapon_export_law = {
 				is_country_type = awakened_marauders
 			}
 		}
-		valid = {
-			OR = {
-				# text = civic_tooltip_militarist_or_interventionism_or_capitalism
-				has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"
-				has_ethic = "ethic_interventionism"
-				has_ethic = "ethic_fanatic_interventionism"
-				has_ethic = "ethic_capitalism"
-				has_ethic = "ethic_fanatic_capitalism"
-			}
-		}
 		policy_flags = {
 			export_law_vh_exp
 		}
@@ -3137,36 +2901,12 @@ ngm_policies_weapon_export_law = {
 				has_ethic = ethic_militarist
 			}
 			modifier = {
-				factor = 1.5
-				has_ethic = ethic_fanatic_interventionism
-			}
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_interventionism
-			}
-			modifier = {
-				factor = 1.5
-				has_ethic = ethic_fanatic_capitalism
-			}
-			modifier = {
-				factor = 1.25
-				has_ethic = ethic_capitalism
-			}
-			modifier = {
 				factor = 0.5
 				has_ethic = ethic_fanatic_pacifist
 			}
 			modifier = {
 				factor = 0.75
 				has_ethic = ethic_pacifist
-			}
-			modifier = {
-				factor = 0.5
-				has_ethic = ethic_fanatic_neutralism
-			}
-			modifier = {
-				factor = 0.75
-				has_ethic = ethic_neutralism
 			}
 		}
 	}
@@ -3201,9 +2941,6 @@ ngm_policies_information_law = {
 		}
 		valid = {
 			OR = {
-				# text = civic_tooltip_neutralism_or_xenophile_or_egalitarian
-				has_ethic = "ethic_neutralism"
-				has_ethic = "ethic_fanatic_neutralism"
 				has_ethic = "ethic_xenophile"
 				has_ethic = "ethic_fanatic_xenophile"
 				has_ethic = "ethic_egalitarian"
@@ -3215,7 +2952,7 @@ ngm_policies_information_law = {
 		}
 		modifier = {
 			intel_encryption_add = -5
-			country_admin_cap_mult = 0.1
+			empire_size_mult = -0.05
 			pop_happiness = 0.05
 			trade_value_mult = 0.1
 		}
@@ -3239,7 +2976,7 @@ ngm_policies_information_law = {
 		}
 		modifier = {
 			pop_happiness = 0.05
-			country_admin_cap_mult = 0.05
+			empire_size_mult = -0.025
 			trade_value_mult = 0.05
 		}
 		AI_weight = {
@@ -3301,13 +3038,10 @@ ngm_policies_information_law = {
 		}
 		valid = {
 			OR = {
-				# text = civic_tooltip_authoritarian_or_xenophobe_or_interventionism
 				has_ethic = "ethic_authoritarian"
 				has_ethic = "ethic_fanatic_authoritarian"
 				has_ethic = "ethic_xenophobe"
 				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_interventionism"
-				has_ethic = "ethic_fanatic_interventionism"
 			}
 		}
 		policy_flags = {
@@ -3418,9 +3152,6 @@ ngm_policies_martial_law = {
 		}
 		valid = {
 			OR = {
-				# text = civic_tooltip_utilitarianism_or_militarist
-				has_ethic = "ethic_utilitarianism"
-				has_ethic = "ethic_fanatic_utilitarianism"
 				has_ethic = "ethic_militarist"
 				has_ethic = "ethic_fanatic_militarist"
 			}
@@ -3449,9 +3180,6 @@ ngm_policies_martial_law = {
 		}
 		valid = {
 			OR = {
-				# text = civic_tooltip_utilitarianism_or_militarist_or_xenophobe
-				has_ethic = "ethic_utilitarianism"
-				has_ethic = "ethic_fanatic_utilitarianism"
 				has_ethic = "ethic_militarist"
 				has_ethic = "ethic_fanatic_militarist"
 				has_ethic = "ethic_xenophobe"
@@ -3513,13 +3241,6 @@ ngm_policies_sheriffs_law = {
 				is_country_type = awakened_fallen_empire
 				is_country_type = primitive
 				is_country_type = awakened_marauders
-			}
-		}
-		valid = {
-			OR = {
-				# text = civic_tooltip_utilitarianism
-				has_ethic = "ethic_utilitarianism"
-				has_ethic = "ethic_fanatic_utilitarianism"
 			}
 		}
 		policy_flags = {
@@ -3773,13 +3494,10 @@ ngm_policies_broadcast_law = {
 		}
 		valid = {
 			OR = {
-				# text = civic_tooltip_authoritarian_or_militarist_or_utilitarianism
 				has_ethic = "ethic_authoritarian"
 				has_ethic = "ethic_fanatic_authoritarian"
 				has_ethic = "ethic_militarist"
 				has_ethic = "ethic_fanatic_militarist"
-				has_ethic = "ethic_utilitarianism"
-				has_ethic = "ethic_fanatic_utilitarianism"
 			}
 		}
 		policy_flags = {

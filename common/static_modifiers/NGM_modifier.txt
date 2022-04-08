@@ -239,10 +239,6 @@ ngm_government3a = {
 ngm_government3d = {
 	country_war_exhaustion_mult = -0.1
 }
-# とある施設なら中で叫んでくれて構わない。(権威かつ社会主義。影響力-80。当該惑星に3年間強制労働者3枠のJobを獲得)
-ngm_government3e = {
-	job_ad_forcrd_larbor_add = 3
-}
 
 # 名前は、銀河規模の拡大という名称で、
 # Pop成長率+1000%、Pop製造速度+1000%。Pop消費財+50%

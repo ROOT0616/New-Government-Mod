@@ -270,38 +270,17 @@
  civic_ngm_federation_of_the_galaxies:0 "銀河連邦"
  civic_ngm_federation_of_the_galaxies_desc:0 "この社会は自由民主的な社会で、公平で正義を希求する民主的連邦制が実現している。"
 
- civic_ngm_environmental_democracy:0 "環境民主制"
- civic_ngm_environmental_democracy_desc:0 "この社会は環境問題の対応と自然保護を基調とした穏和な民主的体制であり、国民一人一人が環境に対して鋭い感覚を有している。"
-
  civic_ngm_religious_republicanism:0 "宗教共和制"
  civic_ngm_religious_republicanism_desc:0 "この社会は民選の宗教評議会を中心とした民主的体制で、神の名の下に厳格な民主制度が保証されている。"
-
- civic_ngm_peoples_democracy:0 "人民民主制"
- civic_ngm_peoples_democracy_desc:0 "この社会は労働者や兵士を中心とした非特権層を中心とした経済的平等を志向する民主体制である。"
 
  civic_ngm_cyberdemocracy:0 "サイバー民主制"
  civic_ngm_cyberdemocracy_desc:0 "この社会は、インターネットを利用した低コスト、高効率を志向した直接民主的なもので、投票などの民主体制に不可欠な分野もデジタル化されている。"
 
- civic_ngm_aristocratic_republicanism:0 "貴族共和制"
- civic_ngm_aristocratic_republicanism_desc:0 "この社会は世襲の貴族による貴族間における平等な共和体制であり、貴族の倫理観により社会の平等性が確保されている。"
-
- civic_ngm_chief_secretary_system:0 "書記長制"
- civic_ngm_chief_secretary_system_desc:0 "この社会は社会主義政党が中心となった官僚的体制で、高度な教育を受けた官僚が専門的に社会的平等の実現に向けて努力を続けている。"
-
  civic_ngm_war_lord:0 "戦争卿"
  civic_ngm_war_lord_desc:0 "この社会は軍最高総司令官、統合参謀本部議長、国防大臣を兼ねる戦争卿が国家元首であり、戦争に向けて国力を集結させている。"
 
- civic_ngm_communist_dictatorship:0 "共産独裁制"
- civic_ngm_communist_dictatorship_desc:0 "この社会は、社会主義政党の総書記による強権的な体制であり、総書記による強力な指導のもとで、社会の平等へ邁進している。"
-
- civic_ngm_demagoguery:0 "衆愚扇動制"
- civic_ngm_demagoguery_desc:0 "この社会は、無知蒙昧な市民を口先で操り国家を運営する詐欺師による国家である。国家元首は能力如何はともかく、口先は達者である。"
-
  civic_ngm_order_of_chivalry:0 "騎士団"
  civic_ngm_order_of_chivalry_desc:0 "この社会は世襲の軍国主義体制で、軍事的指導者である騎士団の長が、国を統治している。"
-
- civic_ngm_honorary_imperialism:0 "名誉帝制"
- civic_ngm_honorary_imperialism_desc:0 "この社会は名声や栄誉を重んじる君主政体であり、さまざまな称号を帯びた君主や貴族、官僚等が国家運営を担っている。"
 
  civic_ngm_guiding_principle:0 "指導者原理"
  civic_ngm_guiding_principle_desc:0 "この国の指導者は被指導者に対して無条件の服従と忠誠を要求する思想である。"
@@ -478,9 +457,6 @@
  civic_ngm_development_dictatorship:0 "開発独裁"
  civic_ngm_development_dictatorship_desc:0 "この国では経済発展の為には「政治的安定」が必要であるとして、国民の政治参加を著しく制限し、強権的政策が正当化されている。"
 
- civic_ngm_financing:0 "金融資本主義"
- civic_ngm_financing_desc:0 "この国では金融産業が中心として発展しており、資本家はそれらに投資を続けている。"
-
  civic_ngm_information:0 "情報資本主義"
  civic_ngm_information_desc:0 "この国では情報産業が中心として発展しており、資本家はそれらに投資を続けている。"
 
@@ -540,9 +516,6 @@
 
  civic_ngm_breakdown_prevention_method:0 "絶滅防止法"
  civic_ngm_breakdown_prevention_method_desc:0 "この国において、絶滅ということは存在せず、すべての種は保存される。"
-
- civic_ngm_nature_faith:0 "自然信仰"
- civic_ngm_nature_faith_desc:0 "自然は神が作りし存在であり、自然には神が宿る。"
 
  civic_ngm_grand_monument:0 "グランド・モニュメント"
  civic_ngm_grand_monument_desc:0 "建築とは自らを表現する至高の物品である。"
@@ -897,7 +870,7 @@
  policy_ngm_policies_loop_method_desc:0 "オメガ理論研究達成より選択可能"
  loop_method_loop_vic_name:0 "ループを称えよ、さすれば道は開かれん"
  NAME_NGM_loop_vic:0 "ループを称えよ、さすれば道は開かれん"
- NAME_NGM_loop_vic_desc:0 "o↑kzbdan"
+ NAME_NGM_loop_vic_desc:0 "  o↑kzbdan "
  loop_method_guruguru_name:0 "ぐるぐる"
  NAME_NGM_guruguru:0 "ぐるぐる"
  NAME_NGM_guruguru_desc:0 "ぐるぐる"
@@ -1220,30 +1193,6 @@
  job_bureau_of_ceremonies_plural:0 "式部官"
  mod_job_bureau_of_ceremonies_add:0 "式部官の職業枠"
 
- planet_ngm_secretary:0 "書記"
- ngm_secretary:0 "書記"
- ngm_secretary_desc:0 "政党の幹部で、あらゆる官僚や軍人に指導を行う政治的エリート"
- job_ngm_secretary:0 "書記"
- job_ngm_secretary_plural:0 "書記"
- job_ngm_secretary_desc:0 "政党の幹部で、あらゆる官僚や軍人に指導を行う政治的エリート"
- mod_job_ngm_secretary_add:0 "書記の職業枠"
- mod_job_ngm_secretary_per_pop:0 "$VALUE$ POP につき$job_ngm_secretary$の職業枠§G+1§!"
- mod_job_ngm_secretary_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ngm_secretary_add£ §G+1§!"
- job_ngm_secretary_effect_desc:0 "£job_ngm_secretary£ $job_ngm_secretary_plural$は£mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!と £engineering£ §Y工学§!と§Y社会主義魅力§!を生産する"
- civic_tooltip_ngm_secretary_effects:0 "£building£ §Y首都建造物§!が提供する£job_administrator£ §Y$job_administrator$§!枠の一部が £job_ngm_secretary£§Y$job_ngm_secretary_plural$§!枠に置き換わる"
-
- planet_ngm_pacifist:0 "宣撫官"
- ngm_pacifist:0 "宣撫官"
- ngm_pacifist_desc:0 "民衆を鼓舞し、扇動する言葉の魔術師"
- job_ngm_pacifist:0 "宣撫官"
- job_ngm_pacifist_plural:0 "宣撫官"
- job_ngm_pacifist_desc:0 "民衆を鼓舞し、扇動する言葉の魔術師"
- mod_job_ngm_pacifist_add:0 "宣撫官の職業枠"
- mod_job_ngm_pacifist_per_pop:0 "$VALUE$ POP につき$job_ngm_pacifist$の職業枠§G+1§!"
- mod_job_ngm_pacifist_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ngm_pacifist_add£ §G+1§!"
- job_ngm_pacifist_effect_desc:0 "£job_ngm_pacifist£ $job_ngm_pacifist_plural$は§Y労働者幸福度§!、§Y労働者生産力§!、§Y実利主義魅力§!を生産する"
- civic_tooltip_ngm_pacifist_effects:0 "£building£ §Y首都建造物§!が提供する£job_administrator£ §Y$job_administrator$§!枠の一部が £job_ngm_pacifist£§Y$job_ngm_pacifist_plural$§!枠に置き換わる"
-
  planet_ngm_crest_bearer:0 "紋章官"
  ngm_crest_bearer:0 "紋章官"
  ngm_crest_bearer_desc:0 "貴族の称号や紋章を管理し、運用する宮廷官僚"
@@ -1254,7 +1203,7 @@
  mod_job_ngm_crest_bearer_per_pop:0 "$VALUE$ POP につき$job_ngm_crest_bearer$の職業枠§G+1§!"
  mod_job_ngm_crest_bearer_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ngm_crest_bearer_add£ §G+1§!"
  job_ngm_crest_bearer_effect_desc:0 "£job_ngm_crest_bearer£ $job_ngm_crest_bearer_plural$は£unity£ §Y$unity$§!と£influence£ §Y$influence$§!と§Y栄望主義魅力§!を生産する"
- civic_tooltip_ngm_crest_bearer_effects:0 "£building£ §Y首都建造物§!が提供する£job_administrator£ §Y$job_administrator$§!枠の一部が £job_ngm_crest_bearer£§Y$job_ngm_crest_bearer_plural$§!枠に置き換わる"
+ civic_tooltip_ngm_crest_bearer_effects:0 "£building£ §Y首都建造物§!が提供する£job_politician£ §Y$job_politician$§!枠の一部が £job_ngm_crest_bearer£§Y$job_ngm_crest_bearer_plural$§!枠に置き換わる"
 
  planet_ngm_senior_advisor:0 "高級参謀"
  ngm_senior_advisor:0 "高級参謀"
@@ -1266,7 +1215,7 @@
  mod_job_ngm_senior_advisor_per_pop:0 "$VALUE$ POP につき$job_ngm_senior_advisor$の職業枠§G+1§!"
  mod_job_ngm_senior_advisor_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ngm_senior_advisor_add£ §G+1§!"
  job_ngm_senior_advisor_effect_desc:0 "£job_ngm_senior_advisor£ $job_ngm_senior_advisor_plural$は £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!と £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!と§Y栄望主義魅力§!を増加させ、 £defense_army£ §Y防衛軍§!を編成する"
- civic_tooltip_ngm_senior_advisor_effects:0 "£building£ §Y首都建造物§!が提供する£job_administrator£ §Y$job_administrator$§!枠の一部が £job_ngm_senior_advisor£§Y$job_ngm_senior_advisor_plural$§!枠に置き換わる"
+ civic_tooltip_ngm_senior_advisor_effects:0 "£building£ §Y首都建造物§!が提供する£job_politician£ §Y$job_politician$§!枠の一部が £job_ngm_senior_advisor£§Y$job_ngm_senior_advisor_plural$§!枠に置き換わる"
 
  planet_ngm_heroes_of_society:0 "社会的英雄"
  ngm_heroes_of_society:0 "社会的英雄"
@@ -1278,31 +1227,7 @@
  mod_job_ngm_heroes_of_society_pop:0 "$VALUE$ POP につき$job_ngm_heroes_of_society$の職業枠§G+1§!"
  mod_job_ngm_heroes_of_society_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ngm_heroes_of_society_add£ §G+1§!"
  job_ngm_heroes_of_society_effect_desc:0 "£job_ngm_heroes_of_society£ $job_ngm_heroes_of_society_plural$は £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!と £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!を産出する"
- civic_tooltip_ngm_heroes_of_society_effects:0 "£building£ §Y首都建造物§!が提供する£job_administrator£ §Y$job_administrator$§!枠の一部が £job_ngm_heroes_of_society£§Y$job_ngm_heroes_of_society_plural$§!枠に置き換わる"
-
- planet_ngm_superintendent_of_wilderness:0 "大自然監督官"
- ngm_superintendent_of_wilderness:0 "大自然監督官"
- ngm_superintendent_of_wilderness_desc:0 "国家の自然を管理し、保全を行う高級官僚"
- job_ngm_superintendent_of_wilderness:0 "大自然監督官"
- job_ngm_superintendent_of_wilderness_plural:0 "大自然監督官"
- job_ngm_superintendent_of_wilderness_desc:0 "国家の自然を管理し、保全を行う高級官僚"
- mod_job_ngm_superintendent_of_wilderness_add:0 "大自然監督官の職業枠"
- mod_job_ngm_superintendent_of_wilderness_per_pop:0 "$VALUE$ POP につき$job_ngm_superintendent_of_wilderness$の職業枠§G+1§!"
- mod_job_ngm_superintendent_of_wilderness_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ngm_superintendent_of_wilderness_add£ §G+1§!"
- job_ngm_superintendent_of_wilderness_effect_desc:0 "£job_ngm_superintendent_of_wilderness£ $job_ngm_superintendent_of_wilderness_plural$は £unity£ §Y$unity$§!と£society£ §Y$society_research$§!と £mod_pop_environment_tolerance£ §Y$MOD_POP_ENVIRONMENT_TOLERANCE$§!を産出する"
- civic_tooltip_ngm_superintendent_of_wilderness_effects:0 "£building£ §Y首都建造物§!が提供する£job_administrator£ §Y$job_administrator$§!枠の一部が £job_ngm_superintendent_of_wilderness£§Y$job_ngm_superintendent_of_wilderness_plural$§!枠に置き換わる"
-
- planet_ngm_influencer:0 "インフルエンサー"
- ngm_influencer:0 "インフルエンサー"
- ngm_influencer_desc:0 "現代社会で様々なコンテンツを利用して他者の思考や行動に影響を与える有力者"
- job_ngm_influencer:0 "インフルエンサー"
- job_ngm_influencer_plural:0 "インフルエンサー"
- job_ngm_influencer_desc:0 "現代社会で様々なコンテンツを利用して他者の思考や行動に影響を与える有力者"
- mod_job_ngm_influencer_add:0 "インフルエンサーの職業枠"
- mod_job_ngm_influencer_per_pop:0 "$VALUE$ POP につき$job_ngm_influencer$の職業枠§G+1§!"
- mod_job_ngm_influencer_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ngm_influencer_add£ §G+1§!"
-
- civic_tooltip_ngm_high_priest_effects:0 "£building£ §Y首都建造物§!が提供する£job_administrator£ §Y$job_administrator$§!枠の一部が £job_high_priest£§Y$job_high_priest_plural$§!枠に置き換わる"
+ civic_tooltip_ngm_heroes_of_society_effects:0 "£building£ §Y首都建造物§!が提供する£job_politician£ §Y$job_politician$§!枠の一部が £job_ngm_heroes_of_society£§Y$job_ngm_heroes_of_society_plural$§!枠に置き換わる"
 
 ##############################
 #####    リーダー特性    ######
@@ -1570,7 +1495,6 @@
 
  ngm_government3a:0 "厭戦活動"
  ngm_government3d:0 "$厭戦活動$"
- ngm_government3e:0 "$厭戦活動$"
 
  ngm_with_honor_1_modifier:0 "死は無であるが、敗北と不名誉に生きることは、まさに日常の死なのだ。"
  ngm_with_honor_2_modifier:0 "屈辱を与えられた。"

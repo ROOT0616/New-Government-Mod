@@ -62,7 +62,10 @@ leader_trait_ngm_governor_government_guardianship = {
 	modifier = {
 		species_leader_exp_gain = 0.2
 		planet_jobs_unity_produces_mult = 0.1
-		country_admin_cap_mult = 0.1
+		empire_size_mult = -0.05
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -83,6 +86,9 @@ leader_trait_ngm_scientist_government_guardianship = {
 		science_ship_survey_speed = 0.1
 		all_technology_research_speed = 0.05
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
 leader_trait_ngm_admiral_government_guardianship = {
@@ -102,6 +108,9 @@ leader_trait_ngm_admiral_government_guardianship = {
 		ships_upkeep_mult = -0.1
 		ship_speed_mult = 0.1
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
 leader_trait_ngm_general_government_guardianship = {
@@ -120,6 +129,9 @@ leader_trait_ngm_general_government_guardianship = {
 		species_leader_exp_gain = 0.2
 		armies_upkeep_mult = -0.1
 		army_morale = 0.2
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 

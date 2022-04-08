@@ -164,12 +164,12 @@ civic_lax_building_codes = {
 	}
 }
 
-#10.真実と和解委員会		受容主義、中立主義。権威主義、実利主義、狂信的資本主義ではない				幸福度+10％、統合力+10％、使節+1
+#10.真実と和解委員会		受容主義、権威主義				幸福度+10％、統合力+10％、使節+1
 civic_truth_and_reconciliation_commission = {
 	possible = {
 		ethics = {
 			OR = {
-				text = civic_tooltip_xenophile_or_neutralism
+				text = civic_tooltip_xenophile
 				value = ethic_xenophile
 				value = ethic_fanatic_xenophile
 			}
@@ -262,7 +262,7 @@ civic_ngm_separation_of_powers = {
 	modifier = {
 		planet_crime_mult = -0.1
 		country_base_influence_produces_add = 1
-		country_election_influence_cost_mult = 1
+		country_election_cost_mult = 1
 	}
 }
 
@@ -282,7 +282,7 @@ civic_ngm_kakistocracy = {
 		planet_crime_mult = 0.5
 		planet_stability_add = -10
 		pop_happiness = -0.2
-		country_election_influence_cost_mult = -0.5
+		country_election_cost_mult = -0.5
 		country_energy_produces_mult = 0.2
 		trade_value_mult = 0.2
 		country_base_influence_produces_add = 1
@@ -698,6 +698,7 @@ civic_ngm_space_security_headquarters = {
 
 # 乱脈的出生率 random_birth_rate		(ゲーム開始後の追加削除不可)Pop成長率+10%、幸福度-5%、住居使用量+5%
 civic_ngm_random_birth_rate = {
+	modification = no
 	random_weight = {
 		base = 5
 	}
@@ -735,6 +736,7 @@ civic_ngm_virtual_society = {
 
 # 健康的習慣 healthy_habits			(この国の国民は運動と食事、適度な日向ぼっこにより健康的な生活を送っている。)(ゲーム開始後の追加削除不可)リーダー寿命+10年、幸福度+5%
 civic_ngm_healthy_habits = {
+	modification = no
 	random_weight = {
 		base = 5
 	}
@@ -803,30 +805,6 @@ civic_ngm_religious_republicanism = {
 	modifier = {
 		country_unity_produces_mult = 0.1
 		planet_stability_add = 5
-	}
-}
-
-# 人民民主制 peoples_democracy	(民主制、社会主義) Pop幸福度+5%、労働者生産量+5%、行政官の一人を書記に置換え。
-civic_ngm_peoples_democracy = {
-	possible = {
-		ethics = {
-			OR = {
-				text = civic_tooltip_socialism
-				value = ethic_socialism
-				value = ethic_fanatic_socialism
-			}
-		}
-		authority = {
-			value = auth_democratic
-		}
-	}
-	random_weight = {
-		base = 5
-	}
-	description = "civic_tooltip_ngm_secretary_effects"
-	modifier = {
-		pop_happiness = 0.05
-		planet_jobs_worker_produces_mult = 0.05
 	}
 }
 
@@ -1194,6 +1172,7 @@ civic_ngm_cosmic_scale_liberation = {
 
 # 究極の思想的自由 ultimate_freedom_of_thought	 (狂信的平等)(ゲーム開始後の追加削除不可)				管理許容量+30%、安定度-10、統治志向魅力-30%
 civic_ngm_ultimate_freedom_of_thought = {
+	modification = no
 	possible = {
 		ethics = {
 			value = ethic_fanatic_egalitarian
@@ -1204,7 +1183,7 @@ civic_ngm_ultimate_freedom_of_thought = {
 	}
 	description = civic_tooltip_ngm_not_removed
 	modifier = {
-		country_admin_cap_mult = 0.3
+		empire_size_mult = -0.15
 		planet_stability_add = -10
 		pop_government_ethic_attraction = -0.3
 	}
@@ -1585,6 +1564,7 @@ civic_ngm_military_regime = {
 
 # 闘争のための闘争 The_Struggle_for_Struggle	(狂信軍国)(ゲーム開始後の追加削除不可)		戦争疲弊-20%、戦時中の合金生産量+10%、軍艦建造コスト-5%
 civic_ngm_The_Struggle_for_Struggle = {
+	modification = no
 	possible = {
 		ethics = {
 			value = ethic_fanatic_militarist
@@ -1908,7 +1888,7 @@ civic_ngm_zaibatsu = {
 		base = 5
 	}
 	modifier = {
-		country_admin_cap_mult = 0.2
+		empire_size_mult = -0.1
 		trade_value_mult = 0.1
 	}
 	description = "civic_tooltip_ngm_zaibatsu_effects"
