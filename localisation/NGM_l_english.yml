@@ -1278,199 +1278,6 @@
  ngm_space_time_continuum_ai:0 "時空超越機"
  ngm_space_time_continuum_ai_desc:0 ""
 
- tr_ngm_sniper_debuff_1:0 "狙い撃ち"
- tr_ngm_sniper_debuff_2:0 "$tr_ngm_sniper_debuff_1$"
- tr_ngm_sniper_debuff_3:0 "$tr_ngm_sniper_debuff_1$"
- tr_ngm_sniper_debuff_4:0 "$tr_ngm_sniper_debuff_1$"
- tr_ngm_sniper_debuff_5:0 "$tr_ngm_sniper_debuff_1$"
- tr_ngm_sniper_debuff_6:0 "$tr_ngm_sniper_debuff_1$"
- tr_ngm_sniper_debuff_7:0 "$tr_ngm_sniper_debuff_1$"
- tr_ngm_sniper_debuff_8:0 "$tr_ngm_sniper_debuff_1$"
-
- tr_ngm_penetration_debuff_1:0 "浸透"
- tr_ngm_penetration_debuff_2:0 "$tr_ngm_penetration_debuff_1$"
- tr_ngm_penetration_debuff_3:0 "$tr_ngm_penetration_debuff_1$"
- tr_ngm_penetration_debuff_4:0 "$tr_ngm_penetration_debuff_1$"
- tr_ngm_penetration_debuff_5:0 "$tr_ngm_penetration_debuff_1$"
- tr_ngm_penetration_debuff_6:0 "$tr_ngm_penetration_debuff_1$"
- tr_ngm_penetration_debuff_7:0 "$tr_ngm_penetration_debuff_1$"
- tr_ngm_penetration_debuff_8:0 "$tr_ngm_penetration_debuff_1$"
-
- tr_ngm_freedom_finish_debuff_1:0 "自由"
- tr_ngm_freedom_finish_debuff_2:0 "$tr_ngm_freedom_finish_debuff_1$"
- tr_ngm_freedom_finish_debuff_3:0 "$tr_ngm_freedom_finish_debuff_1$"
- tr_ngm_freedom_finish_debuff_4:0 "$tr_ngm_freedom_finish_debuff_1$"
- tr_ngm_freedom_finish_debuff_5:0 "$tr_ngm_freedom_finish_debuff_1$"
- tr_ngm_freedom_finish_debuff_6:0 "$tr_ngm_freedom_finish_debuff_1$"
- tr_ngm_freedom_finish_debuff_7:0 "$tr_ngm_freedom_finish_debuff_1$"
- tr_ngm_freedom_finish_debuff_8:0 "$tr_ngm_freedom_finish_debuff_1$"
-
- tr_ngm_sabotage_debuff_1:0 "破壊工作"
- tr_ngm_sabotage_debuff_2:0 "$tr_ngm_sabotage_debuff_1$"
- tr_ngm_sabotage_debuff_3:0 "$tr_ngm_sabotage_debuff_1$"
- tr_ngm_sabotage_debuff_4:0 "$tr_ngm_sabotage_debuff_1$"
- tr_ngm_sabotage_debuff_5:0 "$tr_ngm_sabotage_debuff_1$"
- tr_ngm_sabotage_debuff_6:0 "$tr_ngm_sabotage_debuff_1$"
- tr_ngm_sabotage_debuff_7:0 "$tr_ngm_sabotage_debuff_1$"
- tr_ngm_sabotage_debuff_8:0 "$tr_ngm_sabotage_debuff_1$"
-
- tr_ngm_constant_obstruction_debuff_1:0 "恒常的妨害"
- tr_ngm_constant_obstruction_debuff_2:0 "$tr_ngm_constant_obstruction_debuff_1$"
- tr_ngm_constant_obstruction_debuff_3:0 "$tr_ngm_constant_obstruction_debuff_1$"
- tr_ngm_constant_obstruction_debuff_4:0 "$tr_ngm_constant_obstruction_debuff_1$"
- tr_ngm_constant_obstruction_debuff_5:0 "$tr_ngm_constant_obstruction_debuff_1$"
- tr_ngm_constant_obstruction_debuff_6:0 "$tr_ngm_constant_obstruction_debuff_1$"
- tr_ngm_constant_obstruction_debuff_7:0 "$tr_ngm_constant_obstruction_debuff_1$"
- tr_ngm_constant_obstruction_debuff_8:0 "$tr_ngm_constant_obstruction_debuff_1$"
-
- tr_ngm_ministry_engagement_buff_1:0 "国家宣伝省"
- tr_ngm_ministry_engagement_buff_2:0 "$tr_ngm_ministry_engagement_buff_1$"
- tr_ngm_ministry_engagement_buff_3:0 "$tr_ngm_ministry_engagement_buff_1$"
- tr_ngm_ministry_engagement_buff_4:0 "$tr_ngm_ministry_engagement_buff_1$"
- tr_ngm_ministry_engagement_buff_5:0 "$tr_ngm_ministry_engagement_buff_1$"
-
- tr_ngm_neighbor_finish_buff:0 "善隣完遂"
-
- tr_ngm_military_police_buff:0 "憲兵隊"
-
- tr_ngm_margin_adopt_buff:0 "余裕取得"
-
- tr_ngm_margin_finish_buff:0 "余裕完遂"
-
- tr_ngm_weapons_arsenal_country_buff:0 "軍事国家"
-
- ap_ngm_chio_debuff_1:0 "恒常的敵対諜報活動"
- ap_ngm_chio_debuff_2:0 "$ap_ngm_chio_debuff_1$"
- ap_ngm_chio_debuff_3:0 "$ap_ngm_chio_debuff_1$"
- ap_ngm_chio_debuff_4:0 "$ap_ngm_chio_debuff_1$"
- ap_ngm_chio_debuff_5:0 "$ap_ngm_chio_debuff_1$"
- ap_ngm_chio_debuff_6:0 "$ap_ngm_chio_debuff_1$"
- ap_ngm_chio_debuff_7:0 "$ap_ngm_chio_debuff_1$"
- ap_ngm_chio_debuff_8:0 "$ap_ngm_chio_debuff_1$"
-
- ngm_olympic_founder_planet_modifier:0 "国際大会開催地"
- ngm_olympic_founder_planet_modifier_desc:0 ""
-
- ngm_olympic_1_event_modifier:0 "地元の好況"
- ngm_olympic_1_event_modifier_desc:0 ""
-
- ngm_olympic_2_event_modifier:0 "テロ行為の事前発覚"
- ngm_olympic_2_event_modifier_desc:0 ""
-
- ngm_olympic_3_event_modifier:0 "外交官の関心"
- ngm_olympic_3_event_modifier_desc:0 ""
-
- ngm_olympic_4_event_modifier:0 "大会への熱狂"
- ngm_olympic_4_event_modifier_desc:0 ""
-
- ngm_olympic_5_event_modifier:0 "国家規模の好景気"
- ngm_olympic_5_event_modifier_desc:0 ""
-
- ngm_olympic_6_event_modifier:0 "テロ組織の粉砕"
- ngm_olympic_6_event_modifier_desc:0 ""
-
- ngm_olympic_7_event_modifier:0 "大会記念品のヒット"
- ngm_olympic_7_event_modifier_desc:0 ""
-
- ngm_olympic_8_event_modifier:0 "移民の流入"
- ngm_olympic_8_event_modifier_desc:0 ""
-
- ngm_olympic_9_event_modifier:0 "国威発揚"
- ngm_olympic_9_event_modifier_desc:0 ""
-
- ngm_olympic_10_event_modifier:0 "歴史的記録"
- ngm_olympic_10_event_modifier_desc:0 ""
-
- ngm_olympic_11_event_modifier:0 "世界的配信"
- ngm_olympic_11_event_modifier_desc:0 ""
-
- ngm_olympic_12_event_modifier:0 "観光地評価"
- ngm_olympic_12_event_modifier_desc:0 ""
-
- ngm_olympic_13_event_modifier:0 "効率的運営"
- ngm_olympic_13_event_modifier_desc:0 ""
-
- ngm_olympic_14_event_modifier:0 "犯罪流入"
- ngm_olympic_14_event_modifier_desc:0 ""
-
- ngm_olympic_15_event_modifier:0 "大会事故発生"
- ngm_olympic_15_event_modifier_desc:0 ""
-
- ngm_olympic_16_event_modifier:0 "テロ発生"
- ngm_olympic_16_event_modifier_desc:0 ""
-
- ngm_olympic_17_event_modifier:0 "テロ発生"
- ngm_olympic_17_event_modifier_desc:0 ""
-
- ngm_olympic_18_event_modifier:0 "予想外の不況"
- ngm_olympic_18_event_modifier_desc:0 ""
-
- ngm_olympic_1_game_modifier:0 "息をのむ競技"
- ngm_olympic_1_game_modifier_desc:0 ""
-
- ngm_olympic_2_game_modifier:0 "感動的選手"
- ngm_olympic_2_game_modifier_desc:0 ""
-
- ngm_olympic_3_game_modifier:0 "熾烈な競技"
- ngm_olympic_3_game_modifier_desc:0 ""
-
- ngm_olympic_4_game_modifier:0 "歴史的一戦"
- ngm_olympic_4_game_modifier_desc:0 ""
-
- ngm_olympic_5_game_modifier:0 "歴史的一戦"
- ngm_olympic_5_game_modifier_desc:0 ""
-
- ngm_olympic_6_game_modifier:0 "全銀河記録の樹立"
- ngm_olympic_6_game_modifier_desc:0 ""
-
- ngm_olympic_7_game_modifier:0 "観客の熱狂"
- ngm_olympic_7_game_modifier_desc:0 ""
-
- ngm_olympic_8_game_modifier:0 "ドーピングの発覚"
- ngm_olympic_8_game_modifier_desc:0 ""
-
- ngm_olympic_9_game_modifier:0 "ドーピングの発覚"
- ngm_olympic_9_game_modifier_desc:0 ""
-
- ngm_olympic_10_game_modifier:0 "競技における不正"
- ngm_olympic_10_game_modifier_desc:0 ""
-
- ngm_olympic_11_game_modifier:0 "選手によるヘイトクライム"
- ngm_olympic_11_game_modifier_desc:0 ""
-
- ngm_olympic_1win_modifier:0 "オリンピック1位"
- ngm_olympic_1win_modifier_desc:0 ""
-
- ngm_olympic_2win_modifier:0 "オリンピック2位"
- ngm_olympic_2win_modifier_desc:0 ""
-
- ngm_olympic_3win_modifier:0 "オリンピック3位"
- ngm_olympic_3win_modifier_desc:0 ""
-
- ngm_olympic_buff_modifier:0 "オリンピック 参加賞"
- ngm_olympic_buff_modifier_desc:0 ""
-
- first_covid_a_planet_modifier:0 "1-a"
- first_covid_a_planet_modifier_desc:0 ""
- second_covid_a_planet_modifier:0 "2-a"
- second_covid_a_planet_modifier_desc:0 ""
- third_covid_a_planet_modifier:0 "3-a"
- third_covid_a_planet_modifier_desc:0 ""
-
- first_covid_b_planet_modifier:0 "1-b"
- first_covid_b_planet_modifier_desc:0 ""
- second_covid_b_planet_modifier:0 "2-b"
- second_covid_b_planet_modifier_desc:0 ""
- third_covid_b_planet_modifier:0 "3-b"
- third_covid_b_planet_modifier_desc:0 ""
-
- first_covid_c_planet_modifier:0 "1-c"
- first_covid_c_planet_modifier_desc:0 ""
- second_covid_c_planet_modifier:0 "2-c"
- second_covid_c_planet_modifier_desc:0 ""
- third_covid_c_planet_modifier:0 "3-c"
- third_covid_c_planet_modifier_desc:0 ""
-
  civic_tooltip_ngm_experimental_substance_effects:0 "§Rゲーム開始後の追加削除不可§!\n§Y(ゲーム開始後に追加、削除すると元に戻されます。)\n\n§!首都惑星に各戦略資源特性を1つずつ付与"
 
  civic_tooltip_ngm_war_prosperity_effects:0 "戦時中の鉱物,合金,消費財生産量§G+10%§!\n戦時中の交易価値生産量§G+10%§!\n戦時中の建艦速度§G+10%§!\n非戦時中の鉱物,合金,消費財生産量§R-10%§!\n非戦時中の交易価値生産量§R-10%§!\n非戦時中の建艦速度§R-20%§!"
@@ -1496,9 +1303,6 @@
  ngm_government3a:0 "厭戦活動"
  ngm_government3d:0 "$厭戦活動$"
 
- ngm_with_honor_1_modifier:0 "死は無であるが、敗北と不名誉に生きることは、まさに日常の死なのだ。"
- ngm_with_honor_2_modifier:0 "屈辱を与えられた。"
-
  mod_weapon_role_point_defense_weapon_fire_rate_mult:0 "対空砲連射レート"
  mod_country_sr_living_metal_produces_mult:0 "月間 $sr_living_metal$"
  mod_country_sr_zro_produces_mult:0 "月間 $sr_zro$"
@@ -1518,39 +1322,6 @@
  mod_planet_buildings_energy_upkeep_mult:0 "建物の$energy$維持費"
  mod_planet_jobs_consumer_goods_upkeep_mult:0 "£job£ 職業の$consumer_goods$維持費"
  mod_planet_pops_energy_upkeep_mult:0 "Popの$energy$維持費"
-
- promoted_capitalism:0 "資本主義を推奨"
- promoted_capitalism_desc:0 "§H資本主義§!志向は政府によって推奨されている"
- suppressed_capitalism:0 "資本主義を抑圧"
- suppressed_capitalism_desc:0 "§H社会主義§!志向は政府によって抑圧されている"
- promoted_socialism:0 "社会主義を推奨"
- promoted_socialism_desc:0 "§H社会主義§!志向は政府によって推奨されている"
- suppressed_socialism:0 "社会主義を抑圧"
- suppressed_socialism_desc:0 "§H社会主義§!志向は政府によって抑圧されている"
- promoted_interventionism:0 "介入主義を推奨"
- promoted_interventionism_desc:0 "§H介入主義§!志向は政府によって推奨されている"
- suppressed_interventionism:0 "介入主義を抑圧"
- suppressed_interventionism_desc:0 "§H介入主義§!志向は政府によって抑圧されている"
- promoted_neutralism:0 "中立主義を推奨"
- promoted_neutralism_desc:0 "§H中立主義§!志向は政府によって推奨されている"
- suppressed_neutralism:0 "中立主義を抑圧"
- suppressed_neutralism_desc:0 "§H中立主義§!志向は政府によって抑圧されている"
- promoted_conservationism:0 "保全主義を推奨"
- promoted_conservationism_desc:0 "§H保全主義§!志向は政府によって推奨されている"
- suppressed_conservationism:0 "保全主義を抑圧"
- suppressed_conservationism_desc:0 "§H保全主義§!志向は政府によって抑圧されている"
- promoted_developmentalism:0 "開発主義を推奨"
- promoted_developmentalism_desc:0 "§H開発主義§!志向は政府によって推奨されている"
- suppressed_developmentalism:0 "開発主義を抑圧"
- suppressed_developmentalism_desc:0 "§H開発主義§!志向は政府によって抑圧されている"
- promoted_honorism:0 "栄望主義を推奨"
- promoted_honorism_desc:0 "§H栄望主義§!志向は政府によって推奨されている"
- suppressed_honorism:0 "栄望主義を抑圧"
- suppressed_honorism_desc:0 "§H栄望主義§!志向は政府によって抑圧されている"
- promoted_utilitarianism:0 "実利主義を推奨"
- promoted_utilitarianism_desc:0 "§H実利主義§!志向は政府によって推奨されている"
- suppressed_utilitarianism:0 "実利主義を抑圧"
- suppressed_utilitarianism_desc:0 "§H実利主義§!志向は政府によって抑圧されている"
 
 ##########################
 #####    種族特性    ######
@@ -1792,81 +1563,6 @@
  trait_ngm_merchant_from_ancient_desc:0 "はるか太古から頭脳労働者として活躍してきたため、創造やデスクワークに適性がある種族。人口過少の防止として太古に繁殖力の増強が図られている。"
 
 #######################
-#####    派閥    ######
-#######################
-
- pft_NGM_mammonism:0 "拝金主義"
- pft_NGM_mammonism_desc:0 "拝金主義者は利益の追求と資本の安定化をより重視する。"
- MAMMONISM_TRADE_SUPREMACY:0 "貿易至上主義"
- MAMMONISM_TRADE_SUPREMACY_DESC:0 "外交政策が重商主義であれば、 [Root.GetName]は喜ぶだろう。 "
- MAMMONISM_TRADE_PROFIT:0 "貿易利益"
- MAMMONISM_TRADE_PROFIT_DESC:0 "政策が富の創造であれば、 [Root.GetName]は喜ぶだろう。 "
- MAMMONISM_EXPANDING_TRADE:0 "通商の拡大"
- MAMMONISM_EXPANDING_TRADE_DESC:0 "§Y3§!つ以上の帝国と貿易協定を結べば、 [Root.GetName]は喜ぶだろう。 "
-
- pft_NGM_collectivism:0 "共産主義"
- pft_NGM_collectivism_desc:0 "共産主義者は経済的、出自的平等を目指し、社会の平等化を目指す。"
- COLLECTIVISM_SOCIAL_WELFARE:0 "社会福祉"
- COLLECTIVISM_SOCIAL_WELFARE_DESC:0 "われわれの帝国のすべての住民が§Y社会福祉§!もしくは§Yユートピアの豊かさ§!の中で暮らさせることは、 [Root.GetName]を大いに喜ぶだろう。"
- COLLECTIVISM_MILITARY_SERVICE:0 "平等の兵役"
- COLLECTIVISM_MILITARY_SERVICE_DESC:0 "我々の帝国にいるすべての種族に完全兵役が、 [Root.GetName]は喜ぶだろう。"
- COLLECTIVISM_ANTIMONARCHY:0 "反君主制"
- COLLECTIVISM_ANTIMONARCHY_DESC:0 "君主制であれば-10"
-
- pft_NGM_environmentalism:0 "環境主義"
- pft_NGM_environmentalism_desc:0 "環境主義者は惑星の環境を維持し、生命体の保全を重視する。"
- ENVIRONMENTALISM_PLANET_PRESERVATION:0 "惑星保存"
- ENVIRONMENTALISM_PLANET_PRESERVATION_DESC:0 "テラフォーミングを行えば、[Root.GetName]はを大いに喜ぶだろう。"
- ENVIRONMENTALISM_AGRICULTURAL_MAINTENANCE:0 "農業の維持"
- ENVIRONMENTALISM_AGRICULTURAL_MAINTENANCE_DESC:0 "一定の食料生産が得られれば[Root.GetName]はを大いに喜ぶだろう。"
-
- pft_NGM_industrialism:0 "産業主義"
- pft_NGM_industrialism_desc:0 "産業主義者は開発を重視し、工業化をより推し進めようとする。"
- INDUSTRIALISM_CIVILIAN_FACTORY:0 "民間工業化"
- INDUSTRIALISM_CIVILIAN_FACTORY_DESC:0 "一定の消費財生産が得られれば[Root.GetName]はを大いに喜ぶだろう。"
- INDUSTRIALISM_MILITARY_FACTORY:0 "軍事工業化"
- INDUSTRIALISM_MILITARY_FACTORY_DESC:0 "一定の合金生産が得られれば[Root.GetName]はを大いに喜ぶだろう。"
- INDUSTRIALISM_PLANETARY_REFORM:0 "惑星改造"
- INDUSTRIALISM_PLANETARY_REFORM_DESC:0 "テラフォーミングを行えば、[Root.GetName]はを大いに怒りを覚えるだろう。"
-
- pft_NGM_hawks:0 "タカ派"
- pft_NGM_hawks_desc:0 "タカ派は他国に積極的に関与して自国の存在を誇示しようとする。"
-
- pft_NGM_doves:0 "ハト派"
- pft_NGM_doves_desc:0 "ハト派は他国と距離を置き、できるかぎり安定的な立ち位置を目指そうとする。"
-
- pft_NGM_reputation:0 "名誉主義"
- pft_NGM_reputation_desc:0 "名誉主義者は名誉を重んじ、地位と名誉が維持されるべきであると考えている。"
- REPUTATION_MONARCHIST:0 "君主主義者"
- REPUTATION_MONARCHIST_DESC:0 "§Y君主制な統治形態§!の下での生活に、 [Root.GetName]は喜ぶだろう。 "
- REPUTATION_NATIONAL_INFLUENCE:0 "国家的影響"
- REPUTATION_NATIONAL_INFLUENCE_DESC:0 "少なくとも£influence£ §Y500§!を貯蔵していれば、 [Root.GetName]は喜ぶだろう。"
- REPUTATION_UNHONORIST:0 "少数派の苦悩"
- REPUTATION_NOT_UNHONORIST:0 "少数派の苦悩"
- REPUTATION_UNHONORIST_DESC:0 "[Root.Owner.GetName]の栄望主義に関わる問題を軽んじると、 [Root.GetName]は怒りを覚えるだろう。"
-
- pft_NGM_supremacy:0 "自己至上主義"
- pft_NGM_supremacy_desc:0 "自己至上主義者は自分の利益を最大化させ、他社よりも自分を維持することを重視している。"
-
- factions.1.desc.NGM_mammonism:0 "メンバーは商業的利益を重視しており、経済活動の重視を訴えている。 \n\n"
- factions.1.desc.NGM_collectivism:0 "メンバーは経済的平等と唱えており、国民の均一化と経済的平等の解消を求めている。 \n\n"
- factions.1.desc.NGM_environmentalism:0 "メンバーはすべての惑星に対しての環境保全と種の保存を強く求めている。 \n\n"
- factions.1.desc.NGM_industrialism:0 "メンバーは重工業の発展と惑星開発を進めるようロビー活動を始めている。 \n\n"
- factions.1.desc.NGM_hawks:0 "メンバーは他国に対して強硬な姿勢に出ることと、外交的干渉を支持して活動を始めている。 \n\n"
- factions.1.desc.NGM_doves:0 "メンバーは他国との等距離外交を唱えており、過度な干渉や介入を慎むよう政府に要求している。 \n\n"
- factions.1.desc.NGM_reputation:0 "メンバーは栄光と名誉を重んじ、他国に誇れる立場を主張しながら浸透している。 \n\n"
- factions.1.desc.NGM_supremacy:0 "メンバーは目に見える利益を尊重しており、実益につながる行動を求めている。 \n\n"
-
- factions.2000.desc.NGM_mammonism:0 "この派閥が政府に組み入れられたことで、 政府はより§H資本主義§!的になったようだ。 \n\n"
- factions.2000.desc.NGM_collectivism:0 "この派閥が政府に組み入れられたことで、 政府はより§H社会主義§!的になったようだ。 \n\n"
- factions.2000.desc.NGM_environmentalism:0 "この派閥が政府に組み入れられたことで、 政府はより§H保全主義§!的になったようだ。 \n\n"
- factions.2000.desc.NGM_industrialism:0 "この派閥が政府に組み入れられたことで、 政府はより§H開発主義§!的になったようだ。 \n\n"
- factions.2000.desc.NGM_hawks:0 "この派閥が政府に組み入れられたことで、 政府はより§H介入主義§!的になったようだ。 \n\n"
- factions.2000.desc.NGM_doves:0 "この派閥が政府に組み入れられたことで、 政府はより§H中立主義§!的になったようだ。 \n\n"
- factions.2000.desc.NGM_reputation:0 "この派閥が政府に組み入れられたことで、 政府はより§H栄望主義§!的になったようだ。 \n\n"
- factions.2000.desc.NGM_supremacy:0 "この派閥が政府に組み入れられたことで、 政府はより§H実利主義§!的になったようだ。 \n\n"
-
-#######################
 #####    連邦    ######
 #######################
 
@@ -1875,11 +1571,6 @@
  resolution_ngm_galactic_scale_1_desc:0 ""
  resolution_ngm_galactic_scale_2:0 "銀河規模の拡大の廃止"
  resolution_ngm_galactic_scale_2_desc:0 ""
-
- resolution_category_ngm_olympic_form:0 "国際大会"
- resolution_ngm_olympic_form:0 "国際大会の形成"
- resolution_ngm_olympic_form_desc:0 "国際政治に縛られない事実上の銀河的交易は、 異種族同士が初めて出会った時点から存在した。 \n\n我々は銀河のリーダーとして、 皆が利益を得られるようにすべく、 §Yこの商業フォーラムを公認する§!べき時が来ている。 "
- resolution_ngm_olympic_form_effect_success:0 "$ngm_government.100.name$」イベントチェーンを開始する。"
 
  NGM_CEPA_federation:0 "包括的経済連携協定"
  NGM_CEPA_federation_desc:0 "この連邦は、緩やかな経済的共同体の確立と経済的深化を目指している。"
@@ -2046,17 +1737,6 @@
 #####    戦争目標    ######
 ##########################
 
- casus_belli_cb_ngm_with_honor:0 "名誉にかけて"
- casus_belli_cb_ngm_with_honor_desc:0 "我が国の名誉を汚す存在は許されるべきではない。流される血液により汚名をそそぐべきだ。"
- war_goal_wg_ngm_with_honor:0 "名誉の獲得"
- war_goal_wg_ngm_with_honor_desc:0 "他国を下し、我が国の優位を銀河中に知らしめる。"
-
- casus_belli_cb_ngm_pest_control:0 "環境保全"
- casus_belli_cb_ngm_pest_control_desc:0 "美しい自然に巣くう国家は撃滅され、改心されるべきである。"
- war_goal_wg_ngm_pest_control:0 "環境保全"
- war_goal_wg_ngm_pest_control_desc:0 "開発主義国家を保全主義へと改心させ、生物学的知見を相手に与える。"
- fail_text_wg_ngm_pest_control:0 "相手国は必要な§Y$ethic_developmentalism$§!の志向を採用していない。"
-
  casus_belli_cb_ngm_holy_wars:0 "聖戦"
  casus_belli_cb_ngm_holy_wars_desc:0 ""
  cb_ngm_holy_wars:0 "聖戦"
@@ -2070,14 +1750,6 @@
 ##########################
 #####    イベント    ######
 ##########################
-
- ngm_origin.100.name:0 "追跡者"
- ngm_origin.100.desc:0 "やつらが未来から追いかけて来た\nなんとかするんだ"
-
- ngm_origin.101.name:0 "追跡者の撃退"
- ngm_origin.101.desc:0 "我々を追って無茶な追跡を行っていた艦隊は撃滅された。おそらく、新たな部隊が過去へ"戻って"くるだろうが、しばらくは何とかなるだろう。\nまた、彼らは我々が再発見できていない技術を多数持ち込んでくれたようだ。"
- ngm_origin.101.a:0 "早速活用しよう"
- ngm_origin.101.b:0 "いつまで追いかけてくるんだ"
 
  ngm_government.1.name:0 "作戦会議"
  ngm_government.1.desc:0 "我が国の戦争に対して、各所から所見が届いている。統合参謀本部からは必要な補給物資を将兵に与えることで士気を高めることができると指摘している。しかし、前線指揮官達は補給物資を別の用途で使用することで戦力を向上させることができると主張している。\nこれらとは別に陸軍将校からは臨時の補強計画が提案されている。\n本日の会議は限られた資源をどのように投入するかという内容である。"
@@ -2120,42 +1792,11 @@
  ngm_government.7.b:0 "政府は提督を支持する。"
  ngm_government.7.c:0 "政府は将軍を支持する。"
 
- ngm_crisis.2.name:0 "不穏な気配"
- ngm_crisis.2.desc:0 "[Root.GetName]で体調不良を訴えるものが増えているらしい"
- ngm_crisis.2.a:0 "a"
- ngm_crisis.2.b:0 "b"
- ngm_crisis.2.c:0 "c"
- ngm_crisis.2.d:0 "d"
-
- ngm_crisis.3.name:0 "何かがおかしい"
- ngm_crisis.3.desc:0 "最近、[Root.GetName]で死者が増加しているようだ"
- ngm_crisis.3.a:0 "a"
- ngm_crisis.3.b:0 "b"
- ngm_crisis.3.c:0 "c"
- ngm_crisis.3.d:0 "d"
-
 ##########################
 #####    そのほか    ######
 ##########################
 
  civic_tooltip_fsass:0 "§Y寡頭制§!か§Y独裁制§!か§Y君主制§!である"
-
- civic_tooltip_socialism:0 "§Y社会主義§!系統である"
- civic_tooltip_not_socialism:0 "§Y社会主義§!系統ではない"
- civic_tooltip_capitalism:0 "§Y資本主義§!系統である"
- civic_tooltip_not_capitalism:0 "§Y資本主義§!系統ではない"
- civic_tooltip_interventionism:0 "§Y介入主義§!系統である"
- civic_tooltip_not_interventionism:0 "§Y介入主義§!系統ではない"
- civic_tooltip_neutralism:0 "§Y中立主義§!系統である"
- civic_tooltip_not_neutralism:0 "§Y中立主義§!系統ではない"
- civic_tooltip_conservationism:0 "§Y保全主義§!系統である"
- civic_tooltip_not_conservationism:0 "§Y保全主義§!系統ではない"
- civic_tooltip_developmentalism:0 "§Y開発主義§!系統である"
- civic_tooltip_not_developmentalism:0 "§Y開発主義§!系統ではない"
- civic_tooltip_honorism:0 "§Y栄望主義§!系統である"
- civic_tooltip_not_honorism:0 "§Y栄望主義§!系統ではない"
- civic_tooltip_utilitarianism:0 "§Y実利主義§!系統である"
- civic_tooltip_not_utilitarianism:0 "§Y実利主義§!系統ではない"
 
  civic_tooltip_authoritarian_or_xenophile:0 "§Y権威主義§!系統か§Y受容主義§!系統である"
  civic_tooltip_authoritarian_or_militarist:0 "§Y権威主義§!系統か§Y軍国主義§!系統である"
