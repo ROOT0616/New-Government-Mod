@@ -1,9 +1,17 @@
-#儀典局	  式部官x2 エネルギ200  鉱石400
+# 1.儀典局	  式部官x2 エネルギ200  鉱石400
 #式武官   統合力10 影響力1 → 勲章0.02
-building_bureau_of_ceremonies = {
+building_ngm_bureau_of_ceremonies = {
 	base_buildtime = 360
 	base_cap_amount = 1
 	category = government
+	potential = {
+		owner = {
+			is_gestalt = no
+			NOT = {
+				has_country_flag = build_ngm_bureau_of_ceremonies
+			}
+		}
+	}
 	prerequisites = {
 		"tech_ceremony_theory"
 	}
@@ -20,10 +28,48 @@ building_bureau_of_ceremonies = {
 	planet_modifier = {
 		job_bureau_of_ceremonies_add = 2
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_bureau_of_ceremonies_effect_desc
+	}
+	on_built = {
+		owner = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = build_ngm_bureau_of_ceremonies
+					}
+				}
+				set_country_flag = build_ngm_bureau_of_ceremonies
+			}
+		}
+	}
+	on_destroy = {
+		owner = {
+			remove_country_flag = build_ngm_bureau_of_ceremonies
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = build_ngm_bureau_of_ceremonies
+		}
+	}
+	on_unqueued = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = build_ngm_bureau_of_ceremonies
+				}
+				remove_country_flag = build_ngm_bureau_of_ceremonies
+			}
+		}
+	}
 }
 
-# 初期建築物「永久の宮殿」 Perpetual Palace （古代から続くこの地を治める者のための宮殿で、列強の君主や元首が集い交渉を行うことも多かったためか、壮麗な建築でいまだに陰りを見せていない。）
-# 維持費：エネルギー10、消費財5。住居+5、快適度+5、貴族Job+1、行政官+1、紋章官+1、高級参謀+1、事務員+10、建築物Slot+16、
+# 2.初期建築物「永久の宮殿」 Perpetual Palace 
+# 維持費：エネルギー10、消費財5。住居+5、快適度+5、貴族Job+1、政治家+1、紋章官+1、高級参謀+1、事務員+10、建築物Slot+16、
 building_ngm_perpetual_palace = {
 	base_buildtime = @b2_time
 	can_build = no
@@ -45,6 +91,36 @@ building_ngm_perpetual_palace = {
 		planet_max_buildings_add = 16
 		planet_max_districts_add = 10
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_noble_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_politician_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_ngm_crest_bearer_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_ngm_senior_advisor_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
+	}
 	resources = {
 		category = planet_buildings
 		upkeep = {
@@ -53,10 +129,10 @@ building_ngm_perpetual_palace = {
 	}
 }
 
-# 銀河百貨店	ginga_department_store	(全銀河の嗜好品が集まる集合商業施設)						(惑星につき一つ:支社の価値+20%、惑星快適度+5、事務員+3)
+# 3.銀河百貨店	ginga_department_store							(惑星につき一つ:支社の価値+20%、惑星快適度+5、事務員+3)
 building_ngm_ginga_department_store = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -70,6 +146,12 @@ building_ngm_ginga_department_store = {
 		job_clerk_add = 3
 		planet_amenities_add = 5
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
+	}
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
@@ -82,15 +164,12 @@ building_ngm_ginga_department_store = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 企業大学校  business_school		(経済や経営を学ぶ者の専門大学)							(惑星につき一つ:企業国家の研究算出各々+10、研究者+1)				:この企業は高度な技術を運用した工業製品を取り扱っており、極めて高度な製品はあらゆる産業の礎となっている。
+# 4.企業大学校  business_school		(惑星につき一つ:企業国家の研究算出各々+10、研究者+1)				:この企業は高度な技術を運用した工業製品を取り扱っており、極めて高度な製品はあらゆる産業の礎となっている。
 building_ngm_business_school = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -101,6 +180,12 @@ building_ngm_business_school = {
 	}
 	planet_modifier = {
 		job_researcher_add = 1
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_researcher_effect_desc
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -116,15 +201,12 @@ building_ngm_business_school = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 星間工場群	star_workshop	(惑星規模に広がるコンビナート群)						(惑星につき一つ:企業国家の合金+5、企業国家の消費財+5、職人+1、冶金技師+1)	:この企業は重化学工業を中心とした大規模な工業製品を取り扱っており、その工場が惑星表面を覆うほどの工業化が進んでいる。
+# 5.星間工場群	star_workshop	(惑星規模に広がるコンビナート群)						(惑星につき一つ:企業国家の合金+5、企業国家の消費財+5、職人+1、冶金技師+1)	:この企業は重化学工業を中心とした大規模な工業製品を取り扱っており、その工場が惑星表面を覆うほどの工業化が進んでいる。
 building_ngm_star_workshop = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -136,6 +218,18 @@ building_ngm_star_workshop = {
 	planet_modifier = {
 		job_artisan_add = 1
 		job_foundry_add = 1
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_artisan_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_foundry_effect_desc
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -150,15 +244,12 @@ building_ngm_star_workshop = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 銀河サロン  galaxy_salon		(上流階級の者が集う社交界)							(惑星につき一つ:企業国家の統合力+5、企業国家の外交発言力+10、豪商+1、役員+1)	:この企業は創業家を中心に会社に多大な貢献を行った社員一家を特別役員として扱っており、企業内の団結や対外交渉などに活躍している、一種の君主制国家の様相を呈している。
+# 6.銀河サロン  galaxy_salon		(帝国に1つ:企業国家の統合力+5、企業国家の外交発言力+5%、豪商+1、役員+1)	:この企業は創業家を中心に会社に多大な貢献を行った社員一家を特別役員として扱っており、企業内の団結や対外交渉などに活躍している、一種の君主制国家の様相を呈している。
 building_ngm_galaxy_salon = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -166,13 +257,106 @@ building_ngm_galaxy_salon = {
 			has_civic = civic_ngm_hereditary_officers
 			is_criminal_syndicate = no
 		}
+		if = {
+			limit = {
+				branch_office_owner = {
+					NOR = {
+						has_country_flag = build_planet_building_ngm_galaxy_salon_1
+						has_country_flag = build_planet_building_ngm_galaxy_salon_2
+						has_country_flag = build_planet_building_ngm_galaxy_salon_3
+						has_country_flag = build_planet_building_ngm_galaxy_salon_4
+					}
+				}
+			}
+			always = yes
+		}
+		else_if = {
+			limit = {
+				branch_office_owner = {
+					has_country_flag = build_planet_building_ngm_galaxy_salon_1
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						NOT = {
+							has_country_flag = build_planet_building_ngm_galaxy_salon_1
+						}
+					}
+				}
+				always = yes
+			}
+		}
+		else_if = {
+			limit = {
+				branch_office_owner = {
+					has_country_flag = build_planet_building_ngm_galaxy_salon_2
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						NOT = {
+							has_country_flag = build_planet_building_ngm_galaxy_salon_2
+						}
+					}
+				}
+				always = yes
+			}
+		}
+		else_if = {
+			limit = {
+				branch_office_owner = {
+					has_country_flag = build_planet_building_ngm_galaxy_salon_3
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						NOT = {
+							has_country_flag = build_planet_building_ngm_galaxy_salon_3
+						}
+					}
+				}
+				always = yes
+			}
+		}
+		else_if = {
+			limit = {
+				branch_office_owner = {
+					has_country_flag = build_planet_building_ngm_galaxy_salon_4
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						NOT = {
+							has_country_flag = build_planet_building_ngm_galaxy_salon_4
+						}
+					}
+				}
+				always = yes
+			}
+		}
 	}
 	country_modifier = {
-		diplo_weight_mult = 0.05
+		diplo_weight_mult = 0.25
 	}
 	planet_modifier = {
 		job_merchant_add = 1
 		job_executive_add = 1
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_merchant_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_executive_effect_desc
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -186,15 +370,218 @@ building_ngm_galaxy_salon = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
+	on_built = {
+		if = {
+			limit = {
+				branch_office_owner = {
+					NOR = {
+						has_country_flag = build_planet_building_ngm_galaxy_salon_1
+						has_country_flag = build_planet_building_ngm_galaxy_salon_2
+						has_country_flag = build_planet_building_ngm_galaxy_salon_3
+						has_country_flag = build_planet_building_ngm_galaxy_salon_4
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = build_planet_building_ngm_galaxy_salon_1
+					}
+				}
+				set_global_flag = build_planet_building_ngm_galaxy_salon_1
+				owner = {
+					set_country_flag = build_planet_building_ngm_galaxy_salon_1
+				}
+				branch_office_owner = {
+					set_country_flag = build_planet_building_ngm_galaxy_salon_1
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_global_flag = build_planet_building_ngm_galaxy_salon_2
+					}
+				}
+				set_global_flag = build_planet_building_ngm_galaxy_salon_2
+				owner = {
+					set_country_flag = build_planet_building_ngm_galaxy_salon_2
+				}
+				branch_office_owner = {
+					set_country_flag = build_planet_building_ngm_galaxy_salon_2
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_global_flag = build_planet_building_ngm_galaxy_salon_3
+					}
+				}
+				set_global_flag = build_planet_building_ngm_galaxy_salon_3
+				owner = {
+					set_country_flag = build_planet_building_ngm_galaxy_salon_3
+				}
+				branch_office_owner = {
+					set_country_flag = build_planet_building_ngm_galaxy_salon_3
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_global_flag = build_planet_building_ngm_galaxy_salon_4
+					}
+				}
+				set_global_flag = build_planet_building_ngm_galaxy_salon_4
+				owner = {
+					set_country_flag = build_planet_building_ngm_galaxy_salon_4
+				}
+				branch_office_owner = {
+					set_country_flag = build_planet_building_ngm_galaxy_salon_4
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				branch_office_owner = {
+					OR = {
+						has_country_flag = build_planet_building_ngm_galaxy_salon_1
+						has_country_flag = build_planet_building_ngm_galaxy_salon_2
+						has_country_flag = build_planet_building_ngm_galaxy_salon_3
+						has_country_flag = build_planet_building_ngm_galaxy_salon_4
+					}
+				}
+			}
+			if = {
+				limit = {
+					branch_office_owner = {
+						has_country_flag = build_planet_building_ngm_galaxy_salon_1
+					}
+				}
+				owner = {
+					set_country_flag = build_planet_building_ngm_galaxy_salon_1
+				}
+			}
+			else_if = {
+				limit = {
+					branch_office_owner = {
+						has_country_flag = build_planet_building_ngm_galaxy_salon_2
+					}
+				}
+				owner = {
+					set_country_flag = build_planet_building_ngm_galaxy_salon_2
+				}
+			}
+			else_if = {
+				limit = {
+					branch_office_owner = {
+						has_country_flag = build_planet_building_ngm_galaxy_salon_3
+					}
+				}
+				owner = {
+					set_country_flag = build_planet_building_ngm_galaxy_salon_3
+				}
+			}
+			else_if = {
+				limit = {
+					branch_office_owner = {
+						has_country_flag = build_planet_building_ngm_galaxy_salon_4
+					}
+				}
+				owner = {
+					set_country_flag = build_planet_building_ngm_galaxy_salon_4
+				}
+			}
+		}
+	}
+	on_destroy = {
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = build_planet_building_ngm_galaxy_salon_1
+				}
+			}
+			owner = {
+				remove_country_flag = build_planet_building_ngm_galaxy_salon_1
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = build_planet_building_ngm_galaxy_salon_2
+				}
+			}
+			owner = {
+				remove_country_flag = build_planet_building_ngm_galaxy_salon_2
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = build_planet_building_ngm_galaxy_salon_3
+				}
+			}
+			owner = {
+				remove_country_flag = build_planet_building_ngm_galaxy_salon_3
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = build_planet_building_ngm_galaxy_salon_3
+				}
+			}
+			owner = {
+				remove_country_flag = build_planet_building_ngm_galaxy_salon_3
+			}
+		}
+	}
+	on_unqueued = {
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = build_planet_building_ngm_galaxy_salon_1
+				}
+			}
+			owner = {
+				remove_country_flag = build_planet_building_ngm_galaxy_salon_1
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = build_planet_building_ngm_galaxy_salon_2
+				}
+			}
+			owner = {
+				remove_country_flag = build_planet_building_ngm_galaxy_salon_2
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = build_planet_building_ngm_galaxy_salon_3
+				}
+			}
+			owner = {
+				remove_country_flag = build_planet_building_ngm_galaxy_salon_3
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = build_planet_building_ngm_galaxy_salon_3
+				}
+			}
+			owner = {
+				remove_country_flag = build_planet_building_ngm_galaxy_salon_3
+			}
+		}
 	}
 }
 
-# M&Aセンター m_a_center		(他社を評価、買収することを目的とした企業)					(惑星につき一つ:企業国家の外交発言力+10%、惑星の交易価値+30%、豪商+1、事務員+2)	:この企業は一部の持株会社が多くの企業を支配する形をとっており、ごく少数の役員やエリートによる決定が絶対視されている。
+# 7.M&Aセンター m_a_center		(惑星につき一つ:企業国家の外交発言力+10%、惑星の交易価値+30%、豪商+1、事務員+2)	:この企業は一部の持株会社が多くの企業を支配する形をとっており、ごく少数の役員やエリートによる決定が絶対視されている。
 building_ngm_m_a_center = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -211,6 +598,18 @@ building_ngm_m_a_center = {
 		job_merchant_add = 1
 		job_clerk_add = 2
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_merchant_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
+	}
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
@@ -220,15 +619,12 @@ building_ngm_m_a_center = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 銀河銀行  galactic_bank		(銀河規模に広がる投資、貯蓄、資産運用を行う銀行)				(惑星につき一つ:企業国家のエネルギー+10、惑星の交易価値+5%、事務員+3)		:この企業はコンサルティングや債権、電子通貨、金融商品等を取り扱うことに長けており、それらの産業が中心となって企業が運営されている。
+# 8.ギャラクティックバンク  galactic_bank		(惑星につき一つ:企業国家のエネルギー+10、惑星の交易価値+5%、事務員+3)		:この企業はコンサルティングや債権、電子通貨、金融商品等を取り扱うことに長けており、それらの産業が中心となって企業が運営されている。
 building_ngm_galactic_bank = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -240,6 +636,12 @@ building_ngm_galactic_bank = {
 	planet_modifier = {
 		trade_value_mult = 0.05
 		job_clerk_add = 3
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -253,15 +655,12 @@ building_ngm_galactic_bank = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 星間広告代理店	interstellar_advertising_agency	(情報を加工し、大衆に敷衍しやすい言葉で洗脳を行う企業)				(惑星につき一つ:企業国家の快適度+10、惑星の快適度+5、事務員+3)			:この企業はSNSや広告、システムエンジニアリングなどの目に見えないものを取り扱うことが多く、総じてそれらに対する造詣が深い。
+# 9.星間広告代理店	interstellar_advertising_agency	(惑星につき一つ:企業国家の快適度+10、惑星の快適度+5、事務員+3)			:この企業はSNSや広告、システムエンジニアリングなどの目に見えないものを取り扱うことが多く、総じてそれらに対する造詣が深い。
 building_ngm_IAA = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -277,6 +676,12 @@ building_ngm_IAA = {
 		planet_amenities_add = 5
 		job_clerk_add = 3
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
+	}
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
@@ -286,15 +691,12 @@ building_ngm_IAA = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 企業病院	corporate_hospital	(できるだけ安価に高品質な医療や福祉を行うことを目的とした社有の医療機関)	(惑星につき一つ:企業国家の社会学+10、惑星のPop成長速度+5%、医療従事者+1)	:この企業は利益だけではなく社員や顧客の幸福や利益を追求することを目指している。
+# 10.コーポレートメディカルセンター	corporate_hospital	(惑星につき一つ:企業国家の社会学+10、惑星のPop成長速度+5%、医療従事者+1)	:この企業は利益だけではなく社員や顧客の幸福や利益を追求することを目指している。
 building_ngm_corporate_hospital = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -306,6 +708,12 @@ building_ngm_corporate_hospital = {
 	planet_modifier = {
 		pop_growth_speed = 0.05
 		job_healthcare_add = 1
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_healthcare_effect_desc
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -319,15 +727,12 @@ building_ngm_corporate_hospital = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 惑星規模建築センター planetary_scale_building_center	(惑星で何らかの建築が行われる際に重機や物資、人員を提供する企業)		(惑星につき一つ:企業国家の鉱物+20、惑星の区域建造コスト-10%、事務員+2)		:この企業はインフラ建築や材料調達に関しての専門企業で、大規模な建築が行われる際にはこの企業の関与がないことはほとんどない。
+# 11.惑星規模建築センター planetary_scale_building_center	(惑星で何らかの建築が行われる際に重機や物資、人員を提供する企業)		(惑星につき一つ:企業建築可能slotを3つ追加、企業国家の鉱物+20、惑星の区域建造コスト-10%、事務員+2)		:この企業はインフラ建築や材料調達に関しての専門企業で、大規模な建築が行われる際にはこの企業の関与がないことはほとんどない。
 building_ngm_planetary_scale_building_center = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -337,8 +742,15 @@ building_ngm_planetary_scale_building_center = {
 		}
 	}
 	planet_modifier = {
+		planet_max_branch_office_buildings_add = 3
 		planet_districts_cost_mult = -0.1
 		job_clerk_add = 2
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -352,15 +764,12 @@ building_ngm_planetary_scale_building_center = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 企業農園	corporate_plantation	(社有の大規模な農園で、惑星特有の農作物取り扱っている。)			(惑星につき一つ:企業国家の食料+20、農民+3)					:この企業は農業を中心としており、自然と共生しつつ農業生産を行うことで環境系企業として存続している。
+# 12.企業農園	corporate_plantation	(社有の大規模な農園で、惑星特有の農作物取り扱っている。)			(惑星につき一つ:企業国家の食料+20、農民+3)					:この企業は農業を中心としており、自然と共生しつつ農業生産を行うことで環境系企業として存続している。
 building_ngm_corporate_plantation = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -371,6 +780,12 @@ building_ngm_corporate_plantation = {
 	}
 	planet_modifier = {
 		job_farmer_add = 3
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_farmer_effect_desc
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -384,15 +799,12 @@ building_ngm_corporate_plantation = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 社有宇宙港  society_cosmic_port		(物資や旅客を効率的かつ高速に取り扱うための会社専用の宇宙港)			(惑星につき一つ:惑星の交易価値+10、支社の価値+30%、事務員+2)			:この企業は物資等の輸送や運輸、旅客運送により利益を得ており、輸送分野における実績は並ぶものがない。
+# 13.社有宇宙港  society_cosmic_port		(物資や旅客を効率的かつ高速に取り扱うための会社専用の宇宙港)			(惑星につき一つ:惑星の交易価値+10、支社の価値+30%、事務員+2)			:この企業は物資等の輸送や運輸、旅客運送により利益を得ており、輸送分野における実績は並ぶものがない。
 building_ngm_society_cosmic_port = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -406,6 +818,12 @@ building_ngm_society_cosmic_port = {
 		branch_office_value_mult = 0.3
 		job_clerk_add = 2
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
+	}
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
@@ -415,15 +833,12 @@ building_ngm_society_cosmic_port = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 惑星信託銀行	planet_trust_bank	(惑星単位で資産や有価証券を運用して利益を追求する企業)				(惑星につき一つ:惑星の交易価値+30%、支社の価値+30%、豪商+1、事務員+3)		:この企業は出資者やクライアントの資産を最大化することを目指しており、倫理観を無視した投資運用を行い、利益を追求する。
+# 14.惑星信託銀行	planet_trust_bank	(惑星単位で資産や有価証券を運用して利益を追求する企業)				(惑星につき一つ:惑星の交易価値+30%、支社の価値+30%、豪商+1、事務員+3)		:この企業は出資者やクライアントの資産を最大化することを目指しており、倫理観を無視した投資運用を行い、利益を追求する。
 building_ngm_planet_trust_bank = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -438,6 +853,18 @@ building_ngm_planet_trust_bank = {
 		job_merchant_add = 1
 		job_clerk_add = 3
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_merchant_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
+	}
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
@@ -447,15 +874,12 @@ building_ngm_planet_trust_bank = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 企業諜報機関	corporate_espionage	(自社以外のあらゆる情報を収集し、他者に売却する企業)				(惑星につき一つ:企業帝国の解読力+5、惑星の犯罪度+5、事務員+2)			:この企業は国家や企業の情報を奪い、それを利用してあらゆる利益を獲得している。
+# 15.企業諜報機関	corporate_espionage	(自社以外のあらゆる情報を収集し、他者に売却する企業)				(惑星につき一つ:財閥の解読力+5、惑星の犯罪度+5、事務員+2)			:この企業は国家や企業の情報を奪い、それを利用してあらゆる利益を獲得している。
 building_ngm_corporate_espionage = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -471,6 +895,12 @@ building_ngm_corporate_espionage = {
 		planet_crime_add = 5
 		job_clerk_add = 2
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
+	}
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
@@ -480,15 +910,12 @@ building_ngm_corporate_espionage = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 惑星格付会社	planet_rating_agency	(あらゆるものを格付けし、判断基準を創出する企業)				(惑星につき一つ:企業帝国の統合力+10、惑星の統合力+5%、事務員+2)
+# 16.惑星格付会社	planet_rating_agency	(あらゆるものを格付けし、判断基準を創出する企業)				(惑星につき一つ:財閥の統合力+10、惑星の統合力+5%、事務員+2)
 building_ngm_planet_rating_agency = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -500,6 +927,12 @@ building_ngm_planet_rating_agency = {
 	planet_modifier = {
 		planet_jobs_unity_produces_mult = 0.05
 		job_clerk_add = 2
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -513,26 +946,23 @@ building_ngm_planet_rating_agency = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
-# 名称：サービス付き高官向け料亭（帝国首都にのみ建造可能）
+# 17.サービス付き高官向け料亭（帝国首都にのみ建造可能）
 # 生産物：統合力+10
 # 維持費：エネルギー10
-# 企業帝国補正：外交発言力+25%
+# 財閥補正：外交発言力+25%
 # 惑星補正：犯罪度+100、犯罪度+15%、惑星を所有する国家の暗号力-7、安定度+20、豪商の職業枠+1、役員+1、事務員+2
-# 説明文：政府高官や富裕層の贈賄や裏交渉の場として利用される娯楽施設。裏カジノや闇銀行も併設されており、犯罪企業や現地政府の影響力を拡大させるとともに、腐敗を進行させていっている......
 building_ngm_sa_ko_ryo = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
+	position_priority = 0
 	potential = {
 		has_branch_office = yes
 		is_capital = yes
 		branch_office_owner = {
+			has_valid_civic = civic_ngm_underhanded_trick
 			is_criminal_syndicate = yes
-			has_civic = civic_ngm_underhanded_trick
 		}
 	}
 	planet_modifier = {
@@ -549,6 +979,24 @@ building_ngm_sa_ko_ryo = {
 		diplo_weight_mult = 0.25
 		country_base_influence_produces_add = 0.5
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_merchant_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_executive_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
+	}
 	resources = {
 		category = planet_branch_office_buildings
 		produces = {
@@ -560,8 +1008,5 @@ building_ngm_sa_ko_ryo = {
 		upkeep = {
 			energy = 10
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }

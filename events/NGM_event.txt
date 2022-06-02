@@ -746,81 +746,78 @@ country_event = {
 	picture = GFX_evt_announcement
 	show_sound = event_activating_unknown_technology
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		months = 1
-	}
 	trigger = {
 		is_at_war = yes
 	}
-	immediate = {
-		hidden_effect = {
-			set_country_flag = ngm_government_war_flag
-		}
-		random_list = {
-			20 = {
-				country_event = {
-					id = ngm_government.2
-					days = 720
-				}
-			}
-			20 = {
-				country_event = {
-					id = ngm_government.2
-					days = 780
-				}
-			}
-			20 = {
-				country_event = {
-					id = ngm_government.2
-					days = 840
-				}
-			}
-			20 = {
-				country_event = {
-					id = ngm_government.2
-					days = 900
-				}
-			}
-			20 = {
-				country_event = {
-					id = ngm_government.2
-					days = 960
-				}
-			}
-		}
-		random_list = {
-			20 = {
-				country_event = {
-					id = ngm_government.3
-					days = 720
-				}
-			}
-			20 = {
-				country_event = {
-					id = ngm_government.3
-					days = 780
-				}
-			}
-			20 = {
-				country_event = {
-					id = ngm_government.3
-					days = 840
-				}
-			}
-			20 = {
-				country_event = {
-					id = ngm_government.3
-					days = 900
-				}
-			}
-			20 = {
-				country_event = {
-					id = ngm_government.3
-					days = 960
-				}
-			}
-		}
-	}
+	# immediate = {
+		# 	hidden_effect = {
+		# 		set_country_flag = ngm_government_war_flag
+		# 	}
+		# 	random_list = {
+		# 		20 = {
+		# 			country_event = {
+		# 				id = ngm_government.2
+		# 				days = 720
+		# 			}
+		# 		}
+		# 		20 = {
+		# 			country_event = {
+		# 				id = ngm_government.2
+		# 				days = 780
+		# 			}
+		# 		}
+		# 		20 = {
+		# 			country_event = {
+		# 				id = ngm_government.2
+		# 				days = 840
+		# 			}
+		# 		}
+		# 		20 = {
+		# 			country_event = {
+		# 				id = ngm_government.2
+		# 				days = 900
+		# 			}
+		# 		}
+		# 		20 = {
+		# 			country_event = {
+		# 				id = ngm_government.2
+		# 				days = 960
+		# 			}
+		# 		}
+		# 	}
+		# 	random_list = {
+		# 		20 = {
+		# 			country_event = {
+		# 				id = ngm_government.3
+		# 				days = 720
+		# 			}
+		# 		}
+		# 		20 = {
+		# 			country_event = {
+		# 				id = ngm_government.3
+		# 				days = 780
+		# 			}
+		# 		}
+		# 		20 = {
+		# 			country_event = {
+		# 				id = ngm_government.3
+		# 				days = 840
+		# 			}
+		# 		}
+		# 		20 = {
+		# 			country_event = {
+		# 				id = ngm_government.3
+		# 				days = 900
+		# 			}
+		# 		}
+		# 		20 = {
+		# 			country_event = {
+		# 				id = ngm_government.3
+		# 				days = 960
+		# 			}
+		# 		}
+		# 	}
+	# }
 	# 統合参謀本部に任せる。(消費財1000消費。1年間亜空間移動速度+10%)
 	option = {
 		name = ngm_government.1.a
@@ -915,228 +912,230 @@ country_event = {
 	}
 }
 
-# 2.軍事パレード(戦争期間2年以上でランダム発生)
-# 長引く戦争の影響で国民の中には厭戦感情を訴えるものも存在する。その者たちの不安を解消し、我が国の威力を誇示するために戦時の軍事パレードを行うよう国防省から提案があった。
-country_event = {
-	id = ngm_government.2
-	title = ngm_government.2.name
-	desc = ngm_government.2.desc
-	picture = GFX_evt_announcement
-	show_sound = event_activating_unknown_technology
-	is_triggered_only = yes
-	trigger = {
-		has_country_flag = ngm_government_war_flag
-		is_at_war = yes
-	}
-	# よろしい。直ちに軍事パレードだ。(影響力100消費。)
-	option = {
-		name = ngm_government.2.a
-		allow = {
-			owner = {
-				resource_stockpile_compare = {
-					resource = influence
-					value >= 100
-				}
-			}
-		}
-		owner = {
-			add_resource = {
-				influence = -100
-			}
-		}
-		add_modifier = {
-			modifier = ngm_government2a
-			years = 1
-		}
-	}
-	# そのような余裕はない。(消費なし)
-	option = {
-		name = ngm_government.2.b
-	}
-	# 軍事パレードではなく、追悼集会をしよう(平和のみ。影響力50消費。厭戦-10)
-	option = {
-		name = ngm_government.2.c
-		allow = {
-			owner = {
-				OR = {
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-				}
-				resource_stockpile_compare = {
-					resource = influence
-					value >= 50
-				}
-			}
-		}
-		owner = {
-			add_resource = {
-				influence = -50
-			}
-		}
-		add_modifier = {
-			modifier = ngm_government2c
-			years = 1
-		}
-	}
-	# 盛大にやろうじゃないか(軍国or栄望or権威のみ。影響力100、エネルギー500消費。厭戦値-10%、1年間の厭戦増加-10%)
-	option = {
-		name = ngm_government.2.d
-		allow = {
-			owner = {
-				OR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
-				resource_stockpile_compare = {
-					resource = influence
-					value >= 100
-				}
-				resource_stockpile_compare = {
-					resource = energy
-					value >= 500
-				}
-			}
-		}
-		owner = {
-			add_resource = {
-				influence = -100
-			}
-			add_resource = {
-				energy = -500
-			}
-		}
-		add_modifier = {
-			modifier = ngm_government2d
-			years = 1
-		}
-	}
-	# 英雄を讃え、勲章を配ろう。(実利以外。勲章を-10 厭戦値-10%、1年間の厭戦増加-10%)(編集済)
-	option = {
-		name = ngm_government.2.e
-		allow = {
-			owner = {
-				resource_stockpile_compare = {
-					resource = ngm_order_of_merit
-					value >= 10
-				}
-			}
-		}
-		owner = {
-			add_resource = {
-				ngm_order_of_merit = -10
-			}
-		}
-		add_modifier = {
-			modifier = ngm_government2e
-			years = 1
-		}
-	}
-}
+# # 2.軍事パレード(戦争期間2年以上でランダム発生)
+	# # 長引く戦争の影響で国民の中には厭戦感情を訴えるものも存在する。その者たちの不安を解消し、我が国の威力を誇示するために戦時の軍事パレードを行うよう国防省から提案があった。
+	# country_event = {
+	# 	id = ngm_government.2
+	# 	title = ngm_government.2.name
+	# 	desc = ngm_government.2.desc
+	# 	picture = GFX_evt_announcement
+	# 	show_sound = event_activating_unknown_technology
+	# 	is_triggered_only = yes
+	# 	trigger = {
+	# 		has_country_flag = ngm_government_war_flag
+	# 		is_at_war = yes
+	# 	}
+	# 	# よろしい。直ちに軍事パレードだ。(影響力100消費。)
+	# 	option = {
+	# 		name = ngm_government.2.a
+	# 		allow = {
+	# 			owner = {
+	# 				resource_stockpile_compare = {
+	# 					resource = influence
+	# 					value >= 100
+	# 				}
+	# 			}
+	# 		}
+	# 		owner = {
+	# 			add_resource = {
+	# 				influence = -100
+	# 			}
+	# 		}
+	# 		add_modifier = {
+	# 			modifier = ngm_government2a
+	# 			years = 1
+	# 		}
+	# 	}
+	# 	# そのような余裕はない。(消費なし)
+	# 	option = {
+	# 		name = ngm_government.2.b
+	# 	}
+	# 	# 軍事パレードではなく、追悼集会をしよう(平和のみ。影響力50消費。厭戦-10)
+	# 	option = {
+	# 		name = ngm_government.2.c
+	# 		allow = {
+	# 			owner = {
+	# 				OR = {
+	# 					has_ethic = ethic_pacifist
+	# 					has_ethic = ethic_fanatic_pacifist
+	# 				}
+	# 				resource_stockpile_compare = {
+	# 					resource = influence
+	# 					value >= 50
+	# 				}
+	# 			}
+	# 		}
+	# 		owner = {
+	# 			add_resource = {
+	# 				influence = -50
+	# 			}
+	# 		}
+	# 		add_modifier = {
+	# 			modifier = ngm_government2c
+	# 			years = 1
+	# 		}
+	# 	}
+	# 	# 盛大にやろうじゃないか(軍国or栄望or権威のみ。影響力100、エネルギー500消費。厭戦値-10%、1年間の厭戦増加-10%)
+	# 	option = {
+	# 		name = ngm_government.2.d
+	# 		allow = {
+	# 			owner = {
+	# 				OR = {
+	# 					has_ethic = ethic_militarist
+	# 					has_ethic = ethic_fanatic_militarist
+	# 					has_ethic = ethic_authoritarian
+	# 					has_ethic = ethic_fanatic_authoritarian
+	# 				}
+	# 				resource_stockpile_compare = {
+	# 					resource = influence
+	# 					value >= 100
+	# 				}
+	# 				resource_stockpile_compare = {
+	# 					resource = energy
+	# 					value >= 500
+	# 				}
+	# 			}
+	# 		}
+	# 		owner = {
+	# 			add_resource = {
+	# 				influence = -100
+	# 			}
+	# 			add_resource = {
+	# 				energy = -500
+	# 			}
+	# 		}
+	# 		add_modifier = {
+	# 			modifier = ngm_government2d
+	# 			years = 1
+	# 		}
+	# 	}
+	# 	# 英雄を讃え、勲章を配ろう。(実利以外。勲章を-10 厭戦値-10%、1年間の厭戦増加-10%)(編集済)
+	# 	option = {
+	# 		name = ngm_government.2.e
+	# 		allow = {
+	# 			owner = {
+	# 				resource_stockpile_compare = {
+	# 					resource = ngm_order_of_merit
+	# 					value >= 10
+	# 				}
+	# 			}
+	# 		}
+	# 		owner = {
+	# 			add_resource = {
+	# 				ngm_order_of_merit = -10
+	# 			}
+	# 		}
+	# 		add_modifier = {
+	# 			modifier = ngm_government2e
+	# 			years = 1
+	# 		}
+	# 	}
+	# }
+#
 
-# 3.厭戦活動(厭戦50以上かつ2年以上の戦争、攻撃側のみランダムで発生)
-# 長きにわたる戦争のためか遂に(惑星名)の市民の一部が反戦デモを開始した。これは我が国の方針に反しており、徐々に規模が拡張している。
-country_event = {
-	id = ngm_government.3
-	title = ngm_government.3.name
-	desc = ngm_government.3.desc
-	picture = GFX_evt_announcement
-	show_sound = event_activating_unknown_technology
-	is_triggered_only = yes
-	trigger = {
-		is_war_participant = {
-			who = THIS
-			side = attackers
-		}
-		has_country_flag = ngm_government_war_flag
-		is_at_war = yes
-	}
-	# すぐに鎮圧しろ！(3年間惑星安定度-10。厭戦+10)
-	option = {
-		name = ngm_government.3.a
-		add_modifier = {
-			modifier = ngm_government3a
-			years = 3
-		}
-	}
-	# 代表者と交渉しろ。(影響力-100)
-	option = {
-		name = ngm_government.3.b
-		allow = {
-			owner = {
-				resource_stockpile_compare = {
-					resource = influence
-					value >= 100
-				}
-			}
-		}
-		owner = {
-			add_resource = {
-				influence = -100
-			}
-		}
-	}
-	# いつも通り行えば良い。(権威のみ。影響力-30)
-	option = {
-		name = ngm_government.3.c
-		allow = {
-			owner = {
-				OR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
-				resource_stockpile_compare = {
-					resource = influence
-					value >= 30
-				}
-			}
-		}
-		owner = {
-			add_resource = {
-				influence = -30
-			}
-		}
-	}
-	# 群衆に呼びかけ、軍の支持集会を開け。(軍国のみ。影響力-50。厭戦-10)
-	option = {
-		name = ngm_government.3.d
-		allow = {
-			owner = {
-				OR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
-				}
-				resource_stockpile_compare = {
-					resource = influence
-					value >= 50
-				}
-			}
-		}
-		owner = {
-			add_resource = {
-				influence = -50
-			}
-		}
-		add_modifier = {
-			modifier = ngm_government3d
-			years = 2
-		}
-	}
-}
+# # 3.厭戦活動(厭戦50以上かつ2年以上の戦争、攻撃側のみランダムで発生)
+	# # 長きにわたる戦争のためか遂に(惑星名)の市民の一部が反戦デモを開始した。これは我が国の方針に反しており、徐々に規模が拡張している。
+	# country_event = {
+	# 	id = ngm_government.3
+	# 	title = ngm_government.3.name
+	# 	desc = ngm_government.3.desc
+	# 	picture = GFX_evt_announcement
+	# 	show_sound = event_activating_unknown_technology
+	# 	is_triggered_only = yes
+	# 	trigger = {
+	# 		is_war_participant = {
+	# 			who = THIS
+	# 			side = attackers
+	# 		}
+	# 		has_country_flag = ngm_government_war_flag
+	# 		is_at_war = yes
+	# 	}
+	# 	# すぐに鎮圧しろ！(3年間惑星安定度-10。厭戦+10)
+	# 	option = {
+	# 		name = ngm_government.3.a
+	# 		add_modifier = {
+	# 			modifier = ngm_government3a
+	# 			years = 3
+	# 		}
+	# 	}
+	# 	# 代表者と交渉しろ。(影響力-100)
+	# 	option = {
+	# 		name = ngm_government.3.b
+	# 		allow = {
+	# 			owner = {
+	# 				resource_stockpile_compare = {
+	# 					resource = influence
+	# 					value >= 100
+	# 				}
+	# 			}
+	# 		}
+	# 		owner = {
+	# 			add_resource = {
+	# 				influence = -100
+	# 			}
+	# 		}
+	# 	}
+	# 	# いつも通り行えば良い。(権威のみ。影響力-30)
+	# 	option = {
+	# 		name = ngm_government.3.c
+	# 		allow = {
+	# 			owner = {
+	# 				OR = {
+	# 					has_ethic = ethic_authoritarian
+	# 					has_ethic = ethic_fanatic_authoritarian
+	# 				}
+	# 				resource_stockpile_compare = {
+	# 					resource = influence
+	# 					value >= 30
+	# 				}
+	# 			}
+	# 		}
+	# 		owner = {
+	# 			add_resource = {
+	# 				influence = -30
+	# 			}
+	# 		}
+	# 	}
+	# 	# 群衆に呼びかけ、軍の支持集会を開け。(軍国のみ。影響力-50。厭戦-10)
+	# 	option = {
+	# 		name = ngm_government.3.d
+	# 		allow = {
+	# 			owner = {
+	# 				OR = {
+	# 					has_ethic = ethic_militarist
+	# 					has_ethic = ethic_fanatic_militarist
+	# 				}
+	# 				resource_stockpile_compare = {
+	# 					resource = influence
+	# 					value >= 50
+	# 				}
+	# 			}
+	# 		}
+	# 		owner = {
+	# 			add_resource = {
+	# 				influence = -50
+	# 			}
+	# 		}
+	# 		add_modifier = {
+	# 			modifier = ngm_government3d
+	# 			years = 2
+	# 		}
+	# 	}
+	# }
+#
 
-country_event = {
-	id = ngm_government.4
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_country_flag = ngm_government_war_flag
-		is_at_war = no
-	}
-	immediate = {
-		remove_country_flag = ngm_government_war_flag
-	}
-}
+# country_event = {
+		# id = ngm_government.4
+		# hide_window = yes
+		# is_triggered_only = yes
+		# trigger = {
+		# 	has_country_flag = ngm_government_war_flag
+		# 	is_at_war = no
+		# }
+		# immediate = {
+		# 	remove_country_flag = ngm_government_war_flag
+		# }
+# }
 
 # リーダーイベント
 # 2.学術論争

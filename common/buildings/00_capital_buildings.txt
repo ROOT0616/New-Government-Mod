@@ -228,7 +228,7 @@ building_capital = {
 		}
 	}
 
-	# 銀河連邦 (民主制、受容主義)行政官の一人を社会的英雄に置換え。
+	# 銀河連邦 (民主制、受容主義)政治家の一人を社会的英雄に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -241,7 +241,7 @@ building_capital = {
 			job_politician_add = 1
 		}
 	}
-	# 宗教共和制 (民主制、精神主義)行政官の一人を大祭司に置換え。
+	# 宗教共和制 (民主制、精神主義)政治家の一人を大祭司に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -254,7 +254,7 @@ building_capital = {
 			job_politician_add = 1
 		}
 	}
-	# サイバー民主制 (民主制、物質主義)行政官の一人を科学総裁に置換え。
+	# サイバー民主制 (民主制、物質主義)政治家の一人を科学総裁に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -267,7 +267,7 @@ building_capital = {
 			job_politician_add = 1
 		}
 	}
-	# 戦争卿 (独裁制、軍国主義)行政官の一人を高級参謀に置換え。
+	# 戦争卿 (独裁制、軍国主義)政治家の一人を高級参謀に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -280,7 +280,7 @@ building_capital = {
 			job_politician_add = 1
 		}
 	}
-	# 騎士団 (君主制、軍国主義) 行政官の一人を高級参謀に置換え。
+	# 騎士団 (君主制、軍国主義) 政治家の一人を高級参謀に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -352,7 +352,7 @@ building_capital = {
 		}
 		text = job_head_researcher_effect_desc
 	}
-	# 銀河連邦 (民主制、受容主義)行政官の一人を社会的英雄に置換え。
+	# 銀河連邦 (民主制、受容主義)政治家の一人を社会的英雄に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -362,7 +362,7 @@ building_capital = {
 		}
 		text = job_ngm_heroes_of_society_effect_desc
 	}
-	# 宗教共和制 (民主制、精神主義)行政官の一人を大祭司に置換え。
+	# 宗教共和制 (民主制、精神主義)政治家の一人を大祭司に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -372,7 +372,7 @@ building_capital = {
 		}
 		text = job_high_priest_effect_desc
 	}
-	# サイバー民主制 (民主制、物質主義)行政官の一人を科学総裁に置換え。
+	# サイバー民主制 (民主制、物質主義)政治家の一人を科学総裁に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -382,7 +382,7 @@ building_capital = {
 		}
 		text = job_head_researcher_effect_desc
 	}
-	# 戦争卿 (独裁制、軍国主義)行政官の一人を高級参謀に置換え。
+	# 戦争卿 (独裁制、軍国主義)政治家の一人を高級参謀に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -392,7 +392,7 @@ building_capital = {
 		}
 		text = job_ngm_senior_advisor_effect_desc
 	}
-	# 騎士団 (君主制、軍国主義) 行政官の一人を高級参謀に置換え。
+	# 騎士団 (君主制、軍国主義) 政治家の一人を高級参謀に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -584,7 +584,7 @@ building_major_capital = {
 		}
 	}
 
-	# 銀河連邦 (民主制、受容主義)行政官の一人を社会的英雄に置換え。
+	# 銀河連邦 (民主制、受容主義)政治家の一人を社会的英雄に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -597,7 +597,7 @@ building_major_capital = {
 			job_politician_add = 2
 		}
 	}
-	# 宗教共和制 (民主制、精神主義)行政官の一人を大祭司に置換え。
+	# 宗教共和制 (民主制、精神主義)政治家の一人を大祭司に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -610,7 +610,7 @@ building_major_capital = {
 			job_politician_add = 2
 		}
 	}
-	# サイバー民主制 (民主制、物質主義)行政官の一人を科学総裁に置換え。
+	# サイバー民主制 (民主制、物質主義)政治家の一人を科学総裁に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -623,7 +623,7 @@ building_major_capital = {
 			job_politician_add = 2
 		}
 	}
-	# 戦争卿 (独裁制、軍国主義)行政官の一人を高級参謀に置換え。
+	# 戦争卿 (独裁制、軍国主義)政治家の一人を高級参謀に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -636,7 +636,7 @@ building_major_capital = {
 			job_politician_add = 2
 		}
 	}
-	# 騎士団 (君主制、軍国主義) 行政官の一人を高級参謀に置換え。
+	# 騎士団 (君主制、軍国主義) 政治家の一人を高級参謀に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -722,7 +722,7 @@ building_major_capital = {
 		text = job_head_researcher_effect_desc
 	}
 
-	# 銀河連邦 (民主制、受容主義)行政官の一人を社会的英雄に置換え。
+	# 銀河連邦 (民主制、受容主義)政治家の一人を社会的英雄に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -732,7 +732,7 @@ building_major_capital = {
 		}
 		text = job_ngm_heroes_of_society_effect_desc
 	}
-	# 宗教共和制 (民主制、精神主義)行政官の一人を大祭司に置換え。
+	# 宗教共和制 (民主制、精神主義)政治家の一人を大祭司に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -742,7 +742,7 @@ building_major_capital = {
 		}
 		text = job_high_priest_effect_desc
 	}
-	# サイバー民主制 (民主制、物質主義)行政官の一人を科学総裁に置換え。
+	# サイバー民主制 (民主制、物質主義)政治家の一人を科学総裁に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -752,7 +752,7 @@ building_major_capital = {
 		}
 		text = job_head_researcher_effect_desc
 	}
-	# 戦争卿 (独裁制、軍国主義)行政官の一人を高級参謀に置換え。
+	# 戦争卿 (独裁制、軍国主義)政治家の一人を高級参謀に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -762,7 +762,7 @@ building_major_capital = {
 		}
 		text = job_ngm_senior_advisor_effect_desc
 	}
-	# 騎士団 (君主制、軍国主義) 行政官の一人を高級参謀に置換え。
+	# 騎士団 (君主制、軍国主義) 政治家の一人を高級参謀に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -797,7 +797,7 @@ building_major_capital = {
 		}
 		text = job_politician_effect_desc
 	}
-	
+
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -965,7 +965,7 @@ building_system_capital = {
 		}
 	}
 
-	# 銀河連邦 (民主制、受容主義)行政官の一人を社会的英雄に置換え。
+	# 銀河連邦 (民主制、受容主義)政治家の一人を社会的英雄に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -978,8 +978,8 @@ building_system_capital = {
 			job_politician_add = 2
 		}
 	}
-	# 環境民主制 (民主制、保全主義)行政官の一人を大自然監督官に置換え。
-	# 宗教共和制 (民主制、精神主義)行政官の一人を大祭司に置換え。
+	# 環境民主制 (民主制、保全主義)政治家の一人を大自然監督官に置換え。
+	# 宗教共和制 (民主制、精神主義)政治家の一人を大祭司に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -992,7 +992,7 @@ building_system_capital = {
 			job_politician_add = 2
 		}
 	}
-	# サイバー民主制 (民主制、物質主義)行政官の一人を科学総裁に置換え。
+	# サイバー民主制 (民主制、物質主義)政治家の一人を科学総裁に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1005,7 +1005,7 @@ building_system_capital = {
 			job_politician_add = 2
 		}
 	}
-	# 戦争卿 (独裁制、軍国主義)行政官の一人を高級参謀に置換え。
+	# 戦争卿 (独裁制、軍国主義)政治家の一人を高級参謀に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1018,7 +1018,7 @@ building_system_capital = {
 			job_politician_add = 2
 		}
 	}
-	# 騎士団 (君主制、軍国主義) 行政官の一人を高級参謀に置換え。
+	# 騎士団 (君主制、軍国主義) 政治家の一人を高級参謀に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1112,7 +1112,7 @@ building_system_capital = {
 		}
 		text = job_head_researcher_effect_desc
 	}
-	# 銀河連邦 (民主制、受容主義)行政官の一人を社会的英雄に置換え。
+	# 銀河連邦 (民主制、受容主義)政治家の一人を社会的英雄に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -1122,7 +1122,7 @@ building_system_capital = {
 		}
 		text = job_ngm_heroes_of_society_effect_desc
 	}
-	# 宗教共和制 (民主制、精神主義)行政官の一人を大祭司に置換え。
+	# 宗教共和制 (民主制、精神主義)政治家の一人を大祭司に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -1132,7 +1132,7 @@ building_system_capital = {
 		}
 		text = job_high_priest_effect_desc
 	}
-	# サイバー民主制 (民主制、物質主義)行政官の一人を科学総裁に置換え。
+	# サイバー民主制 (民主制、物質主義)政治家の一人を科学総裁に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -1142,7 +1142,7 @@ building_system_capital = {
 		}
 		text = job_head_researcher_effect_desc
 	}
-	# 戦争卿 (独裁制、軍国主義)行政官の一人を高級参謀に置換え。
+	# 戦争卿 (独裁制、軍国主義)政治家の一人を高級参謀に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -1152,7 +1152,7 @@ building_system_capital = {
 		}
 		text = job_ngm_senior_advisor_effect_desc
 	}
-	# 騎士団 (君主制、軍国主義) 行政官の一人を高級参謀に置換え。
+	# 騎士団 (君主制、軍国主義) 政治家の一人を高級参謀に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -1879,7 +1879,7 @@ building_hab_capital = {
 	}
 
 	resources = {
-		category = planet_buildings
+		category = planet_buildings_hab_capital
 		upkeep = {
 			energy = 3
 			alloys = 5
@@ -1894,6 +1894,11 @@ building_hab_capital = {
 		planet_housing_add = 3
 		planet_amenities_add = 3
 		planet_max_buildings_add = @buildings_t1
+	}
+
+	triggered_planet_modifier = {
+		modifier = { planet_stability_add = 1 }
+		mult = modifier:habitat_stability_add
 	}
 
 	triggered_planet_modifier = {
@@ -1914,7 +1919,7 @@ building_hab_capital = {
 			owner = { has_active_tradition = tr_prosperity_void_works }
 		}
 		modifier = {
-			 planet_max_buildings_add = 1
+			planet_max_buildings_add = 1
 		}
 	}
 
@@ -1953,7 +1958,7 @@ building_hab_capital = {
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 		modifier = {
-			 planet_max_buildings_add = 2
+			planet_max_buildings_add = 2
 		}
 	}
 
@@ -2073,7 +2078,7 @@ building_hab_major_capital = {
 	}
 
 	resources = {
-		category = planet_buildings
+		category = planet_buildings_hab_capital
 		cost = {
 			minerals = @b2_minerals
 		}
@@ -2092,6 +2097,26 @@ building_hab_major_capital = {
 		planet_amenities_add = 5
 		planet_max_buildings_add = @buildings_t2
 		planet_max_branch_office_buildings_add = 1
+	}
+
+	triggered_planet_modifier = {
+		modifier = { planet_stability_add = 1 }
+		mult = modifier:habitat_stability_add
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				any_situation = {
+				is_situation_type = situation_alloys_deficit
+				current_situation_approach = deficit_approach_cut_maintenance
+				}
+			}
+		}
+		modifier = {
+			planet_stability_add = -50
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -2219,7 +2244,7 @@ building_hab_major_capital = {
 		}
 	}
 
-	# 銀河連邦 (民主制、受容主義)行政官の一人を社会的英雄に置換え。
+	# 銀河連邦 (民主制、受容主義)政治家の一人を社会的英雄に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2232,7 +2257,7 @@ building_hab_major_capital = {
 			job_politician_add = 1
 		}
 	}
-	# 宗教共和制 (民主制、精神主義)行政官の一人を大祭司に置換え。
+	# 宗教共和制 (民主制、精神主義)政治家の一人を大祭司に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2245,7 +2270,7 @@ building_hab_major_capital = {
 			job_politician_add = 1
 		}
 	}
-	# サイバー民主制 (民主制、物質主義)行政官の一人を科学総裁に置換え。
+	# サイバー民主制 (民主制、物質主義)政治家の一人を科学総裁に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2258,7 +2283,7 @@ building_hab_major_capital = {
 			job_politician_add = 1
 		}
 	}
-	# 戦争卿 (独裁制、軍国主義)行政官の一人を高級参謀に置換え。
+	# 戦争卿 (独裁制、軍国主義)政治家の一人を高級参謀に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2271,7 +2296,7 @@ building_hab_major_capital = {
 			job_politician_add = 1
 		}
 	}
-	# 騎士団 (君主制、軍国主義) 行政官の一人を高級参謀に置換え。
+	# 騎士団 (君主制、軍国主義) 政治家の一人を高級参謀に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2294,7 +2319,7 @@ building_hab_major_capital = {
 			job_merchant_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2989,7 +3014,7 @@ building_imperial_capital = {
 		}
 	}
 
-	# 銀河連邦 (民主制、受容主義)行政官の一人を社会的英雄に置換え。
+	# 銀河連邦 (民主制、受容主義)政治家の一人を社会的英雄に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -3002,7 +3027,7 @@ building_imperial_capital = {
 			job_politician_add = 3
 		}
 	}
-	# 宗教共和制 (民主制、精神主義)行政官の一人を大祭司に置換え。
+	# 宗教共和制 (民主制、精神主義)政治家の一人を大祭司に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -3015,7 +3040,7 @@ building_imperial_capital = {
 			job_politician_add = 3
 		}
 	}
-	# サイバー民主制 (民主制、物質主義)行政官の一人を科学総裁に置換え。
+	# サイバー民主制 (民主制、物質主義)政治家の一人を科学総裁に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -3028,7 +3053,7 @@ building_imperial_capital = {
 			job_politician_add = 3
 		}
 	}
-	# 戦争卿 (独裁制、軍国主義)行政官の一人を高級参謀に置換え。
+	# 戦争卿 (独裁制、軍国主義)政治家の一人を高級参謀に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -3041,7 +3066,7 @@ building_imperial_capital = {
 			job_politician_add = 3
 		}
 	}
-	# 騎士団 (君主制、軍国主義) 行政官の一人を高級参謀に置換え。
+	# 騎士団 (君主制、軍国主義) 政治家の一人を高級参謀に置換え。
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -3135,7 +3160,7 @@ building_imperial_capital = {
 		}
 		text = job_head_researcher_effect_desc
 	}
-	# 銀河連邦 (民主制、受容主義)行政官の一人を社会的英雄に置換え。
+	# 銀河連邦 (民主制、受容主義)政治家の一人を社会的英雄に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -3145,7 +3170,7 @@ building_imperial_capital = {
 		}
 		text = job_ngm_heroes_of_society_effect_desc
 	}
-	# 宗教共和制 (民主制、精神主義)行政官の一人を大祭司に置換え。
+	# 宗教共和制 (民主制、精神主義)政治家の一人を大祭司に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -3155,7 +3180,7 @@ building_imperial_capital = {
 		}
 		text = job_high_priest_effect_desc
 	}
-	# サイバー民主制 (民主制、物質主義)行政官の一人を科学総裁に置換え。
+	# サイバー民主制 (民主制、物質主義)政治家の一人を科学総裁に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -3165,7 +3190,7 @@ building_imperial_capital = {
 		}
 		text = job_head_researcher_effect_desc
 	}
-	# 戦争卿 (独裁制、軍国主義)行政官の一人を高級参謀に置換え。
+	# 戦争卿 (独裁制、軍国主義)政治家の一人を高級参謀に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -3175,7 +3200,7 @@ building_imperial_capital = {
 		}
 		text = job_ngm_senior_advisor_effect_desc
 	}
-	# 騎士団 (君主制、軍国主義) 行政官の一人を高級参謀に置換え。
+	# 騎士団 (君主制、軍国主義) 政治家の一人を高級参謀に置換え。
 	triggered_desc = {
 		trigger = {
 			exists = owner
