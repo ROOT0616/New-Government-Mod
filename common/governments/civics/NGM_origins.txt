@@ -47,3 +47,71 @@ origin_ngm_buffer_state = {
 		base = 5
 	}
 }
+
+# 過去への逃走 escape_to_the_past
+# 
+# この国の種族は苛烈な運命をたどる時代から逃げ去り、未来を変えるために再度過去へと戻った。
+# しかし、その運命から抗う手法は追跡者を生み、定期的な襲撃を受けることとなる。
+# 
+# 研究力+10%、艦隊連射レート+5%
+# 120か月に1度未来からの艦隊が襲撃する。打ち勝つことによって技術のデブリを取得することが可能となる。
+# 
+# 首都惑星に特殊な特性「時空超越機」（時間を超えることができる機械で、惑星と一体化している。原理は失われているため再現は不可能であるが、時折亡命者がこの時代に流れ込んでいる。）
+# 物理学研究+20%、Pop成長速度+10%
+origin_ngm_escape_to_the_past = {
+	is_origin = yes
+	icon = "gfx/interface/icons/governments/origins/origins_ngm_escape_to_the_past.dds"
+	picture = GFX_origin_ngm_escape_to_the_past
+	potential = {
+		always = yes
+	}
+	modifier = {
+		ship_fire_rate_mult = 0.05
+		country_physics_research_produces_mult = 0.1
+		country_society_research_produces_mult = 0.1
+		country_engineering_research_produces_mult = 0.1
+	}
+	description = "origin_tooltip_ngm_escape_to_the_past"
+	random_weight = {
+		base = 0
+	}
+}
+
+# # 銀河帝国アクアリウム
+# origin_ngm_galactic_empire_aquarium = {
+# 	is_origin = yes
+# 	# icon = "gfx/interface/icons/governments/origins/origins_ngm_escape_to_the_past.dds"
+# 	picture = GFX_origin_ngm_galactic_empire_aquarium
+
+# 	starting_colony = pc_ngm_ocean
+# 	habitability_preference = pc_ngm_ocean
+# 	# initializers = { ocean_paradise_start }	
+
+# 	playable = {
+# 		has_aquatics = yes
+# 	}
+
+# 	possible = {
+# 		authority = {
+# 			NOT = { value = auth_machine_intelligence }
+# 		}
+# 		ethics = {
+# 			OR = {
+# 				value = ethic_pacifist
+# 				value = ethic_fanatic_pacifist
+# 			}
+# 			OR = {
+# 				value = ethic_xenophile
+# 				value = ethic_fanatic_xenophile
+# 			}
+# 		}
+# 	}
+
+# 	traits = {
+# 		trait = trait_aquatic
+# 	}
+# 	description = "origin_tooltip_ngm_galactic_empire_aquarium"
+# 	random_weight = {
+# 		base = 5
+# 	}
+# }

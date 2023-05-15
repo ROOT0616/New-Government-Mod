@@ -29,6 +29,15 @@ clerk = {
 
 	triggered_planet_modifier = {
 		potential = {
+			has_councilor = { COUNCILOR = "councilor_merchant_guilds" }
+		}
+
+		trade_value_add = 0.4
+		mult = value:scripted_modifier_councilor_level_mult|MODIFIER|pop_job_trade_mult|TYPE|councilor_merchant_guilds|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
 			planet = {
 				has_planet_flag = has_franchise_headquarters
 			}
@@ -50,9 +59,7 @@ clerk = {
 	}
 
 	triggered_planet_modifier = {
-		potential = {
-			always = yes
-		}
+		potential = { always = yes }
 		planet_amenities_add = 2
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
@@ -73,7 +80,6 @@ clerk = {
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -81,6 +87,14 @@ clerk = {
 		}
 		trade_value_add = 1
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_modifier = paragon_origin_strengthened_government_iii }
+		}
+		country_edict_fund_add = 1
 	}
 
 	weight = {
@@ -112,6 +126,11 @@ clerk = {
 		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.1
+			exists = owner
+			owner = { is_megacorp = yes }
 		}
 		modifier = {
 			factor = 0.5
@@ -149,6 +168,7 @@ technician = {
 		}
 		produces = {
 			trigger = {
+				exists = owner
 				owner = {
 					is_robot_empire = yes
 				}
@@ -264,6 +284,15 @@ miner = {
 			}
 			minerals = @requisitorium_minerals_reduction
 		}
+	}
+
+	triggered_planet_modifier = {
+		# Gives some Stability per "Mining Guild" Councilor level.
+		potential = {
+			has_councilor = { COUNCILOR = "councilor_mining_guilds" }
+		}
+		planet_stability_add = @councilor_mining_guilds_miner_stability
+		mult = value:councilor_level|TYPE|councilor_mining_guilds|
 	}
 
 	overlord_resources = {
@@ -647,16 +676,9 @@ soldier = {
 	country_modifier = {
 		country_naval_cap_add = 4
 	}
+
 	resources = {
 		category = planet_soldiers
-		# 軍事政権
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_valid_civic = civic_ngm_military_regime }
-			}
-			unity = 2
-		}
 	}
 	triggered_country_modifier = {
 		potential = {
@@ -671,21 +693,25 @@ soldier = {
 		}
 	}
 
-	pop_modifier = {
-		pop_defense_armies_add = 3
+	triggered_country_modifier = {
+	  	potential = {
+	  		exists = owner
+	  		owner = {
+				any_owned_leader = {
+					is_councilor = yes
+					has_trait = leader_trait_bellicose
+				}
+	  		}
+		}
+
+		modifier = {
+			country_naval_cap_add = 2
+		}
+		mult = value:bellicose_naval_cap
 	}
 
-	# 軍産複合体
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_civic = civic_ngm_military_industrial_complex
-			}
-		}
-		modifier = {
-			trade_value_add = 1
-		}
+	pop_modifier = {
+		pop_defense_armies_add = 3
 	}
 
 	# 〇治安法	憲兵の司法警察権	兵士1人あたりの犯罪度-1
@@ -700,11 +726,54 @@ soldier = {
 			planet_crime_add = -1
 		}
 	}
+	triggered_pop_modifier = {
+	  	potential = {
+	  		exists = owner
+	  		owner = {
+				any_owned_leader = {
+					is_councilor = yes
+					has_trait = leader_trait_bellicose
+				}
+	  		}
+		}
+
+		modifier = {
+			pop_defense_armies_add = 1
+		}
+		mult = value:bellicose_naval_cap
+	}
+
 	triggered_planet_modifier = {
 		modifier = {
 			planet_stability_add = 1
 		}
 		mult = planet.modifier:job_soldier_stability_add
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_councilor = { COUNCILOR = "councilor_private_military_companies" }
+		}
+
+		modifier = {
+			planet_stability_add = @councilor_private_military_companies_stability
+		}
+
+		mult = value:councilor_level|TYPE|councilor_private_military_companies|
+	}
+
+	triggered_planet_modifier = {
+		modifier = {
+			planet_building_build_speed_mult = 0.05
+		}
+		potential = {
+			planet = {
+				exists = army_leader
+				army_leader = {
+					has_trait = leader_trait_taskmaster
+				}
+			}
+		}
 	}
 
 	possible_pre_triggers = {
@@ -829,17 +898,8 @@ preacher = {
 			NOT = { has_trait = trait_mechanical }
 		}
 		modifier = {
-			factor = 1.2
-			has_ethic = ethic_spiritualist
-		}
-		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
-		}
-		modifier = {
-			factor = 0.1
-			has_ethic = ethic_materialist
-			NOT = { has_job = preacher }
 		}
 	}
 }
@@ -891,17 +951,8 @@ mortal_initiate = {
 			NOT = { has_trait = trait_mechanical }
 		}
 		modifier = {
-			factor = 1.2
-			has_ethic = ethic_spiritualist
-		}
-		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
-		}
-		modifier = {
-			factor = 0.1
-			has_ethic = ethic_materialist
-			NOT = { has_job = mortal_initiate }
 		}
 	}
 }
@@ -1002,9 +1053,17 @@ angler = {
 	}
 
 	resources = {
-		category = planet_farmers
+		category = planet_anglers
 		produces = {
 			food = 8
+		}
+		produces = {
+			trigger = {
+				has_councilor = { COUNCILOR = "councilor_anglers" } 
+			}
+
+			food = @councilor_anglers_angler_food_bonus
+			mult = value:councilor_level|TYPE|councilor_anglers|
 		}
 		produces = {
 			trigger = {
@@ -1036,10 +1095,36 @@ angler = {
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			has_councilor = { COUNCILOR = "councilor_corporate_anglers" } 
+		}
+
+		trade_value_add = @councilor_corporate_anglers_angler_trade_value_bonus
+		mult = value:trade_value_corporate_angler_councilor_mult
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_agrarian_idyll }
+		}
+		planet_amenities_add = 2
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
 	weight = {
 		weight = @worker_job_weight
 		mult = value:job_weights_modifier|JOB|angler|RESOURCE|food|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+		modifier = {
+			factor = 1.1
+			owner = { has_valid_civic = civic_agrarian_idyll }
+		}
+		modifier = {
+			factor = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+			owner = { has_valid_civic = civic_agrarian_idyll }
+		}
 		modifier = {
 			factor = 10
 			is_enslaved = yes
@@ -1091,5 +1176,63 @@ ranger = {
 			factor = 1.5
 			has_job = ranger
 		}
+	}
+}
+
+squire = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_order_keep
+	clothes_texture_index = 4
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+		is_enslaved = no
+	}
+
+	possible_precalc = can_fill_specialist_job #deliberate, they are baby knights
+
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	planet_modifier = {
+		knights_independent_category_produces_mult = 0.02
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_amenities_add = 2
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			planet = { has_modifier = syamelles_curse_habitat }
+		}
+		planet_pop_assembly_organic_add = 0.25
+	}
+
+	resources = {
+		category = planet_squires
+		upkeep = {
+			trigger = {
+				planet = { has_modifier = syamelles_curse_habitat }
+			}
+			alloys = 0.5
+		}
+	}
+
+	weight = {
+		weight = @worker_job_weight
+		factor = 1.2
 	}
 }

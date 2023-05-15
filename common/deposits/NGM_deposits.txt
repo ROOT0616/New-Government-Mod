@@ -27,3 +27,23 @@ d_ngm_special_policies_deposit = {
 		weight = 0
 	}
 }
+
+# 実験的物質の発見
+d_ngm_experimental_substance = {
+	category = deposit_cat_rare
+	icon = d_city
+	resources = {
+		category = planet_deposits
+		produces = {
+			rare_crystals = 1
+			exotic_gases = 1
+			volatile_motes = 1
+		}
+	}
+	potential = {
+		always = yes
+	}
+	drop_weight = {
+		weight = 0
+	}
+}

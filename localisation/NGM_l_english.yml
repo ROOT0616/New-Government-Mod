@@ -10,60 +10,60 @@
  decision_ngm_undo_desc:0 ""
 
  decision_ngm_territorial_monarchy:0 "Territorial Monarchy"
- decision_ngm_territorial_monarchy_desc:0 "Entrust this sector’s capital to a local monarch with strong authority, allowing for limited local self-governance"
+ decision_ngm_territorial_monarchy_desc:0 "Entrust this sector’s capital to a local monarch with strong authority, allowing for limited local self-governance."
  ngm_territorial_monarchy:0 "Lordship Monarchy"
  ngm_territorial_monarchy_desc:0 "A local monarch who is trying to get better ‘benefits’ from his subjects governs this sector’s capital."
  decision_ngm_end_territorial_monarchy:0 "Abolish Territorial Monarchy"
- decision_ngm_end_territorial_monarchy_desc:0 "Eliminate inappropriate local autonomy and return to the centralized system as it should have been."
+ decision_ngm_end_territorial_monarchy_desc:0 "Abolish local autonomy and restore a centralized system."
 
  decision_ngm_symbolic_monarchy:0 "Symbolic Monarchy"
  decision_ngm_symbolic_monarchy_desc:0 "Entrust this sector’s capital to local monarch’s and governments without authority allowing for limited local self-governance."
  ngm_symbolic_monarchy:0 "Symbolic Monarchy"
  ngm_symbolic_monarchy_desc:0 "A formal monarch and a local democratic or oligarchic government govern this sector’s capital, with the local government aiming for the well-being and stable integration of the people."
  decision_ngm_end_symbolic_monarchy:0 "Abolish Symbolic Monarchy"
- decision_ngm_end_symbolic_monarchy_desc:0 "We will eliminate inappropriate local autonomy and return to the centralized system as it should have been."
+ decision_ngm_end_symbolic_monarchy_desc:0 "Abolish local autonomy and restore a centralized system."
 
  decision_ngm_local_dictatorship:0 "Local Dictatorship"
  decision_ngm_local_dictatorship_desc:0 "Entrust this sector’s capital to an authoritative dictator, allowing for limited local self-governance."
  ngm_local_dictatorship:0 "Local Dictatorship"
  ngm_local_dictatorship_desc:0 "A dictator appointed by the central government governs this sector’s capital. The citizens are moderately comfortable with the caustic, yet efficient governance."
  decision_ngm_end_local_dictatorship:0 "Abolish Local Dictatorship"
- decision_ngm_end_local_dictatorship_desc:0 "Eliminate inappropriate local autonomy and return to the centralized system as it should have been."
+ decision_ngm_end_local_dictatorship_desc:0 "Abolish local autonomy and restore a centralized system."
 
  decision_ngm_golden_rule_system:0 "Golden Rule System"
  decision_ngm_golden_rule_system_desc:0 "Entrust this sector’s capital to capitalists and large corporations, allowing for a limited local self-governance."
  ngm_golden_rule_system:0 "Golden Rule System"
  ngm_golden_rule_system_desc:0 "Efficient capitalists and large corporations govern this sector’s capital and pay higher taxes in return. \n §R (1 credit is required to read this guide) §!"
  decision_ngm_end_golden_rule_system:0 "Abolish Golden Rule System"
- decision_ngm_end_golden_rule_system_desc:0 "Eliminate inappropriate local autonomy and return to the centralized system as it should have been."
+ decision_ngm_end_golden_rule_system_desc:0 "Abolish local autonomy and restore a centralized system."
 
  decision_ngm_ai_supplementary_governance:0 "AI Supplementary Governance"
  decision_ngm_ai_supplementary_governance_desc:0 "Entrust this sector’s capital to advanced AI and their supporting technicians, allowing for limited local self-governance."
  ngm_ai_supplementary_governance:0 "AI Supplementary Governance"
  ngm_ai_supplementary_governance_desc:0 "Multiple problem-solving AI and their supporting technicians govern this sector’s capital with efficiency and rationality."
- decision_ngm_end_ai_supplementary_governance:0 "Cancel AI Supplementary Governance"
- decision_ngm_end_ai_supplementary_governance_desc:0 "Eliminate inappropriate local autonomy and return to the centralized system as it should have been."
+ decision_ngm_end_ai_supplementary_governance:0 "Abolish AI Supplementary Governance"
+ decision_ngm_end_ai_supplementary_governance_desc:0 "Abolish local autonomy and restore a centralized system."
 
  decision_ngm_chieftaincy_system:0 "Chieftaincy System"
  decision_ngm_chieftaincy_system_desc:0 "Entrust this sector’s capital to a weak parliament with a powerful chief executive, allowing for limited local self-governance."
  ngm_chieftaincy_system:0 "Chieftaincy Dominance System"
  ngm_chieftaincy_system_desc:0 "An elected, weakly empowered parliament and a strongly empowered chief executive governs this sector capital. Popular opinion projects into politics, causing powerful, often drastic reforms."
  decision_ngm_end_chieftaincy_system:0 "Abolish Chieftaincy System"
- decision_ngm_end_chieftaincy_system_desc:0 "Eliminate inappropriate local autonomy and return to the centralized system as it should have been."
+ decision_ngm_end_chieftaincy_system_desc:0 "Abolish local autonomy and restore a centralized system."
 
  decision_ngm_parliamentary_dominance:0 "Parliamentary Dominance System"
  decision_ngm_parliamentary_dominance_desc:0 "Entrust this sector’s capital to a strong parliament and a weakly empowered chief executive, allowing for limited local self-governance."
  ngm_parliamentary_dominance:0 "Parliamentary Dominance System"
  ngm_parliamentary_dominance_desc:0 "A strong, elected parliament and a weak chief executive govern this sector’s capital. Because of limited authority, the chief executive often makes concessions to parliament against the backdrop of popular opinion."
  decision_ngm_end_parliamentary_dominance:0 "Abolish Parliamentary Dominance System"
- decision_ngm_end_parliamentary_dominance_desc:0 "Eliminate inappropriate local autonomy and return to the centralized system as it should have been."
+ decision_ngm_end_parliamentary_dominance_desc:0 "Abolish local autonomy and restore a centralized system."
 
  decision_ngm_religious_domination:0 "Religious Domination System"
  decision_ngm_religious_domination_desc:0 "Entrust this sector’s capital to the local church, allowing for limited local self-governance."
  ngm_religious_domination:0 "Religious Domination System"
  ngm_religious_domination_desc:0 "The head of the local church governs this sector’s capital, and clergy are in charge of politics. The people have little freedom of religion, but live happily under one ideology."
  decision_ngm_end_religious_domination:0 "Abolish Religious Domination System"
- decision_ngm_end_religious_domination_desc:0 "Eliminate inappropriate local autonomy and return to the centralized system as it should have been."
+ decision_ngm_end_religious_domination_desc:0 "Abolish local autonomy and restore a centralized system."
 
  patrolling_society:0 "Drone Security"
  patrolling_society_desc:0 "The planet will be guarded by drones throughout its cities."
@@ -73,7 +73,7 @@
  d_patrolling_society_deposit_desc:0 "This planet is being guarded by drones."
 
  decision_end_patrolling:0 "Stop Drone Security"
- decision_end_patrolling_desc:0 "It's a horrible thing to have drones flying around the city, stop them!"
+ decision_end_patrolling_desc:0 "It’s a cruel business to have drones circling around the city. Deactivate them!"
  decision_end_planet_patrolling_society_effects_short:0 "End security of the city by drones."
 
  fanatic_patrolling_society:0 "Satellite Surveillance"
@@ -95,12 +95,12 @@
  decision_end_planet_hyper_fanatic_patrolling_society_effects_short:0 "Satellites, drones to end city security."
 
  free_speech:0 "Encourage Free Speech"
- free_speech_desc:0 "I encourage you to have a free discussion."
+ free_speech_desc:0 "We will encourage free speech for all our citizens! Let's promote free discussion and debate."
  decision_planet_free_speech:0 "Free Speech"
- decision_planet_free_speech_desc:0 "I encourage you to have a free discussion."
+ decision_planet_free_speech_desc:0 "We will encourage free speech for all our citizens! We will promote free discussion and debate."
 
  decision_end_free_speech:0 "Stop Encouraging Free Speech"
- decision_end_free_speech_desc:0 "Encouraging free speech is a disservice to the government. Make it stop!"
+ decision_end_free_speech_desc:0 "Encouraging free speech is an injustice to the state. Make it stop!"
  decision_end_planet_free_speech_effects_short:0 "Stop Encouraging Free Speech"
 
  fanatic_free_speech:0 "Hold The Great Free Debate Regularly"
@@ -109,16 +109,16 @@
  decision_planet_fanatic_free_speech_desc:0 "Regularly hold meetings where free discussion can take place."
 
  decision_end_fanatic_free_speech:0 "Stop Holding The Great Free Debate"
- decision_end_fanatic_free_speech_desc:0 "Encouraging free speech is a disservice to the government. Make it stop!"
+ decision_end_fanatic_free_speech_desc:0 "Encouraging free speech is an injustice to the state. Make it stop!"
  decision_end_planet_fanatic_free_speech_effects_short:0 "Stop Holding The Great Free Debate"
 
- forced_labor:0 "Perform Forced Labor"
- forced_labor_desc:0 "Perform forced labor"
- decision_planet_forced_labor:0 "Perform Forced Labor."
- decision_planet_forced_labor_desc:0 "Perform forced labor"
+ forced_labor:0 "Institute Forced Labor"
+ forced_labor_desc:0 "We always need more workers. Let's institute forced labor."
+ decision_planet_forced_labor:0 "Institute Forced Labor"
+ decision_planet_forced_labor_desc:0 "We always need more workers. Let's institute forced labor."
 
  decision_end_forced_labor:0 "Stop Forced Labor"
- decision_end_forced_labor_desc:0 "Forced labor is a disservice to the government. Make it stop!"
+ decision_end_forced_labor_desc:0 "Forced labor is an injustice to the state. Make it stop!"
  decision_end_planet_forced_labor_effects_short:0 "Stop Forced Labor"
 
  requisition_policy:0 "Planetary Scale Commandeering Policy"
@@ -127,7 +127,7 @@
  decision_planet_requisition_policy_desc:0 "Make a planetary scale commandeering policy."
 
  decision_end_requisition_policy:0 "Stop Planetary Scale Commandeering Policy"
- decision_end_requisition_policy_desc:0 "A planetary scale commandeering policy is a disservice to the government. Make it stop!"
+ decision_end_requisition_policy_desc:0 "A planetary scale commandeering policy is an injustice to the state. Make it stop!"
  decision_end_planet_requisition_policy_effects_short:0 "Stop the planetary scale commandeering policy."
 
  decision_planet_ngm_stonefish:0 "Stone Fish"
@@ -169,7 +169,7 @@
 
  decision_boost_ngm_olympic_nomination:0 "Reinforce Nomination"
  decision_boost_ngm_olympic_nomination_desc:0 "Reduce administrative costs, create special economic zones, and grease some palms. "
- decision_boost_ngm_olympic_nomination_effects:0 "§Y2§! It's available up to twice. "
+ decision_boost_ngm_olympic_nomination_effects:0 "§Y2§! Can activate twice."
  decision_boost_ngm_olympic_nomination_effects_short:0 "Take additional measures to rate the competition for attracting planetary §Y conventions§! and strengthen the rating of the planetary competition. "
 
  decision_revoke_ngm_olympic_nomination:0 "Withdraw Nomination"
@@ -181,80 +181,83 @@
 ########################
 
  ngm_air_cavalry_division_army:0 "Air Cavalry Division"
- ngm_air_cavalry_division_army_desc:0 "Forces that control enemy land forces from overhead and compete with speed."
+ ngm_air_cavalry_division_army_desc:0 "Forces that control enemy land forces from overhead and battle with speed."
 
  ngm_artillery_division_army:0 "Artillery Group"
  ngm_artillery_division_army_desc:0 "Troops attacking the enemy with missiles and artillery shells, plowing the planet's surface."
 
  ngm_armor_division_army:0 "Mechatronics"
- ngm_armor_division_army_desc:0 "Troops with high durability and high firepower in close proximity to penetrate the enemy"
+ ngm_armor_division_army_desc:0 "Troops with high durability and high firepower in close proximity to penetrate the enemy."
 
  ngm_special_forces_army:0 "Special Operations Group"
  ngm_special_forces_army_desc:0 "Troops that demonstrate high penetration against the enemy and overwhelm the enemy with their high level of skill."
 
  ngm_combat_machine_army:0 "War Machine"
- ngm_combat_machine_army_desc:0 "Specialized machines made for the sole purpose of overwhelming enemy forces with brute strength"
+ ngm_combat_machine_army_desc:0 "Specialized machines made for the sole purpose of overwhelming enemy forces with brute strength."
+
+ ngm_giants_army:0 "Giants"
+ ngm_giants_army_desc:0 "It's huge!"
 
  ngm_naval_fleet:0 "Naval Fleet"
- ngm_naval_fleet_desc:0 "Ships and naval vessels defending the planet"
+ ngm_naval_fleet_desc:0 "Ships and naval vessels defending the planet."
 
 #######################
 #####    志向    ######
 #######################
 
- ethic_fanatic_socialism:0 "Fanatical Socialism."
- ethic_fanatic_socialism_desc:0 "§L There is no doubt that property and the concept of private ownership is an evil system that fosters economic inequality. We should pursue the well-being of all our citizens through the efficient and equal distribution of property and land belonging to the community and the state. §! \n"
+ ethic_fanatic_socialism:0 "Fanatical Socialism"
+ ethic_fanatic_socialism_desc:0 "§LProperty and the concept of private ownership is an evil system that fosters economic inequality. We should pursue the well-being of our citizens, and the state, through efficient, equal distribution of wealth and land. §! \n"
  ethic_socialism:0 "Socialism"
- ethic_socialism_desc:0 "§L Privileged capitalists and hereditary institutions are factors that impede the equality of citizens in general and the stability and well-being of nations. We should eliminate such factors and strive for economic equality. §!" \fnDroid Sans Fallback
+ ethic_socialism_desc:0 "§LPrivileged capitalists and hereditary institutions are factors that impede the equality of citizens, along with the stability and well-being of nations. We should eliminate such factors and strive for economic equality. §!" \fnDroid Sans Fallback
  POP_ATTRACTION_SOCIALISM_POS:0 "§G+ £empire£ The orientation of empire is socialism §!"
  POP_ATTRACTION_SOCIALISM_NEG:0 "§R- £empire£ The orientation of empire is socialism §!"
 
- ethic_fanatic_capitalism:0 "Fanatical Capitalism."
- ethic_fanatic_capitalism_desc:0 "§LThe pursuit of profit is a right of citizens, and there is no doubt that restricting that right overly restricts citizens. It is inevitable that some sacrifices will be made in the maximization of profit. §! \n"
+ ethic_fanatic_capitalism:0 "Fanatical Capitalism"
+ ethic_fanatic_capitalism_desc:0 "§LThe pursuit of profit is the penultimate right of citizens, and restricting that right unreasonably controls inhabitants. Inevitably, some sacrifices will be made in the name of profit maximization. §! \n"
  ethic_capitalism:0 "Capitalism"
- ethic_capitalism_desc:0 "§LThe pursuit of stability for citizens and the state, and the well-being of citizens, naturally leads to the conclusion that stimulating economic activity is essential. The management of capital according to its capacity and the maximization of profit are extremely important actions. §! \n"
+ ethic_capitalism_desc:0 "§LThe pursuit of stability and well-being for the state and its citizens naturally leads to the conclusion that stimulating economic activity is essential. The management of capital according to its capacity and the maximization of profit are extremely important actions. §! \n"
  POP_ATTRACTION_CAPITALISM_POS:0 "§G+ £empire£ The orientation of empire is capitalism §!"
  POP_ATTRACTION_CAPITALISM_NEG:0 "§R- £empire£ The orientation of empire is capitalism §!"
 
  ethic_fanatic_interventionism:0 "Fanatical Interventionism"
- ethic_fanatic_interventionism_desc:0 "§L Lenses everywhere!  Wiretaps!  Recon drones!  Intelligence agents!  Trust no one. Manipulate everyone. §! \n"
+ ethic_fanatic_interventionism_desc:0 "§LLenses everywhere!  Wiretaps!  Recon drones!  Intelligence agents!  Trust no one. Manipulate everyone. §! \n"
  ethic_interventionism:0 "Interventionism"
- ethic_interventionism_desc:0 "§L We are always in danger. Demons with smiles are everywhere. In order to protect ourselves from such threats, we should actively interfere with others and consolidate our position. §! \n"
+ ethic_interventionism_desc:0 "§LWe are always in danger. Demons with smiles are everywhere. In order to protect ourselves from such threats, we should actively interfere with others and consolidate our position. §! \n"
  POP_ATTRACTION_INTERVENTIONISM_POS:0 "§G+ £empire£ The orientation of the empire is interventionism §!"
  POP_ATTRACTION_INTERVENTIONISM_NEG:0 "§R- £empire£ The orientation of the empire is interventionist §!"
 
  ethic_fanatic_neutralism:0 "Fanatical Neutralism"
- ethic_fanatic_neutralism_desc:0 "§L Nothing good comes from actively interacting with other governments. When you get involved, you risk your position. Non-interference and moderation are the keys to success in diplomacy. §!" \fnDroid Sans Fallback
+ ethic_fanatic_neutralism_desc:0 "§LNothing good comes from actively interacting with other governments. When you get involved, you risk your position. Non-interference and moderation are the keys to success in diplomacy. §!" \fnDroid Sans Fallback
  ethic_neutralism:0 "Neutralism"
- ethic_neutralism_desc:0 "§L Respect others and look within yourself. From the wisdom of the wise, we should distance ourselves from others and try to be passive in our responses. §! \n"
+ ethic_neutralism_desc:0 "§LRespect others and look within yourself. From the wisdom of the wise, we should distance ourselves from others and try to be passive in our responses. §! \n"
  POP_ATTRACTION_NEUTRALISM_POS:0 "§G+ £empire£ The orientation of the empire is neutralism §!"
  POP_ATTRACTION_NEUTRALISM_NEG:0 "§R- £empire£ The orientation of the empire is neutralism §!"
 
  ethic_fanatic_conservationism:0 "Fanatical Conservationism"
- ethic_fanatic_conservationism_desc:0 "§L The mother planet gave birth to us, her children. The spiritualists tell us this, and we agree. Without planets, we would not have been able to live as highly intelligent life forms. We must protect our environment for it is the planet. §!" \nDroid Sans Fallback
+ ethic_fanatic_conservationism_desc:0 "§LMother Earth gave birth to us, her children. The spiritualists tell us this, and we agree. Without her perfect environment, we would not have been able to live as highly intelligent life forms. We must protect her at all costs. §!" \nDroid Sans Fallback
  ethic_conservationism:0 "Conservationism"
- ethic_conservationism_desc:0 "§L We cannot live without our planet. Of course, we can 'live' on stations and ships, but we will not be able to 'stay alive'. We must protect our environment. §! \n"
+ ethic_conservationism_desc:0 "§LWe cannot live without our planet. Of course, we can 'live' on stations and ships, but we will not be able to 'stay alive'. We must protect our environment. §! \n"
  POP_ATTRACTION_CONSERVATIONISM_POS:0 "§G+ £empire£ The orientation of empire is conservationism §!"
  POP_ATTRACTION_CONSERVATIONISM_NEG:0 "§R- £empire£ The orientation of the empire is conservationism §!"
 
  ethic_fanatic_developmentalism:0 "Fanatical Developmentalism"
- ethic_fanatic_developmentalism_desc:0 "§L Conquer nature and bring it under control. Maximum industrialization is the duty of civilized nations, and their industrial power is a model for the whole world. §!" \fnDroid Sans Fallback
+ ethic_fanatic_developmentalism_desc:0 "§LConquer nature and bring it under control. Maximum industrialization is the duty of civilized nations, and their industrial power is a model for the whole world. §!" \fnDroid Sans Fallback
  ethic_developmentalism:0 "Developmentalism"
- ethic_developmentalism_desc:0 "§L It is the right of the colonists to remodel the planet for the better and make it a livable land for themselves. Industrialization is an essential element in the development of civilization. §! \n"
+ ethic_developmentalism_desc:0 "§LIt is the right of the colonists to remodel the planet for the better and make it a livable land for themselves. Industrialization is an essential element in the development of civilization. §! \n"
  POP_ATTRACTION_DEVELOPMENTALISM_POS:0 "§G+ £empire£ The orientation of the empire is developmentalism §!"
  POP_ATTRACTION_DEVELOPMENTALISM_NEG:0 "§R- £empire£ The orientation of the empire is developmentalism §!"
 
  ethic_fanatic_honorism:0 "Fanatical Honorism"
- ethic_fanatic_honorism_desc:0 "§L The respect and admiration of others should be earned through the achievements of our predecessors and ourselves. Our achievements in research, military service, development, and culture will be remembered and celebrated forever. §! \fnDroid Sans Fallback
+ ethic_fanatic_honorism_desc:0 "§LThe respect and admiration of others should be earned through the achievements of our predecessors and ourselves. Our achievements in research, military service, development, and culture will be remembered and celebrated forever. §!" \fnDroid Sans Fallback
  ethic_honorism:0 "Honorism"
  ethic_honorism_desc:0 "§L Honor and fame. Invisible achievements are to be remembered and celebrated. A successful person should be one who is recognized and celebrated by others. §! \n"
  POP_ATTRACTION_HONORISM_POS:0 "§G+ £empire£ The orientation of empire is honorism §!"
  POP_ATTRACTION_HONORISM_NEG:0 "§R- £empire£ The orientation of empire is honorism §!"
 
  ethic_fanatic_utilitarianism:0 "Fanatical Utilitarianism"
- ethic_fanatic_utilitarianism_desc:0 "§L Maximization of reward and profit. The state itself needs substantial goods to prosper, and should be ashamed to exist in name only. Are we currently producing anything!? §! \n"
+ ethic_fanatic_utilitarianism_desc:0 "§LMaximization of reward and profit. The state itself needs substantial goods to prosper, and should be ashamed to exist in name only. Are we currently producing anything!? §! \n"
  ethic_utilitarianism:0 "Utilitarianism"
- ethic_utilitarianism_desc:0 "§L Visible profit. What could be more wonderful than that? Money and pleasure rather than fame. These are the things that make us rich. §!" \fnDroid Sans Fallback
+ ethic_utilitarianism_desc:0 "§LVisible profit. What could be more wonderful than that? Money and pleasure rather than fame. These are the things that make us rich. §!" \fnDroid Sans Fallback
  POP_ATTRACTION_UTILITARIANISM_POS:0 "§G+ £empire£ The orientation of empire is utilitarianism §!"
  POP_ATTRACTION_UTILITARIANISM_NEG:0 "§R- £empire£ The orientation of empire is utilitarianism §!"
 
@@ -263,15 +266,15 @@
 #######################
 
  origin_ngm_buffer_state:0 "The Ancient Buffer State Of Law"
- origin_ngm_buffer_state_desc:0 "The star system in which this country is located was a strategically important location in ancient times due to its rich location, and wars were fought over it. \n The ancient nations of this system escaped the danger of war by establishing a tiny independent buffer state to rule over it. \n The resulting nations were forced to live on small land masses and limited raw material production in exchange for trade benefits and a strong international voice. \n Even after the demise of the ancient group of nations, the country has maintained its traditions as one of the few inherited elements."
+ origin_ngm_buffer_state_desc:0 "The star system in which this country is located was a strategically important location in ancient times because of its rich location. As a result, this land has had many wars fought over it. \n The ancient nations of this system escaped the danger of war by establishing a tiny independent buffer state to rule over it. \n The resulting nations were forced to live on small land masses and limited raw material production for trade benefits and a strong international voice. \n Even after the demise of the ancient group of nations, the country has maintained its traditions as one of the few inherited elements."
  origin_tooltip_ngm_buffer_state_effects:0 "-They are produced in star systems located in very rich choke points.\n-This empire gets relics§Y『The Ancient Pact』§ at the start!\n-It imposes extremely large constraints on expansion.\n-Market commissions§G-10%§!、Pop grows§G+100%§!、\n-Acquire special racial traits.\n\nearly buildings§Y「The Palace of Eternity」§!\ntraits of a species§Y「Merchants from ancient times」§!\n"
 
  origin_ngm_escape_to_the_past:0 "Escape to the Past"
- origin_ngm_escape_to_the_past_desc:0 " This nation's race fled from a time of torment and doom, and returned to the past to change the future.\n However, their methods of resisting their fate have given rise to trackers and regular raids."
+ origin_ngm_escape_to_the_past_desc:0 "This nation's race fled from a time of torment and doom, and returned to the past to change the future.\n However, their methods of resisting their fate have given rise to trackers and regular raids."
  origin_tooltip_ngm_escape_to_the_past:0 "Once every 120 months, a fleet from the future attacks. By defeating them, it is possible to acquire technological debris.\n\nCapital planet has special characteristics「space-time continuum」\nPhysics Research speed§G+20%§!、Pop grows§G+10%§!"
 
  origin_ngm_galactic_empire_aquarium:0 "Galactic Empire Aquarium"
- origin_ngm_galactic_empire_aquarium_desc:0 "This nation existed as an amusement park of the good old Galactic Empire. Because of its entertaining nature, it was not the target of attacks from many countries. But because of this, it has been in a slow decline. n\ Finally, it realized that it could not go on like this and entered the galactic community with trepidation, but all the knowledge it once had was lost and it did not dare to expand.\n However, the rich amusement park is alive and well.\n§RIt bugs me when there are more than two countries that choose this origin.§!"
+ origin_ngm_galactic_empire_aquarium_desc:0 "This nation existed as an amusement park in the old Galactic Empire. Because of its entertaining nature, it was secure from the attacks of other countries. But because of this, it has been in a slow decline. n\ Finally, it realized that its position was unsustainable and entered the galactic community with trepidation, but all the knowledge it once had was lost and it did not dare to expand.\n However, the rich amusement park is alive and well.\n§RIt bugs me when there are more than two countries that choose this origin.§!"
  origin_tooltip_ngm_galactic_empire_aquarium:0 "Start with a special group of star systems and capital planets in the outer reaches of the galaxy.\n\nExtremely restrictive regarding expansion. \n\nSpecial buildings can be built.\n\n"
 
 #######################
@@ -279,10 +282,10 @@
 #######################
 
  civic_sham_constitutionalism:0 "Sham Constitutionalism"
- civic_sham_constitutionalism_desc:0 "Executive power is constrained by codified law in this country, but the constraints do not make sense and have only nominal implications. Citizens are under the illusion that they've got a democratic system, and the experts are babbling on while oppressing the workers."
-
+ civic_sham_constitutionalism_desc:0 "Codified law constrains executive power, but the constraints seldom make sense and have nominal implications. Citizens are under the illusion that they have a democratic system, and the experts are babbling on while oppressing the workers."
+ 
  civic_substantive_constitutionalism:0 "Substantive Constitutionalism"
- civic_substantive_constitutionalism_desc:0 "Unwritten and codified laws limit the powers of the monarch. This is a state where the views of the people are reflected in policy through the democratic process. This system, which appears inefficient and irrational from the outside, has been extremely effective in the aspect of national stability."
+ civic_substantive_constitutionalism_desc:0 "Unwritten and codified laws limit the powers of the monarch. Policy reflects the views of the people. This democratic process, which appears inefficient and irrational from the outside, has been effective in national stability."
  
  civic_noblesse_oblige:0 "Noblesse-Oblige"
  civic_noblesse_oblige_desc:0 "A basic moral principle in Western society that those of higher status have social responsibilities and duties that must be fulfilled accordingly."
@@ -291,45 +294,45 @@
  civic_non_retention_of_force_desc:0 "This country possesses an armed space force for defense only and does not recognize war as an invocation of state rights. It recognizes only a few ‘space police’ and ‘riot police’ for counter-piracy, but does not allow the use and possession of any military force or other force."
 
  civic_symbolic_monarchy:0 "Symbolic Monarchy"
- civic_symbolic_monarchy_desc:0 "A ‘symbolic monarchy’ is a monarchy that acknowledges the existence of a monarch, but in which the monarch has no functions related to national government, but merely functions that symbolize the unity of the people and the permanence of the nation in a spiritual and psychological sense."
+ civic_symbolic_monarchy_desc:0 "A ‘symbolic monarchy’ is a monarchy that acknowledges the existence of a monarch, but in which the monarch has no functions related to the national government. It functions to symbolize the unity of the people and the permanence of the nation in a spiritual and psychological sense."
 
  civic_cramming_for_education:0 "Cramming Education"
  civic_cramming_for_education_desc:0 "Cramming is a method of education that places an emphasis on increasing the amount of knowledge by rote, or aims to increase knowledge."
 
  civic_lax_building_codes:0 "Loose Building Codes"
- civic_lax_building_codes_desc:0 "Building codes in this country are extremely loose and restrictive, which means that many citizens are forced into cramped and uncomfortable rooms. However, this allows for a large number of buildings and facilities to be provided for."
+ civic_lax_building_codes_desc:0 "Building codes are extremely loose and restrictive. As a result, this government forced many citizens into cramped and uncomfortable rooms. However, this allows for many buildings and facilities to be provided for."
  
  civic_truth_and_reconciliation_commission:0 "Truth and Reconciliation Commission"
- civic_truth_and_reconciliation_commission_desc:0 "In this country, reflection on former dictatorships, wars and acts of genocide has led to the public discovery and disclosure of wrongs for the past, present and future in the interest of national, ethnic and communal harmony. The permanent committees established for this purpose have had no small impact on national integration."
+ civic_truth_and_reconciliation_commission_desc:0 "Reflection on former dictatorships, wars and acts of genocide has led to the public discovery and disclosure of wrongs for the past, present and future in the interest of national harmony. The permanent committees established for this purpose have had no small impact on national integration."
 
  civic_national_sacrifice:0 "National Rituals"
- civic_national_sacrifice_desc:0 "In this country, aside from religious freedom, the emphasis is on state-sponsored rituals and ceremonies, which are performed throughout the country. Bureaucrats in the ceremonial field occupy important positions in the country and the people look forward to the same ceremonies as the festivals."
+ civic_national_sacrifice_desc:0 "Aside from religious freedom, the emphasis is on state-sponsored rituals and ceremonies performed throughout the country. Bureaucrats in the ceremonial field occupy important positions in the country and the people look forward to the same ceremonies as national festivals."
  
  civic_neoliberalism:0 "Neoliberalism"
  civic_neoliberalism_desc:0 "Philosophy for a re-evaluation of individual liberty and market principles against the social market economy. It advocates that government intervention in individuals and markets should be at a minimum."
 
  civic_ngm_manifest_destiny:0 "Manifest Destiny"
- civic_ngm_manifest_destiny_desc:0 "It is the goal of this country and the consensus of the people to continue to expand in the name of the obvious mission. Openness and the light of civilization are of utmost importance."
+ civic_ngm_manifest_destiny_desc:0 "It is the goal of this country and the consensus of the people to continue to expand in the name of their perceived virtues. Openness and enlightenment are of utmost concern."
 
  civic_ngm_separation_of_powers:0 "Separation of Powers"
- civic_ngm_separation_of_powers_desc:0 "The executive, the legislature and the judiciary each have a great deal of probability of running amok. By decentralizing each of them, rather than concentrating them in one person or one agency, and having them mutually monitored, the stability of the state and the stability of the people can be achieved."
+ civic_ngm_separation_of_powers_desc:0 "The executive, the legislature and the judiciary each have a great deal of probability of running amok. By decentralizing each of them, rather than concentrating them in one person or one agency, and having them monitored, we can achieve the stability of both the state and the people."
 
  civic_ngm_kakistocracy:0 "Kakistocracy"
- civic_ngm_kakistocracy_desc:0 "A kakistocracy is a government run by a malevolent politician or citizen, with many who are capable exercising their abilities to line their pockets, while the majority of people are occupied with living their day. But this government, run by greed, can sometimes move in great directions."
+ civic_ngm_kakistocracy_desc:0 "A kakistocracy is a government run by the least qualified politician or citizen. Many elites exercise their abilities to line their pockets while they occupy citizens with day-to-day life. This government, run by greed, can sometimes move in expert directions."
 
  civic_ngm_enlightenment:0 "The Enlightenment"
  civic_ngm_enlightenment_desc:0 "This government is a friendly one that aims to protect those who are weaker than they are and elevate them to the same status as themselves."
 
  civic_ngm_youth_politics:0 "Youth Politics"
- civic_ngm_youth_politics_desc:0 "This government is dominated by young people and a lot of decisions are made by up-and-coming government officials. But it tends to hasten the retirement of those who are skilled and experienced in the labor federation and tends to create spur-of-the-moment decisions."
+ civic_ngm_youth_politics_desc:0 "Young people and up-and-coming government officials dominate this government and make most of the decisions. But it hastens the retirement of those experienced in the labor federation and creates spur-of-the-moment decisions."
  Youth_Politics:0 "The age of the initial leaders will be 20-30 years old."
 
  civic_ngm_elder_politics:0 "Elder Politics"
- civic_ngm_elder_politics_desc:0 "This government is dominated by older people and many decisions are made by skilled government officials. However, this tends to discourage newcomers from participating in government and reduces the predisposition to accept new ideas."
+ civic_ngm_elder_politics_desc:0 "Older people dominate this government, and skilled government officials make many decisions. But this discourages newcomers from participating in government and reduces the predisposition to accept new ideas."
  Elder_Politics:0 "The age of the initial leaders will be 65-100 years old."
 
  civic_ngm_advanced_glory_system:0 "The Advanced Glory System"
- civic_ngm_advanced_glory_system_desc:0 "The glory of this country is multi-layered and difficult for other countries to understand. But for us, glory is supreme, and obtaining it is an honor and often more important than life."
+ civic_ngm_advanced_glory_system_desc:0 "The concept of glory is multi-layered and difficult for other countries to understand. But for us, glory is supreme, and getting it is an honor more important than life itself."
 
  civic_ngm_culturism:0 "Culturism"
  civic_ngm_culturism_desc:0 "This government emphasizes education and knowledge, and is governed by the knowledgeable, making it almost impossible for the mendacious and under-educated to get ahead. As a result, researchers and others are given preferential treatment, but commerce is neglected."
@@ -347,19 +350,19 @@
  civic_ngm_formalist_rootkeeper_desc:0 "The government of this country prefers to conduct consultations in secret chambers, and often displays an ostensibly formalistic attitude. As a result, to those who do not know the truth, it appears to be a rational and smooth process of making requests and adjusting interests, but behind the scenes there is fierce truncation and hidden consensus building."
 
  civic_ngm_artistically_inclined_careless_person:0 "Careless and Creative"
- civic_ngm_artistically_inclined_careless_person_desc:0 "The government of this country has excellent artistic sensibilities and entertainment, but in diplomacy it often forgets its promises and protocols."
+ civic_ngm_artistically_inclined_careless_person_desc:0 "The government of this country has excellent artistic sensibilities and entertainment, but in diplomacy, it often forgets its obligations and protocols."
 
  civic_ngm_steady_hand:0 "Steady Hand"
  civic_ngm_steady_hand_desc:0 "The government of this country is extremely solidly run and has succeeded in building a solid foundation."
 
  civic_ngm_the_toxic_survivalist:0 "Tongue-In-Cheek Survivalists"
- civic_ngm_the_toxic_survivalist_desc:0 "The government of this country is run by a foul-mouthed leader who does not make a good impression on others, but is skilled in the art of practical survival and works hard behind the scenes."
+ civic_ngm_the_toxic_survivalist_desc:0 "The leader of this country is offensive and foul, but is skilled in the art of practical survival and works hard behind the scenes."
 
  civic_ngm_hard_worker_with_a_slow_pace:0 "Slow and Steady"
- civic_ngm_hard_worker_with_a_slow_pace_desc:0 "The government of this country is patient and implements its security plans at its own pace, always struggling to deal with other countries. Because of this attitude, it is trusted by many countries and has strong confidence in its people."
+ civic_ngm_hard_worker_with_a_slow_pace_desc:0 "The government of this country is patient and implements its security plans at its own pace, so is always struggling to deal with other countries militarily. Because of this attitude, many countries have a strong sense of trust and confidence in its people."
 
  civic_ngm_ruthless_realist:0 "Ruthless Realist"
- civic_ngm_ruthless_realist_desc:0 "The government of this country is frighteningly pragmatic, not hesitating to betray its allies, no matter how old. Internal politics are harsh and efficient. However, this attitude is not actively supported by the people or by other countries."
+ civic_ngm_ruthless_realist_desc:0 "The government of this country is frighteningly pragmatic, not hesitating to betray its allies, no matter how old. Internal politics are harsh and efficient. However, neither the people, nor other countries, actively support this attitude."
 
  civic_ngm_smooth_traffic:0 "Smooth Traffic"
  civic_ngm_smooth_traffic_desc:0 "Keeping the traffic moving smoothly increases productivity and happiness among our population."
@@ -371,7 +374,7 @@
  civic_ngm_space_security_headquarters_desc:0 "Specialized police agencies have been established in this country to deal with piracy."
 
  civic_ngm_random_birth_rate:0 "Random Birth Rate"
- civic_ngm_random_birth_rate_desc:0 "The birth rate is out of control in this country."
+ civic_ngm_random_birth_rate_desc:0 "The birth rate in this country is unpredictable, so family planning is practically impossible."
 
  civic_ngm_trading_nations:0 "Trading Nations"
  civic_ngm_trading_nations_desc:0 "This country is based on trade, and the benefits from trade cannot be ignored."
@@ -412,8 +415,8 @@
  civic_ngm_communist_dictatorship:0 "Communist Dictatorship"
  civic_ngm_communist_dictatorship_desc:0 "This society is a strong regime of the general secretary of a socialist party, striving for social equality under the strong leadership of the general secretary."
 
- civic_ngm_demagoguery:0 "Popular Agitation System"
- civic_ngm_demagoguery_desc:0 "This society is a nation of con artists who run the state by manipulating ignorant citizens with their mouths. The head of state is a smooth talker, regardless of his ability."
+ civic_ngm_demagoguery:0 "Populist Agitators"
+ civic_ngm_demagoguery_desc:0 "This society is a nation of con artists who run the state by manipulating ignorant citizens with propaganda. The head of state is a smooth talker, regardless of his ability."
 
  civic_ngm_order_of_chivalry:0 "Knights"
  civic_ngm_order_of_chivalry_desc:0 "This society is a hereditary militaristic system, with a military leader, the head of the Order, ruling the country."
@@ -428,19 +431,19 @@
  civic_ngm_party_rule_desc:0 "This government has a dominant party, and the authority of that party takes precedence over the authority of the state."
 
  civic_ngm_freedom_in_obedience:0 "Freedom In Obedience"
- civic_ngm_freedom_in_obedience_desc:0 "This government has strong ideological control in some areas, but relatively free thought and action is tolerated in other areas of life."
+ civic_ngm_freedom_in_obedience_desc:0 "This government has strong ideological control in some areas, but relative free thought and action is tolerated in other areas of life."
 
  civic_ngm_caste_system:0 "Caste System"
  civic_ngm_caste_system_desc:0 "This society has a strict class system based on religion, and interaction with those of another class or changing jobs is strongly restricted."
 
  civic_ngm_tribalism:0 "Tribalism"
- civic_ngm_tribalism_desc:0 "This society has a surviving tribal system based on blood and geography, which has a significant impact on society as a strong community."
+ civic_ngm_tribalism_desc:0 "This society has a surviving tribal system based on blood and geography, which has a significant impact on population, imbuing a powerful sense of community."
 
  civic_ngm_court_politics:0 "Court Politics"
  civic_ngm_court_politics_desc:0 "The country has a court of aides, high-ranking officials, and others around the head of state. Various important matters are decided behind closed doors."
 
  civic_ngm_social_darvinism:0 "Social Darwinism"
- civic_ngm_social_darvinism_desc:0 "There is a fierce struggle going on in this country, and it is believed that society will develop through competition between nations, and competition will develop society."
+ civic_ngm_social_darvinism_desc:0 "The concept of “survival of the fittest” is our guiding principle. Some species and nations are inherently better than others. We believe that competition between nations is a necessary step for societal development."
 
  civic_ngm_apprenticeship:0 "Apprenticeship"
  civic_ngm_apprenticeship_desc:0 "In this country, to enter a profession, one must accumulate experience through hands-on training under the guidance of a master or teacher."
@@ -455,7 +458,7 @@
  civic_ngm_demonstration_culture_desc:0 "The right to demonstrate is widely recognized in this society, making it easy for groups and activists of various ideologies to make their views known to society."
 
  civic_ngm_open_forum:0 "Public Debate"
- civic_ngm_open_forum_desc:0 "In this society, when an election or major issue arises, experts, politicians, and citizens are brought together for an open debate. This society, which values deliberation, can deal with a variety of issues."
+ civic_ngm_open_forum_desc:0 "In this society, when an election or major issue arises, experts, politicians, and citizens are brought together for an open debate. This society, which values deliberation, can deal with a variety of issues on a grand scale."
 
  civic_ngm_consumer_society:0 "Consumer Society"
  civic_ngm_consumer_society_desc:0 "This country maintains a stable society by wasting large amounts of consumable goods."
@@ -473,10 +476,10 @@
  civic_ngm_right_to_bear_arms_desc:0 "This society recognizes the freedom to take up arms for the noble goal of protecting individual liberty."
 
  civic_ngm_shared_values:0 "Common Values"
- civic_ngm_shared_values_desc:0 "This society shares the common value that intelligent life in the galaxy has universal existence values as well."
+ civic_ngm_shared_values_desc:0 "This society shares the common value that intelligent life in the galaxy has universal value in their existence."
 
  civic_ngm_go_along_with:0 "Conquer Together"
- civic_ngm_go_along_with_desc:0 "Because of the diversity of this society and its tolerance of many different species, all races and people rise up in crisis to protect this society."
+ civic_ngm_go_along_with_desc:0 "Because of the diversity of this society and its tolerance of many different species, all races and people rise up in crisis to protect one another."
 
  civic_ngm_globalism:0 "Globalism"
  civic_ngm_globalism_desc:0 "This society values the existence of other nations and maintains friendly relations and interests with them through trade."
@@ -484,14 +487,14 @@
  civic_ngm_multiculturalism:0 "Multiculturalism"
  civic_ngm_multiculturalism_desc:0 "The country has a maximum tolerance for all cultures and has achieved multicultural coexistence."
 
- civic_ngm_paternalism:0 "Asylumism"
+ civic_ngm_paternalism:0 "Paternalism"
  civic_ngm_paternalism_desc:0 "This society considers it its own duty to protect others, and will do its best to protect other nations, albeit somewhat self-righteously."
 
  civic_ngm_accept_everyone:0 "Open Door Immigration"
  civic_ngm_accept_everyone_desc:0 "This society is tolerant of the acceptance of others and accepts all immigrants as long as they have not committed serious crimes."
 
  civic_ngm_people_flying_away:0 "Emigration Fascination"
- civic_ngm_people_flying_away_desc:0 "This society tends to immigrate to various places, both domestic and foreign, out of interest in the unknown and freedom of movement."
+ civic_ngm_people_flying_away_desc:0 "This society tends to emigrate to various places, both domestic and foreign, out of interest in the unknown and freedom of movement."
 
  civic_ngm_exclusive_community:0 "Exclusive Community"
  civic_ngm_exclusive_community_desc:0 "The society in this country is very exclusive to others and has built its own insular world."
@@ -506,16 +509,16 @@
  civic_ngm_gentlemanly_disgust_desc:0 "The exclusive attitude of this country is gentlemanly, with little open abuse or insult, but stern rejection of others."
 
  civic_ngm_erasure:0 "Erasing The Traces"
- civic_ngm_erasure_desc:0 "There were other countries, but I don't know where they were."
+ civic_ngm_erasure_desc:0 "There were other countries, but I don't know where they went."
 
- civic_ngm_elitism:0 "Electoralism"
+ civic_ngm_elitism:0 "Religious Elitism"
  civic_ngm_elitism_desc:0 "This society believes that they are chosen by God, and that anyone other than themselves who can receive God's salvation is lowly."
 
  civic_ngm_dissection:0 "Incentivized Dissection"
  civic_ngm_dissection_desc:0 "This nation is willing to dissect and experiment on multispecies for its own biological findings."
 
  civic_ngm_imperialism:0 "Imperialism"
- civic_ngm_imperialism_desc:0 "This society considers itself the most superior government, and is doing all it can to demonstrate its national power and prestige, and to secure its interests."
+ civic_ngm_imperialism_desc:0 "This state considers itself the most superior government, and is doing all it can to demonstrate its national power and prestige, and to secure its interests."
 
  civic_ngm_big_ship_policy:0 "Big Ship Policy"
  civic_ngm_big_ship_policy_desc:0 "This society believes that big ships with big guns reign supreme."
@@ -524,7 +527,7 @@
  civic_ngm_military_industrial_complex_desc:0 "The huge military-industrial complex is a major force in this society, and has a major influence on military policy."
 
  civic_ngm_war_prosperity:0 "War Economy"
- civic_ngm_war_prosperity_desc:0 "The economy of this society is extremely fragile, but when war breaks out, all economies are revitalized in the name of total mobilization."
+ civic_ngm_war_prosperity_desc:0 "The economy of this society is extremely fragile while at peace, but when war breaks out, all economies are revitalized in the name of total mobilization."
 
  civic_ngm_military_regime:0 "Military Regime"
  civic_ngm_military_regime_desc:0 "In this society, professional military personnel have a strong influence on the operation of the state under the guise of political neutrality."
@@ -532,8 +535,8 @@
  civic_ngm_The_Struggle_for_Struggle:0 "Struggle For Struggle"
  civic_ngm_The_Struggle_for_Struggle_desc:0 "Peace is just a period of rest between wars."
 
- civic_ngm_aegis_shield:0 "Aegis Protection"
- civic_ngm_aegis_shield_desc:0 "This country emphasizes ironclad defense, and it is not easy to break through the fortress of this country."
+ civic_ngm_aegis_shield:0 "Aegis Shield"
+ civic_ngm_aegis_shield_desc:0 "This country emphasizes ironclad defense and can turn itself into an impenetrable fortress when needed."
 
  civic_ngm_prosperity_advocate:0 "Prosperity Advocate"
  civic_ngm_prosperity_advocate_desc:0 "This country believes that peace and trade, not war, is the only way to bring prosperity and happiness to society."
@@ -541,7 +544,7 @@
  civic_ngm_armed_pacifism:0 "Armed Pacifism"
  civic_ngm_armed_pacifism_desc:0 "This country believes that an army as a defensive force is necessary to keep the peace."
 
- civic_ngm_active_pacifist:0 "Intervention Pacifism"
+ civic_ngm_active_pacifist:0 "Pacifistic Interventionism"
  civic_ngm_active_pacifist_desc:0 "This country believes that in order to maintain peace, it should be involved in other countries to broker peace on a galactic scale."
 
  civic_ngm_messenger_of_peace:0 "Messenger Of Peace"
@@ -558,10 +561,10 @@
  civic_ngm_missionary_group_effect:0 "Neighborhood Spiritualism Attractiveness +40%"
 
  civic_ngm_defender_of_the_faith:0 "Defender of the Faith"
- civic_ngm_defender_of_the_faith_desc:0 "The leaders of this country are committed to protecting God as a nation and are willing to make any sacrifice to do so."
+ civic_ngm_defender_of_the_faith_desc:0 "The leaders of this country are committed to protecting God and are willing to make any sacrifice to do so."
 
  civic_ngm_divination:0 "Kiboku"
- civic_ngm_divination_desc:0 "In this country, politics is conducted by divination, a primitive system that has miraculously survived to the present day."
+ civic_ngm_divination_desc:0 "In this country, politics are conducted by divination, a primitive system that has miraculously survived to the present day."
 
  civic_ngm_cultural_consumption:0 "Mass Cultural Consumption"
  civic_ngm_cultural_consumption_desc:0 "This country consumes a large amount of cultural creations, which has a positive impact on people's mental comfort."
@@ -573,7 +576,7 @@
  civic_ngm_machines_are_our_friends_desc:0 "In this society, robots are given human rights, and robots and citizens live happily together throughout the city."
 
  civic_ngm_longing_for_the_future:0 "Longing For The Future"
- civic_ngm_longing_for_the_future_desc:0 "This society is trying to figure out the unknown by itself and use it as a clue to the future."
+ civic_ngm_longing_for_the_future_desc:0 "This society is trying to figure out the unknown by itself and use it as a way to the future."
 
  civic_ngm_experimental_substance:0 "Experimental Materials"
  civic_ngm_experimental_substance_desc:0 "In the past, this country conducted various experiments to solve its energy problems. As a result, a variety of strategic materials were generated on the planet."
@@ -582,7 +585,7 @@
  civic_ngm_industrial_capitalism_desc:0 "Development and research should revitalize society and make it more prosperous!"
 
  civic_ngm_experimental_practice:0 "Experimental Practice"
- civic_ngm_experimental_practice_desc:0 "Every day is a 'paradise' as a result of conducting all kinds of experiments on a daily basis and incorporating immature techniques and theories into everyday life."
+ civic_ngm_experimental_practice_desc:0 "Every day is a 'paradise' as a result of conducting all kinds of experiments on a daily basis and incorporating abstract techniques and theories into everyday life."
 
  civic_ngm_paranoia:0 "AI-Driven Politics"
  civic_ngm_paranoia_desc:0 "All political chambers in this country are run by AI. Citizen, are you happy?"
@@ -597,7 +600,7 @@
  civic_ngm_peoples_army_desc:0 "The country's army is made up of recruits from the citizenry and is capable of deploying a tremendous number, though not a high quality, army."
 
  civic_ngm_economic_primitivism:0 "Economic Primitivism"
- civic_ngm_economic_primitivism_desc:0 "The country's economy is barely developed or has degenerated into an extremely primitive and unsophisticated economic situation."
+ civic_ngm_economic_primitivism_desc:0 "The country's economy is barely developed or has degenerated into an extremely primitive and unsophisticated economic system."
 
  civic_ngm_land_sharing:0 "Land Sharing Program"
  civic_ngm_land_sharing_desc:0 "In this country, land belongs to the community and private ownership of land is not allowed. All rich and important land is controlled by the state."
@@ -627,13 +630,13 @@
  civic_ngm_CIA_desc:0 "The intelligence agencies in this country are very aggressive and always plotting to intervene in other countries."
 
  civic_ngm_information_operation:0 "Information Operation"
- civic_ngm_information_operation_desc:0 "Systematic information operations are essential in this country to create a good impression of their country and to conceal information about their country from others."
+ civic_ngm_information_operation_desc:0 "Systematic information operations are essential in this country to create a good impression and conceal information from others."
 
  civic_ngm_cryptography:0 "Advanced Cryptography"
- civic_ngm_cryptography_desc:0 "This country's cryptography is unique and uses cryptographic rules that other countries cannot understand."
+ civic_ngm_cryptography_desc:0 "This country's cryptography is unique and uses cryptographic rules that are impossible to understand."
 
  civic_ngm_parabola:0 "Looking Outwards"
- civic_ngm_parabola_desc:0 "This country continues to study other countries to ensure that it does not and may not face any threats to itself."
+ civic_ngm_parabola_desc:0 "This country continues to study other countries to ensure that it does not face threats to itself."
 
  civic_ngm_smile:0 "Broker Of Smiles"
  civic_ngm_smile_desc:0 "This nation faces other nations with a smile, no matter the situation, in order to bring peace to the galaxy."
@@ -645,7 +648,7 @@
  civic_ngm_glorious_isolation_desc:0 "It is not that our country is isolated from the world, but that the world is isolated from our country."
 
  civic_ngm_FBI:0 "Defensive Intelligence Agency"
- civic_ngm_FBI_desc:0 "Counterintelligence is the primary mission of the intelligence agencies in this country, and they are heavily funded."
+ civic_ngm_FBI_desc:0 "Counterintelligence is the primary mission of the intelligence agencies in this country, and they are well-funded in return."
 
  civic_ngm_internal_affairs:0 "Non-Interference In Internal Affairs"
  civic_ngm_internal_affairs_desc:0 "This country does not tolerate interference in its own internal affairs, and in return does not tolerate interference in the internal affairs of other countries."
@@ -681,7 +684,7 @@
  civic_ngm_grand_monument_desc:0 "Architecture is the supreme article that expresses itself. This society is known to create monuments for many different occasions."
 
  civic_ngm_destructive_digging:0 "Destructive Digging"
- civic_ngm_destructive_digging_desc:0 "This society either cares little for the environment, or hasn't created sufficient mining technology to protect their environment. If you destroy a planet, you can get minerals, can't you?"
+ civic_ngm_destructive_digging_desc:0 "This society either cares little for the environment, or hasn't created sufficient mining technology to protect their environment. If you destroy a planet, you can still get minerals, can't you?"
 
  civic_ngm_irreversible_industrialization:0 "Irreversible Industrialization"
  civic_ngm_irreversible_industrialization_desc:0 "As a result of over-industrialization, the planetary environment has been irreversibly destroyed (or so we believe)."
@@ -702,16 +705,16 @@
  civic_ngm_diplomatic_etiquette_desc:0 "The diplomats in this country are tenacious and brilliant, but are bound by increasingly complex rituals that are in constant flux."
 
  civic_ngm_exchange_of_honor:0 "Exchange Of Honors"
- civic_ngm_exchange_of_honor_desc:0 "The dignitaries of this country covet not only their own laurels, but also those of other countries, and they believe that the dignitaries of other countries will as well. Therefore, a percentage of diplomatic work is devoted to the exchange of laurels."
+ civic_ngm_exchange_of_honor_desc:0 "The dignitaries of this country covet not only their own honors but also those of other countries, and they believe that the dignitaries of other countries do as well. Therefore, a percentage of diplomatic work is devoted to the exchange of honors."
 
  civic_ngm_heroic_volunteer_force:0 "Heroic Volunteer Force"
- civic_ngm_heroic_volunteer_force_desc:0 "Those who survive this battlefield are the heroes. Heroes are what we want.  Imperial Advance Descent Force Slogan."
+ civic_ngm_heroic_volunteer_force_desc:0 "Those who survive the battlefield are heroes. Heroes are what we want. - Imperial Advance Descent Force Slogan -"
 
  civic_ngm_the_self_righteous_hero:0 "Self-Righteous Heroes"
- civic_ngm_the_self_righteous_hero_desc:0 "This society sees themselves as the heroes of others and won't hesitate to jump to a weaker societies defense, but with pomp and smugness. I am a hero. Heroes should be given the treatment they deserve."
+ civic_ngm_the_self_righteous_hero_desc:0 "This society sees themselves as the heroes of others and won’t hesitate to jump to a weaker society’s defense, but with pomp and smugness. 'I am a hero. We should give heroes the treatment they deserve.'"
 
  civic_ngm_respect_act:0 "Respect Titles Act"
- civic_ngm_respect_act_desc:0 "Those who hold any title or title shall be accorded the honorific title as appropriate. It is a felony to omit a title, title, or title of honor. Or to err is a felony."
+ civic_ngm_respect_act_desc:0 "Those who hold any honorific or title shall be accorded the honorific as appropriate. It is a felony to omit a honorific, title, or title of honor."
 
  civic_ngm_personal_interest:0 "Personal Interest Supremacy Act"
  civic_ngm_personal_interest_desc:0 "We cannot maximize our own interests if we are concerned about others."
@@ -750,7 +753,7 @@
  civic_ngm_financial_enterprises_desc:0 "This company excels in consulting, dealing with receivables, electronic currency, and financial products, and these industries are the core of the company's operations."
 
  civic_ngm_information_company:0 "Information Company"
- civic_ngm_information_company_desc:0 "This company often deals with invisible things such as social networking, advertising, and system engineering, and generally has a deep knowledge of them."
+ civic_ngm_information_company_desc:0 "This company often deals with the informational side of things such as social networking, advertising, and system engineering, thus has a deep knowledge of them."
 
  civic_ngm_social_enterprise:0 "Social Enterprise"
  civic_ngm_social_enterprise_desc:0 "This company aims to pursue not only profits, but also the well-being and interests of its employees and customers."
@@ -774,7 +777,7 @@
  civic_ngm_rating_company_desc:0 "This company is in the business of making judgments about people, companies, nations, and honors, and creating criteria for others to use."
 
  civic_ngm_underhanded_trick:0 "Underhanded Person"
- civic_ngm_underhanded_trick_desc:0 "Backroom deals and pre-negotiations have an extremely important position in this country, and various deals are done behind the scenes. It is only a negotiation."
+ civic_ngm_underhanded_trick_desc:0 "Backroom deals and pre-negotiations have an extremely important position in this country, and various deals are done behind the scenes. 'It is only a negotiation.'"
 
 #######################
 #####    政策    ######
@@ -1290,6 +1293,9 @@
  edict_ngm_class_C_national_defense_plan:0 "Class-C National Defense Plan"
  edict_ngm_class_C_national_defense_plan_desc:0 "Implement the national defense plan developed by the Joint Chiefs of Staff."
 
+ edict_ngm_technology_trade_options_menu:0 "Research Transactions Gifts"
+ edict_ngm_technology_trade_options_menu_desc:0 ""
+
 #######################
 #####    技術    ######
 #######################
@@ -1490,7 +1496,7 @@
  mod_job_ngm_secretary_per_pop:0 "§G+1§! $job_ngm_secretary$ Job per $VALUE$ Pops"
  mod_job_ngm_secretary_per_pop_short:0 "\n§G+1§! £mod_job_ngm_secretary_add£ per $VALUE$ £pop£"
  job_ngm_secretary_effect_desc:0 "£job_ngm_secretary£ $job_ngm_secretary_plural$ is £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§! and £engineering£ §Yengineering§! and improve §YSocialism Ethics Attraction§!"
- civic_tooltip_ngm_secretary_effects:0 "£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_ngm_secretary£ §Y$job_ngm_secretary_plural$§!"
+ civic_tooltip_ngm_secretary_effects:0 "£building£ §YCapital Buildings§! replace some £job_politician£ §Y$job_politician$§! Jobs with £job_ngm_secretary£ §Y$job_ngm_secretary_plural$§!"
 
  planet_ngm_pacifist:0 "Pacifier"
  ngm_pacifist:0 "Pacifier"
@@ -1502,7 +1508,7 @@
  mod_job_ngm_pacifist_per_pop:0 "§G+1§! $job_ngm_pacifist$ Job per $VALUE$ Pops"
  mod_job_ngm_pacifist_per_pop_short:0 "\n§G+1§! £mod_job_ngm_pacifist_add£ per $VALUE$ £pop£"
  job_ngm_pacifist_effect_desc:0 "£job_ngm_pacifist£ $job_ngm_pacifist_plural$ is a measure of §Y worker happiness §! and §Yworker output§! and improve §YUtilitarianism Ethics Attraction§!"
- civic_tooltip_ngm_pacifist_effects:0 "£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_ngm_pacifist£ §Y$job_ngm_pacifist_plural$§!"
+ civic_tooltip_ngm_pacifist_effects:0 "£building£ §YCapital Buildings§! replace some £job_politician£ §Y$job_politician$§! Jobs with £job_ngm_pacifist£ §Y$job_ngm_pacifist_plural$§!"
 
  planet_ngm_crest_bearer:0 "Crest Bearer"
  ngm_crest_bearer:0 "Crest Bearer"
@@ -1514,7 +1520,7 @@
  mod_job_ngm_crest_bearer_per_pop:0 "§G+1§! $job_ngm_crest_bearer$ Job per $VALUE$ Pops"
  mod_job_ngm_crest_bearer_per_pop_short:0 "\n§G+1§! £mod_job_ngm_crest_bearer_add£ per $VALUE$ £pop£"
  job_ngm_crest_bearer_effect_desc:0 "£job_ngm_crest_bearer£ $job_ngm_crest_bearer_plural$ produce £unity£ §Y$unity$§! and £influence£ §Y$influence$§! and improve §YHonorism Ethics Attraction§!"
- civic_tooltip_ngm_crest_bearer_effects:0 "£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_ngm_crest_bearer£ §Y$job_ngm_crest_bearer_plural$§!"
+ civic_tooltip_ngm_crest_bearer_effects:0 "£building£ §YCapital Buildings§! replace some £job_politician£ §Y$job_politician$§! Jobs with £job_ngm_crest_bearer£ §Y$job_ngm_crest_bearer_plural$§!"
 
  planet_ngm_senior_advisor:0 "Senior Staff"
  ngm_senior_advisor:0 "Senior Staff"
@@ -1526,7 +1532,7 @@
  mod_job_ngm_senior_advisor_per_pop:0 "§G+1§! $job_ngm_senior_advisor$ Job per $VALUE$ Pops"
  mod_job_ngm_senior_advisor_per_pop_short:0 "\n§G+1§! £mod_job_ngm_senior_advisor_add£ per $VALUE$ £pop£"
  job_ngm_senior_advisor_effect_desc:0 "£job_ngm_senior_advisor£ $job_ngm_senior_advisor_plural$ increase £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§! and improve §YHonorism Ethics Attraction§! and spawn £defense_army£ §YDefense Armies§!"
- civic_tooltip_ngm_senior_advisor_effects:0 "£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_ngm_senior_advisor£ §Y$job_ngm_senior_advisor_plural$§!"
+ civic_tooltip_ngm_senior_advisor_effects:0 "£building£ §YCapital Buildings§! replace some £job_politician£ §Y$job_politician$§! Jobs with £job_ngm_senior_advisor£ §Y$job_ngm_senior_advisor_plural$§!"
 
  planet_ngm_heroes_of_society:0 "Heroes of Society"
  ngm_heroes_of_society:0 "Heroes of Society"
@@ -1538,7 +1544,7 @@
  mod_job_ngm_heroes_of_society_pop:0 "§G+1§! $job_ngm_heroes_of_society$ Job per $VALUE$ Pops"
  mod_job_ngm_heroes_of_society_pop_short:0 "\n§G+1§! £mod_job_ngm_heroes_of_society_add£ per $VALUE$ £pop£"
  job_ngm_heroes_of_society_effect_desc:0 "£job_ngm_heroes_of_society£ $job_ngm_heroes_of_society_plural$ produce £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§! and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
- civic_tooltip_ngm_heroes_of_society_effects:0 "£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_ngm_heroes_of_society£ §Y$job_ngm_heroes_of_society_plural$§!"
+ civic_tooltip_ngm_heroes_of_society_effects:0 "£building£ §YCapital Buildings§! replace some £job_politician£ §Y$job_politician$§! Jobs with £job_ngm_heroes_of_society£ §Y$job_ngm_heroes_of_society_plural$§!"
 
  planet_ngm_superintendent_of_wilderness:0 "Nature Supervisor"
  ngm_superintendent_of_wilderness:0 "Nature Supervisor"
@@ -1550,7 +1556,7 @@
  mod_job_ngm_superintendent_of_wilderness_per_pop:0 "§G+1§! $job_ngm_superintendent_of_wilderness$ Job per $VALUE$ Pops"
  mod_job_ngm_superintendent_of_wilderness_per_pop_short:0 "\n§G+1§! £mod_job_ngm_superintendent_of_wilderness_add£ per $VALUE$ £pop£"
  job_ngm_superintendent_of_wilderness_effect_desc:0 "£job_ngm_superintendent_of_wilderness£ $job_ngm_superintendent_of_wilderness_plural$ produce £unity£ §Y$unity$§! and £society£ §Y$society_research$§! and £mod_pop_environment_tolerance£ §Y$MOD_POP_ENVIRONMENT_TOLERANCE$§!"
- civic_tooltip_ngm_superintendent_of_wilderness_effects:0 "£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_ngm_superintendent_of_wilderness£ §Y$job_ngm_superintendent_of_wilderness_plural$§!"
+ civic_tooltip_ngm_superintendent_of_wilderness_effects:0 "£building£ §YCapital Buildings§! replace some £job_politician£ §Y$job_politician$§! Jobs with £job_ngm_superintendent_of_wilderness£ §Y$job_ngm_superintendent_of_wilderness_plural$§!"
 
  planet_ngm_influencer:0 "Influencer"
  ngm_influencer:0 "Influencer"
@@ -1563,7 +1569,7 @@
  mod_job_ngm_influencer_per_pop_short:0 "\n§G+1§! £mod_job_ngm_influencer_add£ per $VALUE$ £pop£"
  job_ngm_influencer_effect_desc:0 "£job_ngm_influencer£ $job_ngm_influencer_plural$ is §Y governing-oriented attractiveness§! and improves £influence£ §Y$influence$§! and £society£ §Y$society_research$§! and £society£ §Y$society_research$§!"
 
- civic_tooltip_ngm_high_priest_effects:0 "£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_high_priest£ §Y$job_high_priest_plural$§!"
+ civic_tooltip_ngm_high_priest_effects:0 "£building£ §YCapital Buildings§! replace some £job_politician£ §Y$job_politician$§! Jobs with £job_high_priest£ §Y$job_high_priest_plural$§!"
 
  planet_ngm_tide_engineer:0 "Trendsetter"
  ngm_tide_engineer:0 "Trendsetter"
@@ -1865,7 +1871,7 @@
  tr_ngm_penetration_debuff_7:0 "$tr_ngm_penetration_debuff_1$"
  tr_ngm_penetration_debuff_8:0 "$tr_ngm_penetration_debuff_1$"
 
- tr_ngm_freedom_finish_debuff_1:0 "Freedom"
+ tr_ngm_freedom_finish_debuff_1:0 "$tr_ngm_freedom_broad$"
  tr_ngm_freedom_finish_debuff_2:0 "$tr_ngm_freedom_finish_debuff_1$"
  tr_ngm_freedom_finish_debuff_3:0 "$tr_ngm_freedom_finish_debuff_1$"
  tr_ngm_freedom_finish_debuff_4:0 "$tr_ngm_freedom_finish_debuff_1$"
@@ -2861,7 +2867,7 @@
  ngm_government.200.a:0 "Gulp......"
 
  ngm_government.201.name:0 "Moved by the Players"
- ngm_government.201.desc:0 "§Y[ngm_olympic_game_global_event_target_1.GetName]§! The leader of the team of athletes in §Y[ngmolympicgame.com] is one of the leading athletes in the tournament. The leader of the team is a hero in his home country, and his successes are an inspiration to many people."
+ ngm_government.201.desc:0 "The leader of the §Y[ngm_olympic_game_global_event_target_1.GetName]§! delegation is one of the most prominent athletes in the competition. The leader of the team is a hero in his home country, having risen from the ashes after suffering repeated setbacks due to injury, illness, and poor performance."
  ngm_government.201.a:0 "Thanks for the inspiration!"
 
  ngm_government.202.name:0 "Fierce Competition"
@@ -2909,7 +2915,7 @@
  ngm_government.212.a:0 "It's sad."
 
  ngm_government.213.name:0 "Hate Crimes by Players"
- ngm_government.213.desc:0 "§Y[ngm_olympic_game_global_event_target_14.GetName]§! was discovered that several members of the athletic team of §Y[ngm_olympic_game_target_14.GetName]§! made incredibly discriminatory remarks against the citizens of the host planet. Making discriminatory remarks at a festival of harmony and peace is an unacceptable act, and the government of §Y[ngm_olympic_game_global_event_target_14.GetName]§! The government of the United States of America (U.S.A.) is forced to defend itself."
+ ngm_government.213.desc:0 "Several members of the §Y[ngm_olympic_game_global_event_target_14.GetName]§! athletic team were found to have made incredibly discriminatory remarks against citizens of the host planet. Making discriminatory remarks at a festival of harmony and peace is an unforgivable act, and the government of §Y[ngm_olympic_game_global_event_target_14.GetName]§! is forced to defend itself."
  ngm_government.213.a:0 "Screw you!"
 
  ngm_government.300.name:0 "Closing Ceremony"
@@ -2982,6 +2988,12 @@
 
  ngm_tradition.49.a:0 "$civic_anglers$"
  ngm_tradition.49.b:0 "$civic_pompous_purists$"
+ ngm_tradition.49.c:0 "$civic_corporate_dominion$"
+ ngm_tradition.49.d:0 "$civic_toxic_baths$"
+ ngm_tradition.49.e:0 "$civic_relentless_industrialists$"
+ ngm_tradition.49.f:0 "$civic_scavengers$"
+ ngm_tradition.49.g:0 "$civic_ascensionists$"
+ ngm_tradition.49.h:0 "$civic_eager_explorers$"
 
  ngm_tradition.50.a:0 "$civic_hive_subspace_ephapse$"
  ngm_tradition.50.b:0 "$civic_hive_natural_neural_network$"
@@ -2998,6 +3010,10 @@
  ngm_tradition.52.a:0 "$civic_hive_memorialist$"
  ngm_tradition.52.b:0 "$civic_hive_catalytic_processing$"
  ngm_tradition.52.c:0 "$civic_hive_idyllic_bloom$"
+ ngm_tradition.52.d:0 "$civic_hive_toxic_baths$"
+ ngm_tradition.52.e:0 "$civic_hive_ascensionists$"
+ ngm_tradition.52.f:0 "$civic_hive_cordyceptic_drones$"
+ ngm_tradition.52.g:0 "$civic_hive_stargazers$"
 
  ngm_tradition.53.a:0 "$civic_machine_servitor$"
  ngm_tradition.53.b:0 "$civic_machine_terminator$"
@@ -3020,6 +3036,9 @@
  ngm_tradition.56.a:0 "$civic_machine_maintenance_protocols$"
  ngm_tradition.56.b:0 "$civic_machine_memorialist$"
  ngm_tradition.56.c:0 "$civic_machine_catalytic_processing$"
+ ngm_tradition.56.d:0 "$civic_machine_toxic_baths$"
+ ngm_tradition.56.e:0 "$civic_machine_ascensionists$"
+ ngm_tradition.56.f:0 "$civic_machine_exploration_protocol$"
 
  ngm_tradition.57.a:0 "$civic_franchising$"
  ngm_tradition.57.b:0 "$civic_trading_posts$"
@@ -3043,6 +3062,11 @@
  ngm_tradition.60.b:0 "$civic_corporate_anglers$"
  ngm_tradition.60.c:0 "$civic_corporate_crafters$"
  ngm_tradition.60.d:0 "$civic_permanent_employment$"
+ ngm_tradition.60.e:0 "$civic_corporate_relentless_industrialists$"
+ ngm_tradition.60.f:0 "$civic_corporate_toxic_baths$"
+ ngm_tradition.60.g:0 "$civic_corporate_scavengers$"
+ ngm_tradition.60.h:0 "$civic_corporate_ascensionists$"
+ ngm_tradition.60.i:0 "$civic_privatized_exploration$"
 
  ngm_tradition.61.a:0 "$civic_sham_constitutionalism$"
  ngm_tradition.61.b:0 "$civic_substantive_constitutionalism$"
@@ -3547,7 +3571,7 @@
  tr_ngm_memory2:0 "Pursuit of Memory"
  tr_ngm_memory2_desc:0 "§Y20Pop§! for each §Y death recorder Job§! for every §G1§! increase."
  tr_ngm_memory2_delayed:0 "Memory is perfect."
- tr_ngm_crime_record:0 "Criminal Record"
+ tr_ngm_crime_record:0 "We Remember"
  tr_ngm_crime_record_desc:0 "Planet's §Y Crime Degree§! is reduced by §G10§! Decreases the"
  tr_ngm_crime_record_delayed:0 "Mistakes are recorded."
  tr_ngm_trade_record:0 "Price Record"
@@ -4311,7 +4335,7 @@
 
  civic_tooltip_ngm_remorseless_justice_effects:0 "Cannot be selected except for Doomsday Orbit Bombing"
 
- civic_tooltip_mechanical_faith_effects:0 "§RCannot be added or removed after the game has started.§!\n§Y(If you add or remove them after the game starts, they will be restored.)§!\n\nThe spiritualist faction will no longer be angry with robots.\nWe can't outlaw robots.\nFix robot human rights to citizenship."
+ civic_tooltip_mechanical_faith_effects:0 "The spiritualist faction will no longer be angry with robots.\nWe can't outlaw robots.\nFix robot human rights to citizenship."
 
  NAME_Pursuer:0 "Pursuer"
 

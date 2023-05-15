@@ -1,15 +1,3 @@
 planet_bureau_of_ceremonies = {
 	parent = planet_jobs
 }
-
-planet_ngm_crest_bearer = {
-	parent = planet_jobs
-}
-
-planet_ngm_senior_advisor = {
-	parent = planet_jobs
-}
-
-planet_ngm_heroes_of_society = {
-	parent = planet_jobs
-}
