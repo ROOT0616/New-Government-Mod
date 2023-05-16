@@ -8,42 +8,6 @@
 # 								# notification when a claim CB is generated)
 #}
 
-# 害虫駆除		(保全、軍国)	開発主義国家に対して、環境保全の開戦事由を獲得
-# （勝利すると開発主義の志向を保全主義に転向させ、相手を属国化させる。
-# さらに、終戦時に戦争相手へ社会学研究力を自国の3か月分あげる）。
-cb_ngm_pest_control = {
-	show_in_diplomacy = yes
-	show_notification = no
-	potential = {
-		is_country_type = default
-		exists = from
-		OR = {
-			has_ethic = ethic_conservationism
-			has_ethic = ethic_fanatic_conservationism
-		}
-		OR = {
-			has_ethic = ethic_militarist
-			has_ethic = ethic_fanatic_militarist
-		}
-	}
-	is_valid = {
-		from = { is_country_type = default }
-		from = { NOT = { has_ethic = ethic_gestalt_consciousness } }
-		from = {
-			OR = {
-				has_ethic = ethic_developmentalism
-				has_ethic = ethic_fanatic_developmentalism
-			}
-		}
-		has_total_war_cb = no
-		NOT = { is_overlord_to = FROM }
-		OR = {
-			is_subject = no
-			overlord = { NOT = { is_same_value = from } }
-		}
-	}
-}
-
 # ※聖戦（非精神主義国家に対して精神主義を強要する宣戦布告事由を得る）
 cb_ngm_holy_wars = {
 	show_in_diplomacy = no

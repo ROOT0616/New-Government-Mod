@@ -1542,7 +1542,6 @@ country_event = {
 		random_neighbor_country = {
 			limit = {
 				NOR = {
-					has_ascension_perk = ap_ngm_ministry_of_innocence
 					has_country_flag = civic_ngm_missionary_group_country_flag
 				}
 			}

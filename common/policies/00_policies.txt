@@ -2158,9 +2158,6 @@ first_contact_protocol = {
 		modifier = {}
 
 		valid = {
-			NOT = {
-				has_tradition = tr_ngm_neighbor_first
-			}
 			is_pacifist = no
 			is_xenophile = no
 		}
@@ -2626,7 +2623,6 @@ artificial_intelligence_policy = {
 
 		valid = {
 			NOR = {
-				has_country_flag = synthetic_empire
 				has_civic = civic_ngm_mechanical_faith
 				has_civic = civic_ngm_machines_are_our_friends
 			}
@@ -3169,14 +3165,6 @@ slavery = {
 				has_ethic = ethic_fanatic_authoritarian
 				has_ethic = ethic_xenophobe
 				has_ethic = ethic_fanatic_xenophobe
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
-				has_ethic = ethic_capitalism
-				has_ethic = ethic_fanatic_capitalism
-			}
-			NOR = {
-				has_ethic = ethic_fanatic_socialism
-				has_ethic = ethic_socialism
 			}
 		}
 

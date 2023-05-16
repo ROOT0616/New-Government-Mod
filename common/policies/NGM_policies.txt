@@ -1,7 +1,7 @@
 #	1.法体系(民法や刑法を中心とした帝国内における法秩序に関して、帝国の法律機関が基調とする法理論を決定する。)
 ngm_legal_system = {
 	option = {
-		name = "NAME_NGM_Hig_low"		#  ①理性法釈		安定度-10,研究力+5%		(物質主義かつ平等主義 or 実利)	理性はすべてを解決し、成文法もしくは不文の法ではなく、当事者間や第三者の理性に秩序と解決を寄託する法理論
+		name = "NAME_NGM_Hig_low"		#  ①理性法釈		安定度-10,研究力+5%		(物質主義かつ平等主義)	理性はすべてを解決し、成文法もしくは不文の法ではなく、当事者間や第三者の理性に秩序と解決を寄託する法理論
 		potential = {
 			is_country_type = default
 		}
@@ -11,8 +11,6 @@ ngm_legal_system = {
 				has_ethic = ethic_fanatic_materialist
 			}
 			OR = {
-				has_ethic = ethic_capitalism
-				has_ethic = ethic_fanatic_capitalism
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
 			}
@@ -68,7 +66,7 @@ ngm_legal_system = {
 		}
 	}
 	option = {
-		name = "NAME_NGM_Com_low"		#  ④共同体法拠		安定度+5,布告基金+20		(平等主義、実利以外)		自己が所属している、組合やギルドなどの共同体を基調とした小型社会の素朴な秩序維持を中核とする法理論
+		name = "NAME_NGM_Com_low"		#  ④共同体法拠		安定度+5,布告基金+20		(平等主義以外)		自己が所属している、組合やギルドなどの共同体を基調とした小型社会の素朴な秩序維持を中核とする法理論
 		potential = {
 			is_country_type = default
 		}
@@ -76,8 +74,6 @@ ngm_legal_system = {
 			NOR = {
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
 			}
 		}
 		policy_flags = {
@@ -92,7 +88,7 @@ ngm_legal_system = {
 		}
 	}
 	option = {
-		name = "NAME_NGM_Pat_low"		#  ⑤父権主義的法典	安定度+10,犯罪-10,帝国規模+5%	(平等主義、実利以外)		国家が社会的な内容だけではなく、個人間の関係においても家父長的な介入を行うことで秩序維持を行う法理論
+		name = "NAME_NGM_Pat_low"		#  ⑤父権主義的法典	安定度+10,犯罪-10,帝国規模+5%	(平等主義以外)		国家が社会的な内容だけではなく、個人間の関係においても家父長的な介入を行うことで秩序維持を行う法理論
 		potential = {
 			is_country_type = default
 		}
@@ -100,8 +96,6 @@ ngm_legal_system = {
 			NOR = {
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
 			}
 		}
 		policy_flags = {
@@ -164,7 +158,7 @@ ngm_legal_system = {
 
 #2.選挙法(国民の意見を政策に反映させるための手段として、どのような手法を行うか決定する。)
 ngm_election_law = {
-	#  ①比例代表選挙	労働者政治力+20%,派閥統合力収入+50%,統治志向魅力-40%	(権威主義、実利主義ではない)			政党を基調とした選挙を行うことで、より少数派の意見を国政に反映することができる選挙制度
+	#  ①比例代表選挙	労働者政治力+20%,派閥統合力収入+50%,統治志向魅力-40%	(権威主義ではない)			政党を基調とした選挙を行うことで、より少数派の意見を国政に反映することができる選挙制度
 	option = {
 		name = "NAME_NGM_Par_ele"
 		potential = {
@@ -174,8 +168,6 @@ ngm_election_law = {
 			NOR = {
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
 			}
 		}
 		policy_flags = {
@@ -190,7 +182,7 @@ ngm_election_law = {
 			weight = 10
 		}
 	}
-	#  ②大選挙区選挙	労働者政治力+20%,派閥統合力収入+10%,布告基金+10		(権威主義、実利主義ではない)			選挙区から複数名の候補を選ぶことで、多数の意見を国政に反映することができる選挙制度
+	#  ②大選挙区選挙	労働者政治力+20%,派閥統合力収入+10%,布告基金+10		(権威主義ではない)			選挙区から複数名の候補を選ぶことで、多数の意見を国政に反映することができる選挙制度
 	option = {
 		name = "NAME_NGM_Big_ele"
 		potential = {
@@ -200,8 +192,6 @@ ngm_election_law = {
 			NOR = {
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
 			}
 		}
 		policy_flags = {
@@ -216,7 +206,7 @@ ngm_election_law = {
 			weight = 10
 		}
 	}
-	#  ③小選挙区選挙	労働者政治力+20%,布告基金+30				(権威主義、実利主義ではない)			選挙区から1名の候補を選ぶことで、大多数の民意を強力に国政へ反映することができる選挙制度
+	#  ③小選挙区選挙	労働者政治力+20%,布告基金+30				(権威主義ではない)			選挙区から1名の候補を選ぶことで、大多数の民意を強力に国政へ反映することができる選挙制度
 	option = {
 		name = "NAME_NGM_Sma_ele"
 		potential = {
@@ -226,8 +216,6 @@ ngm_election_law = {
 			NOR = {
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
 			}
 		}
 		policy_flags = {
@@ -257,7 +245,7 @@ ngm_election_law = {
 			weight = 10
 		}
 	}
-	#  ⑤形骸化選挙Mel_ele		労働者政治力-50%,労働者幸福度-10%			(権威主義or実利主義)				票数調整や、立候補に大きな制限があるなど、形式的にだけ実施される選挙制度
+	#  ⑤形骸化選挙Mel_ele		労働者政治力-50%,労働者幸福度-10%			(権威主義)				票数調整や、立候補に大きな制限があるなど、形式的にだけ実施される選挙制度
 	option = {
 		name = "NAME_NGM_Mel_ele"
 		potential = {
@@ -267,8 +255,6 @@ ngm_election_law = {
 			OR = {
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
 			}
 		}
 		policy_flags = {
@@ -426,7 +412,7 @@ ngm_parliament_law = {
 			weight = 10
 		}
 	}
-	#  ④庶民院と貴族院Nob_Par	布告基金+20,安定度+10					(栄望主義or権威主義である)			選挙人の意見を反映させる議会と、貴族や有力者、知識人等の意見を反映させる議会が並立した制度
+	#  ④庶民院と貴族院Nob_Par	布告基金+20,安定度+10					(権威主義である)			選挙人の意見を反映させる議会と、貴族や有力者、知識人等の意見を反映させる議会が並立した制度
 	option = {
 		name = "NAME_NGM_Nob_Par"
 		potential = {
@@ -436,8 +422,6 @@ ngm_parliament_law = {
 			OR = {
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_honorism
-				has_ethic = ethic_fanatic_honorism
 			}
 		}
 		policy_flags = {
@@ -451,7 +435,7 @@ ngm_parliament_law = {
 			weight = 10
 		}
 	}
-	#  ⑤憲法院		布告基金+50,労働者幸福度-20%				(平等主義、実利主義ではない)				法の専門家が市民や労働者とは別に専門的に議論と法制定に向けて活動する議会制度
+	#  ⑤憲法院		布告基金+50,労働者幸福度-20%				(平等主義ではない)				法の専門家が市民や労働者とは別に専門的に議論と法制定に向けて活動する議会制度
 	option = {
 		name = "NAME_NGM_Con_Par"
 		potential = {
@@ -461,8 +445,6 @@ ngm_parliament_law = {
 			NOR = {
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
 			}
 		}
 		policy_flags = {
@@ -476,7 +458,7 @@ ngm_parliament_law = {
 			weight = 10
 		}
 	}
-	#  ⑥元老院Sen_Par		布告基金+10,リーダースキル上限+2,リーダー維持費-50%	(平等主義、実利主義ではない)				名望家が国政に参与し、国政や立法に取り掛かる議会制度
+	#  ⑥元老院Sen_Par		布告基金+10,リーダースキル上限+2,リーダー維持費-50%	(平等主義ではない)				名望家が国政に参与し、国政や立法に取り掛かる議会制度
 	option = {
 		name = "NAME_NGM_Sen_Par"
 		potential = {
@@ -486,8 +468,6 @@ ngm_parliament_law = {
 			NOR = {
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
 			}
 		}
 		policy_flags = {
@@ -502,7 +482,7 @@ ngm_parliament_law = {
 			weight = 10
 		}
 	}
-	#  ⑦議会無しNot_Par		布告基金-20,統治志向魅力+30%,リーダー雇用コスト-20%	(権威主義or実利主義or国是:直接民主制だとこれで固定)	議会ではなく、国民同士や、権力者同士での会話や判断が国政や法律に直接反映される制度
+	#  ⑦議会無しNot_Par		布告基金-20,統治志向魅力+30%,リーダー雇用コスト-20%	(権威主義or国是:直接民主制だとこれで固定)	議会ではなく、国民同士や、権力者同士での会話や判断が国政や法律に直接反映される制度
 	option = {
 		name = "NAME_NGM_Not_Par"
 		potential = {
@@ -512,8 +492,6 @@ ngm_parliament_law = {
 			OR = {
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
 				has_civic = civic_ngm_direct_democracy
 			}
 		}
@@ -560,10 +538,6 @@ ngm_tax_law = {
 			is_country_type = default
 		}
 		valid = {
-			NOR = {
-				has_ethic = ethic_socialism
-				has_ethic = ethic_fanatic_socialism
-			}
 		}
 		policy_flags = {
 			ngm_flag_Hev_tax
@@ -609,17 +583,13 @@ ngm_tax_law = {
 			weight = 10
 		}
 	}
-	#  ④累進課税法			エネルギー収入+10%				(資本主義以外)			この国では、高所得者に高額の税を課すことで、国家全体の収入を確保しつつ、格差に配慮を行っている
+	#  ④累進課税法			エネルギー収入+10%				()			この国では、高所得者に高額の税を課すことで、国家全体の収入を確保しつつ、格差に配慮を行っている
 	option = {
 		name = "NAME_NGM_Gra_tax"
 		potential = {
 			is_country_type = default
 		}
 		valid = {
-			NOR = {
-				has_ethic = ethic_capitalism
-				has_ethic = ethic_fanatic_capitalism
-			}
 		}
 		policy_flags = {
 			ngm_flag_Gra_tax
@@ -647,19 +617,13 @@ ngm_tax_law = {
 			weight = 10
 		}
 	}
-	#  ⑥代理人法			エネルギー収入+10%,犯罪+30			(実利主義or資本主義のみ)	この国では、国家から徴税権を購入した組織もしくは人物が徴税を代行しており、汚職の温床となっている
+	#  ⑥代理人法			エネルギー収入+10%,犯罪+30			()	この国では、国家から徴税権を購入した組織もしくは人物が徴税を代行しており、汚職の温床となっている
 	option = {
 		name = "NAME_NGM_Age_tax"
 		potential = {
 			is_country_type = default
 		}
 		valid = {
-			OR = {
-				has_ethic = ethic_capitalism
-				has_ethic = ethic_fanatic_capitalism
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
-			}
 		}
 		policy_flags = {
 			ngm_flag_Age_tax
@@ -679,10 +643,6 @@ ngm_tax_law = {
 			is_country_type = default
 		}
 		valid = {
-			OR = {
-				has_ethic = ethic_socialism
-				has_ethic = ethic_fanatic_socialism
-			}
 		}
 		policy_flags = {
 			ngm_flag_All_tax
@@ -700,17 +660,13 @@ ngm_tax_law = {
 
 #5.儀典法(国家の儀礼や儀式に関する規定や、制度について決定する。)
 ngm_ritual_raw = {
-	#  ①紋章院		勲章+0.1,統合力+10%,統治者の消費財消費量+2		(栄望のみ)						この国の栄典管理機関は銀河でも有数の名望を有しており、この機関に認められることは銀河規模の栄誉だ
+	#  ①紋章院		勲章+0.1,統合力+10%,統治者の消費財消費量+2		()						この国の栄典管理機関は銀河でも有数の名望を有しており、この機関に認められることは銀河規模の栄誉だ
 	option = {
 		name = "NAME_NGM_Cor_rit"
 		potential = {
 			is_country_type = default
 		}
 		valid = {
-			OR = {
-				has_ethic = ethic_honorism
-				has_ethic = ethic_fanatic_honorism
-			}
 		}
 		policy_flags = {
 			ngm_flag_Cor_rit
@@ -724,17 +680,13 @@ ngm_ritual_raw = {
 			weight = 10
 		}
 	}
-	#  ②典礼省		式部官からの勲章+0.2,統合力+20%,統治者の消費財消費量+1	(実利ではない)						この国には栄典を管理する独立機関が存在しており、名誉や勲章の管理を行う大規模官僚機関が保証されている
+	#  ②典礼省		式部官からの勲章+0.2,統合力+20%,統治者の消費財消費量+1	()						この国には栄典を管理する独立機関が存在しており、名誉や勲章の管理を行う大規模官僚機関が保証されている
 	option = {
 		name = "NAME_NGM_Rim_rit"
 		potential = {
 			is_country_type = default
 		}
 		valid = {
-			NOR = {
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
-			}
 		}
 		policy_flags = {
 			ngm_flag_Rim_rit
@@ -748,17 +700,13 @@ ngm_ritual_raw = {
 			weight = 10
 		}
 	}
-	#  ③儀典法		式部官からの勲章+0.1,統合力+10%,Pop維持コスト+10%	(実利ではない)						儀礼を強化することでこの国の存在感を他国に示すことができ、国内外へ大きな影響を与えることができる
+	#  ③儀典法		式部官からの勲章+0.1,統合力+10%,Pop維持コスト+10%	()						儀礼を強化することでこの国の存在感を他国に示すことができ、国内外へ大きな影響を与えることができる
 	option = {
 		name = "NAME_NGM_Ril_rit"
 		potential = {
 			is_country_type = default
 		}
 		valid = {
-			NOR = {
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
-			}
 		}
 		policy_flags = {
 			ngm_flag_Ril_rit
@@ -787,17 +735,13 @@ ngm_ritual_raw = {
 			weight = 10
 		}
 	}
-	#  ⑤栄典売却		式部官からの勲章-0.2,式部官に交易価値+10		(栄望ではない)						栄典を国内外に売却することで、収入を確保する。簡単に儲かるというのはよいものだ
+	#  ⑤栄典売却		式部官からの勲章-0.2,式部官に交易価値+10		()						栄典を国内外に売却することで、収入を確保する。簡単に儲かるというのはよいものだ
 	option = {
 		name = "NAME_NGM_Sel_rit"
 		potential = {
 			is_country_type = default
 		}
 		valid = {
-			NOR = {
-				has_ethic = ethic_fanatic_honorism
-				has_ethic = ethic_honorism
-			}
 		}
 		policy_flags = {
 			ngm_flag_Sel_rit
@@ -810,21 +754,13 @@ ngm_ritual_raw = {
 			weight = 10
 		}
 	}
-	#  ⑥反栄典法		労働者幸福度+20%,労働者生産力+10%			(社会主義かつ栄望ではない)				栄典は人心を惑わすものでしかない。その存在は能力の内労働者の生産力を押し下げる可能性を有する
+	#  ⑥反栄典法		労働者幸福度+20%,労働者生産力+10%			()				栄典は人心を惑わすものでしかない。その存在は能力の内労働者の生産力を押し下げる可能性を有する
 	option = {
 		name = "NAME_NGM_Ant_rit"
 		potential = {
 			is_country_type = default
 		}
 		valid = {
-			OR = {
-				has_ethic = ethic_fanatic_socialism
-				has_ethic = ethic_socialism
-			}
-			NOR = {
-				has_ethic = ethic_fanatic_honorism
-				has_ethic = ethic_honorism
-			}
 		}
 		policy_flags = {
 			ngm_flag_Ant_rit
@@ -861,7 +797,7 @@ ngm_ritual_raw = {
 
 #6.表現法(表現の自由や情報の自由に関する情報面の規制に関する政策を決定する。)
 ngm_expression_raw = {
-	#  ①SNS黄金法		25PopごとにインフルエンサーJob+1、犯罪+10%、暗号力-5、統合力+20%	(実利or平等)				社会と常時オンラインでつながり続け、そしてより多くの注目がよりクリエイティビティへとつながる
+	#  ①SNS黄金法		25PopごとにインフルエンサーJob+1、犯罪+10%、暗号力-5、統合力+20%	(平等)				社会と常時オンラインでつながり続け、そしてより多くの注目がよりクリエイティビティへとつながる
 	option = {
 		name = "NAME_NGM_SNS_cap"
 		potential = {
@@ -869,8 +805,6 @@ ngm_expression_raw = {
 		}
 		valid = {
 			OR = {
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
 			}
@@ -977,7 +911,7 @@ ngm_expression_raw = {
 			weight = 10
 		}
 	}
-	#  ⑥国営報道		統合力+15%、布告コスト-20%,統治志向魅力+30%、幸福度-15%			(平等、資本以外)			国家の報道とは、社会の要請であり、つまるところは思考を縛る命令である
+	#  ⑥国営報道		統合力+15%、布告コスト-20%,統治志向魅力+30%、幸福度-15%			(平等)			国家の報道とは、社会の要請であり、つまるところは思考を縛る命令である
 	option = {
 		name = "NAME_NGM_Nat_cap"
 		potential = {
@@ -987,8 +921,6 @@ ngm_expression_raw = {
 			NOR = {
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
-				has_ethic = ethic_capitalism
-				has_ethic = ethic_fanatic_capitalism
 			}
 		}
 		policy_flags = {
@@ -1020,8 +952,6 @@ ngm_expression_raw = {
 				has_ethic = ethic_fanatic_authoritarian
 				has_ethic = ethic_militarist
 				has_ethic = ethic_fanatic_militarist
-				has_ethic = ethic_socialism
-				has_ethic = ethic_fanatic_socialism
 			}
 		}
 		policy_flags = {
@@ -1126,7 +1056,7 @@ ngm_military_law = {
 			weight = 10
 		}
 	}
-	#  ⑤将校地位購入制度		エネルギー収入+10%,統治者幸福度+10,回避-5%,地上軍の士気-10%	(軍国主義or平等主義or栄望主義以外)	この国における軍幹部の地位は金銭で取引されるもので、国家に大いなる収入をもたらしているが、軍事技術の低下を招いている
+	#  ⑤将校地位購入制度		エネルギー収入+10%,統治者幸福度+10,回避-5%,地上軍の士気-10%	(軍国主義or平等主義以外)	この国における軍幹部の地位は金銭で取引されるもので、国家に大いなる収入をもたらしているが、軍事技術の低下を招いている
 	option = {
 		name = "NAME_NGM_Buy_dis"
 		potential = {
@@ -1138,8 +1068,6 @@ ngm_military_law = {
 				has_ethic = ethic_fanatic_militarist
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
-				has_ethic = ethic_honorism
-				has_ethic = ethic_fanatic_honorism
 			}
 		}
 		policy_flags = {
@@ -1155,7 +1083,7 @@ ngm_military_law = {
 			weight = 10
 		}
 	}
-	#  ⑥略奪の公認			地上軍ダメージ+30%,地上軍作成コスト-20%,副次ダメージ+100%	(平和主義or受容主義or栄望主義以外)	この国の軍は公然と略奪を許可しており、地上戦における彼らの活躍は目を見張るものがあるが、その下には大きな犠牲が伴っている
+	#  ⑥略奪の公認			地上軍ダメージ+30%,地上軍作成コスト-20%,副次ダメージ+100%	(平和主義or受容主義or以外)	この国の軍は公然と略奪を許可しており、地上戦における彼らの活躍は目を見張るものがあるが、その下には大きな犠牲が伴っている
 	option = {
 		name = "NAME_NGM_Pai_dis"
 		potential = {
@@ -1167,8 +1095,6 @@ ngm_military_law = {
 				has_ethic = ethic_fanatic_pacifist
 				has_ethic = ethic_xenophile
 				has_ethic = ethic_fanatic_xenophile
-				has_ethic = ethic_honorism
-				has_ethic = ethic_fanatic_honorism
 			}
 		}
 		policy_flags = {
@@ -1183,17 +1109,13 @@ ngm_military_law = {
 			weight = 10
 		}
 	}
-	#  ⑦非公開横領			エネルギー収入+20%,暗号力-5,兵士は追加で犯罪+1をもたらす	(実利主義のみ)				この国では軍事予算の横領と国軍の腐敗が行われており、軍とは公的犯罪集団と化している
+	#  ⑦非公開横領			エネルギー収入+20%,暗号力-5,兵士は追加で犯罪+1をもたらす	()				この国では軍事予算の横領と国軍の腐敗が行われており、軍とは公的犯罪集団と化している
 	option = {
 		name = "NAME_NGM_Pai_dis"
 		potential = {
 			is_country_type = default
 		}
 		valid = {
-			OR = {
-				has_ethic = ethic_utilitarianism
-				has_ethic = ethic_fanatic_utilitarianism
-			}
 		}
 		policy_flags = {
 			ngm_flag_Pai_dis
@@ -1491,10 +1413,6 @@ ngm_sports_policy = {
 			is_country_type = default
 		}
 		valid = {
-			NOR = {
-				has_ethic = ethic_socialism
-				has_ethic = ethic_fanatic_socialism
-			}
 		}
 		policy_flags = {
 			ngm_flag_Co_support
@@ -1621,970 +1539,6 @@ ngm_policies_loop_method = {
 			loop_method_loop_kil
 		}
 		modifier = {
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-}
-
-# 伝統等でアンロックされる政策
-# 1.労働法				(労働者の権利や自由を規定し、企業活動に影響を与える)labor_law
-#   ①企業規制		business_regulations	(労働者幸福度+10%)			(労働者は国民で、国民の権利は保証されるべきだ)
-#   ②労働者優先	workers_priority			(労働者幸福度+5%)				(労働者の過度な搾取は国家を損ねている)
-#   〇③一般規制	general_regulation														(過度な規制や緩和は社会の不安定を招く)
-#   ④企業優先		corporate_priority		(労働者生産量+5%)				(労働者利益よりも企業利益こそが国家への利益へ直結する)
-#   ⑤規制緩和		deregulation					(労働者生産量+10%、無職の召使Jobをアンロック)	(労働に値しない者は、値する者に仕えることで社会を回転させる)
-ngm_policies_labor_law = {
-	potential = {
-		has_tradition = tr_ngm_law_finish
-	}
-	option = {
-		name = "NAME_NGM_business_regulations"		# 企業規制	business_regulations
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_labor_law_business_regulations
-		}
-		modifier = {
-			pop_cat_worker_happiness = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_workers_priority"		# 労働者優先	workers_priority
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_labor_law_workers_priority
-		}
-		modifier = {
-			pop_cat_worker_happiness = 0.05
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_general_regulation"		# ☆一般規制	general_regulation
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_labor_law_general_regulation
-		}
-		modifier = {
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_corporate_priority"		# 企業優先	corporate_priority
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_labor_law_corporate_priority
-		}
-		modifier = {
-			planet_jobs_worker_produces_mult = 0.05
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_deregulation"		# 規制緩和	deregulation
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_labor_law_deregulation
-		}
-		modifier = {
-			planet_jobs_worker_produces_mult = 0.1
-		}
-		AI_weight = {
-			weight = 10
-			modifier = {
-				factor = 1.5
-				has_ethic = ethic_fanatic_authoritarian
-			}
-		}
-	}
-}
-
-# 2.学術政策(国家の研究に関しての方針を規定する) academic_policy
-#   ①政府主導		government_led 			(研究選択肢+5)		(政府が研究の優先度を決定する)
-#   〇②国家後援 country_support 											(国家による研究優遇は常識の範囲に収まる)
-#   ③民間主導  	nongovernmental_initiative	(研究速度+10%)		(政府よりも民間研究機関が国家の研究を担う)
-ngm_policies_academic_policy = {
-	potential = {
-		has_tradition = tr_ngm_academic_finish
-	}
-	option = {
-		name = "NAME_NGM_government_led"		# 政府主導		government_led
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_academic_policy_government_led
-		}
-		modifier = {
-			num_tech_alternatives_add = 5
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_country_support"		# ☆国家後援 country_support
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_academic_policy_country_support
-		}
-		modifier = {
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_nongovernmental_initiative"		# 民間主導  	nongovernmental_initiative
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_academic_policy_nongovernmental_initiative
-		}
-		modifier = {
-			all_technology_research_speed = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-}
-
-# 3.介入政策	intervention_policy	(他国に対する介入方針を決定する)
-#   ①公然としの介入	public_intervention	(外交発言力+20%)(相手に対する介入は公然と行うことが公正だ)
-#   〇②介入の手控え	holding_back_on_intervention	(暗号力+5)	(介入を控え、自分の行動を見直すべきだ。内政不干渉である)
-#   ③秘匿した介入 concealed_intervention (解読力+10)	(表にできないような介入を隠れて行っていく)
-# ngm_policies_intervention_policy = {
-# 	potential = {
-# 		has_tradition = tr_ngm_strong_pressure_finish
-# 	}
-# 	option = {
-# 		name = "NAME_NGM_public_intervention"		# 公然としの介入	public_intervention
-# 		potential = {
-# 			always = yes
-# 		}
-# 		policy_flags = {
-# 			ngm_intervention_policy_public_intervention
-# 		}
-# 		modifier = {
-# 			diplo_weight_mult = 0.2
-# 		}
-# 		AI_weight = {
-# 			weight = 10
-# 		}
-# 	}
-# 	option = {
-# 		name = "NAME_NGM_holding_back_on_intervention"		# ☆介入の手控え	holding_back_on_intervention
-# 		potential = {
-# 			always = yes
-# 		}
-# 		policy_flags = {
-# 			ngm_intervention_policy_holding_back_on_intervention
-# 		}
-# 		modifier = {
-# 			intel_encryption_add = 5
-# 		}
-# 		AI_weight = {
-# 			weight = 10
-# 		}
-# 	}
-# 	option = {
-# 		name = "NAME_NGM_concealed_intervention"		# 秘匿した介入 concealed_intervention
-# 		potential = {
-# 			always = yes
-# 		}
-# 		policy_flags = {
-# 			ngm_intervention_policy_concealed_intervention
-# 		}
-# 		modifier = {
-# 			intel_decryption_add = 10
-# 		}
-# 		AI_weight = {
-# 			weight = 10
-# 		}
-# 	}
-# }
-# 4.諜報政策	intelligence_policy	(情報こそすべてを制する)
-#   ①対外注力	focusing_on_foreign_policy	(解読力+10)	(相手の情報を得ることこそが自国を守る)
-#   〇②バランス	balance	(情報基礎値+5)	(攻めるも守るも優劣はつけがたい)
-#   ③防諜注力	counterintelligence	(暗号力+10)	(相手に情報を隠すことこそが自国を守る)
-ngm_policies_intelligence_policy = {
-	potential = {
-		has_tradition = tr_ngm_intervention_finish
-	}
-	option = {
-		name = "NAME_NGM_focusing_on_foreign_policy"		# 対外注力	focusing_on_foreign_policy
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_intelligence_policy_focusing_on_foreign_policy
-		}
-		modifier = {
-			intel_decryption_add = 10
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_balance"		# ☆バランス	balance
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_intelligence_policy_balance
-		}
-		modifier = {
-			add_base_country_intel = 5
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_counterintelligence"		# 防諜注力	counterintelligence
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_intelligence_policy_counterintelligence
-		}
-		modifier = {
-			intel_encryption_add = 10
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-}
-
-# 5.ロボット職権	robotics	(ロボットに与えられる権限や職域の方針を決定する)
-#   ①自由意志	free_will	(ロボット維持費-10%)	(ロボットの職権や職域は、ロボット自身の希望と成果を基準に決められる)
-#   ②上司指導	managerial_guidance	(ロボット製造速度+10%)	(ロボットの職権や職域は、上司が決定を行う)
-#   ③適正優先	appropriate_priority	(ロボット生産量+10%)	(ロボットの職権や職域は、ロボット自身の適正が重視される)
-ngm_policies_robotics = {
-	potential = {
-		has_tradition = tr_ngm_machine_first
-	}
-	option = {
-		name = "NAME_NGM_free_will"		# 自由意志	free_will
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_robotics_free_will
-		}
-		modifier = {
-			planet_pops_robotics_upkeep_mult = -0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_managerial_guidance"		# ☆上司指導	managerial_guidance
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_robotics_managerial_guidance
-		}
-		modifier = {
-			planet_pop_assembly_mult = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_appropriate_priority"		# 適正優先	appropriate_priority
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_robotics_appropriate_priority
-		}
-		modifier = {
-			planet_jobs_robotic_produces_mult = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-}
-
-# 6.立法手続	legislative_procedure	立法手段と議会システムの詳細を規定する。
-#		1	単独会制	single_member_system	一度の読み合わせと議決で全てが決まる	統治志向魅力+20%、影響力+0.5
-# 	2	三独会制	triple_entry	議決を何度か繰り返すことでより考慮の余地を生み出す	幸福度+10%、布告資金-20
-# 	3	混合制	mixed_system	長所を少しずつ取り入れた様々なシステム	派閥幸福度+10%
-# 	4	委員会制	commission_system	議会付属の委員会で大まかな修正を終了させる	布告資金+30
-# 	5	ラバースタンプ	rubber_stamp	議論が一定期間経過すると、自動的に可決される	布告資金+50、派閥幸福度-10%
-ngm_policies_legislative_procedure = {
-	potential = {
-		has_tradition = tr_ngm_law_first
-	}
-	option = {
-		name = "NAME_NGM_single_member_system"		# 単独会制	single_member_system
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_legislative_procedure_single_member_system
-		}
-		modifier = {
-			pop_government_ethic_attraction = 0.2
-			country_base_influence_produces_add = 0.5
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_triple_entry"		# 三独会制	triple_entry
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_legislative_procedure_triple_entry
-		}
-		modifier = {
-			pop_happiness = 0.1
-			country_edict_fund_add = -20
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_mixed_system"		# 混合制	mixed_system
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_legislative_procedure_mixed_system
-		}
-		modifier = {
-			faction_approval = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_commission_system"		# 委員会制	commission_system
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_legislative_procedure_commission_system
-		}
-		modifier = {
-			country_edict_fund_add = 30
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_rubber_stamp"		# ラバースタンプ	rubber_stamp
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_legislative_procedure_rubber_stamp
-		}
-		modifier = {
-			country_edict_fund_add = 50
-			faction_approval = -0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-}
-
-# 7.交易法	trade_law	国外貿易に関する法を規定する。
-# 	1	貿易推進	trade_promotion	さあ買った買った！	それもくれ！	市場手数料-15%
-# 	2	自由貿易	free_trade	貿易の自由は国家利益を最大化させる	交易価値+20%、市場手数料-10%
-# 	3	保護貿易	protective_trade	自国の産業を保護しつつ貿易は行わなければならない	職業による産出+10%、市場手数料-5%
-# 	4	孤立主義	isolationism	貿易など要らぬ	職業による産出+20%、市場手数料+15%
-ngm_policies_trade_law = {
-	potential = {
-		has_tradition = tr_ngm_law_trade
-	}
-	option = {
-		name = "NAME_NGM_trade_promotion"		# 貿易推進	trade_promotion
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_trade_law_trade_promotion
-		}
-		modifier = {
-			country_trade_fee = -0.15
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_free_trade"		# 自由貿易	free_trade
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_trade_law_free_trade
-		}
-		modifier = {
-			country_trade_fee = -0.1
-			trade_value_mult = 0.2
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_protective_trade"		# 保護貿易	protective_trade
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_trade_law_protective_trade
-		}
-		modifier = {
-			country_trade_fee = -0.05
-			planet_jobs_produces_mult = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_isolationism"		# 孤立主義	isolationism
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_trade_law_isolationism
-		}
-		modifier = {
-			country_trade_fee = 0.15
-			planet_jobs_produces_mult = 0.2
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-}
-
-# 8.憲法	constitution	国家最高法典を規定する
-# 	1	最高法典	supreme_code	憲法とは、国家最高の法典であり、絶対的である。	国是スロット+1
-# 	2	伝統的憲法	traditional_constitution	伝統的で、保守的な安定のある憲法	統治志向魅力+20%、安定度+10
-# 	3	自由主義憲法	liberal_constitution	自由と平等を愛する革新的な憲法	派閥幸福度+20%
-# 	4	憲法的法律	constitutional_law	法律と同格で改正もしやすい、変動的な憲法	布告資金+30
-# 	5	不文法典	unwritten_law	固有の憲法ではなく、慣習により憲法的文化が存在する	統合力+20%
-ngm_policies_constitution = {
-	potential = {
-		has_tradition = tr_ngm_constitution
-	}
-	option = {
-		name = "NAME_NGM_supreme_code"		# 最高法典	supreme_code
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_constitution_supreme_code
-		}
-		modifier = {
-			country_government_civic_points_add = 1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_traditional_constitution"		# 伝統的憲法	traditional_constitution
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_constitution_traditional_constitution
-		}
-		modifier = {
-			planet_stability_add = 10
-			pop_government_ethic_attraction = 0.2
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_liberal_constitution"		# 自由主義憲法	liberal_constitution
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_constitution_liberal_constitution
-		}
-		modifier = {
-			faction_approval = 0.2
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_constitutional_law"		# 憲法的法律	constitutional_law
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_constitution_constitutional_law
-		}
-		modifier = {
-			country_edict_fund_add = 30
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_unwritten_law"		# 不文法典	unwritten_law
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_constitution_unwritten_law
-		}
-		modifier = {
-			country_unity_produces_mult = 0.2
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-}
-
-# 9.侮辱法	contempt_law	他者を侮辱する方法を定めた法律
-# 	1	紳士的嘲笑	gentle_sneer	冷静に、だが確実に相手を嘲笑するのだ	統合力+10%
-# 	2	皮肉の嵐	irony	なんと素晴らしい国家でしょう！	外交発言力+10%
-# 	3	知的扇動	intellectual_agitation	この教養すら理解できないのか？	研究力+10%
-# 	4	低俗な笑い	guffaw	品性を忘れるほど、対象は愚かだ	快適性+25%
-ngm_policies_contempt_law = {
-	potential = {
-		has_tradition = tr_ngm_virture_first
-	}
-	option = {
-		name = "NAME_NGM_gentle_sneer"		# 紳士的嘲笑	gentle_sneer
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_contempt_law_gentle_sneer
-		}
-		modifier = {
-			country_unity_produces_mult = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_irony"		# 皮肉の嵐	irony
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_contempt_law_irony
-		}
-		modifier = {
-			diplo_weight_mult = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_intellectual_agitation"		# 知的扇動	intellectual_agitation
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_contempt_law_intellectual_agitation
-		}
-		modifier = {
-			country_physics_research_produces_mult = 0.1
-			country_society_research_produces_mult = 0.1
-			country_engineering_research_produces_mult = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_guffaw"		# 低俗な笑い	guffaw
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_contempt_law_guffaw
-		}
-		modifier = {
-			planet_amenities_mult = 0.25
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-}
-
-# 10.記録法	recording_method	国家のためにも永遠の記録を
-# 	1	帝国データバンク	imperial_data_bank	全てのデータは中央統御で保管される	統合力+10%、帝国規模-5%
-# 	2	帝国中央図書館	imperial_central_library	全ての資料は司書の管理のもと整理される	統合力+20%
-# 	3	地方記録資料館	local_records_archives	資料は各地で保管され、伝統文化に資する	統合力+10%、快適性+15%
-# 	4	無重力資料室	zero_gravity_reference_room	地上では劣化が進む。宇宙で保管せよ	統合力+10%、研究力+10%
-ngm_policies_recording_method = {
-	potential = {
-		has_tradition = tr_ngm_trade_record
-	}
-	option = {
-		name = "NAME_NGM_imperial_data_bank"		# 帝国データバンク	imperial_data_bank
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_recording_method_imperial_data_bank
-		}
-		modifier = {
-			country_unity_produces_mult = 0.1
-			empire_size_mult = -0.05
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_imperial_central_library"		# 帝国中央図書館	imperial_central_library
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_recording_method_imperial_central_library
-		}
-		modifier = {
-			country_unity_produces_mult = 0.2
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_local_records_archives"		# 地方記録資料館	local_records_archives
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_recording_method_local_records_archives
-		}
-		modifier = {
-			country_unity_produces_mult = 0.1
-			planet_amenities_mult = 0.15
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_zero_gravity_reference_room"		# 無重力資料室	zero_gravity_reference_room
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_recording_method_zero_gravity_reference_room
-		}
-		modifier = {
-			country_unity_produces_mult = 0.1
-			country_physics_research_produces_mult = 0.1
-			country_society_research_produces_mult = 0.1
-			country_engineering_research_produces_mult = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-}
-
-# 11.自由権	civil_liberties	自由の保障は極めて重要である
-# 	1	完全な自由	complete_freedom	自由を侵害するなど国家にできるのか？	幸福度+30%、犯罪+20
-# 	2	自由の楽園	paradise_of_freedom	できる限りの自由こそ、理想社会だ	幸福度+20%、犯罪+10
-# 	3	自己責任	self_responsibility	自己責任の下、各種制約は解かれていく	幸福度+10%
-# 	4	自由保護法	civil_liberties_law	自由を守り、社会を安定化させていくのだ	統合力+10%、安定度+10
-# 	5	自由と秩序	freedom_and_order	自由と秩序のバランスは社会にとって不可欠だ	派閥幸福度+10%、派閥統合力収入+10%
-ngm_policies_civil_liberties = {
-	potential = {
-		has_tradition = tr_ngm_freedom_first
-	}
-	option = {
-		name = "NAME_NGM_complete_freedom"		# 完全な自由	complete_freedom
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_civil_liberties_complete_freedom
-		}
-		modifier = {
-			pop_happiness = 0.3
-			planet_crime_add = 20
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_paradise_of_freedom"		# 自由の楽園	paradise_of_freedom
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_civil_liberties_paradise_of_freedom
-		}
-		modifier = {
-			pop_happiness = 0.2
-			planet_crime_add = 10
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_self_responsibility"		# 自己責任	self_responsibility
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_civil_liberties_self_responsibility
-		}
-		modifier = {
-			pop_happiness = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_civil_liberties_law"		# 自由保護法	civil_liberties_law
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_civil_liberties_civil_liberties_law
-		}
-		modifier = {
-			country_unity_produces_mult = 0.1
-			planet_stability_add = 10
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_freedom_and_order"		# 自由と秩序	freedom_and_order
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_civil_liberties_freedom_and_order
-		}
-		modifier = {
-			faction_approval = 0.1
-			pop_factions_unity_produces_mult = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-}
-
-# 12.秩序維持	maintaining_order	社会に安定と秩序を！
-# 	1	絶対主義	absolutism	秩序は絶対的なもので、それ以上でもそれ以外でもない	犯罪-40、幸福度-10%
-# 	2	父権主義	paternalism	父のような温かさで人々を包み込む	犯罪-30
-# 	3	社会契約	social_compact	社会の安定は国家と市民の契約によるものだ	幸福度+10%
-# 	4	共同体監視	community_monitoring	共同体は人々の安定と安心を確保する	安定度+10、統合力+10%
-# 	5	常時監視	continuous_monitoring	Big Paradox watching you!	安定度+40、幸福度-10%
-ngm_policies_maintaining_order = {
-	potential = {
-		has_tradition = tr_ngm_order_first
-	}
-	option = {
-		name = "NAME_NGM_absolutism"		# 絶対主義	absolutism
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_maintaining_order_absolutism
-		}
-		modifier = {
-			planet_crime_add = -40
-			pop_happiness = -0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_paternalism"		# 父権主義	paternalism
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_maintaining_order_paternalism
-		}
-		modifier = {
-			planet_crime_add = -30
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_social_compact"		# 社会契約	social_compact
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_maintaining_order_social_compact
-		}
-		modifier = {
-			pop_happiness = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_community_monitoring"		# 共同体監視	community_monitoring
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_maintaining_order_community_monitoring
-		}
-		modifier = {
-			planet_stability_add = 10
-			country_unity_produces_mult = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_continuous_monitoring"		# 常時監視	continuous_monitoring
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_maintaining_order_continuous_monitoring
-		}
-		modifier = {
-			planet_stability_add = 40
-			pop_happiness = -0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-}
-
-# 13.公務員法	civil_service_law	公僕のシステムを規定する
-# 	1	世襲官僚	pedigree_bureaucrat	官僚は世襲の地位であるのだ	官僚と司祭の算出する統合力+30%、統合力+10%
-# 	2	資格官僚	licensed_bureaucrat	官僚たるもの、試験を突破せねばならない	帝国規模-10%
-# 	3	選挙官僚	electoral_bureaucracy	官僚は、選挙で選出されるものだ	派閥幸福度+10%、派閥統合力収入+10%
-# 	4	任命官僚	appointed_bureaucrat	官僚は縁故や能力により上司から任命される	リーダー雇用コスト-50%、影響力+1
-ngm_policies_civil_service_law = {
-	potential = {
-		has_tradition = tr_ngm_official_first
-	}
-	option = {
-		name = "NAME_NGM_pedigree_bureaucrat"		# 世襲官僚	pedigree_bureaucrat
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_civil_service_law_pedigree_bureaucrat
-		}
-		modifier = {
-			country_unity_produces_mult = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_licensed_bureaucrat"		# 資格官僚	licensed_bureaucrat
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_civil_service_law_licensed_bureaucrat
-		}
-		modifier = {
-			empire_size_mult = -0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_electoral_bureaucracy"		# 選挙官僚	electoral_bureaucracy
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_civil_service_law_electoral_bureaucracy
-		}
-		modifier = {
-			faction_approval = 0.1
-			pop_factions_unity_produces_mult = 0.1
-		}
-		AI_weight = {
-			weight = 10
-		}
-	}
-	option = {
-		name = "NAME_NGM_appointed_bureaucrat"		# 任命官僚	appointed_bureaucrat
-		potential = {
-			always = yes
-		}
-		policy_flags = {
-			ngm_civil_service_law_appointed_bureaucrat
-		}
-		modifier = {
-			leaders_cost_mult = -0.5
-			country_base_influence_produces_add = 1
 		}
 		AI_weight = {
 			weight = 10

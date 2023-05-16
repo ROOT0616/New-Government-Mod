@@ -115,16 +115,6 @@ researcher = {
 			engineering_research = 4
 			society_research = 4
 		}
-		# NGM2	過去の参照
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_active_tradition = tr_ngm_past }
-			}
-			physics_research = 1
-			engineering_research = 1
-			society_research = 1
-		}
 		upkeep = {
 			consumer_goods = 2
 		}
@@ -284,30 +274,6 @@ priest = {
 		}
 		upkeep = {
 			consumer_goods = 2
-		}
-		# NGM2	緻密な記録
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_active_tradition = tr_ngm_record }
-			}
-			unity	= 1
-		}
-		# NGM2	総務省
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_active_tradition = tr_ngm_general_affairs }
-			}
-			unity	= 1
-		}
-		# NGM2	膨張した官僚機構
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_active_tradition = tr_ngm_rock_solid_bureaucracy }
-			}
-			unity	= 1
 		}
 	}
 
@@ -879,7 +845,7 @@ entertainer = {
 		}
 
 		trade_value_add = @councilor_corporate_hedonism_entertainer_trade_value
-		mult = value:trade_value_councilor_corporate_hedonism_mult
+		mult = value:scripted_modifier_councilor_level_mult|MODIFIER|pop_job_trade_mult|TYPE|councilor_corporate_hedonism|
 	}
 
 	triggered_planet_modifier = {
@@ -1110,30 +1076,6 @@ bureaucrat = {
 		upkeep = {
 			consumer_goods = 2
 		}
-		# NGM2	緻密な記録
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_active_tradition = tr_ngm_record }
-			}
-			unity	= 1
-		}
-		# NGM2	総務省
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_active_tradition = tr_ngm_general_affairs }
-			}
-			unity	= 1
-		}
-		# NGM2	膨張した官僚機構
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_active_tradition = tr_ngm_rock_solid_bureaucracy }
-			}
-			unity	= 1
-		}
 	}
 
 	triggered_planet_modifier = {
@@ -1302,18 +1244,7 @@ chemist = {
 			volatile_motes = 2
 		}
 		upkeep = {
-			minerals = 6
-		}
-		# 最先端工業:化学技師、透過技師、ガス精製技師の維持費-40%
-		upkeep = {
-			trigger = {
-				owner = {
-					NOT = {
-						has_tradition = tr_ngm_latast_industrial
-					}
-				}
-			}
-			minerals = 4
+			minerals = 10
 		}
 	}
 
@@ -1357,18 +1288,7 @@ translucer = {
 			rare_crystals = 2
 		}
 		upkeep = {
-			minerals = 6
-		}
-		# 最先端工業:化学技師、透過技師、ガス精製技師の維持費-40%
-		upkeep = {
-			trigger = {
-				owner = {
-					NOT = {
-						has_tradition = tr_ngm_latast_industrial
-					}
-				}
-			}
-			minerals = 4
+			minerals = 10
 		}
 	}
 
@@ -1417,18 +1337,7 @@ gas_refiner = {
 			exotic_gases = 2
 		}
 		upkeep = {
-			minerals = 6
-		}
-		# 最先端工業:化学技師、透過技師、ガス精製技師の維持費-40%
-		upkeep = {
-			trigger = {
-				owner = {
-					NOT = {
-						has_tradition = tr_ngm_latast_industrial
-					}
-				}
-			}
-			minerals = 4
+			minerals = 10
 		}
 	}
 
@@ -2569,7 +2478,7 @@ pearl_diver = {
 		}
 
 		trade_value_add = @councilor_corporate_anglers_pearl_diver_trade_value_bonus
-		mult = value:trade_value_corporate_angler_councilor_mult
+		mult = value:scripted_modifier_councilor_level_mult|MODIFIER|pop_job_trade_mult|TYPE|councilor_corporate_anglers|
 	}
 
 	overlord_resources = {
