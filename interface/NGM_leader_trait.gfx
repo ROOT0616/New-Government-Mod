@@ -1,0 +1,46 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_leader_trait_ngm_army_brat"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/ngm_army_brat.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ngm_coordinator"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/ngm_coordinator.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ngm_decisive"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/ngm_decisive.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ngm_economist"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/ngm_economist.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ngm_flexibility"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/ngm_flexibility.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ngm_from_the_general_staff"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/ngm_from_the_general_staff.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ngm_general_staff_team"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/ngm_general_staff_team.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ngm_veteran"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/ngm_veteran.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ngm_intuition"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/ngm_intuition.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ngm_leader_bureaucracy"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/ngm_leader_bureaucracy.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ngm_upstream"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/ngm_upstream.dds"
+	}
+}

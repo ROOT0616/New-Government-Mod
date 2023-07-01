@@ -1,191 +1,1162 @@
-###############################
-#######  連邦用イベント ########
-###############################
-namespace = ngm_federation
-country_event = {
-	id = ngm_federation.1
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		federation = {
-			has_federation_perk = NGM_PU_TPP
-		}
-	}
-	immediate = {
-		every_owned_leader = {
-			limit = {
-				NOT = {
-					has_leader_flag = flag_NGM_PU_TPP_bonus
-				}
-			}
-			set_leader_flag = flag_NGM_PU_TPP_bonus
-			set_skill = 2
-		}
-	}
-}
+# ###############################
+# #######  連邦用イベント ########
+# ###############################
+# namespace = ngm_federation
+# country_event = {
+# 	id = ngm_federation.1
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		exists = owner.federation
+# 		owner.federation = {
+# 			has_federation_perk = NGM_PU_TPP
+# 		}
+# 	}
+# 	immediate = {
+# 		every_owned_leader = {
+# 			limit = {
+# 				NOT = {
+# 					has_leader_flag = flag_NGM_PU_TPP_bonus
+# 				}
+# 			}
+# 			set_leader_flag = flag_NGM_PU_TPP_bonus
+# 			set_skill = 2
+# 		}
+# 	}
+# }
 
-###############################
-######  policy用イベント #######
-###############################
-namespace = ngm_policy
+#############################################
+#######  バニライベント上書き用イベント ########
+#############################################
+namespace = syndaw
+@recent_event_pause = 75
 country_event = {
-	id = ngm_policy.1
+	id = syndaw.11
 	hide_window = yes
 	is_triggered_only = yes
-	trigger = {
-		OR = {
-			is_country_type = default
-			is_country_type = fallen_empire
-		}
-	}
 	immediate = {
-		#人口政策	Population Policy
-		set_policy = {
-			policy = ngm_policies_population_stance
-			option = NAME_NGM_population_stance_non_non
-			cooldown = no
-		}
-		# 一般国家新政策 (特筆ない限り☆がデフォルト)
-		set_policy = {
-			policy = ngm_policies_civil_law
-			option = NAME_NGM_maintaining_order
-			cooldown = no
-		}
-		# 〇刑法
-		set_policy = {
-			policy = ngm_policies_criminal_law
-			option = NAME_NGM_maintaining_order_cri
-			cooldown = no
-		}
-		# 議会制度	独裁制と君主制以外デフォルト
-		if = {
-			limit = {
-				NOR = {
-					has_authority = auth_imperial
-					has_authority = auth_dictatorial
+		random_list = {
+			88 = {
+				# 88% chance nothing happens
+			}
+			2 = {
+				modifier = {
+					# 50% chance if self preservation in effect
+					has_active_tradition = tr_synchronicity_self_preservation
+					factor = 0.5
+				}
+				modifier = {
+					# 20% chance if civic_ngm_check in effect
+					has_valid_civic = civic_ngm_check
+					factor = 0.2
+				}
+				modifier = {
+					# 50% chance if zro crystal edict is in effect
+					has_edict = zro_crystal_machine
+					factor = 0.5
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						exists = fleet
+						species = {
+							has_trait = trait_ngm_m_malfunction
+						}
+					}
+					factor = 0.2
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						exists = fleet
+						species = {
+							has_trait = trait_ngm_m_incr
+						}
+					}
+					factor = 0.15
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						exists = fleet
+						species = {
+							has_trait = trait_ngm_m_flash
+						}
+					}
+					factor = 0.1
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						exists = fleet
+						species = {
+							has_trait = trait_ngm_m_blue
+						}
+					}
+					factor = 0.1
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						exists = fleet
+						species = {
+							has_trait = trait_ngm_m_bomb
+						}
+					}
+					factor = 0.05
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						exists = fleet
+						species = {
+							has_trait = trait_ngm_m_mcpu
+						}
+					}
+					factor = 0.05
+				}
+				if = {
+					# surveying scientist
+					limit = {
+						any_owned_leader = {
+							leader_class = scientist
+							exists = fleet
+							species = {
+								OR = {
+									has_trait = trait_machine_unit
+									has_trait = trait_mechanical
+								}
+							}
+						}
+					}
+					random_owned_leader = {
+						limit = {
+							leader_class = scientist
+							exists = fleet
+							species = {
+								OR = {
+									has_trait = trait_machine_unit
+									has_trait = trait_mechanical
+								}
+							}
+						}
+						# 20% chance if civic_ngm_check in effect
+						if = {
+							limit = {
+								species = {
+									OR = {
+										has_trait = trait_ngm_m_malfunction
+										has_trait = trait_ngm_m_main
+										has_trait = trait_ngm_m_back
+									}
+								}
+							}
+							random_list = {
+								99 = {
+									save_event_target_as = malfunctioning_leader
+									fleet = {
+										save_event_target_as = malfunctioning_leader_fleet
+									}
+									root = {
+										if = {
+											limit = {
+												has_authority = auth_machine_intelligence
+											}
+											country_event = {
+												id = syndaw.21
+											}
+										}
+										else = {
+											country_event = {
+												id = action.71
+											}
+										}
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = scientist
+											exists = fleet
+											species = {
+												has_trait = trait_ngm_m_main
+											}
+										}
+										factor = 0.95
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = scientist
+											exists = fleet
+											species = {
+												has_trait = trait_ngm_m_made
+											}
+										}
+										factor = 0.95
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = scientist
+											exists = fleet
+											species = {
+												has_trait = trait_ngm_m_back
+											}
+										}
+										factor = 0.8
+									}
+								}
+								1 = {
+								}
+							}
+						}
+						else = {
+							save_event_target_as = malfunctioning_leader
+							fleet = {
+								save_event_target_as = malfunctioning_leader_fleet
+							}
+							root = {
+								if = {
+									limit = {
+										has_authority = auth_machine_intelligence
+									}
+									country_event = {
+										id = syndaw.21
+									}
+								}
+								else = {
+									country_event = {
+										id = action.71
+									}
+								}
+							}
+						}
+					}
 				}
 			}
-			set_policy = {
-				policy = ngm_policies_parliamentarism
-				option = NAME_NGM_unicameral_system
-				cooldown = no
-			}
-		}
-		# 議会制度	独裁制と君主制デフォルト
-		if = {
-			limit = {
-				OR = {
-					has_authority = auth_imperial
-					has_authority = auth_dictatorial
+			2 = {
+				modifier = {
+					# 50% chance if self preservation in effect
+					has_active_tradition = tr_synchronicity_self_preservation
+					factor = 0.5
+				}
+				modifier = {
+					# 2% chance if civic_ngm_check in effect
+					has_valid_civic = civic_ngm_check
+					factor = 0.2
+				}
+				modifier = {
+					# 50% chance if zro crystal edict is in effect
+					has_edict = zro_crystal_machine
+					factor = 0.5
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = engineering
+						species = {
+							has_trait = trait_ngm_m_malfunction
+						}
+					}
+					factor = 0.2
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = engineering
+						species = {
+							has_trait = trait_ngm_m_incr
+						}
+					}
+					factor = 0.15
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = engineering
+						species = {
+							has_trait = trait_ngm_m_flash
+						}
+					}
+					factor = 0.1
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = engineering
+						species = {
+							has_trait = trait_ngm_m_blue
+						}
+					}
+					factor = 0.1
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = engineering
+						species = {
+							has_trait = trait_ngm_m_bomb
+						}
+					}
+					factor = 0.05
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = engineering
+						species = {
+							has_trait = trait_ngm_m_mcpu
+						}
+					}
+					factor = 0.05
+				}
+				if = {
+					# engineering scientist
+					limit = {
+						any_owned_leader = {
+							leader_class = scientist
+							is_researching_area = engineering
+							species = {
+								OR = {
+									has_trait = trait_machine_unit
+									has_trait = trait_mechanical
+								}
+							}
+						}
+					}
+					random_owned_leader = {
+						limit = {
+							leader_class = scientist
+							is_researching_area = engineering
+							species = {
+								OR = {
+									has_trait = trait_machine_unit
+									has_trait = trait_mechanical
+								}
+							}
+						}
+						# 20% chance if civic_ngm_check in effect
+						if = {
+							limit = {
+								species = {
+									OR = {
+										has_trait = trait_ngm_m_malfunction
+										has_trait = trait_ngm_m_main
+										has_trait = trait_ngm_m_back
+									}
+								}
+							}
+							random_list = {
+								99 = {
+									save_event_target_as = malfunctioning_leader
+									root = {
+										if = {
+											limit = {
+												has_authority = auth_machine_intelligence
+											}
+											country_event = {
+												id = syndaw.22
+											}
+										}
+										else = {
+											country_event = {
+												id = action.72
+											}
+										}
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = scientist
+											is_researching_area = engineering
+											species = {
+												has_trait = trait_ngm_m_main
+											}
+										}
+										factor = 0.95
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = scientist
+											is_researching_area = engineering
+											species = {
+												has_trait = trait_ngm_m_made
+											}
+										}
+										factor = 0.95
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = scientist
+											is_researching_area = engineering
+											species = {
+												has_trait = trait_ngm_m_back
+											}
+										}
+										factor = 0.8
+									}
+								}
+								1 = {
+								}
+							}
+						}
+						else = {
+							save_event_target_as = malfunctioning_leader
+							root = {
+								if = {
+									limit = {
+										has_authority = auth_machine_intelligence
+									}
+									country_event = {
+										id = syndaw.22
+									}
+								}
+								else = {
+									country_event = {
+										id = action.72
+									}
+								}
+							}
+						}
+					}
 				}
 			}
-			set_policy = {
-				policy = ngm_policies_parliamentarism
-				option = NAME_NGM_unicameral_system
-				cooldown = no
+			2 = {
+				modifier = {
+					# 50% chance if self preservation in effect
+					has_active_tradition = tr_synchronicity_self_preservation
+					factor = 0.5
+				}
+				modifier = {
+					# 2% chance if civic_ngm_check in effect
+					has_valid_civic = civic_ngm_check
+					factor = 0.2
+				}
+				modifier = {
+					# 50% chance if zro crystal edict is in effect
+					has_edict = zro_crystal_machine
+					factor = 0.5
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = society
+						species = {
+							has_trait = trait_ngm_m_malfunction
+						}
+					}
+					factor = 0.2
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = society
+						species = {
+							has_trait = trait_ngm_m_incr
+						}
+					}
+					factor = 0.15
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = society
+						species = {
+							has_trait = trait_ngm_m_flash
+						}
+					}
+					factor = 0.1
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = society
+						species = {
+							has_trait = trait_ngm_m_blue
+						}
+					}
+					factor = 0.1
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = society
+						species = {
+							has_trait = trait_ngm_m_bomb
+						}
+					}
+					factor = 0.05
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = society
+						species = {
+							has_trait = trait_ngm_m_mcpu
+						}
+					}
+					factor = 0.05
+				}
+				if = {
+					# society scientist
+					limit = {
+						any_owned_leader = {
+							leader_class = scientist
+							is_researching_area = society
+							species = {
+								OR = {
+									has_trait = trait_machine_unit
+									has_trait = trait_mechanical
+								}
+							}
+						}
+					}
+					random_owned_leader = {
+						limit = {
+							leader_class = scientist
+							is_researching_area = society
+							species = {
+								OR = {
+									has_trait = trait_machine_unit
+									has_trait = trait_mechanical
+								}
+							}
+						}
+						# 20% chance if civic_ngm_check in effect
+						if = {
+							limit = {
+								species = {
+									OR = {
+										has_trait = trait_ngm_m_malfunction
+										has_trait = trait_ngm_m_main
+										has_trait = trait_ngm_m_back
+									}
+								}
+							}
+							random_list = {
+								99 = {
+									save_event_target_as = malfunctioning_leader
+									root = {
+										if = {
+											limit = {
+												has_authority = auth_machine_intelligence
+											}
+											country_event = {
+												id = syndaw.23
+											}
+										}
+										else = {
+											country_event = {
+												id = action.73
+											}
+										}
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = scientist
+											is_researching_area = society
+											species = {
+												has_trait = trait_ngm_m_main
+											}
+										}
+										factor = 0.95
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = scientist
+											is_researching_area = society
+											species = {
+												has_trait = trait_ngm_m_made
+											}
+										}
+										factor = 0.95
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = scientist
+											is_researching_area = society
+											species = {
+												has_trait = trait_ngm_m_back
+											}
+										}
+										factor = 0.8
+									}
+								}
+								1 = {
+								}
+							}
+						}
+						else = {
+							save_event_target_as = malfunctioning_leader
+							root = {
+								if = {
+									limit = {
+										has_authority = auth_machine_intelligence
+									}
+									country_event = {
+										id = syndaw.23
+									}
+								}
+								else = {
+									country_event = {
+										id = action.73
+									}
+								}
+							}
+						}
+					}
+				}
 			}
-		}
-		# 選挙制度
-		set_policy = {
-			policy = ngm_policies_electoral_system
-			option = NAME_NGM_maze
-			cooldown = no
-		}
-		# 選挙法 
-		set_policy = {
-			policy = ngm_policies_election_law
-			option = NAME_NGM_maze_e
-			cooldown = no
-		}
-		# 公務員任用制度
-		set_policy = {
-			policy = ngm_policies_civil_service_appointments_system
-			option = NAME_NGM_hybrid
-			cooldown = no
-		}
-		# 納税制度
-		set_policy = {
-			policy = ngm_policies_taxation_system
-			option = NAME_NGM_general_tax_system
-			cooldown = no
-		}
-		# 所得税
-		set_policy = {
-			policy = ngm_policies_income_tax
-			option = NAME_NGM_a_income
-			cooldown = no
-		}
-		# 法人税
-		set_policy = {
-			policy = ngm_policies_corporation_tax
-			option = NAME_NGM_a_corp_tax
-			cooldown = no
-		}
-		# 文化政策
-		set_policy = {
-			policy = ngm_policies_cultural_policy
-			option = NAME_NGM_private_initiative
-			cooldown = no
-		}
-		# 国家祭典
-		set_policy = {
-			policy = ngm_policies_national_ceremony
-			option = NAME_NGM_ceremony
-			cooldown = no
-		}
-		# 農業政策
-		set_policy = {
-			policy = ngm_policies_agricultural_policy
-			option = NAME_NGM_no_agricultural_incentives
-			cooldown = no
-		}
-		# 言語政策
-		set_policy = {
-			policy = ngm_policies_language_policy
-			option = NAME_NGM_common_language_policy
-			cooldown = no
-		}
-		# 研究倫理
-		set_policy = {
-			policy = ngm_policies_research_ethics
-			option = NAME_NGM_ethical
-			cooldown = no
-		}
-		# 過激思想規制
-		set_policy = {
-			policy = ngm_policies_SNS_regulation
-			option = NAME_NGM_ext_restriction
-			cooldown = no
-		}
-		# 武器輸出法
-		set_policy = {
-			policy = ngm_policies_weapon_export_law
-			option = NAME_NGM_ave_exp
-			cooldown = no
-		}
-		# 情報法
-		set_policy = {
-			policy = ngm_policies_information_law
-			option = NAME_NGM_nat_save
-			cooldown = no
-		}
-		# 軍法
-		set_policy = {
-			policy = ngm_policies_martial_law
-			option = NAME_NGM_court_martial
-			cooldown = no
-		}
-		# 治安法
-		set_policy = {
-			policy = ngm_policies_sheriffs_law
-			option = NAME_NGM_pub_erd
-			cooldown = no
-		}
-		# 放送法
-		set_policy = {
-			policy = ngm_policies_broadcast_law
-			option = NAME_NGM_non_limit
-			cooldown = no
+			2 = {
+				modifier = {
+					# 50% chance if self preservation in effect
+					has_active_tradition = tr_synchronicity_self_preservation
+					factor = 0.5
+				}
+				modifier = {
+					# 2% chance if civic_ngm_check in effect
+					has_valid_civic = civic_ngm_check
+					factor = 0.2
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = physics
+						species = {
+							has_trait = trait_ngm_m_malfunction
+						}
+					}
+					factor = 0.2
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = physics
+						species = {
+							has_trait = trait_ngm_m_incr
+						}
+					}
+					factor = 0.15
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = physics
+						species = {
+							has_trait = trait_ngm_m_flash
+						}
+					}
+					factor = 0.1
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = physics
+						species = {
+							has_trait = trait_ngm_m_blue
+						}
+					}
+					factor = 0.1
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = physics
+						species = {
+							has_trait = trait_ngm_m_bomb
+						}
+					}
+					factor = 0.05
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = scientist
+						is_researching_area = physics
+						species = {
+							has_trait = trait_ngm_m_mcpu
+						}
+					}
+					factor = 0.05
+				}
+				if = {
+					# society scientist
+					limit = {
+						any_owned_leader = {
+							leader_class = scientist
+							is_researching_area = physics
+							species = {
+								OR = {
+									has_trait = trait_machine_unit
+									has_trait = trait_mechanical
+								}
+							}
+						}
+					}
+					random_owned_leader = {
+						limit = {
+							leader_class = scientist
+							is_researching_area = physics
+							species = {
+								OR = {
+									has_trait = trait_machine_unit
+									has_trait = trait_mechanical
+								}
+							}
+						}
+						# 20% chance if civic_ngm_check in effect
+						if = {
+							limit = {
+								species = {
+									OR = {
+										has_trait = trait_ngm_m_malfunction
+										has_trait = trait_ngm_m_main
+										has_trait = trait_ngm_m_back
+									}
+								}
+							}
+							random_list = {
+								99 = {
+									save_event_target_as = malfunctioning_leader
+									root = {
+										if = {
+											limit = {
+												has_authority = auth_machine_intelligence
+											}
+											country_event = {
+												id = syndaw.24
+											}
+										}
+										else = {
+											country_event = {
+												id = action.74
+											}
+										}
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = scientist
+											is_researching_area = physics
+											species = {
+												has_trait = trait_ngm_m_main
+											}
+										}
+										factor = 0.95
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = scientist
+											is_researching_area = physics
+											species = {
+												has_trait = trait_ngm_m_made
+											}
+										}
+										factor = 0.95
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = scientist
+											is_researching_area = physics
+											species = {
+												has_trait = trait_ngm_m_back
+											}
+										}
+										factor = 0.8
+									}
+								}
+								1 = {
+								}
+							}
+						}
+						else = {
+							save_event_target_as = malfunctioning_leader
+							root = {
+								if = {
+									limit = {
+										has_authority = auth_machine_intelligence
+									}
+									country_event = {
+										id = syndaw.24
+									}
+								}
+								else = {
+									country_event = {
+										id = action.74
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			2 = {
+				modifier = {
+					# 50% chance if self preservation in effect
+					has_active_tradition = tr_synchronicity_self_preservation
+					factor = 0.5
+				}
+				modifier = {
+					# 2% chance if civic_ngm_check in effect
+					has_valid_civic = civic_ngm_check
+					factor = 0.2
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = admiral
+						exists = fleet
+						species = {
+							has_trait = trait_ngm_m_malfunction
+						}
+					}
+					factor = 0.2
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = admiral
+						exists = fleet
+						species = {
+							has_trait = trait_ngm_m_incr
+						}
+					}
+					factor = 0.15
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = admiral
+						exists = fleet
+						species = {
+							has_trait = trait_ngm_m_flash
+						}
+					}
+					factor = 0.1
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = admiral
+						exists = fleet
+						species = {
+							has_trait = trait_ngm_m_blue
+						}
+					}
+					factor = 0.1
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = admiral
+						exists = fleet
+						species = {
+							has_trait = trait_ngm_m_bomb
+						}
+					}
+					factor = 0.05
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = admiral
+						exists = fleet
+						species = {
+							has_trait = trait_ngm_m_mcpu
+						}
+					}
+					factor = 0.05
+				}
+				if = {
+					# commanding admiral
+					limit = {
+						any_owned_leader = {
+							leader_class = admiral
+							exists = fleet
+							species = {
+								OR = {
+									has_trait = trait_machine_unit
+									has_trait = trait_mechanical
+								}
+							}
+						}
+					}
+					random_owned_leader = {
+						limit = {
+							leader_class = admiral
+							exists = fleet
+							species = {
+								OR = {
+									has_trait = trait_machine_unit
+									has_trait = trait_mechanical
+								}
+							}
+						}
+						# 20% chance if civic_ngm_check in effect
+						if = {
+							limit = {
+								species = {
+									OR = {
+										has_trait = trait_ngm_m_malfunction
+										has_trait = trait_ngm_m_main
+										has_trait = trait_ngm_m_back
+									}
+								}
+							}
+							random_list = {
+								99 = {
+									save_event_target_as = malfunctioning_leader
+									fleet = {
+										save_event_target_as = malfunctioning_leader_fleet
+									}
+									root = {
+										if = {
+											limit = {
+												has_authority = auth_machine_intelligence
+											}
+											country_event = {
+												id = syndaw.25
+											}
+										}
+										else = {
+											country_event = {
+												id = action.75
+											}
+										}
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = admiral
+											exists = fleet
+											species = {
+												has_trait = trait_ngm_m_main
+											}
+										}
+										factor = 0.95
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = admiral
+											exists = fleet
+											species = {
+												has_trait = trait_ngm_m_made
+											}
+										}
+										factor = 0.95
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = admiral
+											exists = fleet
+											species = {
+												has_trait = trait_ngm_m_back
+											}
+										}
+										factor = 0.8
+									}
+								}
+								1 = {
+								}
+							}
+						}
+						else = {
+							save_event_target_as = malfunctioning_leader
+							fleet = {
+								save_event_target_as = malfunctioning_leader_fleet
+							}
+							root = {
+								if = {
+									limit = {
+										has_authority = auth_machine_intelligence
+									}
+									country_event = {
+										id = syndaw.25
+									}
+								}
+								else = {
+									country_event = {
+										id = action.75
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			2 = {
+				modifier = {
+					# 50% chance if self preservation in effect
+					has_active_tradition = tr_synchronicity_self_preservation
+					factor = 0.5
+				}
+				modifier = {
+					# 2% chance if civic_ngm_check in effect
+					has_valid_civic = civic_ngm_check
+					factor = 0.2
+				}
+				modifier = {
+					# 50% chance if zro crystal edict is in effect
+					has_edict = zro_crystal_machine
+					factor = 0.5
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = governor
+						exists = sector
+						species = {
+							has_trait = trait_ngm_m_malfunction
+						}
+					}
+					factor = 0.2
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = governor
+						exists = sector
+						species = {
+							has_trait = trait_ngm_m_incr
+						}
+					}
+					factor = 0.15
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = governor
+						exists = sector
+						species = {
+							has_trait = trait_ngm_m_flash
+						}
+					}
+					factor = 0.1
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = governor
+						exists = sector
+						species = {
+							has_trait = trait_ngm_m_blue
+						}
+					}
+					factor = 0.1
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = governor
+						exists = sector
+						species = {
+							has_trait = trait_ngm_m_bomb
+						}
+					}
+					factor = 0.05
+				}
+				modifier = {
+					any_owned_leader = {
+						leader_class = governor
+						exists = sector
+						species = {
+							has_trait = trait_ngm_m_mcpu
+						}
+					}
+					factor = 0.05
+				}
+				if = {
+					# planet governor
+					limit = {
+						any_owned_leader = {
+							leader_class = governor
+							exists = sector
+							species = {
+								OR = {
+									has_trait = trait_machine_unit
+									has_trait = trait_mechanical
+								}
+							}
+						}
+					}
+					random_owned_leader = {
+						limit = {
+							leader_class = governor
+							exists = sector
+							species = {
+								OR = {
+									has_trait = trait_machine_unit
+									has_trait = trait_mechanical
+								}
+							}
+						}
+						# 20% chance if civic_ngm_check in effect
+						if = {
+							limit = {
+								species = {
+									OR = {
+										has_trait = trait_ngm_m_malfunction
+										has_trait = trait_ngm_m_main
+										has_trait = trait_ngm_m_back
+									}
+								}
+							}
+							random_list = {
+								99 = {
+									save_event_target_as = malfunctioning_leader
+									root = {
+										if = {
+											limit = {
+												has_authority = auth_machine_intelligence
+											}
+											country_event = {
+												id = syndaw.26
+											}
+										}
+										else = {
+											country_event = {
+												id = action.76
+											}
+										}
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = governor
+											exists = sector
+											species = {
+												has_trait = trait_ngm_m_main
+											}
+										}
+										factor = 0.95
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = governor
+											exists = sector
+											species = {
+												has_trait = trait_ngm_m_made
+											}
+										}
+										factor = 0.95
+									}
+									modifier = {
+										any_owned_leader = {
+											leader_class = governor
+											exists = sector
+											species = {
+												has_trait = trait_ngm_m_back
+											}
+										}
+										factor = 0.8
+									}
+								}
+								1 = {
+								}
+							}
+						}
+						else = {
+							save_event_target_as = malfunctioning_leader
+							root = {
+								if = {
+									limit = {
+										has_authority = auth_machine_intelligence
+									}
+									country_event = {
+										id = syndaw.26
+									}
+								}
+								else = {
+									country_event = {
+										id = action.76
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

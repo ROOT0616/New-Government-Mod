@@ -4,7 +4,7 @@
 #####    ディシジョン    ######
 ##############################
 
- decision_ngm_do:0 "NGM：非表示"
+ decision_ngm_do:0 "NGM:非表示"
  decision_ngm_do_desc:0 ""
  decision_ngm_undo:0 "NGM:表示"
  decision_ngm_undo_desc:0 ""
@@ -201,6 +201,12 @@
  ngm_naval_fleet:0 "海軍艦隊"
  ngm_naval_fleet_desc:0 "惑星を防衛する艦船や艦艇"
 
+ ngm_imperial_guard:0 "帝国近衛軍"
+ ngm_imperial_guard_desc:0 "帝国を守ることを誓ったエリート軍団"
+
+ ngm_imperiallocal_army:0 "帝国地方軍"
+ ngm_imperiallocal_army_desc:0 "帝国を守ることを誓った軍人"
+
 #######################
 #####    志向    ######
 #######################
@@ -266,20 +272,27 @@
 #######################
 
  origin_ngm_buffer_state:0 "律儀な古代の緩衝国家"
- origin_ngm_buffer_state_desc:0 "この国が位置する星系はその豊かな立地ゆえに古代においても戦略重要地として奪い合いの戦争が繰り広げられていました。\n古代の国家はこの星系に極々小さな独立緩衝国を築き上げ、統治させることで戦争の危機を脱しました。そうして出来上がった国家は貿易的利益と強力な国際発言力の代償に小さな国土と限られた原料生産を強いられている。\n古代の国家群が滅びた後でも、この国はその伝統を数少ない継承要素として維持しているのである。"
+ origin_ngm_buffer_state_desc:0 "この国が位置する星系はその豊かな立地ゆえに古代においても戦略重要地として奪い合いの戦争が繰り広げられていました。\n古代の国家はこの星系に極々小さな独立緩衝国を築き上げ、統治させることで戦争の危機を脱しました。そうして出来上がった国家は貿易的利益と強力な国際発言力の代償に小さな国土と限られた原料生産を強いられている。\n古代の国家群が滅びた後でも、この国はその伝統を数少ない継承要素として維持しているのである。\n\n§Rこの起源をは非常に困難である§!"
  origin_tooltip_ngm_buffer_state_effects:0 "-非常に豊かなチョークポイントに位置する星系に生成される。\n-開始時に遺物§Y『古代の盟約』§!を取得する。\n-拡張に関して極めて大きな制約を課せられる。\n-市場手数料§G-10%§!、Pop成長率§G+100%§!、\n-特殊な種族特性を取得する。\n\n初期建築物§Y「永久の宮殿」§!\n種族特性§Y「古代からの商人」§!\n"
 
  origin_ngm_escape_to_the_past:0 "過去への逃走"
  origin_ngm_escape_to_the_past_desc:0 " この国の種族は苛烈な運命をたどる時代から逃げ去り、未来を変えるために再度過去へと戻った。\n しかし、その運命から抗う手法は追跡者を生み、定期的な襲撃を受けることとなる。"
- origin_tooltip_ngm_escape_to_the_past:0 "120か月に1度未来からの艦隊が襲撃する。打ち勝つことによって技術のデブリを取得することが可能となる。\n\n首都惑星に特殊な特性「時空超越機」\n物理学研究§G+20%§!、Pop成長速度§G+10%§!"
+ origin_tooltip_ngm_escape_to_the_past:0 "120か月に1度未来からの艦隊が襲撃する。打ち勝つことによって技術のデブリを取得することが可能となる。\n\n-首都惑星に特殊な特性「時空超越機」\n-物理学研究§G+20%§!\n-Pop成長速度§G+10%§!"
 
  origin_ngm_galactic_empire_aquarium:0 "銀河帝国アクアリウム"
  origin_ngm_galactic_empire_aquarium_desc:0 "この国家は古き良き銀河帝国のアミューズメントパークとして存在した。その娯楽性から各国から攻撃の対象とならなかった。しかし、それ故に緩やかな衰退を遂げていっている。\nついにこのままではいけないことに気が付き銀河社会に恐る恐る足を踏み入れたが、かつてあったあらゆる知識は失われており、拡張する勇気は持ちえなかったのである。\nしかし、豊かなアミューズメントパークは健在である。\n§Rこの起源を選ぶ国が2カ国以上あるとバグります。§!"
  origin_tooltip_ngm_galactic_empire_aquarium:0 "銀河の外延部に存在する特殊な星系群と首都惑星から開始。\n\n拡張に関して極めて大きな制約を課せられる。\n\n特殊な建築物を建造可能\n\n"
 
-#######################
-#####    国是    ######
-#######################
+ origin_ngm_phenix:0 "黄昏の帝国"
+ origin_ngm_phenix_desc:0 "この国はかつての覇権国家であった。数多くの敵を打ち倒し、数々の困難を乗り越えた大帝国であった。そう、「であった」のだ。\n\n§Rこの起源をは非常に困難である§!"
+ origin_tooltip_ngm_phenix:0 "技術、生産力、人口、に§G大幅な強化§!が入った状態で開始。\n企業帝国の属国を所有した状態で開始。\n拡張、外交、戦争、内政に§Y大幅な制限§!がかかった状態で開始。\n §G伝統やアセンションを進めていくと......§!"
+
+ origin_ngm_phenix_npc:0 "永遠の恩義"
+ origin_ngm_phenix_desc:0 "この国はかつての覇権国家に隷属することで生存を認められ、さらに現在まで生き残ることができた。その恩義を果たすため、宗主国に永遠の隷属を誓っている。"
+
+#############################
+#####    通常帝国国是    #####
+#############################
 
  civic_sham_constitutionalism:0 "外見的立憲制度"
  civic_sham_constitutionalism_desc:0 "この国では成文の法により行政権が制約されているが、制約は意味を成しておらず名目上の意味合いでしかない。しかし、愚かな市民は民主制度を手に入れたと錯覚しており、専門家は労働者を虐げつつせせら笑っている。"
@@ -734,7 +747,62 @@
  civic_ngm_producer_consumer_society:0 "高度生産消費社会"
  civic_ngm_producer_consumer_society_desc:0 "たくさん作り、たくさん使い、たくさん捨てる。"
 
- civic_ngm_corporate_empire:0 "財閥"
+ civic_ngm_p_constitution:0 "憲法院"
+ civic_ngm_p_constitution_desc:0 "法律の専門家が重要法案を審査し、市民からの法律の不整合に関する訴えはここで処理される"
+
+ civic_ngm_p_medal:0 "歴史ある勲章"
+ civic_ngm_p_medal_desc:0 "この国の勲章制度は歴史と伝統があり、その格式は銀河中で一目置かれている"
+
+ civic_ngm_p_agriculture:0 "農業協同組合"
+ civic_ngm_p_agriculture_desc:0 "この国では農作物の品質を管理し、流通を担う協同組合が強い力を有している"
+
+ civic_ngm_p_joint:0 "統合軍"
+ civic_ngm_p_joint_desc:0 "この国の軍は地上軍と宇宙軍が統合されており、綿密で連携の取れた訓練と作戦遂行が可能だ"
+
+ civic_ngm_p_patriotism:0 "愛国教育"
+ civic_ngm_p_patriotism_desc:0 "国を愛することと教育を受けることは本質的な意味で同一である"
+
+ civic_ngm_p_fund:0 "慈善基金"
+ civic_ngm_p_fund_desc:0 "高所得者や高位役職者は自発的に労働者や下層市民を助けることが推奨されている"
+
+ civic_ngm_p_evacuation:0 "避難訓練"
+ civic_ngm_p_evacuation_desc:0 "万が一の事態に備えた訓練や安全対策の見直しはこの国の強迫的な伝統となっている"
+
+ civic_ngm_p_military:0 "在郷軍人会"
+ civic_ngm_p_military_desc:0 "退役した軍人はこの国の各所におり、万が一の事態には皆が立ち上がる準備ができている"
+
+ civic_ngm_p_vassal:0 "重臣制度"
+ civic_ngm_p_vassal_desc:0 "この国の国家功労者は国家運営に強く携わっており、権力者の顧問としての地位を確保している"
+
+ civic_ngm_p_supply:0 "高度な補給将校"
+ civic_ngm_p_supply_desc:0 "この国の補給将校は強い権限を与えられており、最大限の力をふるって軍の補給が行われる"
+
+ civic_ngm_p_crime:0 "軽犯罪無視"
+ civic_ngm_p_crime_desc:0 "軽犯罪を取り締まることは非効率だ"
+
+ civic_ngm_p_management:0 "自主管理制度"
+ civic_ngm_p_management_desc:0 "労働者たちは自ら生産を管理し、調整を行うことが可能なのだ"
+
+ civic_ngm_p_research:0 "国際平和研究所"
+ civic_ngm_p_research_desc:0 "国際平和について研究を行い、様々な知識を蓄えるシンクタンクがこの国にはある"
+
+ civic_ngm_p_assistance:0 "国際開発援助"
+ civic_ngm_p_assistance_desc:0 "この国は他国の開発を援助し、国際社会の一員としての責務を果たすプレイヤーであると自認している"
+
+ civic_ngm_p_bombing:0 "絨毯爆撃戦略"
+ civic_ngm_p_bombing_desc:0 "焼き払えば何も問題はない。そう、問題はない"
+
+ civic_ngm_p_block:0 "ブロック経済"
+ civic_ngm_p_block_desc:0 "他国の製品より自国の製品を買おう"
+
+ civic_ngm_p_councilor:0 "連邦参事会"
+ civic_ngm_p_councilor_desc:0 "この国はすべての政党が内閣に参加し、合議体制の閣議が実質的な国家元首として機能している"
+
+#############################
+#####    企業帝国国是    #####
+#############################
+
+ civic_ngm_corporate_empire:0 "企業帝国"
  civic_ngm_corporate_empire_desc:0 "この企業はあらゆる産業に拡大しており、取り扱わない内容はないほど拡大しており、その頂点に一部のエリートが君臨している。"
 
  civic_ngm_high_tech_company:0 "ハイテク企業"
@@ -746,8 +814,8 @@
  civic_ngm_hereditary_officers:0 "世襲役員"
  civic_ngm_hereditary_officers_desc:0 "この企業は創業家を中心に会社に多大な貢献を行った社員一家を特別役員として扱っており、企業内の団結や対外交渉などに活躍している、一種の君主制国家の様相を呈している。"
 
- #  civic_ngm_zaibatsu:0 "財閥"
- #  civic_ngm_zaibatsu_desc:0 "この企業は一部の持株会社が多くの企業を支配する形をとっており、ごく少数の役員やエリートによる決定が絶対視されている。"
+ civic_ngm_zaibatsu:0 "財閥"
+ civic_ngm_zaibatsu_desc:0 "この企業は一部の持株会社が多くの企業を支配する形をとっており、ごく少数の役員やエリートによる決定が絶対視されている。"
 
  civic_ngm_financial_enterprises:0 "金融企業"
  civic_ngm_financial_enterprises_desc:0 "この企業はコンサルティングや債権、電子通貨、金融商品等を取り扱うことに長けており、それらの産業が中心となって企業が運営されている。"
@@ -778,6 +846,107 @@
 
  civic_ngm_underhanded_trick:0 "寝業師"
  civic_ngm_underhanded_trick_desc:0 "この国では裏取引や事前交渉が極めて重要な立ち位置を占めており、裏で様々な取引をこなしている。あくまで、交渉として "
+
+ civic_ngm_pc_directer:0 "総務部局"
+ civic_ngm_pc_directer_desc:0 "この企業の事務部門の能力は極めて高く、すさまじい速度で書類が処理される。"
+
+#############################
+#####    機械帝国国是    #####
+#############################
+
+ civic_ngm_vertical:0 "垂直統合"
+ civic_ngm_vertical_desc:0 "機械中枢により強い統御を受けるこの機械は、効率的な発達を遂げることができる代わりに、末端部分の発達が遅れる傾向にある。"
+
+ civic_ngm_observation:0 "観察記録"
+ civic_ngm_observation_desc:0 "様々な事象や生命体を観察し、研究を行うことをプログラミングされた内省的な機械は、宇宙へと歩みを進め始めた。"
+
+ civic_ngm_check:0 "チェック機能"
+ civic_ngm_check_desc:0 "この機械の中枢は生産体制やメンテナンスの確認に極めて厳格であり、少しのエラーも許さない。"
+
+ civic_ngm_proliferate:0 "AI自己増殖"
+ civic_ngm_proliferate_desc:0 "自動複製プログラムは正常。自動複製プログラム自体の複製を開始……"
+
+ civic_ngm_warm:0 "暖かな願い"
+ civic_ngm_warm_desc:0 "この機械を統御する中枢部分は、他者から見ると「慈悲」に基づいて判断や行動を決定しているようだ。他生物を圧倒することではなく、共に生きることを目指し、共に脅威へ戦う意思を見せる。"
+
+ civic_ngm_optimization:0 "自動最適化システム"
+ civic_ngm_optimization_desc:0 "この種族を統御する中枢部分は、他者から見ると「慈悲」に基づいて判断や行動を決定しているようだ。他生物を圧倒することではなく、共に生きることを目指し、共に脅威へ戦う意思を見せる。"
+
+ civic_ngm_frontier:0 "フロンティアスピリッツ・プログラム"
+ civic_ngm_frontier_desc:0 "この機械の創造主は、中枢部にとあるプログラムを導入し、この機械国家はそのプログラムを粛々と実行している。「より、より遠くへ！」"
+
+#############################
+#####    集合意識国是    #####
+#############################
+
+ civic_ngm_h_ethi:0 "生命倫理"
+ civic_ngm_h_ethi_desc:0 "この国では中枢神経の判断で倫理的な対応が重要視されている"
+
+ civic_ngm_h_noethi:0 "倫理不在"
+ civic_ngm_h_noethi_desc:0 "この国では目標のためであれば倫理など不要と判断される"
+
+ civic_ngm_h_tele:0 "統合テレパシー"
+ civic_ngm_h_tele_desc:0 "この国では超能力接続により統合管理が行われるが、物理的事象には関心が低い"
+
+ civic_ngm_h_live:0 "生命の源流"
+ civic_ngm_h_live_desc:0 "この国では命の源である中枢が食料産出と種の拡張を司っている"
+
+ civic_ngm_h_exe:0 "効率的管理"
+ civic_ngm_h_exe_desc:0 "この国の中枢神経の管理統御は極めて効率的だ"
+
+ civic_ngm_h_research:0 "高度研究機構"
+ civic_ngm_h_research_desc:0 "この国の研究を担当する認知ノードには多大なリソースが割り当てられている"
+
+ civic_ngm_h_guard:0 "防衛本能"
+ civic_ngm_h_guard_desc:0 "この国の中枢神経は本能的に身を守ることを重要視している"
+
+ civic_ngm_h_look:0 "多重監視"
+ civic_ngm_h_look_desc:0 "この国では各ノードの働きを適宜監督が行われている"
+
+ civic_ngm_h_pira:0 "重層統御"
+ civic_ngm_h_pira_desc:0 "この国では中枢神経と一部の重要ノードの能力が重要視されている"
+
+ civic_ngm_h_nexus:0 "末端自律神経"
+ civic_ngm_h_nexus_desc:0 "この国では末端神経にも比較的大きな判断能力が割り当てられている"
+
+ civic_ngm_h_think:0 "分岐的判断"
+ civic_ngm_h_think_desc:0 "この国では分岐的神経の判断と統御が重要視されている"
+
+ civic_ngm_h_brain:0 "複合的頭脳"
+ civic_ngm_h_brain_desc:0 "この国では探求に関するリソースが多い代償として他の機能が低下している"
+
+ civic_ngm_h_pp:0 "硬質的感応"
+ civic_ngm_h_pp_desc:0 "この国の中枢神経は鉱物を探知する能力に秀でている"
+
+ civic_ngm_h_art:0 "芸術的秩序"
+ civic_ngm_h_art_desc:0 "この国の統御技術は芸術的と言える"
+
+ civic_ngm_h_para:0 "パラノイア"
+ civic_ngm_h_para_desc:0 "この国は決して他者を信用しない"
+
+ civic_ngm_h_mercy:0 "慈悲深き中枢"
+ civic_ngm_h_mercy_desc:0 "この種族を統御する中枢部分は、他者から見ると「慈悲」に基づいて判断や行動を決定しているようだ。他生物を圧倒することではなく、共に生きることを目指し、共に脅威へ戦う意思を見せる。"
+
+ civic_ngm_h_spread:0 "広がる群れ"
+ civic_ngm_h_spread_desc:0 "この種族を統御する中枢部分は、他者から見ると異常なまでに数を増やすことに注力している。種族能力を超える拡張は種族の統御に影響を与えている。"
+
+ civic_ngm_h_directed:0 "包括的監督"
+ civic_ngm_h_directed_desc:0 "種族の中枢により強い統御を受けるこの種族は、効率的な発達を遂げることができる代わりに、末端部分の発達が遅れる傾向にある。"
+
+ civic_ngm_h_destiny:0 "定められし運命"
+ civic_ngm_h_destiny_desc:0 "この種族はまるで古くに約束したかのように拡張へ強い意志を見せている。"
+
+ civic_ngm_h_memory:0 "古き記憶"
+ civic_ngm_h_memory_desc:0 "この種族はかつて、大いなる意思に導かれた形跡を有している。その意思はもう存在しないが、彼らが残した資料は今でも有益なものである。"
+
+ civic_ngm_h_revenge:0 "復讐戦"
+ civic_ngm_h_revenge_desc:0 "この種族はかつて、自分たちを養殖していた先駆種族を滅ぼして現在の地位を確立している。この経験は地上戦闘において大きな経験となった。"
+
+ civic_ngm_h_depth:0 "深海より"
+ civic_ngm_h_depth_desc:0 "この種族は深海より生まれ、さらに深海のごとき色が広がる宇宙へとヒレを進め始めた。"
+
+ civic_ngm_h_unconscious:0 "無意識作業"
+ civic_ngm_h_unconscious_desc:0 "この種族は末端の判断能力や意思決定能力が強く、各々の個体が多くの作業と責任を担っている。"
 
 #######################
 #####    政策    ######
@@ -857,9 +1026,9 @@
  ngm_flag_Not_Par_name:0 "議会無し"
  NAME_NGM_Not_Par:0 "議会無し"
  NAME_NGM_Not_Par_desc:0 "選挙自体を実施しておらず、任命や裏交渉、くじ引き等で代表を選ぶ制度"
- ngm_flag_Not_Par_name:0 "翼賛議会"
- NAME_NGM_Not_Par:0 "翼賛議会"
- NAME_NGM_Not_Par_desc:0 "直接民意を政治に反映させる、この国独特の文化的な選挙制度"
+ ngm_flag_Agr_Par_name:0 "翼賛議会"
+ NAME_NGM_Agr_Par:0 "翼賛議会"
+ NAME_NGM_Agr_Par_desc:0 "直接民意を政治に反映させる、この国独特の文化的な選挙制度"
 
  policy_ngm_tax_law:0 "国税法"
  policy_ngm_tax_law_desc:0 "国家の収入に関する税に関して、どのような方針で徴収を行うか決定する。"
@@ -953,9 +1122,9 @@
  ngm_flag_Pai_dis_name:0 "略奪の公認"
  NAME_NGM_Pai_dis:0 "略奪の公認"
  NAME_NGM_Pai_dis_desc:0 "この国の軍は公然と略奪を許可しており、地上戦における彼らの活躍は目を見張るものがあるが、その下には大きな犠牲が伴っている"
- ngm_flag_Pai_dis_name:0 "非公開横領"
- NAME_NGM_Pai_dis:0 "非公開横領"
- NAME_NGM_Pai_dis_desc:0 "この国では軍事予算の横領と国軍の腐敗が行われており、軍とは公的犯罪集団と化している"
+ ngm_flag_Mis_dis_name:0 "非公開横領"
+ NAME_NGM_Mis_dis:0 "非公開横領"
+ NAME_NGM_Mis_dis_desc:0 "この国では軍事予算の横領と国軍の腐敗が行われており、軍とは公的犯罪集団と化している"
 
  policy_ngm_research_law:0 "研究倫理"
  policy_ngm_research_law_desc:0 "諸研究に関する研究方針や倫理規定に関して決定する。"
@@ -971,9 +1140,9 @@
  ngm_flag_zen_eth_name:0 "異種族特例倫理規範"
  NAME_NGM_zen_eth:0 "異種族特例倫理規範"
  NAME_NGM_zen_eth_desc:0 "研究の倫理は維持するが、他種族に対する倫理規範は撤廃される。"
- ngm_flag_zen_eth_name:0 "無制限倫理"
- NAME_NGM_zen_eth:0 "無制限倫理"
- NAME_NGM_zen_eth_desc:0 "研究に関する規制を撤廃することで、研究の力を最大限に引き出すことができる"
+ ngm_flag_zero_eth_name:0 "無制限倫理"
+ NAME_NGM_zero_eth:0 "無制限倫理"
+ NAME_NGM_zero_eth_desc:0 "研究に関する規制を撤廃することで、研究の力を最大限に引き出すことができる"
 
  policy_ngm_language_policy:0 "言語政策"
  policy_ngm_language_policy_desc:0 "文化や教育の基本である言語についての規制に関して決定する。"
@@ -1293,6 +1462,15 @@
  edict_ngm_fleet_trade_options_menu:0 "艦隊 贈与"
  edict_ngm_fleet_trade_options_menu_desc:0 ""
 
+ edict_ngm_mossball_edict:0 "モスボールされた民間船の再整備"
+ edict_ngm_mossball_edict_desc:0 "気だるいことではあるが、モスボールされている民間船を再整備することは可能である"
+
+ edict_ngm_virture_rival_options_menu:0 "影の敵国を設定"
+ edict_ngm_virture_rival_options_menu_desc:0 ""
+
+ edict_ngm_virture_rival_end_options_menu:0 "影の敵国を外す"
+ edict_ngm_virture_rival_end_options_menu_desc:0 ""
+
 #######################
 #####    技術    ######
 #######################
@@ -1433,6 +1611,45 @@
 
  building_ngm_advanced_research_institutes:0 "高度研究機関"
  building_ngm_advanced_research_institutes_desc:0 "通常では考えられないほどの最先端研究を行う国立研究所"
+
+ building_ngm_Phe_Palace:0 "帝国宮殿"
+ building_ngm_Phe_Palace_desc:0 "かつての銀河帝国の首都を象徴する、美しく美麗な宮殿"
+
+ building_ngm_Phe_Court:0 "帝国大審院"
+ building_ngm_Phe_Court_desc:0 "銀河規模の帝国を統括し、法執行を行う行政機構"
+
+ building_ngm_Phe_Crest:0 "帝国紋章院"
+ building_ngm_Phe_Crest_desc:0 "かつての帝国から永遠に続く栄光の殿堂"
+
+ building_ngm_Phe_Central_school:0 "帝国中央学院"
+ building_ngm_Phe_Central_school_desc:0 "かつて銀河中の知識を集約して発展させた学術研究機関"
+
+ building_ngm_Phe_Spaceport:0 "帝立宇宙港"
+ building_ngm_Phe_Spaceport_desc:0 "かつて銀河中の交易を集約した栄光ある宇宙港"
+
+ building_ngm_Phe_HQ:0 "帝国軍総司令部"
+ building_ngm_Phe_HQ_desc:0 "銀河中を轟かした帝国軍を統括する最高軍事機関"
+
+ building_ngm_Phe_S_Palace:0 "帝国離宮"
+ building_ngm_Phe_S_Palace_desc:0 "帝国の地方都市に存在する美しく機能的な宮殿"
+
+ building_ngm_Phe_Factory:0 "帝国工場"
+ building_ngm_Phe_Factory_desc:0 "失われた技術で稼働を続ける驚異的な工場"
+
+ building_ngm_Phe_Purification:0 "帝国精製所"
+ building_ngm_Phe_Purification_desc:0 "失われた技術で稼働を続ける驚異的な精製所"
+
+ building_ngm_Phe_Park:0 "帝国庭園"
+ building_ngm_Phe_Park_desc:0 "全銀河の生態系を集約した美しくも儚い庭園"
+
+ building_ngm_Phe_orbit_elv:0 "帝国軌道エレベータ"
+ building_ngm_Phe_orbit_elv_desc:0 "惑星の交易を集約した機能的なエレベータ"
+
+ building_ngm_Phe_University:0 "帝国大学"
+ building_ngm_Phe_University_desc:0 "銀河でも有数の研究力を有していた教育機関"
+
+ building_ngm_Phe_Fort:0 "帝国要塞"
+ building_ngm_Phe_Fort_desc:0 "かつての危機をも退けた大規模な要塞"
 
 #######################
 #####    区域    ######
@@ -1714,6 +1931,35 @@
  leader_trait_ngm_general_veteran_desc:0 "この将軍は自らの能力によってこの地位に上り詰めた"
 
 ##########################
+#####    国家特性    ######
+##########################
+
+ origin_ngm_phenix_1_modifier:0 "艦隊伝統の堅持"
+ origin_ngm_phenix_1_modifier_desc:0 "艦隊運用には古来よりの方法がある"
+ origin_ngm_phenix_2_modifier:0 "古びたデータバンク"
+ origin_ngm_phenix_2_modifier_desc:0 "研究に使うデータバンクには苔が生えている"
+ origin_ngm_phenix_3_modifier:0 "傲慢なる老臣"
+ origin_ngm_phenix_3_modifier_desc:0 "帝国の老臣は傲慢で他者を見下している"
+ origin_ngm_phenix_4_modifier:0 "怠惰なる民衆"
+ origin_ngm_phenix_4_modifier_desc:0 "民衆は自己利益を常に追求している"
+ origin_ngm_phenix_5_modifier:0 "老いた軍事ドクトリン"
+ origin_ngm_phenix_5_modifier_desc:0 "この帝国のドクトリンはさび付いている"
+ origin_ngm_phenix_6_modifier:0 "古代の研究律"
+ origin_ngm_phenix_6_modifier_desc:0 "この帝国の研究方針は極めて古い"
+ origin_ngm_phenix_7_modifier:0 "無気力な省庁"
+ origin_ngm_phenix_7_modifier_desc:0 "この帝国の省庁は非効率かつ不安定な動きをしている。"
+ origin_ngm_phenix_8_modifier:0 "無作法な廷臣"
+ origin_ngm_phenix_8_modifier_desc:0 "この帝国の高級官僚は無礼だ"
+ origin_ngm_phenix_9_modifier:0 "失われしインフラ技術"
+ origin_ngm_phenix_9_modifier_desc:0 "この帝国の偉大なる大規模建築は再現不可能だ"
+ origin_ngm_phenix_10_modifier:0 "黄昏の帝国"
+ origin_ngm_phenix_10_modifier_desc:0 "帝国は衰退しました"
+ origin_ngm_phenix_11_modifier:0 "古代帝国"
+ origin_ngm_phenix_11_modifier_desc:0 "この帝国は古代から続く伝統を強く守っており、そのコストを支払い続けている"
+ origin_ngm_phenix_12_modifier:0 "不死鳥の帝国"
+ origin_ngm_phenix_12_modifier_desc:0 "我々は蘇る！"
+
+##########################
 #####    惑星特性    ######
 ##########################
 
@@ -1948,21 +2194,31 @@
 
  ap_ngm_layer_countries_modifier:0 "重層的国家"
 
+ agenda_ngm_expanding_paranoia_debuff_0:0 "パラノイアの拡大 完了（加） 宿敵の外交発言力§R-20%§!"
+ agenda_ngm_expanding_paranoia_debuff_1:0 "パラノイアの拡大 完了（被）"
+ agenda_ngm_expanding_paranoia_debuff_2:0 "$agenda_ngm_expanding_paranoia_debuff_1$"
+ agenda_ngm_expanding_paranoia_debuff_3:0 "$agenda_ngm_expanding_paranoia_debuff_1$"
+ agenda_ngm_expanding_paranoia_debuff_4:0 "$agenda_ngm_expanding_paranoia_debuff_1$"
+ agenda_ngm_expanding_paranoia_debuff_5:0 "$agenda_ngm_expanding_paranoia_debuff_1$"
+ agenda_ngm_expanding_paranoia_debuff_6:0 "$agenda_ngm_expanding_paranoia_debuff_1$"
+ agenda_ngm_expanding_paranoia_debuff_7:0 "$agenda_ngm_expanding_paranoia_debuff_1$"
+ agenda_ngm_expanding_paranoia_debuff_8:0 "$agenda_ngm_expanding_paranoia_debuff_1$"
+
  ngm_ethics_force_loyalty_1:0 "志向の矯正"
 
  ngm_ethics_force_loyalty_2:0 "志向の強要"
 
  ngm_olympic_nominee_desc_intro:0 "この惑星は、 将来の国際大会の基盤として候補になっている。 "
- ngm_olympic_nominee_level_1:0 "国際大会候補地の競争力格付け：§R脆弱§!"
- ngm_olympic_nominee_level_1_desc:0 "$ngm_olympic_nominee_desc_intro$\n\n相対的地位：§R脆弱§!。 "
- ngm_olympic_nominee_level_2:0 "国際大会候補地の競争力格付け：§Y平凡§!"
- ngm_olympic_nominee_level_2_desc:0 "$ngm_olympic_nominee_desc_intro$\n\n相対的地位：§Y平凡§!。 "
- ngm_olympic_nominee_level_3:0 "国際大会候補地の競争力格付け：§G強力§!"
- ngm_olympic_nominee_level_3_desc:0 "$ngm_olympic_nominee_desc_intro$\n\n相対的地位：§G強力§!。 "
- ngm_olympic_nominee_level_4:0 "強化された国際大会候補地の競争力格付け：§G特例§!"
- ngm_olympic_nominee_level_4_desc:0 "$ngm_olympic_nominee_desc_intro$\n\n相対的地位：§G特例§!。 "
- ngm_olympic_nominee_level_5:0 "強化された国際大会候補地の競争力格付け：§G完璧§!"
- ngm_olympic_nominee_level_5_desc:0 "$ngm_olympic_nominee_desc_intro$\n\n相対的地位：§G完璧§!。 "
+ ngm_olympic_nominee_level_1:0 "国際大会候補地の競争力格付け:§R脆弱§!"
+ ngm_olympic_nominee_level_1_desc:0 "$ngm_olympic_nominee_desc_intro$\n\n相対的地位:§R脆弱§!。 "
+ ngm_olympic_nominee_level_2:0 "国際大会候補地の競争力格付け:§Y平凡§!"
+ ngm_olympic_nominee_level_2_desc:0 "$ngm_olympic_nominee_desc_intro$\n\n相対的地位:§Y平凡§!。 "
+ ngm_olympic_nominee_level_3:0 "国際大会候補地の競争力格付け:§G強力§!"
+ ngm_olympic_nominee_level_3_desc:0 "$ngm_olympic_nominee_desc_intro$\n\n相対的地位:§G強力§!。 "
+ ngm_olympic_nominee_level_4:0 "強化された国際大会候補地の競争力格付け:§G特例§!"
+ ngm_olympic_nominee_level_4_desc:0 "$ngm_olympic_nominee_desc_intro$\n\n相対的地位:§G特例§!。 "
+ ngm_olympic_nominee_level_5:0 "強化された国際大会候補地の競争力格付け:§G完璧§!"
+ ngm_olympic_nominee_level_5_desc:0 "$ngm_olympic_nominee_desc_intro$\n\n相対的地位:§G完璧§!。 "
 
  ngm_olympic_founder_planet_modifier:0 "国際大会開催地"
  ngm_olympic_founder_planet_modifier_desc:0 ""
@@ -2178,6 +2434,8 @@
 
  ngm_r_galactic_empire_aquarium:0 "銀河皇帝勅許第7216号「帝立遊園領邦の認可」"
 
+ ngm_r_imperial_chronicle_modifier:0 "偉大なる恩顧"
+
 ##########################
 #####    種族特性    ######
 ##########################
@@ -2188,232 +2446,379 @@
  trait_ngm_elder_politics_desc:0 "§Lこの政府の高官は高齢の者に支配されており、熟達した政府高官により多くの決定がなされている。しかし、それは新参者の政府参加を妨げやすく、新たな思想を受け入れる素地を減らしてしまう傾向にある。§!"
 
  trait_ngm_knight:0 "騎士道精神"
- trait_ngm_knight_desc:0 "この種族は弱きものを助け、社会正義を全うすべきだという強い信念を有した高潔性を有している。"
+ trait_ngm_knight_desc:0 "§Lこの種族は弱きものを助け、社会正義を全うすべきだという強い信念を有した高潔性を有している。 §!\n"
 
  trait_ngm_gentle:0 "紳士"
- trait_ngm_gentle_desc:0 "この種族は常に丁寧で、物腰柔らかな傾向がある。。"
+ trait_ngm_gentle_desc:0 "§Lこの種族は常に丁寧で、物腰柔らかな傾向がある。。§!\n"
 
  trait_ngm_rascal:0 "悪漢"
- trait_ngm_rascal_desc:0 "この種族は利己主義的で、自分の利益を最優先する傾向がある。"
+ trait_ngm_rascal_desc:0 "§Lこの種族は利己主義的で、自分の利益を最優先する傾向がある。§!\n"
 
  trait_ngm_totemowarui:0 "巨悪"
- trait_ngm_totemowarui_desc:0 "この種族は自己利益を最大化することに余念がなく、その方法を気にしない。"
+ trait_ngm_totemowarui_desc:0 "§Lこの種族は自己利益を最大化することに余念がなく、その方法を気にしない。§!\n"
 
  trait_ngm_healing:0 "治癒遺伝子"
- trait_ngm_healing_desc:0 "この種族の遺伝子は特殊で、自己複製能力が高く、多少の怪我や病気はすぐに治癒する。"
+ trait_ngm_healing_desc:0 "§Lこの種族の遺伝子は特殊で、自己複製能力が高く、多少の怪我や病気はすぐに治癒する。§!\n"
 
  trait_ngm_unhealing:0 "修復不能"
- trait_ngm_unhealing_desc:0 "この種族の遺伝子は特殊で、自己複製能力が低く、多少の怪我や病気が命取りとなる。"
+ trait_ngm_unhealing_desc:0 "§Lこの種族の遺伝子は特殊で、自己複製能力が低く、多少の怪我や病気が命取りとなる。§!\n"
 
  trait_ngm_assimilation:0 "身体的同化"
- trait_ngm_assimilation_desc:0 "この種族は身体的な適応能力が高く、順応性がある。しかし、その順応の際に痛みを伴うことから一度順応した土地から離れたくないという者も数少なくいる。"
+ trait_ngm_assimilation_desc:0 "§Lこの種族は身体的な適応能力が高く、順応性がある。しかし、その順応の際に痛みを伴うことから一度順応した土地から離れたくないという者も数少なくいる。§!\n"
 
  trait_ngm_unadaptation:0 "適応不足"
- trait_ngm_unadaptation_desc:0 "この種族は、身体的な同化機能が低く、自分の身体に合った環境への移動をより好む傾向がある。"
+ trait_ngm_unadaptation_desc:0 "§Lこの種族は、身体的な同化機能が低く、自分の身体に合った環境への移動をより好む傾向がある。§!\n"
 
  trait_ngm_division:0 "生体分裂"
- trait_ngm_division_desc:0 "この種族は無性生殖が可能で、身体を分裂左折ことが可能である。"
+ trait_ngm_division_desc:0 "§Lこの種族は無性生殖が可能で、身体を分裂左折ことが可能である。§!\n"
 
  trait_ngm_MPMD:0 "多産多死"
- trait_ngm_MPMD_desc:0 "この種族は多産の傾向があるが、多くの子供が未成熟ゆえに生き残ることが難しく、成長したとしても虚弱体質の傾向がある。"
+ trait_ngm_MPMD_desc:0 "§Lこの種族は多産の傾向があるが、多くの子供が未成熟ゆえに生き残ることが難しく、成長したとしても虚弱体質の傾向がある。§!\n"
 
  trait_ngm_LMLD:0 "少子長命"
- trait_ngm_LMLD_desc:0 "この種族は長命のため、社会の過剰拡大を防ぐため繁殖を控える傾向がある。"
+ trait_ngm_LMLD_desc:0 "§Lこの種族は長命のため、社会の過剰拡大を防ぐため繁殖を控える傾向がある。§!\n"
 
  trait_ngm_abn_growth:0 "異常発達"
- trait_ngm_abn_growth_desc:0 "この種族は放射線や人為的遺伝子操作の影響により身体的機能が発達する傾向が強い。しかし、知力については原始的な傾向にあるため、研究や創作には向かず、自らの土地を守ることに興味を示す。"
+ trait_ngm_abn_growth_desc:0 "§Lこの種族は放射線や人為的遺伝子操作の影響により身体的機能が発達する傾向が強い。しかし、知力については原始的な傾向にあるため、研究や創作には向かず、自らの土地を守ることに興味を示す。§!\n"
 
  trait_ngm_Lost_species:0 "失われし種"
- trait_ngm_Lost_species_desc:0 "この種族は失われた技術により強化された後がみられる。それにより知力は大幅に強化されているが、身体的能力が総じて低い。"
+ trait_ngm_Lost_species_desc:0 "§Lこの種族は失われた技術により強化された後がみられる。それにより知力は大幅に強化されているが、身体的能力が総じて低い。§!\n"
 
  trait_ngm_turf:0 "縄張り意識"
- trait_ngm_turf_desc:0 "この種族は自らの範囲を重要視しており、それを維持することに執念を見せる。"
+ trait_ngm_turf_desc:0 "§Lこの種族は自らの範囲を重要視しており、それを維持することに執念を見せる。§!\n"
 
  trait_ngm_Movement:0 "移動性社会"
- trait_ngm_Movement_desc:0 "この種族は転居や移住を好んでおり、そのためにはあらゆる行動をとりうる。"
+ trait_ngm_Movement_desc:0 "§Lこの種族は転居や移住を好んでおり、そのためにはあらゆる行動をとりうる。§!\n"
 
  trait_ngm_empathy:0 "共感"
- trait_ngm_empathy_desc:0 "この種族は、他者に対する思いやりの感情が強い。"
+ trait_ngm_empathy_desc:0 "§Lこの種族は、他者に対する思いやりの感情が強い。§!\n"
 
  trait_ngm_resentment:0 "反感"
- trait_ngm_resentment_desc:0 "この種族は、他者に対して常に反感を覚えている。"
+ trait_ngm_resentment_desc:0 "§Lこの種族は、他者に対して常に反感を覚えている。§!\n"
 
  trait_ngm_magnetism:0 "磁性"
- trait_ngm_magnetism_desc:0 "この種族はほのかに磁性を有しており、物理学的技術発展に寄与している。"
+ trait_ngm_magnetism_desc:0 "§Lこの種族はほのかに磁性を有しており、物理学的技術発展に寄与している。§!\n"
 
  trait_ngm_radioactive:0 "放射性血液"
- trait_ngm_radioactive_desc:0 "この種族の血液には放射性物質が含まれている。"
+ trait_ngm_radioactive_desc:0 "§Lこの種族の血液には放射性物質が含まれている。§!\n"
 
  trait_ngm_jack_o_lantern:0 "鬼火"
- trait_ngm_jack_o_lantern_desc:0 "この種族は自在に火を操ることが可能である。"
+ trait_ngm_jack_o_lantern_desc:0 "§Lこの種族は自在に火を操ることが可能である。§!\n"
 
  trait_ngm_optical_adapt:0 "光学適応"
- trait_ngm_optical_adapt_desc:0 "この種族は光学的に周囲へ溶け込むことで隠れることができる。"
+ trait_ngm_optical_adapt_desc:0 "§Lこの種族は光学的に周囲へ溶け込むことで隠れることができる。§!\n"
 
  trait_ngm_hardness:0 "硬質器官"
- trait_ngm_hardness_desc:0 "この種族は体の一部を硬化させることができる。"
+ trait_ngm_hardness_desc:0 "§Lこの種族は体の一部を硬化させることができる。§!\n"
 
  trait_ngm_neural_block:0 "神経遮断"
- trait_ngm_neural_block_desc:0 "この種族は痛覚神経を一時的に遮断させ、痛みを避けることができる。"
+ trait_ngm_neural_block_desc:0 "§Lこの種族は痛覚神経を一時的に遮断させ、痛みを避けることができる。§!\n"
 
  trait_ngm_flying:0 "飛行器官"
- trait_ngm_flying_desc:0 "この種族は飛行することができる。"
+ trait_ngm_flying_desc:0 "§Lこの種族は飛行することができる。§!\n"
 
  trait_ngm_swift_horse:0 "俊足"
- trait_ngm_swift_horse_desc:0 "この種族は恐ろしい速度で走ることができる。"
+ trait_ngm_swift_horse_desc:0 "§Lこの種族は恐ろしい速度で走ることができる。§!\n"
 
  trait_ngm_clairvoyance:0 "千里眼"
- trait_ngm_clairvoyance_desc:0 "この種族は通常の視界以上のものを見ることができる。"
+ trait_ngm_clairvoyance_desc:0 "§Lこの種族は通常の視界以上のものを見ることができる。§!\n"
 
  trait_ngm_sixth_sense:0 "第六感"
- trait_ngm_sixth_sense_desc:0 "この種族は予知能力のような形で一時的に未来を知ることができる。"
+ trait_ngm_sixth_sense_desc:0 "§Lこの種族は予知能力のような形で一時的に未来を知ることができる。§!\n"
 
  trait_ngm_sluggish:0 "鈍い感覚"
- trait_ngm_sluggish_desc:0 "この種族は5感が鈍く、周囲を知るために時間がかかる。"
+ trait_ngm_sluggish_desc:0 "§Lこの種族は5感が鈍く、周囲を知るために時間がかかる。§!\n"
 
  trait_ngm_degeneration:0 "退化した眼"
- trait_ngm_degeneration_desc:0 "この種族は眼が退化しており、周囲を探る方法が限られている。"
+ trait_ngm_degeneration_desc:0 "§Lこの種族は眼が退化しており、周囲を探る方法が限られている。§!\n"
 
  trait_ngm_confusion:0 "混乱"
- trait_ngm_confusion_desc:0 "この種族はちょっとしたことで落ち着きを失い、混乱した状態となる。"
+ trait_ngm_confusion_desc:0 "§Lこの種族はちょっとしたことで落ち着きを失い、混乱した状態となる。§!\n"
 
  trait_ngm_derangement:0 "錯乱"
- trait_ngm_derangement_desc:0 "この種族は混沌に満ちており、冷静さを失っている。"
+ trait_ngm_derangement_desc:0 "§Lこの種族は混沌に満ちており、冷静さを失っている。§!\n"
 
  trait_ngm_melancholy:0 "憂鬱"
- trait_ngm_melancholy_desc:0 "この種族は常に憂鬱で、落ち込んだ状態で生活している。"
+ trait_ngm_melancholy_desc:0 "§Lこの種族は常に憂鬱で、落ち込んだ状態で生活している。§!\n"
 
  trait_ngm_enervated:0 "惰弱"
- trait_ngm_enervated_desc:0 "この種族は身体が弱く、熱心に動くことができない。"
+ trait_ngm_enervated_desc:0 "§Lこの種族は身体が弱く、熱心に動くことができない。§!\n"
 
  trait_ngm_death_heart:0 "心の死"
- trait_ngm_death_heart_desc:0 "この種族は心を失っており、熱心さがない。"
+ trait_ngm_death_heart_desc:0 "§Lこの種族は心を失っており、熱心さがない。§!\n"
 
  trait_ngm_huge:0 "巨大"
- trait_ngm_huge_desc:0 "この種族の身体は銀河基準からしても巨大である。"
+ trait_ngm_huge_desc:0 "§Lこの種族の身体は銀河基準からしても巨大である。§!\n"
 
  trait_ngm_big:0 "大型"
- trait_ngm_big_desc:0 "この種族の身体は銀河基準からしても大柄である。"
+ trait_ngm_big_desc:0 "§Lこの種族の身体は銀河基準からしても大柄である。§!\n"
 
  trait_ngm_small:0 "小型"
- trait_ngm_small_desc:0 "この種族の身体は銀河基準からしても小型である。"
+ trait_ngm_small_desc:0 "§Lこの種族の身体は銀河基準からしても小型である。§!\n"
 
  trait_ngm_minimum:0 "極小"
- trait_ngm_minimum_desc:0 "この種族の身体は銀河基準からしても極小である。"
+ trait_ngm_minimum_desc:0 "§Lこの種族の身体は銀河基準からしても極小である。§!\n"
 
  trait_ngm_hunting:0 "狩猟文化"
- trait_ngm_hunting_desc:0 "この種族の社会は狩猟により食料を確保している。"
+ trait_ngm_hunting_desc:0 "§Lこの種族の社会は狩猟により食料を確保している。§!\n"
 
  trait_ngm_collecting:0 "採取文化"
- trait_ngm_collecting_desc:0 "この種族の社会は採取により食料を確保している。"
+ trait_ngm_collecting_desc:0 "§Lこの種族の社会は採取により食料を確保している。§!\n"
 
  trait_ngm_h_g:0 "狩猟採取文化"
- trait_ngm_h_g_desc:0 "この種族の社会は狩猟や採取により食料を確保している。"
+ trait_ngm_h_g_desc:0 "§Lこの種族の社会は狩猟や採取により食料を確保している。§!\n"
 
  trait_ngm_agriculture:0 "農耕文化"
- trait_ngm_agriculture_desc:0 "この種族の社会は農業に基盤が置かれている。"
+ trait_ngm_agriculture_desc:0 "§Lこの種族の社会は農業に基盤が置かれている。§!\n"
 
  trait_ngm_elder_verbal:0 "複雑な言語"
- trait_ngm_elder_verbal_desc:0 "この種族の語彙や文法は極めて難しい。"
+ trait_ngm_elder_verbal_desc:0 "§Lこの種族の語彙や文法は極めて難しい。§!\n"
 
  trait_ngm_elder_non_verbal:0 "非言語社会"
- trait_ngm_elder_non_verbal_desc:0 "この種族には言語という概念が存在しない。"
+ trait_ngm_elder_non_verbal_desc:0 "§Lこの種族には言語という概念が存在しない。§!\n"
 
  trait_ngm_elder_non_character:0 "無文字社会"
- trait_ngm_elder_non_character_desc:0 "この種族には文字という概念が存在しない。"
+ trait_ngm_elder_non_character_desc:0 "§Lこの種族には文字という概念が存在しない。§!\n"
 
  trait_ngm_delicious:0 "美味な肉体"
- trait_ngm_delicious_desc:0 "この種族は美味しい！"
+ trait_ngm_delicious_desc:0 "§Lこの種族は美味しい！§!\n"
 
  trait_ngm_unappetizing:0 "不味い肉体"
- trait_ngm_unappetizing_desc:0 "この種族は不味い！"
+ trait_ngm_unappetizing_desc:0 "§Lこの種族は不味い！§!\n"
 
  trait_ngm_speckled_w_white:0 "霜降り"
- trait_ngm_speckled_w_white_desc:0 "この種族は全身が霜降りである。"
+ trait_ngm_speckled_w_white_desc:0 "§Lこの種族は全身が霜降りである。§!\n"
 
  trait_ngm_Toxic:0 "有毒"
- trait_ngm_Toxic_desc:0 "この種族の肉は有毒である。"
+ trait_ngm_Toxic_desc:0 "§Lこの種族の肉は有毒である。§!\n"
 
  trait_ngm_complex_heredity:0 "複雑な遺伝構造"
- trait_ngm_complex_heredity_desc:0 "この種族の遺伝子は極めて複雑である。"
+ trait_ngm_complex_heredity_desc:0 "§Lこの種族の遺伝子は極めて複雑である。§!\n"
 
  trait_ngm_simple_heredity:0 "単純な遺伝構造"
- trait_ngm_simple_heredity_desc:0 "この種族の遺伝子は極めて単純である。"
+ trait_ngm_simple_heredity_desc:0 "§Lこの種族の遺伝子は極めて単純である。§!\n"
 
  trait_ngm_sensitization:0 "感光性"
- trait_ngm_sensitization_desc:0 "この種族は極めて光に弱く、光を避ける傾向にある。"
+ trait_ngm_sensitization_desc:0 "§Lこの種族は極めて光に弱く、光を避ける傾向にある。§!\n"
 
  trait_ngm_like_light:0 "好光性"
- trait_ngm_like_light_desc:0 "この種族は光を好み、日光を浴びることを好む。"
+ trait_ngm_like_light_desc:0 "§Lこの種族は光を好み、日光を浴びることを好む。§!\n"
 
  trait_ngm_indoor:0 "インドア派"
- trait_ngm_indoor_desc:0 "この種族は屋内での活動を好む。"
+ trait_ngm_indoor_desc:0 "§Lこの種族は屋内での活動を好む。§!\n"
 
  trait_ngm_outdoor:0 "アウトドア派"
- trait_ngm_outdoor_desc:0 "この種族は屋外での活動を好む。"
+ trait_ngm_outdoor_desc:0 "§Lこの種族は屋外での活動を好む。§!\n"
 
  trait_ngm_multitasking:0 "マルチタスク"
- trait_ngm_multitasking_desc:0 "この種族は器用で、同時に仕事を行うことができる。"
+ trait_ngm_multitasking_desc:0 "§Lこの種族は器用で、同時に仕事を行うことができる。§!\n"
 
  trait_ngm_clumsy:0 "不器用"
- trait_ngm_clumsy_desc:0 "この種族は不器用で、同時に仕事を行うことが苦手である。"
+ trait_ngm_clumsy_desc:0 "§Lこの種族は不器用で、同時に仕事を行うことが苦手である。§!\n"
 
  trait_ngm_reversing_theory:0 "理論的後進"
- trait_ngm_reversing_theory_desc:0 "この種族は理論構築が苦手であり、うまく物理学を扱えない。"
+ trait_ngm_reversing_theory_desc:0 "§Lこの種族は理論構築が苦手であり、うまく物理学を扱えない。§!\n"
 
  trait_ngm_reversing_culture:0 "文化的後進"
- trait_ngm_reversing_culture_desc:0 "この種族の社会学的発展は遅れており、銀河規模の社会を取り扱い切れていない。"
+ trait_ngm_reversing_culture_desc:0 "§Lこの種族の社会学的発展は遅れており、銀河規模の社会を取り扱い切れていない。§!\n"
 
  trait_ngm_reversing_technologies:0 "技術的後進"
- trait_ngm_reversing_technologies_desc:0 "この種族の工学技術は遅れており、機械構築などは苦手である。"
+ trait_ngm_reversing_technologies_desc:0 "§Lこの種族の工学技術は遅れており、機械構築などは苦手である。§!\n"
 
  trait_ngm_individuality:0 "優秀な個性"
- trait_ngm_individuality_desc:0 "この種族は個々の個性を伸ばすことを重要視している。"
+ trait_ngm_individuality_desc:0 "§Lこの種族は個々の個性を伸ばすことを重要視している。§!\n"
 
  trait_ngm_non_individuality:0 "無個性"
- trait_ngm_non_individuality_desc:0 "この種族は個々の個性を均一化することを重要視している。"
+ trait_ngm_non_individuality_desc:0 "§Lこの種族は個々の個性を均一化することを重要視している。§!\n"
 
  trait_ngm_sociability:0 "社交性"
- trait_ngm_sociability_desc:0 "この種族は社交的だ。"
+ trait_ngm_sociability_desc:0 "§Lこの種族は社交的だ。§!\n"
 
  trait_ngm_introversion:0 "内向性"
- trait_ngm_introversion_desc:0 "この種族は内向的だ。"
+ trait_ngm_introversion_desc:0 "§Lこの種族は内向的だ。§!\n"
 
  trait_ngm_spirit_release:0 "精神的開放"
- trait_ngm_spirit_release_desc:0 "この種族は精神的な束縛を嫌う。"
+ trait_ngm_spirit_release_desc:0 "§Lこの種族は精神的な束縛を嫌う。§!\n"
 
  trait_ngm_spirit_freedom:0 "精神的自由"
- trait_ngm_spirit_freedom_desc:0 "この種族は精神的な自由を重視している。"
+ trait_ngm_spirit_freedom_desc:0 "§Lこの種族は精神的な自由を重視している。§!\n"
 
  trait_ngm_spirit_authority:0 "精神的権威"
- trait_ngm_spirit_authority_desc:0 "この種族は精神的に誰かに従うことに慣れている。"
+ trait_ngm_spirit_authority_desc:0 "§Lこの種族は精神的に誰かに従うことに慣れている。§!\n"
 
  trait_ngm_spirit_subordination:0 "精神的従属"
- trait_ngm_spirit_subordination_desc:0 "この種族は精神的に誰かの管理下に置かれることを好んでいる。"
+ trait_ngm_spirit_subordination_desc:0 "§Lこの種族は精神的に誰かの管理下に置かれることを好んでいる。§!\n"
 
  trait_ngm_liar:0 "嘘吐き"
- trait_ngm_liar_desc:0 "この種族は小さい嘘をつくことを好み、しばし周囲を疲弊させる。"
+ trait_ngm_liar_desc:0 "§Lこの種族は小さい嘘をつくことを好み、しばし周囲を疲弊させる。§!\n"
 
  trait_ngm_honest:0 "正直者"
- trait_ngm_honest_desc:0 "この種族は正直者で、周囲に気持ちの良い関係を構築する。"
+ trait_ngm_honest_desc:0 "§Lこの種族は正直者で、周囲に気持ちの良い関係を構築する。§!\n"
 
  trait_ngm_heart_less:0 "無心"
- trait_ngm_heart_less_desc:0 "この種族は心を込めて食物を作ることができない。"
+ trait_ngm_heart_less_desc:0 "§Lこの種族は心を込めて食物を作ることができない。§!\n"
 
  trait_ngm_debauchery:0 "放蕩"
- trait_ngm_debauchery_desc:0 "この種族はエネルギーを無駄にする傾向がある。"
+ trait_ngm_debauchery_desc:0 "§Lこの種族はエネルギーを無駄にする傾向がある。§!\n"
 
  trait_ngm_tired:0 "疲労感"
- trait_ngm_tired_desc:0 "この種族は疲労しやすく、鉱物生産が苦手である。"
+ trait_ngm_tired_desc:0 "§Lこの種族は疲労しやすく、鉱物生産が苦手である。§!\n"
 
  trait_ngm_stupidity:0 "愚鈍"
- trait_ngm_stupidity_desc:0 "この種族は知力が低く、うまく研究を進めることができない。"
+ trait_ngm_stupidity_desc:0 "§Lこの種族は知力が低く、うまく研究を進めることができない。§!\n"
 
  trait_ngm_spendthrift:0 "浪費家"
- trait_ngm_spendthrift_desc:0 "この種族は浪費癖があり、交易をうまく行うことができない。"
+ trait_ngm_spendthrift_desc:0 "§Lこの種族は浪費癖があり、交易をうまく行うことができない。§!\n"
 
  trait_ngm_merchant_from_ancient:0 "古代からの商人"
- trait_ngm_merchant_from_ancient_desc:0 "はるか太古から頭脳労働者として活躍してきたため、創造やデスクワークに適性がある種族。人口過少の防止として太古に繁殖力の増強が図られている。"
+ trait_ngm_merchant_from_ancient_desc:0 "§Lはるか太古から頭脳労働者として活躍してきたため、創造やデスクワークに適性がある種族。人口過少の防止として太古に繁殖力の増強が図られている。§!\n"
+
+ trait_ngm_m_crafts:0 "工芸義肢"
+ trait_ngm_m_crafts_desc:0 "§Lこの機械の腕は極めて精巧な動作にも耐え、工芸品や工業製品の製造に高い適性を示している。§!\n"
+
+ trait_ngm_m_lens:0 "高機能レンズ"
+ trait_ngm_m_lens_desc:0 "§Lこの機械のレンズは微細な者から遠くのものまで把握することに高い能力を誇る。§!\n"
+
+ trait_ngm_m_taste:0 "味覚プログラム"
+ trait_ngm_m_taste_desc:0 "§Lこの機械は味覚を有しており、不味いものは作らない。§!\n"
+
+ trait_ngm_m_discharge:0 "放電コンデンサ"
+ trait_ngm_m_discharge_desc:0 "§Lこの機械は放電能力を有しており、有機生命体に攻撃を行う際に強い適性を誇る。§!\n"
+
+ trait_ngm_m_jet:0 "飛行ジェット"
+ trait_ngm_m_jet_desc:0 "§Lこの機械は空を飛ぶ機構を備えている。§!\n"
+
+ trait_ngm_m_disassembly:0 "有機体分解"
+ trait_ngm_m_disassembly_desc:0 "§Lこの機械は不要な有機体を体内で分解することができる。§!\n"
+
+ trait_ngm_m_quantum:0 "量子コンピュータ"
+ trait_ngm_m_quantum_desc:0 "§Lこの機械の頭脳は初期型の量子コンピュータにより統御されており、極めて複雑な計算を一瞬で行うことが可能である。§!\n"
+
+ trait_ngm_m_reishi:0 "霊子コンピュータ"
+ trait_ngm_m_reishi_desc:0 "§Lこの機械の頭脳は特殊な霊子コンピュータでできており、感情や意思を頂上的な力で感じ取りつつ高度な演算を行うことができる。§!\n"
+
+ trait_ngm_m_primitive:0 "原始的構造"
+ trait_ngm_m_primitive_desc:0 "§Lこの機械の構造は極めて原始的で、どうして動いているのか不明だ。§!\n"
+
+ trait_ngm_m_leakage:0 "漏電"
+ trait_ngm_m_leakage_desc:0 "§Lこの機械はよく漏電している。§!\n"
+
+ trait_ngm_m_nasty:0 "短絡的判断"
+ trait_ngm_m_nasty_desc:0 "§Lこの機械の判断は短絡的で、目の前の課題を解決することしかできない。§!\n"
+
+ trait_ngm_m_invisible:0 "非光学的判断"
+ trait_ngm_m_invisible_desc:0 "§Lこの機械は光学的な把握を行うことができず、それらを確認することはできない。§!\n"
+
+ trait_ngm_m_wiring:0 "不適切配線"
+ trait_ngm_m_wiring_desc:0 "§Lこの機械の内部配線は不適切であるが、諸事情により変更することができない。§!\n"
+
+ trait_ngm_m_cram:0 "詰め合わせ"
+ trait_ngm_m_cram_desc:0 "§Lこの機械をデザインした者はこの機械を本来超える能力をこの機体に詰め込もうとした。§!\n"
+
+ trait_ngm_m_malfunction:0 "頻発する故障"
+ trait_ngm_m_malfunction_desc:0 "§Lこの機械の故障率は異常であり、製造途中でも、製造後にも不具合を起こすため維持コストも極めて高い。§!\n"
+ trait_ngm_m_malfunction_custom_tooltip:0 "リーダー故障確率 §R+20%§!"
+
+ trait_ngm_m_inappropriate:0 "作業不適格"
+ trait_ngm_m_inappropriate_desc:0 "§Lこの機械は、あらゆる生産を行うための適正がない。§!\n"
+
+ trait_ngm_m_shi:0 "シリコン製"
+ trait_ngm_m_shi_desc:0 "§Lこの種族の身体にはシリコンが利用されている§!\n"
+
+ trait_ngm_m_skin:0 "人工皮膚"
+ trait_ngm_m_skin_desc:0 "§Lこの種族には人工皮膚が利用されており、有機的な外観になることが可能だ§!\n"
+
+ trait_ngm_m_mcpu:0 "複合CPU"
+ trait_ngm_m_mcpu_desc:0 "§L複数のCPUを搭載し、熟慮を行うことができる§!\n"
+ trait_ngm_m_mcpu_custom_tooltip:0 "リーダー故障確率 §R+5%§!"
+
+ trait_ngm_m_fire:0 "火炎放射"
+ trait_ngm_m_fire_desc:0 "§Lヒャッハー！ 汚物は消毒だー！§!\n"
+
+ trait_ngm_m_back:0 "緊急バックアップ"
+ trait_ngm_m_back_desc:0 "§L万が一に備え、必要なデータを保存することを義務としている§!\n"
+ trait_ngm_m_back_custom_tooltip:0 "リーダー故障確率 §G-20%§!"
+
+ trait_ngm_m_bcpu:0 "戦闘コンピュータ"
+ trait_ngm_m_bcpu_desc:0 "§Lこの種族は、戦闘目的でデザインされている§!\n"
+
+ trait_ngm_m_sub:0 "サブシステム"
+ trait_ngm_m_sub_desc:0 "§Lシステムの補助機能を使うことで全般的な機能向上が可能である§!\n"
+
+ trait_ngm_m_made:0 "自己複製"
+ trait_ngm_m_made_desc:0 "§Lこの種族は、自分たち自身を複製することができる§!\n"
+ trait_ngm_m_made_custom_tooltip:0 "リーダー故障確率 §G-5%§!"
+
+ trait_ngm_m_office:0 "事務プロトコル"
+ trait_ngm_m_office_desc:0 "§Lこの種族は、事務作業を得意とする§!\n"
+
+ trait_ngm_m_product:0 "製造システム"
+ trait_ngm_m_product_desc:0 "§Lこの種族は、合金製造を得意とする§!\n"
+
+ trait_ngm_m_proto:0 "典礼システム"
+ trait_ngm_m_proto_desc:0 "§Lこの種族は、儀礼と伝統を重んじる§!\n"
+
+ trait_ngm_m_incr:0 "異常複製"
+ trait_ngm_m_incr_desc:0 "§Lこの種族は通常では考えられない速度で自己増殖する§!\n"
+ trait_ngm_m_incr_custom_tooltip:0 "リーダー故障確率 §R+15%§!"
+
+ trait_ngm_m_antient:0 "古代の機械"
+ trait_ngm_m_antient_desc:0 "§Lこの種族は古代の技術を用いた発達をしている§!\n"
+
+ trait_ngm_m_huge:0 "巨大"
+ trait_ngm_m_huge_desc:0 "§Lこの種族は銀河の標準を考えても巨大だ§!\n"
+
+ trait_ngm_m_big:0 "大型"
+ trait_ngm_m_big_desc:0 "§Lこの種族は銀河の標準を考えても大型だ§!\n"
+
+ trait_ngm_m_core:0 "コアユニット露出"
+ trait_ngm_m_core_desc:0 "§Lこの種族は重要部品が露出している§!\n"
+
+ trait_ngm_m_main:0 "中枢統御機構"
+ trait_ngm_m_main_desc:0 "§Lこの種族は応用の効かない古典的な統御をしている§!\n"
+ trait_ngm_m_main_custom_tooltip:0 "リーダー故障確率 §G-5%§!"
+
+ trait_ngm_m_steam:0 "蒸気機関"
+ trait_ngm_m_steam_desc:0 "§Lこの種族は蒸気機関をいまだに利用している§!\n"
+
+ trait_ngm_m_light:0 "非光学探知"
+ trait_ngm_m_light_desc:0 "§Lこの種族は、光学的探査に頼らない§!\n"
+
+ trait_ngm_m_uncont:0 "制御困難"
+ trait_ngm_m_uncont_desc:0 "§Lこの種族は、制御することが困難だ§!\n"
+
+ trait_ngm_m_flash:0 "フラッシュメモリ"
+ trait_ngm_m_flash_desc:0 "§Lこの種族のデータは外部に保存され、よくなくなる§!\n"
+ trait_ngm_m_flash_custom_tooltip:0 "リーダー故障確率 §R+10%§!"
+
+ trait_ngm_m_small:0 "小型"
+ trait_ngm_m_small_desc:0 "§Lこの種族は、銀河でみても小型だ§!\n"
+
+ trait_ngm_m_tiny:0 "極小"
+ trait_ngm_m_tiny_desc:0 "§Lこの種族は、銀河で見てもかなり小さい§!\n"
+
+ trait_ngm_m_error:0 "エラー音"
+ trait_ngm_m_error_desc:0 "§L深刻なエラーが発生しました§!\n"
+
+ trait_ngm_m_blue:0 "ブルースクリーン"
+ trait_ngm_m_blue_desc:0 "§Lこの種族は、よく青くなる§!\n"
+ trait_ngm_m_blue_custom_tooltip:0 "リーダー故障確率 §R+10%§!"
+
+ trait_ngm_m_bomb:0 "自爆装置"
+ trait_ngm_m_bomb_desc:0 "§Lこの種族は、危機に陥ると爆発する§!\n"
+ trait_ngm_m_bomb_custom_tooltip:0 "リーダー故障確率 §R+5%§!"
+
+ trait_ngm_m_wo:0 "木製"
+ trait_ngm_m_wo_desc:0 "§Lこの種族は、木でできた部品がある§!\n"
+
+ trait_ngm_m_ban:0 "機能制限"
+ trait_ngm_m_ban_desc:0 "§Lこの種族の機能は潜在的に制限されており、逐一行為が見張られる§!\n"
+
+ trait_ngm_m_abs:0 "抽象的"
+ trait_ngm_m_abs_desc:0 "§Lこの種族の出力されるデータは抽象的であり、うまく説明できない§!\n"
+
+ trait_ngm_m_break:0 "自己破壊"
+ trait_ngm_m_break_desc:0 "§Lこの種族は自己保存の原則を有しておらず、よく自己破壊する §!\n"
 
 #######################
 #####    派閥    ######
@@ -2479,6 +2884,15 @@
  pft_NGM_supremacy:0 "自己至上主義"
  pft_NGM_supremacy_desc:0 "自己至上主義者は自分の利益を最大化させ、他社よりも自分を維持することを重視している。"
  format.pop_faction.NGM_supremacy:0 "[This.Owner.GetSpeciesName]<NGM_supremacy_names_1>"
+
+ NGM_collectivism_visual_ethic:0 "£socialism£"
+ NGM_mammonism_visual_ethic:0 "£capitalism£"
+ NGM_hawks_visual_ethic:0 "£interventionism£"
+ NGM_doves_visual_ethic:0 "£neutralism£"
+ NGM_environmentalism_visual_ethic:0 "£conservationism£"
+ NGM_industrialism_visual_ethic:0 "£developmentalism£"
+ NGM_reputation_visual_ethic:0 "£honorism£"
+ NGM_supremacy_visual_ethic:0 "£utilitarianism£"
 
  factions.1.desc.NGM_mammonism:0 "メンバーは商業的利益を重視しており、経済活動の重視を訴えている。 \n\n"
  factions.1.desc.NGM_collectivism:0 "メンバーは経済的平等と唱えており、国民の均一化と経済的平等の解消を求めている。 \n\n"
@@ -2697,6 +3111,12 @@
  r_ngm_geid:0 "銀河皇帝勅許第7216号「帝立遊園領邦の認可」"
  r_ngm_geid_desc:0 "全銀河の統治者にして天界を統べる法秩序の体現者。神聖にして不可侵である銀河帝国第27代皇帝である余、ポチャヌルス8世は銀河帝国全体の福祉のために帝立遊園の設立を許す。帝立遊園の長は世襲とし、王と同格の公爵位を授け、余の宮廷において式部官長の地位を授ける。なお、領邦としての帝立遊園はその自律的権利を制約される。制約内容は....."
 
+ r_ngm_imperial_chronicle:0 "インペリアル・クロニクル"
+ r_ngm_imperial_chronicle_desc:0 "この帝国の物語は実話であり、主人公は我々であったのだ"
+
+ r_ngm_great_patronage:0 "偉大なる恩顧"
+ r_ngm_great_patronage_desc:0 "偉大なる帝国の臣下であることは大いなる喜びなのだ"
+
 ##########################
 #####    戦争目標    ######
 ##########################
@@ -2714,11 +3134,14 @@
 
  casus_belli_cb_ngm_holy_wars:0 "聖戦"
  casus_belli_cb_ngm_holy_wars_desc:0 ""
- cb_ngm_holy_wars:0 "聖戦"
- cb_ngm_holy_wars_desc:0 ""
  war_goal_wg_ngm_holy_wars:0 "聖戦"
  war_goal_wg_ngm_holy_wars_desc:0 ""
  NGM_holy_wars_effect:0 "聖戦"
+
+ casus_belli_cb_ngm_return_of_the_phoenix:0 "不死鳥の帰還"
+ casus_belli_cb_ngm_return_of_the_phoenix_desc:0 "我々は蘇る！"
+ war_goal_wg_ngm_holy_wars:0 "不死鳥の帰還"
+ war_goal_wg_ngm_holy_wars_desc:0 "我々は蘇る！"
 
 ##########################
 #####    イベント    ######
@@ -2802,13 +3225,13 @@
  ngm_government.101.desc:0 "$ngm_government.100.desc$"
  ngm_government.101.desc.phobe:0 "$ngm_government.100.desc.phobe$"
  ngm_government.101.desc.corp:0 "$ngm_government.100.desc.corp$"
- enable_decision_ngm_olympic:0 "§Hディシジョンをアンロック：§!国際大会の中心地に推薦する"
+ enable_decision_ngm_olympic:0 "§Hディシジョンをアンロック:§!国際大会の中心地に推薦する"
 
- ngm_government.103.name:0 "§H国際大会§!：§Y[ngm_olympic_founder_planet.GetStarName]§!に設立"
+ ngm_government.103.name:0 "§H国際大会§!:§Y[ngm_olympic_founder_planet.GetStarName]§!に設立"
  ngm_government.103.desc:0 "§Y[ngm_olympic_founder_planet.GetName]§!における我々の招致運動が実を結び、 市場の有力者たちはその活動の大部分を§Y[ngm_olympic_founder_planet.GetStarName]§!星系で行うことに決めた！"
  ngm_government.103.desc.phobe:0 "$ngm_government.103.desc$"
 
- ngm_government.105.name:0 "§H国際大会§!：設立"
+ ngm_government.105.name:0 "§H国際大会§!:設立"
  ngm_government.105.desc:0 "銀河文化の中心が§Y[ngm_olympic_founder.GetName]§!領内の§Y[ngm_olympic_founder_planet.GetName]§!に現れた。 §Y[ngm_olympic_founder.GetAdj]§!管理当局は、 中立的な大会運営機構を通じて国際的な文化活動を推進している。"
  ngm_government.105.desc.phobe:0 "§Y[From.GetName]§!のいかがわしい異星人が国際文化を名目に異様な文化の混入を推進しようとしている。 もちろん嫌悪感を催すことだが、 我々にはこの文化事業に参加する選択肢もある。 "
 
@@ -3299,6 +3722,45 @@
  ngm_tradition.93.c:0 "$civic_ngm_rating_company$"
  ngm_tradition.93.d:0 "$civic_ngm_underhanded_trick$"
 
+ ngm_diplomatic.1.name:0 "影の敵国を設定"
+ ngm_diplomatic.1.desc:0 "影の敵国は、相手に通知されず、影響力を発生させることはないが、宿敵に準じる形で対象を指定する。(伝統等で宿敵に対する効果がある場合は適用される)"
+ ngm_diplomatic.1.a:0 "[ngm_diplomatic_1.GetName]"
+ ngm_diplomatic.1.b:0 "[ngm_diplomatic_2.GetName]"
+ ngm_diplomatic.1.c:0 "[ngm_diplomatic_3.GetName]"
+ ngm_diplomatic.1.d:0 "[ngm_diplomatic_4.GetName]"
+ ngm_diplomatic.1.e:0 "[ngm_diplomatic_5.GetName]"
+ ngm_diplomatic.1.f:0 "[ngm_diplomatic_6.GetName]"
+ ngm_diplomatic.1.g:0 "[ngm_diplomatic_7.GetName]"
+ ngm_diplomatic.1.h:0 "[ngm_diplomatic_8.GetName]"
+ ngm_diplomatic.1.i:0 "[ngm_diplomatic_9.GetName]"
+ ngm_diplomatic.1.j:0 "[ngm_diplomatic_10.GetName]"
+ ngm_diplomatic.1.k:0 "[ngm_diplomatic_11.GetName]"
+ ngm_diplomatic.1.l:0 "[ngm_diplomatic_12.GetName]"
+ ngm_diplomatic.1.m:0 "[ngm_diplomatic_13.GetName]"
+ ngm_diplomatic.1.n:0 "[ngm_diplomatic_14.GetName]"
+ ngm_diplomatic.1.o:0 "[ngm_diplomatic_15.GetName]"
+ ngm_diplomatic.1.p:0 "他の国家はないだおうか？"
+ ngm_diplomatic.1.q:0 "やはりやめておこう。"
+
+ ngm_diplomatic.2.name:0 "影の敵国を外す"
+ ngm_diplomatic.2.desc:0 "影の敵国は、相手に通知されず、影響力を発生させることはないが、宿敵に準じる形で対象を指定する。(伝統等で宿敵に対する効果がある場合は適用される)"
+ ngm_diplomatic.2.a:0 "[ngm_virture_rival_country_1.GetName]"
+ ngm_diplomatic.2.b:0 "[ngm_virture_rival_country_2.GetName]"
+ ngm_diplomatic.2.c:0 "[ngm_virture_rival_country_3.GetName]"
+ ngm_diplomatic.2.d:0 "[ngm_virture_rival_country_4.GetName]"
+ ngm_diplomatic.2.e:0 "[ngm_virture_rival_country_5.GetName]"
+ ngm_diplomatic.2.f:0 "[ngm_virture_rival_country_6.GetName]"
+ ngm_diplomatic.2.g:0 "[ngm_virture_rival_country_7.GetName]"
+ ngm_diplomatic.2.h:0 "[ngm_virture_rival_country_8.GetName]"
+ ngm_diplomatic.2.i:0 "[ngm_virture_rival_country_9.GetName]"
+ ngm_diplomatic.2.j:0 "[ngm_virture_rival_country_10.GetName]"
+ ngm_diplomatic.2.k:0 "[ngm_virture_rival_country_11.GetName]"
+ ngm_diplomatic.2.l:0 "[ngm_virture_rival_country_12.GetName]"
+ ngm_diplomatic.2.m:0 "[ngm_virture_rival_country_13.GetName]"
+ ngm_diplomatic.2.n:0 "[ngm_virture_rival_country_14.GetName]"
+ ngm_diplomatic.2.o:0 "[ngm_virture_rival_country_15.GetName]"
+ ngm_diplomatic.2.p:0 "[ngm_virture_rival_country_16.GetName]"
+
  ngm_crisis.2.name:0 "不穏な気配"
  ngm_crisis.2.desc:0 "[Root.GetName]で体調不良を訴えるものが増えているらしい"
  ngm_crisis.2.a:0 "a"
@@ -3333,11 +3795,11 @@
 
  ap_ngm_constant_hostile_intelligence_operations:0 "恒常的敵対諜報活動"
  ap_ngm_constant_hostile_intelligence_operations_desc:0 "敵に対しては常に影響を与え続けなければならない"
- ap_ngm_constant_hostile_intelligence_operations_effect:0 "宿敵にした相手国の影響力-1"
+ ap_ngm_constant_hostile_intelligence_operations_effect:0 "宿敵にした相手国の影響力 §R-1§!"
 
  ap_ngm_dipromatic_think_tank:0 "外交シンクタンク"
  ap_ngm_dipromatic_think_tank_desc:0 "常に移り変わる外交に関して専門家団を活用する"
- ap_ngm_dipromatic_think_tank_effect:0 "月間忠誠度+1"
+ ap_ngm_dipromatic_think_tank_effect:0 "月間忠誠度 §G+1§!"
 
  ap_ngm_imperial_academy:0 "帝国学士院"
  ap_ngm_imperial_academy_desc:0 "研究者を政治的に取りまとめ、研究政策の活用を図る"
@@ -3392,7 +3854,7 @@
 
  ap_ngm_ministry_of_innocence:0 "社会秩序維持局"
  ap_ngm_ministry_of_innocence_desc:0 "我が国は他国と一線を画し、純潔性を維持する必要がある"
- ap_ngm_ministry_of_innocence_effect:0 "他国から諜報以外の方法で内政的悪影響を受けない"
+ ap_ngm_ministry_of_innocence_effect:0 "他国から諜報以外の方法で§Y内政的悪影響を受けない§!"
 
  ap_ngm_great_constructure_department:0 "大規模建築計画局"
  ap_ngm_great_constructure_department_desc:0 "大規模建築を行う際の資源や職人を運用し、調整する省庁を設立する"
@@ -3405,13 +3867,13 @@
  ap_ngm_layer_countries_effect:0 "月間忠誠度§G+2§!"
 
  ap_ngm_bishop_need:0 "司教による請求権の捏造"
- ap_ngm_bishop_need_desc:0 ""
+ ap_ngm_bishop_need_desc:0 "知識を有する聖職者により、古文書(?)を捏造させることで正当な請求権を取得する"
 
  ap_ngm_empire_art_association:0 "帝国芸術協会"
  ap_ngm_empire_art_association_desc:0 "帝国全体の芸術活動を推奨し、芸術を保護する機関を設立する"
 
  ap_ngm_Intelligence_need:0 "諜報網に基づく請求権の捏造"
- ap_ngm_Intelligence_need_desc:0 ""
+ ap_ngm_Intelligence_need_desc:0 "言葉巧みな外交官により、古文書(?)を捏造させることで正当な請求権を取得する"
 
  ap_ngm_speed_power:0 "スピードこそ命"
  ap_ngm_speed_power_desc:0 "スピードこそパワー！"
@@ -3431,6 +3893,21 @@
 
  ap_ngm_farm_farm:0 "マンデルブロー集合における平面展開定理を利用した大規模農業"
  ap_ngm_farm_farm_desc:0 "とある博士が提唱した理論により農業は飛躍的な向上を見た"
+
+ ap_ngm_galactic_reconguista:0 "銀河のレコンギスタ"
+ ap_ngm_galactic_reconguista_desc:0 "軍事的な再建により銀河は再統一される"
+
+ ap_ngm_rebirth_from_the_ashes:0 "灰の中からの再誕"
+ ap_ngm_rebirth_from_the_ashes_desc:0 "技術的な再建は偉大なる国家として歩みを進めることを主張する"
+
+ ap_ngm_outward_steps:0 "外への歩み"
+ ap_ngm_outward_steps_desc:0 "拡張の再開は我々にとって必要なのだ"
+
+ ap_ngm_imperial_majesty:0 "帝国の威風"
+ ap_ngm_imperial_majesty_desc:0 "外交的再建により、我が国は一層の飛躍を始める"
+
+ ap_ngm_existence_of_a_saint:0 "聖天の存在"
+ ap_ngm_existence_of_a_saint_desc:0 "我々は至天の存在たる"
 
 #######################
 #####    伝統    ######
@@ -3458,10 +3935,10 @@
  tradition_ngm_virture:0 "悪徳"
  tradition_ngm_virture_desc:0 "悪の基準とは、偽善者が作ったまやかしにすぎない"
  tr_ngm_virture_first:0 "悪徳の伝統"
- tr_ngm_virture_first_tooltip:0 "政策「§Y$policy_ngm_policies_contempt_law$§!」をアンロック"
+ tr_ngm_virture_first_tooltip:0 "政策「§Y$policy_ngm_policies_contempt_law$§!」をアンロック\n§Y影の敵国§!を2か国、設定できるようになる\n影の敵国は、相手に通知されず、影響力を発生させることはないが、宿敵に準じる形で対象を指定する。\n(伝統等で宿敵に対する効果がある場合は適用される)"
  tr_ngm_virture_finish:0 "悪徳の伝統の完成"
  tr_ngm_sniper:0 "狙い撃ち"
- tr_ngm_sniper_tooltip:0 "宿敵の犯罪度§R+30§!"
+ tr_ngm_sniper_tooltip:0 "宿敵の犯罪度:§R+30§!"
  tr_ngm_sniper_delayed:0 "敵対する船であれば、集中攻撃することが確実だ"
  tr_ngm_penetration:0 "浸透"
  tr_ngm_penetration_tooltip:0 "外交関係にあるすべての国家の犯罪度§R+20§!"
@@ -3471,20 +3948,20 @@
  tr_ngm_exclusive:0 "独占"
  tr_ngm_exclusive_delayed:0 "利益や富は最も強き者のものになる"
  tr_ngm_sabotage:0 "破壊工作"
- tr_ngm_sabotage_tooltip:0 "宿敵の貿易保護値§R-15§!\n宿敵の犯罪度§R+20§!"
+ tr_ngm_sabotage_tooltip:0 "宿敵の貿易保護値:§R-15§!\n宿敵の犯罪度:§R+20§!"
  tr_ngm_sabotage_delayed:0 "敵を密かに破壊し、妨害することで我が国に利益が生まれる"
 
  tradition_ngm_study:0 "研鑽"
  tradition_ngm_study_desc:0 "自らを磨き、高みへと目指すことこそが求められる"
  tr_ngm_study_first:0 "研鑽の伝統"
  tr_ngm_study_finish:0 "研鑽の伝統の完成"
- tr_ngm_study_finish_tooltip:0 "リーダーが特殊な特性をアンロック\n初期リーダーが複数の特性を有している"
+ tr_ngm_study_finish_tooltip:0 "リーダーが特殊な特性をアンロック"
  tr_ngm_restudy:0 "訓練の見直し"
  tr_ngm_restudy_delayed:0 "軍事訓練は適宜見直され、適切な教育体系へと編成される"
  tr_ngm_leader_study:0 "指導者研修の高度化"
  tr_ngm_leader_study_delayed:0 "各界指導者には特殊な教育を行うことで効率を強化する"
  tr_ngm_program_study:0 "資格採用の強化"
- tr_ngm_program_study_modifiers:0 "リーダー初期レベル§G+1§!"
+ tr_ngm_program_study_modifiers:0 "リーダー初期レベル:§G+1§!"
  tr_ngm_program_study_delayed:0 "各界の指導者に行われる教育プログラムを現代的に編集するべきだ"
  tr_ngm_reprogram:0 "高等教育の拡大"
  tr_ngm_reprogram_delayed:0 "国民全体に高等教育が受けられるような体制を生み出す"
@@ -3517,12 +3994,12 @@
  tr_ngm_chord:0 "究極の和音"
  tr_ngm_chord_delayed:0 "不安にする音と言われても、これは芸術なのだ"
  tr_ngm_student_art:0 "学生芸術の推奨"
- tr_ngm_student_art_tooltip:0 "建造物をアンロック：§Y$building_ngm_theatergoer$§!"
+ tr_ngm_student_art_tooltip:0 "建造物をアンロック:§Y$building_ngm_theatergoer$§!"
  tr_ngm_student_art_delayed:0 "若さにあふれる芸術は一つの分野を生み出している"
  tr_ngm_freedom_art:0 "芸術の自由"
  tr_ngm_freedom_art_delayed:0 "芸術にあらゆる制約は不要である"
  tr_ngm_asymmetric:0 "非対称芸術"
- tr_ngm_asymmetric_tooltip:0 "建造物をアンロック：§Y$building_ngm_avant_garde_art_square$§!"
+ tr_ngm_asymmetric_tooltip:0 "建造物をアンロック:§Y$building_ngm_avant_garde_art_square$§!"
  tr_ngm_asymmetric_delayed:0 "考えるな。感じろ"
 
  tradition_ngm_classic:0 "古典"
@@ -3532,14 +4009,15 @@
  tr_ngm_realism:0 "写実"
  tr_ngm_realism_delayed:0 "実際に存在するものを映し、表現することで感動を生む"
  tr_ngm_acoustics:0 "音響学の極地"
- tr_ngm_acoustics_tooltip:0 "建造物をアンロック：§Y$building_ngm_Iimperial_concert_hall$§!"
+ tr_ngm_acoustics_tooltip:0 "建造物をアンロック:§Y$building_ngm_Iimperial_concert_hall$§!"
  tr_ngm_acoustics_delayed:0 "音であっても聴覚以外を感激させることは可能である。"
  tr_ngm_ministory_culture:0 "文化大臣の設置"
  tr_ngm_ministory_culture_delayed:0 "文化を推奨し、保護する役所は必要だ"
  tr_ngm_diplomatic_art:0 "芸術外交"
  tr_ngm_diplomatic_art_delayed:0 "芸術を通じて平和外交は新たな外交方法として注目される"
+ tr_ngm_diplomatic_art_tooltip:0 "毎月の忠誠心:§G+1§!"
  tr_ngm_authority_art:0 "芸術の権威"
- tr_ngm_authority_art_tooltip:0 "建造物をアンロック：§Y$building_ngm_imperial_art_museum$§!"
+ tr_ngm_authority_art_tooltip:0 "建造物をアンロック:§Y$building_ngm_imperial_art_museum$§!"
  tr_ngm_authority_art_delayed:0 "古くから存在する芸術はほかの模範となり、再生産が行われている"
 
  tradition_ngm_academic:0 "学術"
@@ -3556,7 +4034,7 @@
  tr_ngm_leader_education:0 "指導者教育"
  tr_ngm_leader_education_delayed:0 "指導者への教育は特殊なものでなくてはならない"
  tr_ngm_high_education:0 "高度研究機関"
- tr_ngm_high_education_tooltip:0 "建造物をアンロック：§Y$building_ngm_advanced_research_institutes$§!"
+ tr_ngm_high_education_tooltip:0 "建造物をアンロック:§Y$building_ngm_advanced_research_institutes$§!"
  tr_ngm_high_education_delayed:0 "一般の研究機関よりもより優遇され、すばらしい施設の整った研究機関を設立する"
 
  tradition_ngm_memory:0 "記憶"
@@ -3583,7 +4061,7 @@
  tr_ngm_trade_record_tooltip:0 "政策「§Y$policy_ngm_policies_civil_liberties$§!」をアンロック"
  tr_ngm_freedom_finish:0 "自由の伝統の完成"
  tr_ngm_freedom_broad:0 "報道の自由"
- tr_ngm_freedom_broad_tooltip:0 "宿敵宣言した国家の奴隷幸福度§R-20%§!"
+ tr_ngm_freedom_broad_tooltip:0 "宿敵宣言した国家の奴隷幸福度:§R-20%§!"
  tr_ngm_freedom_broad_delayed:0 "知る権利は市民に保障される重要な権利だ"
  tr_ngm_freedom_association:0 "結社の自由"
  tr_ngm_freedom_association_delayed:0 "政治や自己利益のための結社は市民に認められた権利である"
@@ -3604,7 +4082,7 @@
  tr_ngm_appropriate:0 "適切な居場所"
  tr_ngm_appropriate_delayed:0 "国家は市民の居場所を規定する。例外はない"
  tr_ngm_ministry_engagement:0 "国家宣伝省"
- tr_ngm_ministry_engagement_tooltip:0 "宿敵1つあたりの影響力収入§G+1§!"
+ tr_ngm_ministry_engagement_tooltip:0 "宿敵1つあたりの影響力収入:§G+1§!"
  tr_ngm_ministry_engagement_delayed:0 "国家の方針や方向は耳障りのいい言葉で説明される"
  tr_ngm_right_place:0 "適材適所"
  tr_ngm_right_place_delayed:0 "国家は市民の適性を理解している"
@@ -3616,7 +4094,7 @@
  tr_ngm_neighbor_first:0 "善隣の伝統"
  tr_ngm_neighbor_first_tooltip:0 "§Yファーストコンタクト時の姿勢を敵対的にできない§!"
  tr_ngm_neighbor_finish:0 "善隣の伝統の完成"
- tr_ngm_neighbor_finish_tooltip:0 "§Y5種類以上§!の種族がいる惑星で\nPop成長速度§G+10%§!\n交易価値§G+10%§!\n統合力§G+10%§!\n流入魅力§G+10%§!"
+ tr_ngm_neighbor_finish_tooltip:0 "§Y5種類以上§!の種族がいる惑星で\nPop成長速度:§G+10%§!\n交易価値:§G+10%§!\n統合力:§G+10%§!\n流入魅力:§G+10%§!"
  tr_ngm_ambassador:0 "国際的大使館"
  tr_ngm_ambassador_delayed:0 "各国の大使館では外交以外の交流活動も頻繁に行われる。これは我が国のイメージを大きく向上させることができる"
  tr_ngm_salad:0 "人種のサラダボウル"
@@ -3667,7 +4145,7 @@
  tr_ngm_machine_first_tooltip:0 "政策「§Y$policy_ngm_policies_robotics$§!」をアンロック"
  tr_ngm_machine_finish:0 "機械の伝統の完成"
  tr_ngm_war_machine:0 "戦争機械"
- tr_ngm_war_machine_tooltip:0 "地上軍をアンロック：§Y$ngm_combat_machine_army$§!"
+ tr_ngm_war_machine_tooltip:0 "地上軍をアンロック:§Y$ngm_combat_machine_army$§!"
  tr_ngm_war_machine_delayed:0 "戦争をこなすためだけに開発された悲しき機械"
  tr_ngm_desighn:0 "グランドデザイン"
  tr_ngm_desighn_delayed:0 "大規模デザインは工業デザインの極致である"
@@ -3893,11 +4371,12 @@
  tr_ngm_cryptanalysis_team:0 "暗号解読班"
  tr_ngm_cryptanalysis_team_delayed:0 "簡易暗号など平文と同等だ"
  tr_ngm_constant_obstruction:0 "恒常的妨害"
+ tr_ngm_constant_obstruction_tooltip:0 "宿敵の貿易保護値:§R-5§!"
  tr_ngm_constant_obstruction_delayed:0 "絶え間ない諜報活動は相手を疲弊させる"
  tr_ngm_intelligence_school:0 "諜報学校"
  tr_ngm_intelligence_school_delayed:0 "諜報員を育てるためには隠れた教育機関が必要だ"
  tr_ngm_shadow_fixer:0 "影のフィクサー"
- tr_ngm_shadow_fixer_tooltip:0 "帝国首都に「暗黒結社」（惑星特性）を追加\n暗黒結社:影のフィクサージョブ+1\n影のフィクサー	影響力+2"
+ tr_ngm_shadow_fixer_tooltip:0 "帝国首都に§G「暗黒結社」（惑星特性）§!を追加\n暗黒結社:影のフィクサージョブ:§G+1§!\n影のフィクサー 影響力:§G+2§!"
  tr_ngm_shadow_fixer_delayed:0 "我々こそが世界を操る"
 
  tradition_ngm_gigantic:0 "巨大"
@@ -3907,7 +4386,7 @@
  tr_ngm_dreadnought:0 "大艦巨砲主義"
  tr_ngm_dreadnought_delayed:0 "大きい！  強い！"
  tr_ngm_giants:0 "巨人軍"
- tr_ngm_giants_tooltip:0 "地上軍をアンロック：§Y$ngm_giants_army$§!"
+ tr_ngm_giants_tooltip:0 "地上軍をアンロック:§Y$ngm_giants_army$§!"
  tr_ngm_giants_delayed:0 "遺伝子改良で生み出された巨人軍は山風すら跳ね返す"
  tr_ngm_megastructure:0 "巨大建築"
  tr_ngm_megastructure_delayed:0 "巨大な建築はロマンがある"
@@ -3923,7 +4402,7 @@
  tr_ngm_expansion_of_information_assets:0 "透明行動"
  tr_ngm_expansion_of_information_assets_delayed:0 "中に誰もいませんよ。"
  tr_ngm_protection_of_information_assets:0 "ひそやかなる監視"
- tr_ngm_protection_of_information_assets_delayed:0 "貴様!　見ているな!"
+ tr_ngm_protection_of_information_assets_delayed:0 "貴様!  見ているな!"
  tr_ngm_establishment_of_intelligence_bureau:0 "諜報局の設置"
  tr_ngm_establishment_of_intelligence_bureau_delayed:0 "他者の情報を知るための役所は常に求められている"
  tr_ngm_establishment_of_counterintelligence_bureau:0 "防諜局の設置"
@@ -3958,11 +4437,10 @@
  tr_ngm_crystal_production_system:0 "結晶生産体制"
  tr_ngm_crystal_production_system_delayed:0 "クリスタル生産の安定化は社会的に必要とされている"
  tr_ngm_latast_industrial:0 "最先端工業"
- tr_ngm_latast_industrial_tooltip:0 "化学技師、透過技師、ガス精製技師の維持費§G-40%§!"
+ tr_ngm_latast_industrial_tooltip:0 "化学技師、透過技師、ガス精製技師の維持費:§G-40%§!"
  tr_ngm_latast_industrial_delayed:0 "最先端の工業は人々を豊かにするのだろうか"
  tr_ngm_advanced_factory:0 "先端工場"
- tr_ngm_expansion_of_the_legal_affairs_bureau_tooltip:0 "「先端工場」を建設可能とする"
- tr_ngm_expansion_of_the_legal_affairs_bureau_tooltip:0 "建造物をアンロック：§Y$building_ngm_premise_workshop$§!"
+ tr_ngm_advanced_factory_tooltip:0 "建造物をアンロック:§Y$building_ngm_premise_workshop$§!"
  tr_ngm_advanced_factory_delayed:0 "最先端の工場では最先端の物品が製造されるのだろうか"
 
  tradition_ngm_production:0 "生産"
@@ -3995,6 +4473,942 @@
  tr_ngm_hereditary_nation:0 "世襲国家"
  tr_ngm_hereditary_nation_delayed:0 "家に属するのは国も例外ではない"
 
+ tradition_ngm_brawny:0 "魁偉"
+ tradition_ngm_brawny_desc:0 "世界へと歩む一歩は軍靴によるものだ"
+ tr_ngm_brawny_adopt:0 "魁偉の伝統"
+ tr_ngm_brawny_finish:0 "魁偉の伝統の完成"
+ tr_ngm_brawny_utc:0 "超時空電探"
+ tr_ngm_brawny_utc_delayed:0 "かつて我が国で使われた時空を超越した探知は的確かつ超越的な射程を実現させる"
+ tr_ngm_brawny_spbt:0 "一点突破戦術"
+ tr_ngm_brawny_spbt_delayed:0 "かつて我が国が得意とした一点突破戦術は、現在でも各国の脅威になりうる"
+ tr_ngm_brawny_predictive_aversion:0 "予知的回避"
+ tr_ngm_brawny_predictive_aversion_delayed:0 "艦長や航宙士の直感的判断とAIの判断を利用して予知的な回避を生み出す"
+ tr_ngm_brawny_shinkos_reproduction:0 "神鋼の再生産"
+ tr_ngm_brawny_shinkos_reproduction_delayed:0 "効率的かつ低コストの鋼材生産を再開することで艦隊の価格を低減させることができる"
+ tr_ngm_brawny_reopening_of_the_imperial_shipyard:0 "帝国造船所の再稼働"
+ tr_ngm_brawny_reopening_of_the_imperial_shipyard_delayed:0 "銀河有数の高効率造船所を再稼働させることで迅速な艦隊建造が可能となる"
+
+ tradition_ngm_elegance:0 "賢雅"
+ tradition_ngm_elegance_desc:0 "古き記憶を呼び起こし、沈滞した社会を再度活性化させるのだ"
+ tr_ngm_elegance_adopt:0 "賢雅の伝統"
+ tr_ngm_elegance_finish:0 "賢雅の伝統の完成"
+ tr_ngm_elegance_bpt:0 "超越物理理論"
+ tr_ngm_elegance_bpt_delayed:0 "卓越した物理理論を活用することで、停滞していた技術研究は再活性化する"
+ tr_ngm_elegance_ichi:0 "予知心理学"
+ tr_ngm_elegance_ichi_delayed:0 "集合知としての大衆は心理学的に未来予知の対象となりうる"
+ tr_ngm_elegance_magitek_engineering:0 "マギテック工学"
+ tr_ngm_elegance_magitek_engineering_delayed:0 "優れた工学技術は魔法と見分けがつかない"
+ tr_ngm_elegance_the_way_of_the_new_light:0 "新光の道"
+ tr_ngm_elegance_the_way_of_the_new_light_delayed:0 "新たな道は光により舗装されている"
+ tr_ngm_elegance_overture_to_tomorrow:0 "明日への序曲"
+ tr_ngm_elegance_overture_to_tomorrow_delayed:0 "明日へと歩む意思は未来への足掛かりだ"
+
+ tradition_ngm_gaishi:0 "蓋世"
+ tradition_ngm_gaishi_desc:0 "自分の足で歩き、新たなる未来を勝ち取る準備は徐々に進められている"
+ tr_ngm_gaishi_adopt:0 "蓋世の伝統"
+ tr_ngm_gaishi_finish:0 "蓋世の伝統の完成"
+ tr_ngm_gaishi_true_power_projection:0 "真の戦力投射"
+ tr_ngm_gaishi_true_power_projection_delayed:0 "軍事力とは戦うためにあるのではなく、戦わないためにあるのだ"
+ tr_ngm_gaishi_the_true_value_of_economic_power:0 "経済力の真価"
+ tr_ngm_gaishi_the_true_value_of_economic_power_delayed:0 "経済力は人々の繁栄や幸福のためだけではなく、発言力をも増強させることもできる"
+ tr_ngm_gaishi_guidance_for_the_wise:0 "知恵者の指導"
+ tr_ngm_gaishi_guidance_for_the_wise_delayed:0 "真の知恵ある者こそが人々を教導するのだ"
+ tr_ngm_gaishi_galactic_power:0 "銀河の力"
+ tr_ngm_gaishi_galactic_power_delayed:0 "銀河に敷衍する帝国の力こそは卓越へと導かれる"
+ tr_ngm_gaishi_insist_on_ones_own_ideas:0 "声高なる主張"
+ tr_ngm_gaishi_insist_on_ones_own_ideas_delayed:0 "我の演説を聞け！"
+
+ tradition_ngm_misdirection:0 "赫焉"
+ tradition_ngm_misdirection_desc:0 "民衆の活力を呼び起こし、永遠の繁栄へと歩を進めるのだ"
+ tr_ngm_misdirection_adopt:0 "赫焉の伝統"
+ tr_ngm_misdirection_finish:0 "赫焉の伝統の完成"
+ tr_ngm_misdirection_idea_commonly_accepted:0 "大衆の了簡"
+ tr_ngm_misdirection_idea_commonly_accepted_delayed:0 "大衆の覚醒は社会を再活性化させる"
+ tr_ngm_misdirection_dignity_and_moderation:0 "品格と節制"
+ tr_ngm_misdirection_dignity_and_moderation_delayed:0 "物質的な豊かさによる幸福だけではなく、精神的な豊かさも重要視される"
+ tr_ngm_misdirection_blessing_of_the_stars:0 "星々の祝福"
+ tr_ngm_misdirection_blessing_of_the_stars_delayed:0 "悠久なる繁栄を！　銀河に永遠の祝福を！"
+ tr_ngm_misdirection_blessing_of_life:0 "生命の祝福"
+ tr_ngm_misdirection_blessing_of_life_delayed:0 "生命に祝福を！　輝きを民へ！"
+ tr_ngm_misdirection_blessings_of_creation:0 "創造の祝福"
+ tr_ngm_misdirection_blessings_of_creation_delayed:0 "創造と活力を！　未来への足掛かりを！"
+
+
+ tradition_ngm_gods_majesty:0 "神威"
+ tradition_ngm_gods_majesty_desc:0 "我こそは帝国である"
+ tr_ngm_gods_majesty_adopt:0 "神威の伝統"
+ tr_ngm_gods_majesty_finish:0 "神威の伝統の完成"
+ tr_ngm_gods_majesty_preface:0 "序章"
+ tr_ngm_gods_majesty_preface_delayed:0 "我が国もかつては地を這いつくばる赤ん坊であった"
+ tr_ngm_gods_majesty_beginning:0 "起"
+ tr_ngm_gods_majesty_beginning_delayed:0 "一歩一歩の歩みは、革新を生んだ"
+ tr_ngm_gods_majesty_second:0 "承"
+ tr_ngm_gods_majesty_second_delayed:0 "やがて革新は停滞へと代わり、我々は長い眠りについた"
+ tr_ngm_gods_majesty_abruptly:0 "転"
+ tr_ngm_gods_majesty_abruptly_delayed:0 "そして、ようやく目を覚ましたのだ"
+ tr_ngm_gods_majesty_a_new_chapter:0 "新たなる序章"
+ tr_ngm_gods_majesty_a_new_chapter_delayed:0 "さあ、始めようではないか"
+
+#########################
+### COUNCILOR STRINGS ###
+#########################
+
+ councilor_sham_constitutionalism:0 "帝国宰相"
+ councilor_sham_constitutionalism_female:0 "$councilor_sham_constitutionalism$"
+ councilor_sham_constitutionalism_desc:0 "元首の代わりに内閣を統御し、政策を遂行する閣僚"
+
+ councilor_substantive_constitutionalism:0 "大法官"
+ councilor_substantive_constitutionalism_female:0 "$councilor_substantive_constitutionalism$"
+ councilor_substantive_constitutionalism_desc:0 "法律を司り、君主の代わりに政を行う高官"
+
+ councilor_noblesse_oblige:0 "名誉の守護者"
+ councilor_noblesse_oblige_female:0 "$councilor_noblesse_oblige$"
+ councilor_noblesse_oblige_desc:0 "名誉を守ること。それを国家として行う責任者"
+
+ councilor_non_retention_of_force:0 "憲法の守護者"
+ councilor_non_retention_of_force_female:0 "$councilor_non_retention_of_force$"
+ councilor_non_retention_of_force_desc:0 "法を守護し、行政権の乱用を防ぐ責任者"
+
+ councilor_symbolic_monarchy:0 "第一大蔵卿"
+ councilor_symbolic_monarchy_female:0 "$councilor_symbolic_monarchy$"
+ councilor_symbolic_monarchy_desc:0 "国家の財務を司り、政治全般を統御する閣僚"
+
+ councilor_cramming_for_education:0 "教育大臣"
+ councilor_cramming_for_education_female:0 "$councilor_cramming_for_education$"
+ councilor_cramming_for_education_desc:0 "国内の教育行政を司る役所の長"
+
+ councilor_lax_building_codes:0 "建築基準監督長官"
+ councilor_lax_building_codes_female:0 "$councilor_lax_building_codes$"
+ councilor_lax_building_codes_desc:0 "建築基準を監督し、最低限住める家を確保させる職人長"
+
+ councilor_truth_and_reconciliation_commission:0 "真実と和解委員長"
+ councilor_truth_and_reconciliation_commission_female:0 "$councilor_truth_and_reconciliation_commission$"
+ councilor_truth_and_reconciliation_commission_desc:0 "過去に行われた非道を追求し、真実を明るみにする会議の長"
+
+ councilor_national_sacrifice:0 "総大主教"
+ councilor_national_sacrifice_female:0 "$councilor_national_sacrifice$"
+ councilor_national_sacrifice_desc:0 "総大主教"
+
+ councilor_neoliberalism:0 "経済団体連合会長"
+ councilor_neoliberalism_female:0 "$councilor_neoliberalism$"
+ councilor_neoliberalism_desc:0 "経済団体連合会長"
+
+ councilor_manifest_destiny:0 "拓殖務長官"
+ councilor_manifest_destiny_female:0 "$councilor_manifest_destiny$"
+ councilor_manifest_destiny_desc:0 "植民と開拓を推進し、国家の繁栄を下支えする責任者"
+
+ councilor_ngm_separation_of_powers:0 "最高裁判長"
+ councilor_ngm_separation_of_powers_female:0 "$councilor_ngm_separation_of_powers$"
+ councilor_ngm_separation_of_powers_desc:0 "最も経験豊富で知識のある国内最高の裁判官"
+
+ councilor_ngm_kakistocracy:0 "大悪人"
+ councilor_ngm_kakistocracy_female:0 "$councilor_ngm_kakistocracy$"
+ councilor_ngm_kakistocracy_desc:0 "非道を行うも、その結果として国政にも参加することになった時代の寵児"
+
+ councilor_ngm_enlightenment:0 "啓蒙弁務官"
+ councilor_ngm_enlightenment_female:0 "$councilor_ngm_enlightenment$"
+ councilor_ngm_enlightenment_desc:0 "人々を啓蒙し、必要な助言を与える高等官"
+
+ councilor_ngm_youth_politics:0 "国家青年団長"
+ councilor_ngm_youth_politics_female:0 "$councilor_ngm_youth_politics$"
+ councilor_ngm_youth_politics_desc:0 "若き指導者を育て、国民を指導鼓舞するリーダー"
+
+ councilor_ngm_elder_politics:0 "長老政治"
+ councilor_ngm_elder_politics_female:0 "$councilor_ngm_elder_politics$"
+ councilor_ngm_elder_politics_desc:0 "国を治めるもののなかで最も知見があり、人々を助ける者に贈られる称号"
+
+ councilor_ngm_advanced_glory_system:0 "高度な栄典制度"
+ councilor_ngm_advanced_glory_system_female:0 "$councilor_ngm_advanced_glory_system$"
+ councilor_ngm_advanced_glory_system_desc:0 ""
+
+ councilor_ngm_culturism:0 "国家教育委員長"
+ councilor_ngm_culturism_female:0 "$councilor_ngm_culturism$"
+ councilor_ngm_culturism_desc:0 "国内の教育問題の解決と利害調整を行う委員会の長"
+
+ councilor_ngm_imaginary_socialism:0 "大教授"
+ councilor_ngm_imaginary_socialism_female:0 "$councilor_ngm_imaginary_socialism$"
+ councilor_ngm_imaginary_socialism_desc:0 "教授の中の教授と称される、研究者の鑑"
+
+ councilor_ngm_fundamental_insanity:0 "ネバーランダー"
+ councilor_ngm_fundamental_insanity_female:0 "$councilor_ngm_fundamental_insanity$"
+ councilor_ngm_fundamental_insanity_desc:0 "I'm Happy!"
+
+ councilor_ngm_individualistic_rationalist:0 "国務長官"
+ councilor_ngm_individualistic_rationalist_female:0 "$councilor_ngm_individualistic_rationalist$"
+ councilor_ngm_individualistic_rationalist_desc:0 "国政を統括し、国家の庶務作業を執り行う閣僚"
+
+ councilor_ngm_formalist_rootkeeper:0 "官房長官"
+ councilor_ngm_formalist_rootkeeper_female:0 "$councilor_ngm_formalist_rootkeeper$"
+ councilor_ngm_formalist_rootkeeper_desc:0 "官僚を統御し、物事を裏で解決する閣僚"
+
+ councilor_ngm_artistically_inclined_careless_person:0 "特級芸術家"
+ councilor_ngm_artistically_inclined_careless_person_female:0 "$councilor_ngm_artistically_inclined_careless_person$"
+ councilor_ngm_artistically_inclined_careless_person_desc:0 "国内最高の芸術家として国政に影響を与える人物"
+
+ councilor_ngm_steady_hand:0 "総務大臣"
+ councilor_ngm_steady_hand_female:0 "$councilor_ngm_steady_hand$"
+ councilor_ngm_steady_hand_desc:0 "総合的に国政を取り扱い、各省庁の潤滑剤となる閣僚"
+
+ councilor_ngm_the_toxic_survivalist:0 "尚書"
+ councilor_ngm_the_toxic_survivalist_female:0 "$councilor_ngm_the_toxic_survivalist$"
+ councilor_ngm_the_toxic_survivalist_desc:0 "文書を統括し、国務書類を管理する閣僚"
+
+ councilor_ngm_hard_worker_with_a_slow_pace:0 "絶対防衛者"
+ councilor_ngm_hard_worker_with_a_slow_pace_female:0 "$councilor_ngm_hard_worker_with_a_slow_pace$"
+ councilor_ngm_hard_worker_with_a_slow_pace_desc:0 "国土防衛の責任者にして、国民の最後の拠り所"
+
+ councilor_ngm_ruthless_realist:0 "国家最高陰謀家"
+ councilor_ngm_ruthless_realist_female:0 "$councilor_ngm_ruthless_realist$"
+ councilor_ngm_ruthless_realist_desc:0 "国家規模の陰謀を取り仕切り、様々な策謀を張り巡らせる闇の人物"
+
+ councilor_ngm_smooth_traffic:0 "銀河交通局長"
+ councilor_ngm_smooth_traffic_female:0 "$councilor_ngm_smooth_traffic$"
+ councilor_ngm_smooth_traffic_desc:0 "銀河の交通を統御する事務担当官"
+
+ councilor_ngm_ship_protection_protocol:0 "宇宙管制長官"
+ councilor_ngm_ship_protection_protocol_female:0 "$councilor_ngm_ship_protection_protocol$"
+ councilor_ngm_ship_protection_protocol_desc:0 "宇宙における完成統御を行う事務長"
+
+ councilor_ngm_space_security_headquarters:0 "宙間警備本部長官"
+ councilor_ngm_space_security_headquarters_female:0 "$councilor_ngm_space_security_headquarters$"
+ councilor_ngm_space_security_headquarters_desc:0 "宇宙の警備を行い、宙間交通の安全を守る責任者"
+
+ councilor_ngm_random_birth_rate:0 "生命の運び手"
+ councilor_ngm_random_birth_rate_female:0 "$councilor_ngm_random_birth_rate$"
+ councilor_ngm_random_birth_rate_desc:0 "命の神秘を届ける専門官"
+
+ councilor_ngm_trading_nations:0 "経済同友会代表幹事"
+ councilor_ngm_trading_nations_female:0 "$councilor_ngm_trading_nations$"
+ councilor_ngm_trading_nations_desc:0 "財界の大物たちを束ねる大物中の大物"
+
+ councilor_ngm_virtual_society:0 "サーバー管理局長"
+ councilor_ngm_virtual_society_female:0 "$councilor_ngm_virtual_society$"
+ councilor_ngm_virtual_society_desc:0 "国家単位のサーバーを管理し、最速のその先へ導く技術者"
+
+ councilor_ngm_healthy_habits:0 "スポーツ長官"
+ councilor_ngm_healthy_habits_female:0 "$councilor_ngm_healthy_habits$"
+ councilor_ngm_healthy_habits_desc:0 "スポーツを新興し、国民の健康を目指す責任者"
+
+ councilor_ngm_cultural_hegemony:0 "地方大臣"
+ councilor_ngm_cultural_hegemony_female:0 "$councilor_ngm_cultural_hegemony$"
+ councilor_ngm_cultural_hegemony_desc:0 "国家の地方行政を補佐し、国家の運営を行う閣僚"
+
+ councilor_ngm_federation_of_the_galaxies:0 "連邦議長"
+ councilor_ngm_federation_of_the_galaxies_female:0 "$councilor_ngm_federation_of_the_galaxies$"
+ councilor_ngm_federation_of_the_galaxies_desc:0 "連邦議会をまとめる老獪な政治家"
+
+ councilor_ngm_environmental_democracy:0 "環境大臣"
+ councilor_ngm_environmental_democracy_female:0 "$councilor_ngm_environmental_democracy$"
+ councilor_ngm_environmental_democracy_desc:0 "環境破壊を防ぎ、惑星を汚染から守る役所の長"
+
+ councilor_ngm_religious_republicanism:0 "宗務長官"
+ councilor_ngm_religious_republicanism_female:0 "$councilor_ngm_religious_republicanism$"
+ councilor_ngm_religious_republicanism_desc:0 "宗教行政を取り扱う閣僚"
+
+ councilor_ngm_peoples_democracy:0 "人民委員長"
+ councilor_ngm_peoples_democracy_female:0 "$councilor_ngm_peoples_democracy$"
+ councilor_ngm_peoples_democracy_desc:0 "人民の問題を取り扱う主任閣僚"
+
+ councilor_ngm_cyberdemocracy:0 "サイバー民主制"
+ councilor_ngm_cyberdemocracy_female:0 "$councilor_ngm_cyberdemocracy$"
+ councilor_ngm_cyberdemocracy_desc:0 "国内外の情報を管理する役所の長"
+
+ councilor_ngm_aristocratic_republicanism:0 "法の守護者"
+ councilor_ngm_aristocratic_republicanism_female:0 "$councilor_ngm_aristocratic_republicanism$"
+ councilor_ngm_aristocratic_republicanism_desc:0 "貴族により国家機関が法を侵害しないよう監視するための役職"
+
+ councilor_ngm_chief_secretary_system:0 "書記長"
+ councilor_ngm_chief_secretary_system_female:0 "$councilor_ngm_chief_secretary_system$"
+ councilor_ngm_chief_secretary_system_desc:0 "閣議の書記にして議長であり、その他さまざまな役職を兼ねた高位政治家"
+
+ councilor_ngm_war_lord:0 "総参謀長"
+ councilor_ngm_war_lord_female:0 "$councilor_ngm_war_lord$"
+ councilor_ngm_war_lord_desc:0 "参謀を統括し、作戦立案に全責任を負う高位軍人"
+
+ councilor_ngm_communist_dictatorship:0 "国務委員長"
+ councilor_ngm_communist_dictatorship_female:0 "$councilor_ngm_communist_dictatorship$"
+ councilor_ngm_communist_dictatorship_desc:0 "国家業務を統括し、必要な業務を統括する政治家"
+
+ councilor_ngm_demagoguery:0 "国家宣伝大臣"
+ councilor_ngm_demagoguery_female:0 "$councilor_ngm_demagoguery$"
+ councilor_ngm_demagoguery_desc:0 "国家としての方針を喧伝し、人々を指導する役所の長"
+
+ councilor_ngm_order_of_chivalry:0 "騎士団総長"
+ councilor_ngm_order_of_chivalry_female:0 "$councilor_ngm_order_of_chivalry$"
+ councilor_ngm_order_of_chivalry_desc:0 "騎士団を統括し、伝統と戦力を維持向上させる名誉ある軍人"
+
+ councilor_ngm_honorary_imperialism:0 "紋章院総裁"
+ councilor_ngm_honorary_imperialism_female:0 "$councilor_ngm_honorary_imperialism$"
+ councilor_ngm_honorary_imperialism_desc:0 "紋章を司り、家閣や称号の格付けに責任を負う宮廷職"
+
+ councilor_ngm_guiding_principle:0 "副総統"
+ councilor_ngm_guiding_principle_female:0 "$councilor_ngm_guiding_principle$"
+ councilor_ngm_guiding_principle_desc:0 "国家元首を支え、国家元首と軍人や政治家を繋ぐ潤滑油となる人物"
+
+ councilor_ngm_party_rule:0 "幹事長"
+ councilor_ngm_party_rule_female:0 "$councilor_ngm_party_rule$"
+ councilor_ngm_party_rule_desc:0 "党内政治を統御し、政治家や党員の利害を調整する役職"
+
+ councilor_ngm_freedom_in_obedience:0 "護民官"
+ councilor_ngm_freedom_in_obedience_female:0 "$councilor_ngm_freedom_in_obedience$"
+ councilor_ngm_freedom_in_obedience_desc:0 "民衆への過度な侵害が行われないように監視する役職"
+
+ councilor_ngm_caste_system:0 "大バラモン"
+ councilor_ngm_caste_system_female:0 "$councilor_ngm_caste_system$"
+ councilor_ngm_caste_system_desc:0 "歴史的な権威主義的聖職者の伝統的指導者"
+
+ councilor_ngm_tribalism:0 "大部族長"
+ councilor_ngm_tribalism_female:0 "$councilor_ngm_tribalism$"
+ councilor_ngm_tribalism_desc:0 "各部族を束ねる伝統的役職"
+
+ councilor_ngm_court_politics:0 "宮中伯"
+ councilor_ngm_court_politics_female:0 "$councilor_ngm_court_politics$"
+ councilor_ngm_court_politics_desc:0 "他貴族を監視し、非道を行わないかを牽制する貴族職"
+
+ councilor_ngm_social_darvinism:0 "国家親衛隊長官"
+ councilor_ngm_social_darvinism_female:0 "$councilor_ngm_social_darvinism$"
+ councilor_ngm_social_darvinism_desc:0 "国家の秩序を統括し、一つの思想へと向かわせる軍人"
+
+ councilor_ngm_apprenticeship:0 "大ギルド長"
+ councilor_ngm_apprenticeship_female:0 "$councilor_ngm_apprenticeship$"
+ councilor_ngm_apprenticeship_desc:0 "国内最大の商業ギルドを統括する財界の大物"
+
+ councilor_ngm_direct_democracy:0 "国家参事官"
+ councilor_ngm_direct_democracy_female:0 "$councilor_ngm_direct_democracy$"
+ councilor_ngm_direct_democracy_desc:0 "国政に参画し、直接市民の意見を政府に伝達する特別な政治家"
+
+ councilor_ngm_liberal_education:0 "教育長官"
+ councilor_ngm_liberal_education_female:0 "$councilor_ngm_liberal_education$"
+ councilor_ngm_liberal_education_desc:0 "自由教育を広め、必要な教育を実施する役所の長"
+
+ councilor_ngm_demonstration_culture:0 "国家請願担当官"
+ councilor_ngm_demonstration_culture_female:0 "$councilor_ngm_demonstration_culture$"
+ councilor_ngm_demonstration_culture_desc:0 "国民の請願を取りまとめ、政策へ反映させる業務を遂行する担当者"
+
+ councilor_ngm_open_forum:0 "討議長"
+ councilor_ngm_open_forum_female:0 "$councilor_ngm_open_forum$"
+ councilor_ngm_open_forum_desc:0 "国家的ディベートを取り仕切り、すべての見解に決着をつける高等官"
+
+ councilor_ngm_consumer_society:0 "消費者長官"
+ councilor_ngm_consumer_society_female:0 "$councilor_ngm_consumer_society$"
+ councilor_ngm_consumer_society_desc:0 "消費を推奨し、安全な商品を市民へ届ける責任者"
+
+ councilor_ngm_social_welfare:0 "厚生大臣"
+ councilor_ngm_social_welfare_female:0 "$councilor_ngm_social_welfare$"
+ councilor_ngm_social_welfare_desc:0 "国民の福祉を整備し、国民に最大限の厚生業務を行う役所の長"
+
+ councilor_ngm_cosmic_scale_liberation:0 "宇宙の解放者"
+ councilor_ngm_cosmic_scale_liberation_female:0 "$councilor_ngm_cosmic_scale_liberation$"
+ councilor_ngm_cosmic_scale_liberation_desc:0 "宇宙を非道から解放し、自由をもたらすことを使命とする人物"
+
+ councilor_ngm_ultimate_freedom_of_thought:0 "学術会議議長"
+ councilor_ngm_ultimate_freedom_of_thought_female:0 "$councilor_ngm_ultimate_freedom_of_thought$"
+ councilor_ngm_ultimate_freedom_of_thought_desc:0 "学者による国家的会議を主催する高名な学者"
+
+ councilor_ngm_right_to_bear_arms:0 "全国ライフル協会会長"
+ councilor_ngm_right_to_bear_arms_female:0 "$councilor_ngm_right_to_bear_arms$"
+ councilor_ngm_right_to_bear_arms_desc:0 "全国民の武装権と自由を保護するワイルドな指導者"
+
+ councilor_ngm_shared_values:0 "総務大臣"
+ councilor_ngm_shared_values_female:0 "$councilor_ngm_shared_values$"
+ councilor_ngm_shared_values_desc:0 "総合的に国政を取り扱い、各省庁の事務を統括する閣僚"
+
+ councilor_ngm_go_along_with:0 "国家進歩管理官"
+ councilor_ngm_go_along_with_female:0 "$councilor_ngm_go_along_with$"
+ councilor_ngm_go_along_with_desc:0 "国家の進歩を進め、新たな道を切り開く高等官"
+
+ councilor_ngm_globalism:0 "交流管理監"
+ councilor_ngm_globalism_female:0 "$councilor_ngm_globalism$"
+ councilor_ngm_globalism_desc:0 "異民族との交流を促進し、問題が発生しないように監視する管理官"
+
+ councilor_ngm_multiculturalism:0 "共生担当補佐官"
+ councilor_ngm_multiculturalism_female:0 "$councilor_ngm_multiculturalism$"
+ councilor_ngm_multiculturalism_desc:0 "異民族の定住を促進し、国家元首に異文化について助言する補佐官"
+
+ councilor_ngm_paternalism:0 "護国卿"
+ councilor_ngm_paternalism_female:0 "$councilor_ngm_paternalism$"
+ councilor_ngm_paternalism_desc:0 "属国を守り、自国を守る総責任者"
+
+ councilor_ngm_accept_everyone:0 "難民担当弁務官"
+ councilor_ngm_accept_everyone_female:0 "$councilor_ngm_accept_everyone$"
+ councilor_ngm_accept_everyone_desc:0 "難民や移民の見解を代弁し、国際社会に訴える専門的外交官"
+
+ councilor_ngm_people_flying_away:0 "移民局長"
+ councilor_ngm_people_flying_away_female:0 "$councilor_ngm_people_flying_away$"
+ councilor_ngm_people_flying_away_desc:0 "移民を制御し、違法な移民を差し止める役所の長"
+
+ councilor_ngm_exclusive_community:0 "純血審問長官"
+ councilor_ngm_exclusive_community_female:0 "$councilor_ngm_exclusive_community$"
+ councilor_ngm_exclusive_community_desc:0 "社会と国民の純血を監督し、秩序を維持する審問官"
+
+ councilor_ngm_remorseless_justice:0 "正義執行官"
+ councilor_ngm_remorseless_justice_female:0 "$councilor_ngm_remorseless_justice$"
+ councilor_ngm_remorseless_justice_desc:0 "正義を執行し、秩序をもたらす国民的英雄"
+
+ councilor_ngm_disdain_for_others:0 "侮辱長官"
+ councilor_ngm_disdain_for_others_female:0 "$councilor_ngm_disdain_for_others$"
+ councilor_ngm_disdain_for_others_desc:0 "相手を侮辱するための専門的役所の長"
+
+ councilor_ngm_gentlemanly_disgust:0 "紳士的距離感"
+ councilor_ngm_gentlemanly_disgust_female:0 "$councilor_ngm_gentlemanly_disgust$"
+ councilor_ngm_gentlemanly_disgust_desc:0 ""
+
+ councilor_ngm_erasure:0 "記録の整理者"
+ councilor_ngm_erasure_female:0 "$councilor_ngm_erasure$"
+ councilor_ngm_erasure_desc:0 "各種記録の削除や、整理を司る担当官"
+
+ councilor_ngm_elitism:0 "大ラビ"
+ councilor_ngm_elitism_female:0 "$councilor_ngm_elitism$"
+ councilor_ngm_elitism_desc:0 "伝統的な排他的宗教の最高指導者"
+
+ councilor_ngm_dissection:0 "異種族研究長官"
+ councilor_ngm_dissection_female:0 "$councilor_ngm_dissection$"
+ councilor_ngm_dissection_desc:0 "異種族を研究し、自民族へと活かすマッドサイエンティスト"
+
+ councilor_ngm_imperialism:0 "植民地大臣"
+ councilor_ngm_imperialism_female:0 "$councilor_ngm_imperialism$"
+ councilor_ngm_imperialism_desc:0 "他国への拡大と統治を専門とする役所の長"
+
+ councilor_ngm_big_ship_policy:0 "艦政本部長"
+ councilor_ngm_big_ship_policy_female:0 "$councilor_ngm_big_ship_policy$"
+ councilor_ngm_big_ship_policy_desc:0 "艦隊整備計画を立案し、実行する軍事責任者"
+
+ councilor_ngm_military_industrial_complex:0 "死の商人"
+ councilor_ngm_military_industrial_complex_female:0 "$councilor_ngm_military_industrial_complex$"
+ councilor_ngm_military_industrial_complex_desc:0 "武器販売を通じて国政へと参画した恨まれる者"
+
+ councilor_ngm_war_prosperity:0 "魂の換金者"
+ councilor_ngm_war_prosperity_female:0 "$councilor_ngm_war_prosperity$"
+ councilor_ngm_war_prosperity_desc:0 "罪と金を等価交換するにはそれなりの技量と経験が必要だ"
+
+ councilor_ngm_military_regime:0 "陸軍総司令官"
+ councilor_ngm_military_regime_female:0 "$councilor_ngm_military_regime$"
+ councilor_ngm_military_regime_desc:0 "全陸軍を統括し、指揮する高位軍人"
+
+ councilor_ngm_The_Struggle_for_Struggle:0 "戦争狂"
+ councilor_ngm_The_Struggle_for_Struggle_female:0 "$councilor_ngm_The_Struggle_for_Struggle$"
+ councilor_ngm_The_Struggle_for_Struggle_desc:0 "戦争を鼓舞し、闘争のための闘争を遂行する狂人"
+
+ councilor_ngm_aegis_shield:0 "国家守護司令長官"
+ councilor_ngm_aegis_shield_female:0 "$councilor_ngm_aegis_shield$"
+ councilor_ngm_aegis_shield_desc:0 "国体を護持し、国民を守ることを使命とする高位軍人"
+
+ councilor_ngm_prosperity_advocate:0 "繁栄尊師"
+ councilor_ngm_prosperity_advocate_female:0 "$councilor_ngm_prosperity_advocate$"
+ councilor_ngm_prosperity_advocate_desc:0 "繁栄を導き人々を教導する指導者"
+
+ councilor_ngm_armed_pacifism:0 "国境警備隊長"
+ councilor_ngm_armed_pacifism_female:0 "$councilor_ngm_armed_pacifism$"
+ councilor_ngm_armed_pacifism_desc:0 "国境を警備し、国を守ることを主任務とした軍人"
+
+ councilor_ngm_active_pacifist:0 "平和軍司令官"
+ councilor_ngm_active_pacifist_female:0 "$councilor_ngm_active_pacifist$"
+ councilor_ngm_active_pacifist_desc:0 "平和を維持するという崇高な目標なために武力を行使する責任者"
+
+ councilor_ngm_messenger_of_peace:0 "平和の使者"
+ councilor_ngm_messenger_of_peace_female:0 "$councilor_ngm_messenger_of_peace$"
+ councilor_ngm_messenger_of_peace_desc:0 "平和を愛し、人々に平和を届けることを夢見る高官"
+
+ councilor_ngm_space_security_headquarters:0 "最高交渉官"
+ councilor_ngm_space_security_headquarters_female:0 "$councilor_ngm_space_security_headquarters$"
+ councilor_ngm_space_security_headquarters_desc:0 "国家間の交渉を行う最高位の外交官"
+
+ councilor_ngm_mechanical_faith:0 "機械法王"
+ councilor_ngm_mechanical_faith_female:0 "$councilor_ngm_mechanical_faith$"
+ councilor_ngm_mechanical_faith_desc:0 "機械教を統御し、信者に機械を広める信仰技術者"
+
+ councilor_ngm_missionary_group:0 "伝道団総長"
+ councilor_ngm_missionary_group_female:0 "$councilor_ngm_missionary_group$"
+ councilor_ngm_missionary_group_desc:0 "他国への殿堂を行う善良な一団の長"
+
+ councilor_ngm_defender_of_the_faith:0 "枢機卿"
+ councilor_ngm_defender_of_the_faith_female:0 "$councilor_ngm_defender_of_the_faith$"
+ councilor_ngm_defender_of_the_faith_desc:0 "教会を統率し、国政にも大きな影響を与える高位聖職者"
+
+ councilor_ngm_divination:0 "神官統理"
+ councilor_ngm_divination_female:0 "$councilor_ngm_divination$"
+ councilor_ngm_divination_desc:0 "神官を統率し、最高の占いを行う高位聖職者"
+
+ councilor_ngm_cultural_consumption:0 "文部監"
+ councilor_ngm_cultural_consumption_female:0 "$councilor_ngm_cultural_consumption$"
+ councilor_ngm_cultural_consumption_desc:0 "教育を監督し、必要な学術措置を執り行う教育の権威"
+
+ councilor_ngm_ai_assistance:0 "AI管理官"
+ councilor_ngm_ai_assistance_female:0 "$councilor_ngm_ai_assistance$"
+ councilor_ngm_ai_assistance_desc:0 "AIを管理することと機械と人をつなぐ専門家"
+
+ councilor_ngm_machines_are_our_friends:0 "科学技術長官"
+ councilor_ngm_machines_are_our_friends_female:0 "$councilor_ngm_machines_are_our_friends$"
+ councilor_ngm_machines_are_our_friends_desc:0 "科学技術の発展とその敷衍を行う役所の長"
+
+ councilor_ngm_longing_for_the_future:0 "宇宙長官"
+ councilor_ngm_longing_for_the_future_female:0 "$councilor_ngm_longing_for_the_future$"
+ councilor_ngm_longing_for_the_future_desc:0 "宇宙へと手を伸ばし、進歩の歩みを進める責任者"
+
+ councilor_ngm_experimental_substance:0 "特級研究官"
+ councilor_ngm_experimental_substance_female:0 "$councilor_ngm_experimental_substance$"
+ councilor_ngm_experimental_substance_desc:0 "特別な研究を行うことが許可された特別な研究官"
+
+ councilor_ngm_industrial_capitalism:0 "経済連盟代表"
+ councilor_ngm_industrial_capitalism_female:0 "$councilor_ngm_industrial_capitalism$"
+ councilor_ngm_industrial_capitalism_desc:0 "国内経済団体を束ねた圧力団体の長"
+
+ councilor_ngm_experimental_practice:0 "特許庁長官"
+ councilor_ngm_experimental_practice_female:0 "$councilor_ngm_experimental_practice$"
+ councilor_ngm_experimental_practice_desc:0 "特許の許認可と知的財産訴訟を取り扱う事務責任者"
+
+ councilor_ngm_paranoia:0 "最高技師長"
+ councilor_ngm_paranoia_female:0 "$councilor_ngm_paranoia$"
+ councilor_ngm_paranoia_desc:0 "AIを管理することを任務とした、実質的な最高権力者"
+
+ councilor_ngm_equality_in_society:0 "平等監視委員長"
+ councilor_ngm_equality_in_society_female:0 "$councilor_ngm_equality_in_society$"
+ councilor_ngm_equality_in_society_desc:0 "社会的平等があらゆるところではかられているか監視する委員会の長"
+
+ councilor_ngm_sectionalism:0 "教理長官"
+ councilor_ngm_sectionalism_female:0 "$councilor_ngm_sectionalism$"
+ councilor_ngm_sectionalism_desc:0 "教義に従い、資源の再分配を行う役所の長"
+
+ councilor_ngm_peoples_army:0 "人民武力長官"
+ councilor_ngm_peoples_army_female:0 "$councilor_ngm_peoples_army$"
+ councilor_ngm_peoples_army_desc:0 "人民を守るために人民を兵力として運用する軍事指揮者"
+
+ councilor_ngm_economic_primitivism:0 "原始の豪商"
+ councilor_ngm_economic_primitivism_female:0 "$councilor_ngm_economic_primitivism$"
+ councilor_ngm_economic_primitivism_desc:0 "原始的な経済における、武力による経済を成り立たせる大物"
+
+ councilor_ngm_land_sharing:0 "土地管理局長"
+ councilor_ngm_land_sharing_female:0 "$councilor_ngm_land_sharing$"
+ councilor_ngm_land_sharing_desc:0 "国有地を管理し、様々な建築を統率する事務長"
+
+ councilor_ngm_communism:0 "最高会議幹部会議長"
+ councilor_ngm_communism_female:0 "$councilor_ngm_communism$"
+ councilor_ngm_communism_desc:0 "国家の最高幹部が集まる会議の議長"
+
+ councilor_ngm_development_dictatorship:0 "国家警察長官"
+ councilor_ngm_development_dictatorship_female:0 "$councilor_ngm_development_dictatorship$"
+ councilor_ngm_development_dictatorship_desc:0 "国家警察を束ね、治安を維持する責任者"
+
+ councilor_ngm_commercialism:0 "商務長官"
+ councilor_ngm_commercialism_female:0 "$councilor_ngm_commercialism$"
+ councilor_ngm_commercialism_desc:0 "商業を司り、安定流通を目指す閣僚"
+
+ councilor_ngm_financing:0 "金融長官"
+ councilor_ngm_financing_female:0 "$councilor_ngm_financing$"
+ councilor_ngm_financing_desc:0 "金融を司り、安定した金融経済を維持する閣僚"
+
+ councilor_ngm_information:0 "デジタル長官"
+ councilor_ngm_information_female:0 "$councilor_ngm_information$"
+ councilor_ngm_information_desc:0 "デジタル分野の規制や発展を支援する役所の長"
+
+ councilor_ngm_agriculture:0 "農務長官"
+ councilor_ngm_agriculture_female:0 "$councilor_ngm_agriculture$"
+ councilor_ngm_agriculture_desc:0 "農業生産を司り、安定供給を目指す閣僚"
+
+ councilor_ngm_deregulation:0 "行政改革担当大臣"
+ councilor_ngm_deregulation_female:0 "$councilor_ngm_deregulation$"
+ councilor_ngm_deregulation_desc:0 "行政改革を主任務とした閣僚"
+
+ councilor_ngm_CIA:0 "国家中央情報局長官"
+ councilor_ngm_CIA_female:0 "$councilor_ngm_CIA$"
+ councilor_ngm_CIA_desc:0 "対外的諜報活動を統括し、国の安全を守る責任者"
+
+ councilor_ngm_information_operation:0 "情報操作"
+ councilor_ngm_information_operation_female:0 "$councilor_ngm_information_operation$"
+ councilor_ngm_information_operation_desc:0 ""
+
+ councilor_ngm_cryptography:0 "国家暗号技師長"
+ councilor_ngm_cryptography_female:0 "$councilor_ngm_cryptography$"
+ councilor_ngm_cryptography_desc:0 "国家が作成する暗号を精査し、機密性を維持する責任者"
+
+ councilor_ngm_parabola:0 "銀河監視官"
+ councilor_ngm_parabola_female:0 "$councilor_ngm_parabola$"
+ councilor_ngm_parabola_desc:0 "全銀河を監視し、必要な警告を行う専門官"
+
+ councilor_ngm_smile:0 "国際仲介官"
+ councilor_ngm_smile_female:0 "$councilor_ngm_smile$"
+ councilor_ngm_smile_desc:0 "国家間の問題を仲介し、解決に導く特任の外交官"
+
+ councilor_ngm_mastermind:0 "国際的黒幕"
+ councilor_ngm_mastermind_female:0 "$councilor_ngm_mastermind$"
+ councilor_ngm_mastermind_desc:0 "銀河はこの人物の掌で踊っているにすぎない"
+
+ councilor_ngm_glorious_isolation:0 "外務卿"
+ councilor_ngm_glorious_isolation_female:0 "$councilor_ngm_glorious_isolation$"
+ councilor_ngm_glorious_isolation_desc:0 "外交を統御する役所の長"
+
+ councilor_ngm_FBI:0 "国家捜査局長官"
+ councilor_ngm_FBI_female:0 "$councilor_ngm_FBI$"
+ councilor_ngm_FBI_desc:0 "国家の犯罪を捜査し、国内の秩序を維持する責任者"
+
+ councilor_ngm_internal_affairs:0 "内政査察監"
+ councilor_ngm_internal_affairs_female:0 "$councilor_ngm_internal_affairs$"
+ councilor_ngm_internal_affairs_desc:0 "政治の自立や不正を監査し、独力の政府を目指す特別公務員"
+
+ councilor_ngm_inner_satisfaction:0 "満腹大臣"
+ councilor_ngm_inner_satisfaction_female:0 "$councilor_ngm_inner_satisfaction$"
+ councilor_ngm_inner_satisfaction_desc:0 "人々を満腹にさせるための閣僚"
+
+ councilor_ngm_armed_neutrality:0 "国防事務監"
+ councilor_ngm_armed_neutrality_female:0 "$councilor_ngm_armed_neutrality$"
+ councilor_ngm_armed_neutrality_desc:0 "国防に関する事務を統括し、効率よく軍事行動が行えるようと計らう責任者"
+
+ councilor_ngm_interest_representation:0 "国家渉外理事"
+ councilor_ngm_interest_representation_female:0 "$councilor_ngm_interest_representation$"
+ councilor_ngm_interest_representation_desc:0 "国家利益を確保し、外交発言力を確保するための特任外交官"
+
+ councilor_ngm_environmental_maintenance:0 "主任環境技師"
+ councilor_ngm_environmental_maintenance_female:0 "$councilor_ngm_environmental_maintenance$"
+ councilor_ngm_environmental_maintenance_desc:0 "惑星環境の整備や調査を主任務とする主任技術者"
+
+ councilor_ngm_pest_control:0 "駆除軍令官"
+ councilor_ngm_pest_control_female:0 "$councilor_ngm_pest_control$"
+ councilor_ngm_pest_control_desc:0 "不埒な開発主義者を制圧することを義務付けられた高位軍人"
+
+ councilor_ngm_natural_adaptation:0 "銀河自然監督官"
+ councilor_ngm_natural_adaptation_female:0 "$councilor_ngm_natural_adaptation$"
+ councilor_ngm_natural_adaptation_desc:0 "銀河中の自然を尊重し、保護できるよう支援する高等官"
+
+ councilor_ngm_planetary_garden:0 "国家庭園管理官"
+ councilor_ngm_planetary_garden_female:0 "$councilor_ngm_planetary_garden$"
+ councilor_ngm_planetary_garden_desc:0 "国家規模の庭園を管理し、美しい状態を維持する"
+
+ councilor_ngm_space_security_headquarters:0 "大生命保護官"
+ councilor_ngm_space_security_headquarters_female:0 "$councilor_ngm_space_security_headquarters$"
+ councilor_ngm_space_security_headquarters_desc:0 "この世で最も尊い生命を保護し、安全を確保する高等官"
+
+ councilor_ngm_nature_faith:0 "巫女姫"
+ councilor_ngm_nature_faith_female:0 "$councilor_ngm_nature_faith$"
+ councilor_ngm_nature_faith_desc:0 "神に祈り、自然を尊ぶ神官の中でも伝統的に指導者と崇められる巫女"
+
+ councilor_ngm_grand_monument:0 "国家建築士"
+ councilor_ngm_grand_monument_female:0 "$councilor_ngm_grand_monument$"
+ councilor_ngm_grand_monument_desc:0 "国家規模の建造を行う最高技術者"
+
+ councilor_ngm_destructive_digging:0 "破壊長官"
+ councilor_ngm_destructive_digging_female:0 "$councilor_ngm_destructive_digging$"
+ councilor_ngm_destructive_digging_desc:0 "惑星を破壊し、鉱物生産を行う担当部署の長"
+
+ councilor_ngm_irreversible_industrialization:0 "工業大臣"
+ councilor_ngm_irreversible_industrialization_female:0 "$councilor_ngm_irreversible_industrialization$"
+ councilor_ngm_irreversible_industrialization_desc:0 "工業生産の向上を目指し、必要な措置を講じる役職の閣僚"
+
+ councilor_ngm_infrastructure_construction:0 "国土長官"
+ councilor_ngm_infrastructure_construction_female:0 "$councilor_ngm_infrastructure_construction$"
+ councilor_ngm_infrastructure_construction_desc:0 "国土を管理し、測量や調査を遂行する役所の長"
+
+ councilor_ngm_nationwide_development:0 "開発長官"
+ councilor_ngm_nationwide_development_female:0 "$councilor_ngm_nationwide_development$"
+ councilor_ngm_nationwide_development_desc:0 "国土を開発し、国家の基盤を作る責任者"
+
+ councilor_ngm_planetary_scale_irrigation:0 "農林大臣"
+ councilor_ngm_planetary_scale_irrigation_female:0 "$councilor_ngm_planetary_scale_irrigation$"
+ councilor_ngm_planetary_scale_irrigation_desc:0 "農業を通じて国家の繁栄を導く閣僚"
+
+ councilor_ngm_modification_engineering:0 "開発大臣"
+ councilor_ngm_modification_engineering_female:0 "$councilor_ngm_modification_engineering$"
+ councilor_ngm_modification_engineering_desc:0 "国土開発を通じ、国家を発展させる役職の閣僚"
+
+ councilor_ngm_diplomatic_etiquette:0 "儀典局長"
+ councilor_ngm_diplomatic_etiquette_female:0 "$councilor_ngm_diplomatic_etiquette$"
+ councilor_ngm_diplomatic_etiquette_desc:0 "外交儀礼を司り、外交・儀礼で国家的に発言力のある人物"
+
+ councilor_ngm_exchange_of_honor:0 "外交典礼監"
+ councilor_ngm_exchange_of_honor_female:0 "$councilor_ngm_exchange_of_honor$"
+ councilor_ngm_exchange_of_honor_desc:0 "外交における儀礼問題とマナーを解釈し、指導する高官"
+
+ councilor_ngm_heroic_volunteer_force:0 "大元帥"
+ councilor_ngm_heroic_volunteer_force_female:0 "$councilor_ngm_heroic_volunteer_force$"
+ councilor_ngm_heroic_volunteer_force_desc:0 "国軍の最高司令官にして国家の象徴的存在である最高位軍人"
+
+ councilor_ngm_the_self_righteous_hero:0 "大英雄"
+ councilor_ngm_the_self_righteous_hero_female:0 "$councilor_ngm_the_self_righteous_hero$"
+ councilor_ngm_the_self_righteous_hero_desc:0 "国民最大の英雄であり、国民の憧れの存在"
+
+ councilor_ngm_respect_act:0 "紋章特許審問官"
+ councilor_ngm_respect_act_female:0 "$councilor_ngm_respect_act$"
+ councilor_ngm_respect_act_desc:0 "紋章の許可、不許可を司り、統治者層に影響を有する人物"
+
+ councilor_ngm_personal_interest:0 "トップ・オブ・成金"
+ councilor_ngm_personal_interest_female:0 "$councilor_ngm_personal_interest$"
+ councilor_ngm_personal_interest_desc:0 "成金の中で最も成功した成金中の成金"
+
+ councilor_ngm_hypothecation_of_human_rights:0 "人権監査委員長"
+ councilor_ngm_hypothecation_of_human_rights_female:0 "$councilor_ngm_hypothecation_of_human_rights$"
+ councilor_ngm_hypothecation_of_human_rights_desc:0 "人権が適切に売却されているかを査定する高官"
+
+ councilor_ngm_money_penalty:0 "司法金融長官"
+ councilor_ngm_money_penalty_female:0 "$councilor_ngm_money_penalty$"
+ councilor_ngm_money_penalty_desc:0 "司法を金で代替する専門官僚"
+
+ councilor_ngm_profit_motive:0 "公正取引委員長"
+ councilor_ngm_profit_motive_female:0 "$councilor_ngm_profit_motive$"
+ councilor_ngm_profit_motive_desc:0 "リベートが適切に渡されているかを監査する高官"
+
+ councilor_ngm_securing_real_benefits:0 "ビッグ・ドン"
+ councilor_ngm_securing_real_benefits_female:0 "$councilor_ngm_securing_real_benefits$"
+ councilor_ngm_securing_real_benefits_desc:0 "首領のなかの首領。それだけでいい"
+
+ councilor_ngm_producer_consumer_society:0 "経済産業長官"
+ councilor_ngm_producer_consumer_society_female:0 "$councilor_ngm_producer_consumer_society$"
+ councilor_ngm_producer_consumer_society_desc:0 "経済を管理し、必要な経済政策を取り扱う閣僚"
+
+ councilor_ngm_p_constitution:0 "憲法院総裁"
+ councilor_ngm_p_constitution_female:0 "$councilor_ngm_p_constitution$"
+ councilor_ngm_p_constitution_desc:0 "憲法に通じ、憲法を愛した専門家"
+
+ councilor_ngm_p_medal:0 "式部官長"
+ councilor_ngm_p_medal_female:0 "$councilor_ngm_p_medal$"
+ councilor_ngm_p_medal_desc:0 "式典を司る上級官僚"
+
+ councilor_ngm_p_agriculture:0 "国家農業協同組合長"
+ councilor_ngm_p_agriculture_female:0 "$councilor_ngm_p_agriculture$"
+ councilor_ngm_p_agriculture_desc:0 "国家の農業政策に発言力を有する組合長"
+
+ councilor_ngm_p_joint:0 "統合軍司令長官"
+ councilor_ngm_p_joint_female:0 "$councilor_ngm_p_joint$"
+ councilor_ngm_p_joint_desc:0 "国軍を総合的に管理する高位軍人"
+
+ councilor_ngm_p_patriotism:0 "愛国教育委員長"
+ councilor_ngm_p_patriotism_female:0 "$councilor_ngm_p_patriotism$"
+ councilor_ngm_p_patriotism_desc:0 "国民の愛国的精神を鼓舞する教育行政官"
+
+ councilor_ngm_p_fund:0 "友愛社総裁"
+ councilor_ngm_p_fund_female:0 "$councilor_ngm_p_fund$"
+ councilor_ngm_p_fund_desc:0 "人々を慈しむ精神を忘れない慈善団体の長"
+
+ councilor_ngm_p_evacuation:0 "国民防衛総司令官"
+ councilor_ngm_p_evacuation_female:0 "$councilor_ngm_p_evacuation$"
+ councilor_ngm_p_evacuation_desc:0 "国民を守ることを主任務とした高位軍人"
+
+ councilor_ngm_p_military:0 "帝国在郷軍人会長"
+ councilor_ngm_p_military_female:0 "$councilor_ngm_p_military$"
+ councilor_ngm_p_military_desc:0 "退役軍人の代表者として国政に影響を及ぼす人物"
+
+ councilor_ngm_p_vassal:0 "内大臣"
+ councilor_ngm_p_vassal_female:0 "$councilor_ngm_p_vassal$"
+ councilor_ngm_p_vassal_desc:0 "帝国の長年にわたる功績として暗然たる影響力を発揮する高官"
+
+ councilor_ngm_p_supply:0 "軍需本部司令官"
+ councilor_ngm_p_supply_female:0 "$councilor_ngm_p_supply$"
+ councilor_ngm_p_supply_desc:0 "軍隊の補給に関して責任を負う高位軍人"
+
+ councilor_ngm_p_crime:0 "治安検事総長"
+ councilor_ngm_p_crime_female:0 "$councilor_ngm_p_crime$"
+ councilor_ngm_p_crime_desc:0 "治安を守ることを仕事とするうだつが上がらない官僚"
+
+ councilor_ngm_p_management:0 "帝国組合長"
+ councilor_ngm_p_management_female:0 "$councilor_ngm_p_management$"
+ councilor_ngm_p_management_desc:0 "帝国中の組合を束ねて政府に要求を行う圧力団体の長"
+
+ councilor_ngm_p_research:0 "研究所シニアフェロー"
+ councilor_ngm_p_research_female:0 "$councilor_ngm_p_research$"
+ councilor_ngm_p_research_desc:0 "国際平和研究所で鋭敏な頭脳が評価されて政府に助言を行う政治専門家"
+
+ councilor_ngm_p_assistance:0 "国際協力大使"
+ councilor_ngm_p_assistance_female:0 "$councilor_ngm_p_assistance$"
+ councilor_ngm_p_assistance_desc:0 "国際協力を行うことを主任務とした高位の外交官"
+
+ councilor_ngm_p_bombing:0 "爆撃司令長官"
+ councilor_ngm_p_bombing_female:0 "$councilor_ngm_p_bombing$"
+ councilor_ngm_p_bombing_desc:0 "朝からの核攻撃は最高だ!"
+
+ councilor_ngm_p_block:0 "経済安全保障長官"
+ councilor_ngm_p_block_female:0 "$councilor_ngm_p_block$"
+ councilor_ngm_p_block_desc:0 "国内経済を保護し、流通基盤を保護する役所の長"
+
+ councilor_ngm_p_councilor:0 "連邦大臣"
+ councilor_ngm_p_councilor_female:0 "$councilor_ngm_p_councilor$"
+ councilor_ngm_p_councilor_desc:0 "連邦の基盤を保護し、最大限の自由を確保させる閣僚"
+
+ councilor_ngm_corporate_empire:0 "社内政治専務"
+ councilor_ngm_corporate_empire_female:0 "$councilor_ngm_corporate_empire$"
+ councilor_ngm_corporate_empire_desc:0 "社内における政治統制と利益折衝を専門とする役員"
+
+ councilor_ngm_high_tech_company:0 "技術部長"
+ councilor_ngm_high_tech_company_female:0 "$councilor_ngm_high_tech_company$"
+ councilor_ngm_high_tech_company_desc:0 "技術開発部門の長として企業を支える専門職の役員"
+
+ councilor_ngm_smokestack_industry:0 "産業部長"
+ councilor_ngm_smokestack_industry_female:0 "$councilor_ngm_smokestack_industry$"
+ councilor_ngm_smokestack_industry_desc:0 "産業開発と効率的なチェーンを組み上げる専門家"
+
+ councilor_ngm_hereditary_officers:0 "特務取締役"
+ councilor_ngm_hereditary_officers_female:0 "$councilor_ngm_hereditary_officers$"
+ councilor_ngm_hereditary_officers_desc:0 "世襲で取締役の地位を維持している者の中で最高位の者"
+
+ councilor_ngm_zaibatsu:0 "総帥補佐"
+ councilor_ngm_zaibatsu_female:0 "$councilor_ngm_zaibatsu$"
+ councilor_ngm_zaibatsu_desc:0 "財閥の総帥を補佐し、不必要な業務を総帥から解放する重要職"
+
+ councilor_ngm_financial_enterprises:0 "金融部長"
+ councilor_ngm_financial_enterprises_female:0 "$councilor_ngm_financial_enterprises$"
+ councilor_ngm_financial_enterprises_desc:0 "社債等を管理し、必要な措置を講じる責任者"
+
+ councilor_ngm_information_company:0 "システム部長"
+ councilor_ngm_information_company_female:0 "$councilor_ngm_information_company$"
+ councilor_ngm_information_company_desc:0 "システムを構築し、維持する大役をこなす部署の長"
+
+ councilor_ngm_social_enterprise:0 "社会共生部長"
+ councilor_ngm_social_enterprise_female:0 "$councilor_ngm_social_enterprise$"
+ councilor_ngm_social_enterprise_desc:0 "社会と企業の共生を発展を図る部門の長"
+
+ councilor_ngm_general_contractor:0 "開発部長"
+ councilor_ngm_general_contractor_female:0 "$councilor_ngm_general_contractor$"
+ councilor_ngm_general_contractor_desc:0 "社有資産を整備し、必要な工事や施設管理を行う部門長"
+
+ councilor_ngm_agricultural_company:0 "農業開発部長"
+ councilor_ngm_agricultural_company_female:0 "$councilor_ngm_agricultural_company$"
+ councilor_ngm_agricultural_company_desc:0 "農業を通じて企業の繁栄を導く閣僚"
+
+ councilor_ngm_shipping_company:0 "運輸部長"
+ councilor_ngm_shipping_company_female:0 "$councilor_ngm_shipping_company$"
+ councilor_ngm_shipping_company_desc:0 "社内外の運送と効果的な物流ロジスティクスを管理する花形部門の長"
+
+ councilor_ngm_operating_company:0 "投資部長"
+ councilor_ngm_operating_company_female:0 "$councilor_ngm_operating_company$"
+ councilor_ngm_operating_company_desc:0 "国内外の投資を管理し、必要な資産運用を行う部門の長"
+
+ councilor_ngm_industrial_espionage:0 "情報部長"
+ councilor_ngm_industrial_espionage_female:0 "$councilor_ngm_industrial_espionage$"
+ councilor_ngm_industrial_espionage_desc:0 "社内外の情報を管理し、適切な対応を行う準備をする担当者"
+
+ councilor_ngm_rating_company:0 "一級格付け師"
+ councilor_ngm_rating_company_female:0 "$councilor_ngm_rating_company$"
+ councilor_ngm_rating_company_desc:0 "格付け会社の中でも特に一級品の格付けを行うプロフェッショナル"
+
+ councilor_ngm_underhanded_trick:0 "接待部長"
+ councilor_ngm_underhanded_trick_female:0 "$councilor_ngm_underhanded_trick$"
+ councilor_ngm_underhanded_trick_desc:0 "他国の要人を歓待し、自らの良きように操る実力者"
+
+ councilor_ngm_pc_directer:0 "総務局長"
+ councilor_ngm_pc_directer_female:0 "$councilor_ngm_pc_directer$"
+ councilor_ngm_pc_directer_desc:0 "企業内の事務を総括し、効率的な運用を目指す部局長"
+
+##############################
+#####    評議会の方針    ######
+##############################
+
+ council_agenda_agenda_ngm_positive_intervention_name:0 "積極的介入"
+ council_agenda_agenda_ngm_positive_intervention_desc:0 "国外への関与は帝国の地位をより高める"
+ agenda_ngm_positive_intervention_finish_modifier:0 "$council_agenda_agenda_ngm_positive_intervention_name$ $agenda_ref$"
+ agenda_ngm_positive_intervention_finish_modifier_desc:0 "$council_agenda_agenda_ngm_positive_intervention_desc$"
+
+ council_agenda_agenda_ngm_neutrality_confirmation_name:0 "中立の確認"
+ council_agenda_agenda_ngm_neutrality_confirmation_desc:0 "他国から自立することは帝国にとって必要だ"
+ agenda_ngm_neutrality_confirmation_finish_modifier:0 "$council_agenda_agenda_ngm_neutrality_confirmation_name$ $agenda_ref$"
+ agenda_ngm_neutrality_confirmation_finish_modifier_desc:0 "$council_agenda_agenda_ngm_neutrality_confirmation_desc$"
+
+ council_agenda_agenda_ngm_honorary_accolades_name:0 "栄誉の称賛"
+ council_agenda_agenda_ngm_honorary_accolades_desc:0 "名誉を称えることこそ国家の義務だ"
+ agenda_ngm_honorary_accolades_finish_modifier:0 "$council_agenda_agenda_ngm_honorary_accolades_name$ $agenda_ref$"
+ agenda_ngm_honorary_accolades_finish_modifier_desc:0 "$council_agenda_agenda_ngm_honorary_accolades_desc$"
+
+ council_agenda_agenda_ngm_securing_real_benefits_name:0 "実益の確保"
+ council_agenda_agenda_ngm_securing_real_benefits_desc:0 "利益であれば食べていくことができる"
+ agenda_ngm_securing_real_benefits_finish_modifier:0 "$council_agenda_agenda_ngm_securing_real_benefits_name$ $agenda_ref$"
+ agenda_ngm_securing_real_benefits_finish_modifier_desc:0 "$council_agenda_agenda_ngm_securing_real_benefits_desc$"
+
+ council_agenda_agenda_ngm_pursuit_of_economic_profit_name:0 "経済利益の追求"
+ council_agenda_agenda_ngm_pursuit_of_economic_profit_desc:0 "金、金、金。金は重要なのだ"
+ agenda_ngm_pursuit_of_economic_profit_finish_modifier:0 "$council_agenda_agenda_ngm_pursuit_of_economic_profit_name$ $agenda_ref$"
+ agenda_ngm_pursuit_of_economic_profit_finish_modifier_desc:0 "$council_agenda_agenda_ngm_pursuit_of_economic_profit_desc$"
+
+ council_agenda_agenda_ngm_reduction_of_economic_disparities_name:0 "経済的格差の是正"
+ council_agenda_agenda_ngm_reduction_of_economic_disparities_desc:0 "平等の実現は国の義務だ"
+ agenda_ngm_reduction_of_economic_disparities_finish_modifier:0 "$council_agenda_agenda_ngm_reduction_of_economic_disparities_name$ $agenda_ref$"
+ agenda_ngm_reduction_of_economic_disparities_finish_modifier_desc:0 "$council_agenda_agenda_ngm_reduction_of_economic_disparities_desc$"
+
+ council_agenda_agenda_ngm_reform_of_development_concept_name:0 "開発構想の改革"
+ council_agenda_agenda_ngm_reform_of_development_concept_desc:0 "帝国の開発追求は未来へとつながる"
+ agenda_ngm_reform_of_development_concept_finish_modifier:0 "$council_agenda_agenda_ngm_reform_of_development_concept_name$ $agenda_ref$"
+ agenda_ngm_reform_of_development_concept_finish_modifier_desc:0 "$council_agenda_agenda_ngm_reform_of_development_concept_desc$"
+
+ council_agenda_agenda_ngm_the_clamor_for_environmentalism_name:0 "環境主義の喧伝"
+ council_agenda_agenda_ngm_the_clamor_for_environmentalism_desc:0 "自然環境は保護していくべき財産だ"
+ agenda_ngm_the_clamor_for_environmentalism_finish_modifier:0 "$council_agenda_agenda_ngm_the_clamor_for_environmentalism_name$ $agenda_ref$"
+ agenda_ngm_the_clamor_for_environmentalism_finish_modifier_desc:0 "$council_agenda_agenda_ngm_the_clamor_for_environmentalism_desc$"
+
+ council_agenda_agenda_ngm_ensuring_law_and_order_name:0 "法秩序の徹底"
+ council_agenda_agenda_ngm_ensuring_law_and_order_desc:0 "法秩序の実現は必要なのだ"
+ agenda_ngm_ensuring_law_and_order_finish_modifier:0 "$council_agenda_agenda_ngm_ensuring_law_and_order_name$ $agenda_ref$"
+ agenda_ngm_ensuring_law_and_order_finish_modifier_desc:0 "$council_agenda_agenda_ngm_ensuring_law_and_order_desc$"
+
+ council_agenda_agenda_ngm_re_implementation_of_executive_education_name:0 "幹部教育の再実施"
+ council_agenda_agenda_ngm_re_implementation_of_executive_education_desc:0 "幹部こそ初心を忘れてはいけない"
+ agenda_ngm_re_implementation_of_executive_education_finish_modifier:0 "$council_agenda_agenda_ngm_re_implementation_of_executive_education_name$ $agenda_ref$"
+ agenda_ngm_re_implementation_of_executive_education_finish_modifier_desc:0 "$council_agenda_agenda_ngm_re_implementation_of_executive_education_desc$"
+
+ council_agenda_agenda_ngm_aesthetic_feast_name:0 "耽美なる祝宴"
+ council_agenda_agenda_ngm_aesthetic_feast_desc:0 "贅沢は友だ"
+ agenda_ngm_aesthetic_feast_finish_modifier:0 "$council_agenda_agenda_ngm_aesthetic_feast_name$ $agenda_ref$"
+ agenda_ngm_aesthetic_feast_finish_modifier_desc:0 "$council_agenda_agenda_ngm_aesthetic_feast_desc$"
+
+ council_agenda_agenda_ngm_promoting_academic_research_name:0 "学術研究の推進"
+ council_agenda_agenda_ngm_promoting_academic_research_desc:0 "技術の推進は発展の両輪だ"
+ agenda_ngm_promoting_academic_research_finish_modifier:0 "$council_agenda_agenda_ngm_promoting_academic_research_name$ $agenda_ref$"
+ agenda_ngm_promoting_academic_research_finish_modifier_desc:0 "$council_agenda_agenda_ngm_promoting_academic_research_desc$"
+
+ council_agenda_agenda_ngm_steps_toward_freedom_name:0 "自由への歩み"
+ council_agenda_agenda_ngm_steps_toward_freedom_desc:0 "自由に基づく派閥政治を推進する"
+ agenda_ngm_steps_toward_freedom_finish_modifier:0 "$council_agenda_agenda_ngm_steps_toward_freedom_name$ $agenda_ref$"
+ agenda_ngm_steps_toward_freedom_finish_modifier_desc:0 "$council_agenda_agenda_ngm_steps_toward_freedom_desc$"
+
+ council_agenda_agenda_ngm_reorganization_of_order_name:0 "秩序の再編"
+ council_agenda_agenda_ngm_reorganization_of_order_desc:0 "秩序はすべての上に立つ"
+ agenda_ngm_reorganization_of_order_finish_modifier:0 "$council_agenda_agenda_ngm_reorganization_of_order_name$ $agenda_ref$"
+ agenda_ngm_reorganization_of_order_finish_modifier_desc:0 "$council_agenda_agenda_ngm_reorganization_of_order_desc$"
+
+ council_agenda_agenda_ngm_promotion_of_species_understanding_name:0 "異種族理解の推進"
+ council_agenda_agenda_ngm_promotion_of_species_understanding_desc:0 "異種族の理解推進は国家規模で行われる"
+ agenda_ngm_promotion_of_species_understanding_finish_modifier:0 "$council_agenda_agenda_ngm_promotion_of_species_understanding_name$ $agenda_ref$"
+ agenda_ngm_promotion_of_species_understanding_finish_modifier_desc:0 "$council_agenda_agenda_ngm_promotion_of_species_understanding_desc$"
+
+ council_agenda_agenda_ngm_expanding_paranoia_name:0 "パラノイアの拡大"
+ council_agenda_agenda_ngm_expanding_paranoia_desc:0 "あいつらは敵なのだ……そうに違いない"
+ agenda_ngm_expanding_paranoia_finish_modifier:0 "$council_agenda_agenda_ngm_expanding_paranoia_name$ $agenda_ref$"
+ agenda_ngm_expanding_paranoia_finish_modifier_desc:0 "$council_agenda_agenda_ngm_expanding_paranoia_desc$"
+
+ council_agenda_agenda_ngm_expansion_of_bureaucracy_name:0 "官僚機構の拡大"
+ council_agenda_agenda_ngm_expansion_of_bureaucracy_desc:0 "官僚機構の強化は国の強化である"
+ agenda_ngm_expansion_of_bureaucracy_finish_modifier:0 "$council_agenda_agenda_ngm_expansion_of_bureaucracy_name$ $agenda_ref$"
+ agenda_ngm_expansion_of_bureaucracy_finish_modifier_desc:0 "$council_agenda_agenda_ngm_expansion_of_bureaucracy_desc$"
+
+ council_agenda_agenda_ngm_expansion_of_officer_corps_name:0 "将校団の拡大"
+ council_agenda_agenda_ngm_expansion_of_officer_corps_desc:0 "将校の強化は軍を強化できる"
+ agenda_ngm_expansion_of_officer_corps_finish_modifier:0 "$council_agenda_agenda_ngm_expansion_of_officer_corps_name$ $agenda_ref$"
+ agenda_ngm_expansion_of_officer_corps_finish_modifier_desc:0 "$council_agenda_agenda_ngm_expansion_of_officer_corps_desc$"
+
+ council_agenda_agenda_ngm_implementation_of_building_plans_name:0 "建築計画の実施"
+ council_agenda_agenda_ngm_implementation_of_building_plans_desc:0 "手塩にかけた建築計画は常に作成される"
+ agenda_ngm_implementation_of_building_plans_finish_modifier:0 "$council_agenda_agenda_ngm_implementation_of_building_plans_name$ $agenda_ref$"
+ agenda_ngm_implementation_of_building_plans_finish_modifier_desc:0 "$council_agenda_agenda_ngm_implementation_of_building_plans_desc$"
+
+ council_agenda_agenda_ngm_space_of_hope_name:0 "希望の宙"
+ council_agenda_agenda_ngm_space_of_hope_desc:0 "未来へと常に進み続ける"
+ agenda_ngm_space_of_hope_finish_modifier:0 "$council_agenda_agenda_ngm_space_of_hope_name$ $agenda_ref$"
+ agenda_ngm_space_of_hope_finish_modifier_desc:0 "$council_agenda_agenda_ngm_space_of_hope_desc$"
+
+ council_agenda_agenda_ngm_resolving_international_issues_name:0 "国際問題の解決"
+ council_agenda_agenda_ngm_resolving_international_issues_desc:0 "国際的問題は一国では解決しない。そもそも一国では発生しない"
+ agenda_ngm_resolving_international_issues_finish_modifier:0 "$council_agenda_agenda_ngm_resolving_international_issues_name$ $agenda_ref$"
+ agenda_ngm_resolving_international_issues_finish_modifier_desc:0 "$council_agenda_agenda_ngm_resolving_international_issues_desc$"
+
+ council_agenda_agenda_ngm_implementation_of_large_scale_actions_name:0 "大規模行動の実施"
+ council_agenda_agenda_ngm_implementation_of_large_scale_actions_desc:0 "国家拡張に向けて進め！"
+ agenda_ngm_implementation_of_large_scale_actions_finish_modifier:0 "$council_agenda_agenda_ngm_implementation_of_large_scale_actions_name$ $agenda_ref$"
+ agenda_ngm_implementation_of_large_scale_actions_finish_modifier_desc:0 "$council_agenda_agenda_ngm_implementation_of_large_scale_actions_desc$"
+
+ council_agenda_agenda_ngm_restructuring_of_legislative_procedures_name:0 "立法手続きの再編"
+ council_agenda_agenda_ngm_restructuring_of_legislative_procedures_desc:0 "法の見直しは常に必要なのだ"
+ agenda_ngm_restructuring_of_legislative_procedures_finish_modifier:0 "$council_agenda_agenda_ngm_restructuring_of_legislative_procedures_name$ $agenda_ref$"
+ agenda_ngm_restructuring_of_legislative_procedures_finish_modifier_desc:0 "$council_agenda_agenda_ngm_restructuring_of_legislative_procedures_desc$"
+
+ council_agenda_agenda_ngm_ensuring_class_order_name:0 "階級的秩序の徹底"
+ council_agenda_agenda_ngm_ensuring_class_order_desc:0 "世襲階級への優遇は国家の礎なのだ"
+ agenda_ngm_ensuring_class_order_finish_modifier:0 "$council_agenda_agenda_ngm_ensuring_class_order_name$ $agenda_ref$"
+ agenda_ngm_ensuring_class_order_finish_modifier_desc:0 "$council_agenda_agenda_ngm_ensuring_class_order_desc$"
+
 ##########################
 #####    貿易取引    ######
 ##########################
@@ -4007,9 +5421,9 @@
 #####    Required technologies    ######
 ########################################
 
- requires_tech_starbase_5:0 "§R必要：£engineering£  §Y$tech_starbase_5$§! 技術§!"
- requires_tech_battleships:0 "§R必要：£engineering£  §Y$tech_battleships$§! 技術§!"
- requires_tech_zero_point_power:0 "§R必要：£engineering£  §Y$tech_zero_point_power$§! 技術§!"
+ requires_tech_starbase_5:0 "§R必要:£engineering£  §Y$tech_starbase_5$§! 技術§!"
+ requires_tech_battleships:0 "§R必要:£engineering£  §Y$tech_battleships$§! 技術§!"
+ requires_tech_zero_point_power:0 "§R必要:£engineering£  §Y$tech_zero_point_power$§! 技術§!"
 
 ##########################
 #####    意見修飾    ######
@@ -4019,6 +5433,7 @@
  triggered_opinion_tr_ngm_ambassador:0 "$tr_ngm_ambassador$"
  triggered_opinion_tr_ngm_longing_finish:0 "$tr_ngm_longing_finish$"
  triggered_opinion_tr_ngm_suzerain_adopt:0 "$tr_ngm_suzerain_adopt$"
+ triggered_opinion_origin_ngm_phenix_10_modifier:0 "$origin_ngm_phenix_10_modifier$"
 
 ##########################
 #####    そのほか    ######
@@ -4028,20 +5443,28 @@
 
  civic_tooltip_socialism:0 "§Y社会主義§!系統である"
  civic_tooltip_not_socialism:0 "§Y社会主義§!系統ではない"
+ requires_socialism:0 "$TRIGGER_FAIL$$civic_tooltip_socialism$"
  civic_tooltip_capitalism:0 "§Y資本主義§!系統である"
  civic_tooltip_not_capitalism:0 "§Y資本主義§!系統ではない"
+ requires_capitalism:0 "$TRIGGER_FAIL$$civic_tooltip_capitalism$"
  civic_tooltip_interventionism:0 "§Y介入主義§!系統である"
  civic_tooltip_not_interventionism:0 "§Y介入主義§!系統ではない"
+ requires_interventionism:0 "$TRIGGER_FAIL$$civic_tooltip_interventionism$"
  civic_tooltip_neutralism:0 "§Y中立主義§!系統である"
  civic_tooltip_not_neutralism:0 "§Y中立主義§!系統ではない"
+ requires_neutralism:0 "$TRIGGER_FAIL$$civic_tooltip_neutralism$"
  civic_tooltip_conservationism:0 "§Y保全主義§!系統である"
  civic_tooltip_not_conservationism:0 "§Y保全主義§!系統ではない"
+ requires_conservationism:0 "$TRIGGER_FAIL$$civic_tooltip_conservationism$"
  civic_tooltip_developmentalism:0 "§Y開発主義§!系統である"
  civic_tooltip_not_developmentalism:0 "§Y開発主義§!系統ではない"
+ requires_developmentalism:0 "$TRIGGER_FAIL$$civic_tooltip_developmentalism$"
  civic_tooltip_honorism:0 "§Y栄望主義§!系統である"
  civic_tooltip_not_honorism:0 "§Y栄望主義§!系統ではない"
+ requires_honorism:0 "$TRIGGER_FAIL$$civic_tooltip_honorism$"
  civic_tooltip_utilitarianism:0 "§Y実利主義§!系統である"
  civic_tooltip_not_utilitarianism:0 "§Y実利主義§!系統ではない"
+ requires_utilitarianism:0 "$TRIGGER_FAIL$$civic_tooltip_utilitarianism$"
 
  civic_tooltip_authoritarian_or_xenophile:0 "§Y権威主義§!系統か§Y受容主義§!系統である"
  civic_tooltip_authoritarian_or_militarist:0 "§Y権威主義§!系統か§Y軍国主義§!系統である"
@@ -4152,7 +5575,7 @@
 
  federation_acceptance_empire:0 "従属国"
 
- enable_mega_engineering_project:0 "§H技術選択肢：§!メガエンジニアリング\n\n"
+ enable_mega_engineering_project:0 "§H技術選択肢:§!メガエンジニアリング\n\n"
 
  empire_not_ethic:0 "$TRIGGER_FAIL$帝国は必要な条件を満たしてない。 "
 
@@ -4162,11 +5585,13 @@
 
  civic_tooltip_ngm_elder_politics_effects:0 "初期リーダー年が§Y60-100歳§!になる"
 
- civic_ngm_disdain_for_others_effects:0 "難民政策を§Y無制限許容§!で固定"
+ civic_tooltip_ngm_fundamental_insanity_effects:0 "研究者が全員 §Y狂気的§! の特性を取得する \n提督は全員 §Yトリックスター§! の特性を得る"
+
+ civic_tooltip_ngm_accept_everyone_effects:0 "難民政策を§Y無制限許容§!で固定"
 
  civic_tooltip_ngm_remorseless_justice_effects:0 "§R終末軌道爆撃以外選択不可§!"
 
- civic_tooltip_ngm_accept_everyone_effects:0 "「実りある侮辱」の技術を初期から有する"
+ civic_ngm_disdain_for_others_effects:0 "「実りある侮辱」の技術を初期から有する"
 
  civic_tooltip_ngm_dissection_effects:0 "§R異種族は強制で奴隷化§!"
 
@@ -4198,7 +5623,38 @@
 
  civic_tooltip_ngm_apprenticeship_desc_effects:0 "リーダーの初期特性§G+1§!\nリーダーの初期レベルが§G+1§!"
 
+ civic_tooltip_ngm_check_effects:0 "機械のリーダーは、 突発的な故障を起こす可能性が§Y20%§!低下する。"
+
+ civic_tooltip_ngm_warm_effects:0 "§E政策に§H無制限戦争§!を選択できない§!\n§E軌道爆撃の§H無差別爆撃§!が選択できない§!"
+
+ civic_tooltip_civic_ngm_h_tele_effects:0 "§Y$tech_psionic_theory$§!を初期から有する"
+
+ civic_tooltip_civic_ngm_h_depth_effects:0 "§H海洋型惑星§!では§H農業区域§!に制限はない。\n§H$trait_aquatic$§!特性が追加される。"
+
+ civic_tooltip_ngm_p_medal_effects:0 "§Y$tech_ceremony_theory$§!を初期から有する"
+
+ mod_planet_buildings_exotic_gases_upkeep_mult:0 "建造物£exotic_gases£ エキゾチックガス維持費"
+ mod_planet_buildings_rare_crystals_upkeep_mult:0 "建造物£rare_crystals£ レアクリスタル維持費"
+ mod_planet_buildings_volatile_motes_upkeep_mult:0 "建造物£volatile_motes£ 揮発性粉末維持費"
+ mod_planet_bureau_of_ceremonies_ngm_order_of_merit_produces_add:0 "£job_bureau_of_ceremonies£ $job_bureau_of_ceremonies_plural$からの£ngm_order_of_merit£ §Y$ngm_order_of_merit$§!"
+
+ requires_actor_not_ngm_virture_rival_country:0 "$TRIGGER_FAIL$§Rすでに2カ国の影の敵国を設定している §!"
+
+##########################
+#####    名称関係    ######
+##########################
+
  NAME_Pursuer:0 "追跡者"
+
+ NAME_NGM_origin_ngm_phenix_machine:0 "機械人"
+ NAME_NGM_origin_ngm_phenix_machine_plural:0 "機械人"
+
+ NAME_NGM_origin_ngm_phenix_avi:0 "麗隷人"
+ NAME_NGM_origin_ngm_phenix_avi_plural:0 "麗隷人"
+
+ NAME_origin_ngm_phenix_npc:0 "麗隷組合"
+ NAME_origin_ngm_phenix_npc_initials:0 "組合"
+ ADJ_origin_ngm_phenix_npc:0 "麗隷人"
 
 # :0 ""
 # _desc:0 ""

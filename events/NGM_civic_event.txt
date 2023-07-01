@@ -1542,6 +1542,7 @@ country_event = {
 		random_neighbor_country = {
 			limit = {
 				NOR = {
+					has_ascension_perk = ap_ngm_ministry_of_innocence
 					has_country_flag = civic_ngm_missionary_group_country_flag
 				}
 			}
@@ -1559,53 +1560,135 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_civic = civic_ngm_fundamental_insanity
+		has_valid_civic = civic_ngm_fundamental_insanity
 	}
 	immediate = {
-		every_owned_leader = {
+		set_country_flag = civic_ngm_fundamental_insanity_flag
+		every_pool_leader = {
 			limit = {
-				NOT = {
-					has_leader_flag = flag_civic_ngm_fundamental_insanity_system
-				}
 				leader_class = scientist
 			}
-			set_leader_flag = flag_civic_ngm_fundamental_insanity_system
 			if = {
 				limit = {
 					NOT = {
 						has_trait = leader_trait_maniacal
 					}
 				}
-				add_trait = leader_trait_maniacal
+				add_trait_no_notify = leader_trait_maniacal
 			}
 			else_if = {
 				limit = {
 					has_trait = leader_trait_maniacal
 				}
-				add_trait = leader_trait_maniacal_2
+				add_trait_no_notify = leader_trait_maniacal_2
 			}
 		}
-		every_owned_leader = {
+		every_pool_leader = {
 			limit = {
-				NOT = {
-					has_leader_flag = flag_civic_ngm_fundamental_insanity_system
-				}
 				leader_class = admiral
 			}
-			set_leader_flag = flag_civic_ngm_fundamental_insanity_system
 			if = {
 				limit = {
 					NOT = {
 						has_trait = leader_trait_trickster
 					}
 				}
-				add_trait = leader_trait_trickster
+				add_trait_no_notify = leader_trait_trickster
 			}
 			else_if = {
 				limit = {
 					has_trait = leader_trait_trickster_2
 				}
-				add_trait = leader_trait_trickster_2
+				add_trait_no_notify = leader_trait_trickster_2
+			}
+		}
+		every_owned_leader = {
+			limit = {
+				leader_class = scientist
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_trait = leader_trait_maniacal
+					}
+				}
+				add_trait_no_notify = leader_trait_maniacal
+			}
+			else_if = {
+				limit = {
+					has_trait = leader_trait_maniacal
+				}
+				add_trait_no_notify = leader_trait_maniacal_2
+			}
+		}
+		every_owned_leader = {
+			limit = {
+				leader_class = admiral
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_trait = leader_trait_trickster
+					}
+				}
+				add_trait_no_notify = leader_trait_trickster
+			}
+			else_if = {
+				limit = {
+					has_trait = leader_trait_trickster_2
+				}
+				add_trait_no_notify = leader_trait_trickster_2
+			}
+		}
+	}
+}
+
+# 根本的な狂気		:安定度-10 外交発言力-50% 戦力不均衡ボーナス+40% 研究者が全員狂気的の特性を取得する 提督は全員トリックスターの特性を得る
+country_event = {
+	id = ngm_civic.24
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_valid_civic = civic_ngm_fundamental_insanity
+	}
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					is_pool_leader = yes
+				}
+				if = {
+					limit = {
+						leader_class = scientist
+						NOT = {
+							has_trait = leader_trait_maniacal
+						}
+					}
+					add_trait_no_notify = leader_trait_maniacal
+				}
+				else_if = {
+					limit = {
+						leader_class = scientist
+						has_trait = leader_trait_maniacal
+					}
+					add_trait_no_notify = leader_trait_maniacal_2
+				}
+				if = {
+					limit = {
+						leader_class = admiral
+						NOT = {
+							has_trait = leader_trait_trickster
+						}
+					}
+					add_trait_no_notify = leader_trait_trickster
+				}
+				else_if = {
+					limit = {
+						leader_class = admiral
+						has_trait = leader_trait_trickster_2
+					}
+					add_trait_no_notify = leader_trait_trickster_2
+				}
 			}
 		}
 	}
@@ -1613,22 +1696,61 @@ country_event = {
 
 # 55.徒弟制度 apprenticeship  		(権威、物質)	専門家出力+10% リーダー雇用上限+1 リーダーの初期特性+1 リーダーの初期レベルが+1
 country_event = {
-	id = ngm_civic.24
+	id = ngm_civic.26
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
 		has_civic = civic_ngm_apprenticeship
 	}
 	immediate = {
-		every_owned_leader = {
-			limit = {
-				NOT = {
-					has_leader_flag = civic_ngm_apprenticeship
-				}
-			}
-			set_leader_flag = civic_ngm_apprenticeship
+		FROM = {
 			set_skill = 2
-			add_trait = random
+			add_trait_no_notify = "random_common"
+		}
+	}
+}
+
+# 74.他者蔑視	disdain_for_others		(排他)（実利ではない）		影響力+0.5 使者+1 「実りある侮辱」の技術を初期から有する
+country_event = {
+	id = ngm_civic.27
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_ngm_disdain_for_others
+	}
+	immediate = {
+		give_technology = {
+			tech = tech_satisfying_insults
+		}
+	}
+}
+
+# 歴史ある勲章	civic_ngm_p_medal	なし	この国の勲章制度は歴史と伝統があり、その格式は銀河中で一目置かれている	"勲章+0.1 統合力+15% 初期から式典理論Iを研究済"
+country_event = {
+	id = ngm_civic.28
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_ngm_p_medal
+	}
+	immediate = {
+		give_technology = {
+			tech = tech_ceremony_theory
+		}
+	}
+}
+
+# 3	統合テレパシー	civic_ngm_h_tele			"超能力理論を初期から有する 物理学-10% 群集ノード獲得経験値+10%"	この国では超能力接続により統合管理が行われるが、物理的事象には関心が低い
+country_event = {
+	id = ngm_civic.29
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_ngm_h_tele
+	}
+	immediate = {
+		give_technology = {
+			tech = tech_psionic_theory
 		}
 	}
 }
